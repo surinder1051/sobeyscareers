@@ -1,0 +1,149 @@
+{
+	"setup": {
+		"FP_PAGES": {
+			"en": [
+				{
+					"title": "About"
+				},
+				{
+					"title": "Get Inspired"
+				},
+				{
+					"title": "Flyer"
+				},
+				{
+					"title": "Gift Cards"
+				},
+				{
+					"title": "Privacy"
+				},
+				{
+					"title": "Contact Us"
+				},
+				{
+					"title": "FAQs"
+				},
+				{
+					"title": "Terms of Use"
+				}
+			]
+		},
+		"FP_COLORS": {
+			"primary": "#118471",
+			"secondary": "#8FC351",
+			"button": {
+				"bg": "DE3318",
+				"bg_hover": "DE3318",
+				"text": "FFFFFF",
+				"text_hover": "FFFFFF"
+			},
+			"additional": [
+				{
+					"label": "dark-green",
+					"color": "24823F"
+				},
+				{
+					"label": "red",
+					"color": "DC5237"
+				},
+				{
+					"label": "dark-red",
+					"color": "DE3318"
+				},
+				{
+					"label": "orange",
+					"color": "E79B3E"
+				}				
+			]
+		},
+		"FP_MENUS": {
+			"en": [{
+					"title": "Primary",
+					"location": "primary",
+					"items": [{
+							"title": "About"
+						},
+						{
+							"title": "Get Inspired"
+						}
+					]
+				},
+				{
+					"title": "Footer - Our Stories",
+					"location": "footer-bottom-col1",
+					"items": [{
+							"title": "Sobeys",
+							"type": "custom",
+							"url": "https://www.sobeys.com/"
+						},
+						{
+							"title": "IGA",
+							"type": "custom",
+							"url": "https://iga.net"
+						}, {
+							"title": "Foodland",
+							"type": "custom",
+							"url": "https://foodland.ca"
+						}, {
+							"title": "FreshCo",
+							"type": "custom",
+							"url": "https://freshco.ca"
+						}, {
+							"title": "Price Chopper",
+							"type": "custom",
+							"url": "https://ontario.pricechopper.ca/"
+						}, {
+							"title": "Thrifty Foods",
+							"type": "custom",
+							"url": "https://www.thriftyfoods.com/"
+						}, {
+							"title": "Lawtons Drugs",
+							"type": "custom",
+							"url": "https://lawtons.ca/"
+						}, {
+							"title": "Safeway",
+							"type": "custom",
+							"url": "https://safeway.ca"
+						}]
+				}, {
+					"title": "Footer - Sobeys Inc.",
+					"location": "footer-bottom-col2",
+					"items": [{
+						"title": "Sobeys Corporate",
+						"type": "custom",
+						"url": "https://corporate.sobeys.com/"
+					}, 
+					{
+						"title": "Sobeys Careers",
+						"type": "custom",
+						"url": "https://jobs.sobeyscareers.com/"
+					},
+					{
+						"title": "My Offers",
+						"type": "custom",
+						"url": "https://getmyoffers.ca/"
+					},
+					{
+						"title": "BMO Sobeys",
+						"type": "custom",
+						"url": "https://www.bmosobeys.com/en/"
+					}]
+				}, {
+					"title": "Footer - Empire",
+					"location": "footer-bottom-col3",
+					"items": [{
+							"title": "Empire Company Limited",
+							"type": "custom",
+							"url": "https://www.empireco.ca/en/"
+						},
+						{
+							"title": "Combie REIT",
+							"type": "custom",
+							"url": "https://www.crombie.ca/"
+						}						
+					]
+				}
+			]
+		}
+	}
+}

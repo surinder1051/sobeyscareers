@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+.component_bs_accordion h1,.component_bs_accordion h2,.component_bs_accordion h3,.component_bs_accordion h4,.component_bs_accordion h5,.component_bs_accordion h6{
+  font-size:1.5rem;
+  color:#ea0028;
+}
+
+@media (max-width:413px){
+  .component_bs_accordion h1,.component_bs_accordion h2,.component_bs_accordion h3,.component_bs_accordion h4,.component_bs_accordion h5,.component_bs_accordion h6{
+    font-size:1rem;
+  }
+}
+
+.component_bs_accordion .card{
+  border:0;
+  border-bottom:.0625rem solid #ddd;
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+          border-radius:0;
+  cursor:pointer;
+}
+
+.component_bs_accordion .card .card-header{
+  background-color:#fff;
+  border:0;
+  font-weight:700;
+  padding:1.5625rem 1.5625rem 1.5625rem 0;
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+          border-radius:0;
+}
+
+.component_bs_accordion .card .card-header:before{
+  content:"";
+  font-size:1.0625rem;
+  font-family:brand;
+  font-style:normal;
+  font-weight:400;
+  color:#ea0028;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  margin-right:0;
+  position:absolute;
+  right:0;
+}
+
+@media (max-width:767.98px){
+  .component_bs_accordion .card .card-header:before{
+    -webkit-transform:scale(.7);
+       -moz-transform:scale(.7);
+         -o-transform:scale(.7);
+            transform:scale(.7);
+    font-size:1.375rem;
+    right:-.1875rem;
+  }
+}
+
+@media (max-width:1600px){
+  .component_bs_accordion .card .card-header{
+    padding:1.25rem .9375rem 1.25rem 0;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  .component_bs_accordion .card .card-header{
+    padding:1.25rem .9375rem 1.25rem 0;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_bs_accordion .card .card-header{
+    padding:.9375rem 1.5rem .9375rem 0;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_bs_accordion .card .card-header{
+    font-size:.75rem;
+    padding:.9375rem 1.5rem .9375rem 0;
+  }
+}
+
+.component_bs_accordion .card .card-body{
+  padding:0 0 1.25rem;
+  font-size:1rem;
+  color:#02243e;
+}
+
+.component_bs_accordion .card .card-body p{
+  color:#02243e;
+}
+
+.component_bs_accordion .card .card-body p a,.component_bs_accordion .card .card-body p a:visited:hover{
+  color:#ea0028;
+}
+
+.component_bs_accordion .card[aria-expanded=true] .card-header:before{
+  content:"" !important;
+}
+
+/*# sourceMappingURL=bs_accordion_theme.min.css.map */

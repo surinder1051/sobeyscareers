@@ -1,0 +1,23 @@
+@media (max-width:767.98px){
+  body.page-house-brands .text-border .fl-col.fl-col-small,body.page-marques-maison .text-border .fl-col.fl-col-small{
+    margin-right:.9375rem;
+  }
+}
+
+body.page-house-brands .text-border .fl-module-bs_card .component_bs_card.card .card-img-top,body.page-marques-maison .text-border .fl-module-bs_card .component_bs_card.card .card-img-top{
+  background-position:50%;
+}
+
+@media (min-width:1200px){
+  body.page-house-brands .text-border .fl-module-bs_card .component_bs_card.card .card-img-top,body.page-marques-maison .text-border .fl-module-bs_card .component_bs_card.card .card-img-top{
+    max-height:15.625rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-house-brands .mobile_carousel .slick-list .fl-col.fl-col-small,body.page-marques-maison .mobile_carousel .slick-list .fl-col.fl-col-small{
+    width:100%!important;
+  }
+}
+
+/*# sourceMappingURL=page-house-brands.min.css.map */

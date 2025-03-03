@@ -1,0 +1,10 @@
+@import "component";
+
+// Reason: Added SCSS for quick link font color style
+.fl-module-quick_links {
+	.component_quick_links {
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}

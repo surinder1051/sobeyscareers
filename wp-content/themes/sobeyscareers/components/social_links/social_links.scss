@@ -1,0 +1,27 @@
+@import "component";
+$gray-25: #404040 !default;
+
+.component_social_links {
+	color: $gray-25;
+
+	.social-link {
+		background-color: transparent;
+		color: $gray-25;
+		border-radius: 50%;
+		display: inline-block;
+		font-size: rem(16);
+		line-height: rem(35);
+		margin: 0 rem(2);
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		width: rem(35);
+		height: rem(35);
+		z-index: 1;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}

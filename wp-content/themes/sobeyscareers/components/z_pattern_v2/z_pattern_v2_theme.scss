@@ -1,0 +1,43 @@
+@import "component";
+//CSS for set the design of z-pattern on  mobile view
+.page_top_banner {
+	.fl-module-z_pattern_v2 {
+		.component_z_pattern_v2 {
+			.safety-container {
+				.text-container {
+					@media (min-width: $ultra-screen-lg) {
+						padding-left: 100px;
+						padding-right: 40px;
+					}
+					@media (max-width: $extended-screen-lg) {
+						padding-left: 30px;
+						padding-right: 30px;
+					}
+					h1 {
+						&.heading {
+							margin-bottom: 0;
+							@media (min-width: $ultra-screen-lg) {
+								font-size: 40px;
+								line-height: 48px;
+							}
+						}
+					}
+					.field_editor {
+						p {
+							margin-top: 15px;
+							margin-bottom: 0;
+							color: $yellow;
+						}
+					}
+				}
+				.image-container {
+					img {
+						@media (min-width: $ultra-screen-sm) {
+							height: 350px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

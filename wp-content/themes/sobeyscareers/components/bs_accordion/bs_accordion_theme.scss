@@ -1,0 +1,82 @@
+@import "component";
+
+.component_bs_accordion {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: rem(24);
+        color: $blue-101;
+        @media (max-width: $small-screen) {
+            font-size: rem(16);
+        }
+    }
+    .card {
+        border: 0px;
+        border-bottom: rem(1) solid #dddddd;
+        border-radius: 0;
+        cursor: pointer;
+        .card-header {
+            &:before {
+                content: $icon-plus;
+                font-size: rem(17);
+                font-family: "brand";
+                font-style: normal;
+                font-weight: normal;
+                color: $blue-101;
+                display: flex;
+                margin-right: 0;
+                position: absolute;
+                right: 0;
+                @include media-breakpoint-down(sm) {
+                    transform: scale(0.7);
+                    font-size: rem(22);
+                    right: rem(-3);
+                }
+            }
+            background-color: $white;
+            border: 0;
+            font-weight: 700;
+            padding: rem(25) rem(25) rem(25) 0;
+            border-radius: 0px;
+            @media (max-width: $ultra-screen) {
+                padding: rem(20) rem(15) rem(20) 0;
+            }
+            @include media-breakpoint-only(lg) {
+                padding: rem(20) rem(15) rem(20) 0;
+            }
+            @include media-breakpoint-only(md) {
+                padding: rem(15) rem(24) rem(15) 0;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: rem(12);
+                padding: rem(15) rem(24) rem(15) 0;
+            }
+        }
+        .card-body {
+            padding: 0 0 rem(20) 0;
+            font-size: rem(16);
+            color: $blue-102;
+            p {
+                color: $blue-102;
+                a {
+                    color: $blue-101;
+                    &:visited {
+                        &:hover{
+                            color: $blue-101;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card[aria-expanded="true"] {
+        .card-header {
+            &:before {
+                content: $icon-minus !important;
+            }
+        }
+    }
+}

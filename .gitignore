@@ -1,48 +1,173 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+# ========================================
+# General
+# ========================================
+*~
+.svn
+.cvs
+Thumbs.db
+Thumbs.dbw
+sitemap.xml
+sitemap.xml.gz
+robots.txt
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# ========================================
+# Environment specific
+# ========================================
+.htaccess
+local-config.php
+wp-config-domain-overwrites.php
+Dockerfile
+docker-compose.yml
 
-# Configuration
+# ========================================
+# WP Engine specific
+# ========================================
+.smushit-status
+.gitattributes
+.quarantine
+.tmb
+_wpeprivate
+wp-content/object-cache.php
+wp-content/mu-plugins/mu-plugin.php
+wp-content/mu-plugins/slt-force-strong-passwords.php
+wp-content/mu-plugins/stop-long-comments.php
+wp-content/mu-plugins/force-strong-passwords*
+wp-content/mu-plugins/wpengine-common*
+wp-content/mu-plugins/wpe-wp-sign-on-plugin*
+wp-content/mu-plugins/wpengine-security-auditor.php
+
+# ========================================
+# WordPress specific 
+# ========================================
 wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/*
+wp-content/backup-db/*
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/*
+wp-content/cache/supercache/*
+/db.php
 
-# Example themes
-/wp-content/themes/twenty*/
+# ========================================
+# Plugin specific
+# ========================================
+wp-content/plugins/sobeys-store-importer/json
+wp-content/plugins/user-switching/
+wp-content/plugins/wordpress-importer
 
-# Example plugin
-/wp-content/plugins/hello.php
+# Beaver Builder Icons
+wp-content/uploads/bb-plugin/*
+!wp-content/uploads/bb-plugin/icons/
+wp-content/uploads/bb-plugin/icons/*
+!wp-content/uploads/bb-plugin/icons/icon-*
 
-# Uploads
-/wp-content/uploads/
+wp-content/stores/*
 
-# Log files
+# ========================================
+# Sass specific
+# ========================================
+.sass-cache
+compass_app_log.txt
+/.sass-lint.yml
+
+# ========================================
+# Node.js specific
+# ========================================
+node_modules/
+.linting_reports
+
+# ========================================
+# macOS specific
+# ========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ========================================
+# Editor specific
+# ========================================
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+atlassian-ide-plugin.xml
+.vscode/*
+.idea/
+*.iml
+.idea
+*.ipr
+*.iws
+/out/
+.idea_modules/
+crashlytics.properties
+crashlytics-build.properties
+.apdisk
+/box
+
+# ========================================
+# FP Foundation
+# ========================================
+.env
+.env.json
+# This file gets generated dynamically by saving ACF fields it shouldn't be commited.
+custom-theme-style.css
+
+# ========================================
+# Ignore disabled git projects to quickly allow for pushing changes back up to original repo
+# ========================================
+.git_disabled
+
+# ========================================
+# large/disallowed file types
+# ========================================
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+*.bak
+*.swp
 *.log
+*.lock
+*.sql
+*.sqlite
+*.7z
+*.gz
+*.jar
+*.rar
+*.tar
+*.zip
+*.map
 
-# htaccess
-/.htaccess
+*.map
+/wp-content/mu-plugins/dale-fp-plugin.php
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# devops

@@ -1,0 +1,96 @@
+@media (max-width:767.98px){
+  body.page-blog-and-tips .text-border .fl-col.fl-col-small,body.page-blogs-conseils .text-border .fl-col.fl-col-small{
+    margin-right:.9375rem;
+  }
+}
+
+body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card:hover .overlay,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card:hover .overlay{
+  height:100%;
+  opacity:1;
+}
+
+body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .overlay,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .overlay{
+  background-color:rgba(234, 0, 40, .6);
+}
+
+body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .overlay:before,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .overlay:before{
+  background-color:#ea0028;
+  content:"";
+  display:block;
+  height:100%;
+  opacity:.1;
+  position:absolute;
+  width:100%;
+}
+
+body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-img-top,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-img-top{
+  background-position:50%;
+  max-height:15.625rem;
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-img-top,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-img-top{
+    max-height:12.5rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-img-top,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-img-top{
+    height:9.375rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-img-top,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-img-top{
+    height:14.375rem;
+  }
+}
+
+body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-body,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-body{
+  border:.0625rem solid #ddd;
+  font-size:1.125rem;
+  line-height:1.5rem;
+  font-weight:700;
+  padding-right:6.25rem;
+}
+
+@media (max-width:1600px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-body,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-body{
+    padding-right:1.25rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-body,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-body{
+    font-size:.8125rem;
+    line-height:1.125rem;
+    padding:.9375rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-body .card-text,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-body .card-text{
+    height:auto;
+  }
+}
+
+body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-body .card-text p,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-body .card-text p{
+  color:#4d4d4f;
+  margin:0;
+  font-family:Palanquin Dark SemiBold,sans-serif;
+}
+
+@media (max-width:413px){
+  body.page-blog-and-tips .text-border .fl-module-bs_card .component_bs_card.card .card-body .card-text p,body.page-blogs-conseils .text-border .fl-module-bs_card .component_bs_card.card .card-body .card-text p{
+    font-size:1.125rem;
+    line-height:1.5rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-blog-and-tips .mobile_carousel .slick-list .fl-col.fl-col-small,body.page-blogs-conseils .mobile_carousel .slick-list .fl-col.fl-col-small{
+    width:100%!important;
+  }
+}
+
+/*# sourceMappingURL=page-blog-and-tips.min.css.map */

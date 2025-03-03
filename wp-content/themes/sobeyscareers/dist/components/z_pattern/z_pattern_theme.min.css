@@ -1,0 +1,160 @@
+.component_z_pattern.-right-to-left .safety-container{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:reverse;
+  -webkit-flex-direction:row-reverse;
+     -moz-box-orient:horizontal;
+     -moz-box-direction:reverse;
+          flex-direction:row-reverse;
+  height:auto !important;
+  margin:0;
+  max-width:100%;
+  width:100%;
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container{
+    display:block;
+    height:auto;
+    max-height:inherit;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container{
+  -webkit-print-color-adjust:exact;
+  height:auto;
+  padding:0 5.625rem;
+}
+
+@media (max-width:1850px){
+  .component_z_pattern.-right-to-left .safety-container .text-container{
+    padding:0 2.8125rem;
+  }
+}
+
+@media (max-width:1299px){
+  .component_z_pattern.-right-to-left .safety-container .text-container{
+    padding:0 1.875rem;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container{
+    padding:2.8125rem 1.5625rem;
+    text-align:left;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container .display-table{
+  display:block;
+  height:inherit;
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table{
+    display:table;
+    height:100%;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell{
+  display:block;
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell{
+    display:table-cell;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .block{
+  display:block;
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .block{
+    display:inline;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .field_editor p{
+  font-size:1rem;
+  color:#fffac2;
+  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-weight:600;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .field_editor p{
+    font-weight:400;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .field_editor p{
+    margin-bottom:0;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+  margin-bottom:1.25rem;
+  font-size:2.5rem;
+  font-weight:700;
+}
+
+@media (max-width:1850px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+    font-size:1.875rem;
+  }
+}
+
+@media (max-width:1299px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+    margin-bottom:.9375rem;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+    font-size:2.25rem;
+    line-height:2.5rem;
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading .article_text_style{
+  font-size:1rem;
+  margin-top:1.25rem;
+  font-family:Roboto,sans-serif;
+  font-weight:300;
+}
+
+.component_z_pattern.-right-to-left .safety-container .image-container img{
+  width:100%;
+  min-height:21.875rem;
+  -o-object-fit:cover;
+     object-fit:cover;
+  height:100%;
+}
+
+@media (max-width:1600px){
+  .component_z_pattern.-right-to-left .safety-container .image-container img{
+    min-height:18.75rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_z_pattern.-right-to-left .safety-container .image-container img{
+    min-height:15.625rem;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .image-container img{
+    min-height:12.5rem;
+  }
+}
+
+/*# sourceMappingURL=z_pattern_theme.min.css.map */

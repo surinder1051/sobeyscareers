@@ -1,0 +1,102 @@
+@import 'component';
+
+$small-screen: 413px !default;
+$ultra-screen: 1600px !default;
+$gray-25: #404040 !default;
+$gray-light: #f4f4f4 !default;
+
+.component_recipe_ingredients {
+    &:focus {
+        outline: 0;
+    }
+
+    .title {
+        margin: 0;
+        font-weight: 300;
+		font-size: rem(30);
+		line-height: rem(30);
+		margin-bottom: rem(30);
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li,
+    dl {
+
+        padding: rem(17) rem(15);
+        color: $gray-25;
+        margin: 0;
+
+        @media (max-width: $ultra-screen) {
+            font-size: rem(16);
+            padding: rem(18) rem(10);
+            line-height: rem(20);
+        }
+
+        @media (max-width: $small-screen) {
+            font-size: rem(14);
+            line-height: rem(16);
+        }
+
+        @include media-breakpoint-only(md) {
+            font-size: rem(14);
+        }
+
+        &:nth-child(odd) {
+            background-color: $gray-light;
+        }
+
+        dt {
+            margin: 0;
+            font-weight: 300;
+
+            &.lb {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+
+        dd {
+            margin: 0;
+
+            &.desc {
+                flex: 0 0 65%;
+                max-width: 65%;
+
+                @include media-breakpoint-down(sm) {
+                    flex: 0 0 60%;
+                    max-width: 60%;
+                }
+            }
+
+            &.weight {
+                flex: 0 0 15%;
+                max-width: 15%;
+
+                @include media-breakpoint-down(sm) {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                }
+
+                @include media-breakpoint-only(lg) {
+                    text-align: right;
+                }
+
+                @include media-breakpoint-only(md) {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+@media print {
+    .component_recipe_ingredients {
+        dl {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import 'component';
+
+$gray-25: #404040 !default;
+
+.component_recipe_steps {
+    .component-content-wrapper {
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .title {
+        margin: 0;
+        margin-bottom: rem(30);
+        font-weight: 300;
+        line-height: normal;
+		font-size: rem(30);
+    }
+
+    dl {
+        color: $gray-25;
+        border-bottom: solid rem(1) $gray-400;
+        margin-bottom: rem(5);
+        padding: rem(20) 0;
+
+        @include media-breakpoint-only(md) {
+            font-size: rem(14);
+        }
+    }
+
+    dt {
+        float: left;
+        width: rem(150);
+    }
+	dd {
+		margin-bottom: 0;
+	}	
+}
+@media print {
+    .component_recipe_steps {
+        .title {
+            margin-bottom: rem(20)
+        }
+    }
+}

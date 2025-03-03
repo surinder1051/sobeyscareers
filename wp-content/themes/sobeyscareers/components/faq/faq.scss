@@ -1,0 +1,139 @@
+@import 'component';
+
+.component_faq {
+
+    .container {
+        @include media-breakpoint-up(md) {
+            -ms-grid-columns: 40% 10px calc(60% - 10px); //ie11 grid not created by autoprefixer
+            display: -ms-grid;
+            display: grid;
+            grid-template-columns: 40% calc(60% - 10px);
+            grid-template-areas: 'left right';
+            grid-gap: 10px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            -ms-grid-columns: 25% 40px calc(75% - 40px);
+            grid-template-columns: 25% calc(75% - 40px);
+            grid-gap: 40px;
+        }
+    }
+
+    .button-icon-right {
+        float: right;
+    }
+
+    .category-list {
+        display: block;
+        margin: 0 0 10px;
+        padding: 0;
+
+        @include media-breakpoint-up(md) {
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+            grid-area: left;
+            margin-bottom: 0;
+        }
+
+        > span {
+            cursor: pointer;
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+            padding: 12px 0;
+
+            span {
+                &.active-icon {
+                    display: none;
+                    font-size: 13px;
+					position: relative;
+					right: -15px;
+                    top: 0;
+                    width: 14px;
+                    height: 14px;
+                    transform: rotate(90deg);
+                    @include media-breakpoint-up(md) {
+                        transform: none;
+                        top: 5px;
+                    }
+                }
+            }
+
+            &.-active {
+                span {
+                    &.active-icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .question-section {
+
+        @include media-breakpoint-up(md) {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1;
+            grid-area: right;
+        }
+
+        .accordion {
+            display: none;
+            .card {
+                border-bottom: 1px solid $gray-100;
+                margin-bottom: 15px;
+
+                .card-header {
+                    padding: 0;
+                    position: relative;
+                    button {
+                        border: 0;
+                        background: inherit;
+                        cursor: pointer;
+                        display: block;
+                        float: none;
+                        margin-right: 35px;
+                        padding: 15px 10px;
+                        text-align: left;
+                        width: 100%;
+
+                        .-opened {
+                            display: none;
+                        }
+
+                        .-closed {
+                            display: block;
+                        }
+
+                        &.collapsed {
+                            .-opened {
+                                display: block;
+                            }
+
+                            .-closed {
+                                display: none;
+                            }
+                        }
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        right: 30px;
+                    }
+                }
+            }
+        }
+
+        &.-active {
+            .accordion {
+                display: block;
+            }
+        }
+    }
+}

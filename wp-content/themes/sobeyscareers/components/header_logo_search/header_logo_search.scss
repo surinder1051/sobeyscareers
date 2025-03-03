@@ -1,0 +1,476 @@
+@import 'component';
+
+$color-5: #757575 !default;
+$form-submit-bg: #e03100 !default;
+
+$grid-breakpoints2: (extra-small-screen: 374px);
+$grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
+
+.component_header_logo_search {
+	display: flex;
+	background-color: $white;
+
+	.fl-builder-module-template {
+		padding: 0;
+	}
+
+	.logo-col {
+		width: 100%;
+
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+		}
+
+		.main-logo {
+			font-family: 'brand';
+			color: $main-font-colour;
+			display: block;
+		}
+	}
+
+	.search-col {
+		display: none;
+		width: 100%;
+
+		@include media-breakpoint-up(md) {
+			display: block;
+			margin-left: auto;
+		}
+
+		.header-search {
+			position: relative;
+
+			.search-label {
+				color: $color-5;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				transform: translate3d(14px, 28px, 0) scale(1);
+				transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, max-width 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+				padding: 0 6px;
+				background-color: white;
+
+				@include media-breakpoint-up(md) {
+					transform: translate3d(14px, 16px, 0) scale(1);
+				}
+
+				&.search-active {
+					transform-origin: left top;
+					transform: translate3d(14px, 0, 0) scale(0.75);
+
+					@include media-breakpoint-up(md) {
+						transform: translate3d(14px, -9px, 0) scale(0.75);
+					}
+				}
+			}
+
+			.search-input {
+				border: 1px solid $gray-medium;
+				color: $gray-51;
+				font-size: 14px;
+				height: inherit;
+				line-height: normal;
+				padding: 15px 20px;
+				width: 100%;
+
+				&::-webkit-search-cancel-button {
+					display: none;
+				}
+			}
+
+			.invalid-feedback {
+				font-size: 11px;
+				padding-left: 25px;
+				text-align: left;
+				color: red;
+				position: absolute;
+				bottom: 0;
+				display: none;
+
+				@include media-breakpoint-up(md) {
+					bottom: auto;
+					padding-left: 0;
+				}
+			}
+
+			.search-btn {
+				background: none;
+				border: 0;
+				padding: 0;
+				position: absolute;
+				right: 10px;
+				top: calc(50% - 2px);
+				transform: translate(0, -50%);
+
+				&::before {
+					display: none;
+				}
+
+				&.close {
+					display: inline-block;
+					right: 40px;
+					top: 24px;
+
+					@include media-breakpoint-up(md) {
+						display: none;
+					}
+				}
+
+				span {
+					font-size: 18px;
+
+					&::before {
+						color: $brand-primary;
+					}
+				}
+			}
+
+			&.invalid {
+				.search-input {
+					border-color: red;
+				}
+
+				.invalid-feedback {
+					display: block;
+				}
+			}
+		}
+
+		.head_trending {
+			position: relative;
+
+			.trending_inner {
+				line-height: normal;
+				position: absolute;
+				right: 0;
+
+				@include media-breakpoint-down(sm) {
+					position: relative;
+					text-align: right;
+				}
+
+				.trending_label {
+					color: $gray-48;
+					font-size: 12px;
+					font-weight: 700;
+				}
+
+				ul {
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+
+					li {
+						color: $gray-48;
+						display: inline-block;
+						font-size: 12px;
+						font-weight: 700;
+
+						a {
+							color: $gray-48;
+							font-size: 12px;
+							font-weight: 700;
+							text-decoration: underline;
+
+							&:hover {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	button {
+		&.mob_search_toggle {
+			display: none;
+			float: none;
+
+			&::before {
+				display: none;
+			}
+
+			@include media-breakpoint-down(sm) {
+				appearance: none;
+				background: transparent;
+				border: 0;
+				cursor: pointer;
+				color: $brand-dark;
+				display: inline-block;
+				position: absolute;
+				right: 15px;
+				top: 0;
+				transform: none;
+				padding: 0;
+			}
+
+			@include media-breakpoint-down(xs) {
+				right: 0;
+			}
+		}
+
+		&.mob_menu_toggle {
+			appearance: none;
+			background-color: inherit;
+			border: none;
+			border-radius: 0;
+			display: block;
+			float: none;
+			padding: 0;
+			height: 30px;
+			margin-top: 0;
+			position: absolute;
+			top: 15px;
+			width: 30px;
+
+			&::before {
+				display: none;
+			}
+
+			span {
+				background: $black;
+				bottom: 0;
+				height: 2px;
+				left: 0;
+				margin: auto;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 20px;
+
+				&::before,
+				&::after {
+					content: "";
+					background: $black;
+					height: 2px;
+					left: 0;
+					position: absolute;
+					width: 100%;
+				}
+
+				&::before {
+					top: -7px;
+				}
+
+				&::after {
+					top: 7px;
+				}
+			}
+
+			@include media-breakpoint-up(xs) {
+				left: 15px;
+			}
+
+			@include media-breakpoint-up(md) {
+				display: none;
+			}
+		}
+	}
+
+	span {
+		font-size: 22px;
+	}
+
+	&.-expand-below {
+		padding-top: 15px;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 0;
+		}
+	}
+
+	&.-expand-above {
+		background-color: inherit;
+
+		.search-col {
+			@include media-breakpoint-down(sm) {
+				background-color: $white;
+				border-top: none;
+				bottom: 0;
+				display: none;
+				left: 0;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 10;
+			}
+
+			.header-search {
+				@include media-breakpoint-down(sm) {
+					position: static;
+				}
+			}
+
+			form {
+				@include media-breakpoint-down(sm) {
+					align-items: center;
+					display: flex;
+					height: 100%;
+				}
+			}
+
+			.search-input {
+				background-color: $white;
+				border-radius: 27px;
+				box-shadow: none;
+				font-size: 16px;
+				font-weight: 400;
+				height: 55px;
+				line-height: 30px;
+				padding: 0 50px 0 30px;
+
+				&::placeholder {
+					color: $gray-51;
+					opacity: 1;
+				}
+
+				@include media-breakpoint-down(sm) {
+					border: none;
+					border-radius: 0;
+					line-height: normal;
+					margin: 0;
+					padding: 0 130px 0 40px;
+					width: 100%;
+				}
+			}
+
+			.search-btn {
+				background: inherit;
+				border-left: none;
+				border-radius: 27px;
+				border-bottom-left-radius: 0;
+				border-top-left-radius: 0;
+				cursor: pointer;
+				display: block;
+				font-size: 18px;
+				height: 55px;
+				right: 0;
+				width: 70px;
+
+				&.close {
+					font-size: 18px;
+					transform: translateY(-50%);
+					top: calc(50% - 2px);
+
+					.icon-close {
+						&::before {
+							color: $form-submit-bg;
+						}
+					}
+				}
+
+				@include media-breakpoint-down(sm) {
+					padding-right: 20px;
+					background-color: transparent;
+					border-radius: 0;
+					height: auto;
+					bottom: 0;
+				}
+
+				&::before {
+					display: none;
+				}
+
+				.icon-search {
+					font-size: inherit;
+
+					@include media-breakpoint-up(md) {
+						display: block;
+						height: 25px;
+						line-height: 25px;
+						margin: auto;
+						text-align: center;
+						width: 25px;
+
+						&::before {
+							margin: 0;
+						}
+					}
+
+					&::before {
+						color: $form-submit-bg;
+						position: relative;
+
+						@include media-breakpoint-down(sm) {
+							color: $brand-primary;
+						}
+					}
+				}
+			}
+		}
+
+		button {
+			&.mob_menu_toggle {
+				background: transparent;
+				height: 30px;
+				left: auto;
+				right: 15px;
+				width: 30px;
+				top: calc(50% - 2px);
+				transform: translateY(-50%);
+
+				span {
+					border-radius: 2px;
+					height: 4px;
+					width: 100%;
+
+					&::before,
+					&::after {
+						background: $white;
+						border-radius: 2px;
+						height: 4px;
+					}
+
+					&::before {
+						top: -8px;
+					}
+
+					&::after {
+						top: 8px;
+					}
+				}
+
+				@include media-breakpoint-between(extra-small-screen, sm) {
+					right: 25px;
+				}
+			}
+
+			&.mob_search_toggle {
+				@include media-breakpoint-down(sm) {
+					display: block;
+					margin-top: 0;
+					right: 70px;
+					top: 50%;
+					transform: translate(0, -50%);
+				}
+
+				@include media-breakpoint-up(extra-small-screen) {
+					right: rem(70);
+				}
+
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	input {
+		&[type="search"] {
+			&::-ms-clear {
+				display: none;
+				width: 0;
+				height: 0;
+			}
+
+			&::-ms-reveal {
+				display: none;
+				width: 0;
+				height: 0;
+			}
+		}
+	}
+}

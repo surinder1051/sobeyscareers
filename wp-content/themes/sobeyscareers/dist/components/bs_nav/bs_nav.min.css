@@ -1,0 +1,89 @@
+.fl-builder-content .fl-module-custom .component_bs_nav button.bs-nav-expander{
+  background-color:#fff;
+  border:none;
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+          border-radius:0;
+  color:#b21226;
+  font-size:14px;
+  font-size:.875rem;
+  display:inline-block;
+  margin:0;
+  padding:.3125rem .5rem;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+.fl-builder-content .fl-module-custom .component_bs_nav button.bs-nav-expander:before{
+  display:none;
+}
+
+.fl-builder-content .fl-module-custom .component_bs_nav button.bs-nav-expander:hover{
+  color:#ed1b2e;
+}
+
+.component_bs_nav.vertical .title{
+  width:100%;
+}
+
+.component_bs_nav.vertical ul{
+  display:block;
+}
+
+.component_bs_nav.vertical.navbar-expand-lg .navbar-nav .nav-link{
+  padding:0;
+}
+
+.component_bs_nav.vertical.navbar-expand-lg .navbar-nav .dropdown-menu{
+  border:0;
+  position:static;
+}
+
+.component_bs_nav.vertical.expand-collapse.navbar-expand-lg .navbar-nav .nav-link{
+  padding:0;
+}
+
+.component_bs_nav.vertical.expand-collapse.navbar-expand-lg .navbar-nav .dropdown-menu{
+  border:0;
+  position:static;
+}
+
+@media (min-width:768px){
+  .component_bs_nav.vertical.expand-collapse .btn-group:hover .dropdown-menu,.component_bs_nav.vertical.expand-collapse .btn-group:hover.layout-columns>.dropdown-menu,.component_bs_nav.vertical.expand-collapse .dropdown:hover .dropdown-menu,.component_bs_nav.vertical.expand-collapse .dropdown:hover.layout-columns>.dropdown-menu{
+    display:block;
+  }
+}
+
+.component_bs_nav.vertical.expand-collapse .dropdown-item{
+  background:none;
+  border:none;
+  color:#404040;
+  text-align:left;
+}
+
+.component_bs_nav.vertical.expand-collapse .dropdown-item.active{
+  color:#404040;
+  text-align:left;
+}
+
+.component_bs_nav.vertical.expand-collapse .dropdown-item:hover{
+  color:#ed1b2e;
+}
+
+.component_bs_nav.vertical.expand-collapse .menu-item-has-children:not(.expanded) .dropdown-menu{
+  height:0;
+  overflow:hidden;
+  -webkit-transition:all easeInOutQuint .4s;
+  -o-transition:.4s all easeInOutQuint;
+  -moz-transition:.4s all easeInOutQuint;
+  transition:all easeInOutQuint .4s;
+  display:none;
+}
+
+.component_bs_nav.vertical.expand-collapse .menu-item-has-children.expanded>.dropdown-menu{
+  height:auto;
+  overflow:visible;
+}
+
+/*# sourceMappingURL=bs_nav.min.css.map */

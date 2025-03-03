@@ -1,0 +1,31 @@
+@import "component";
+
+/*
+Url : /fr/air-miles/
+      /en/air-miles/
+*/
+body {
+      &.page-air-miles{
+            // Reason: Added CSS to style headline for small mobile screen
+            .font-small-screen{
+                  .fl-module-heading {
+                        .fl-heading{
+                              @media (max-width: $extra-small-screen) {
+                                    font-size: rem(30);
+                                    line-height: rem(36);
+                              }
+                        }
+                  }
+            }
+            // Reason: Added CSS to style seperator for small mobile screen
+            .separator-mini-screen{
+                  .fl-module-content{
+                        @media (max-width: $extra-small-screen) {
+                              margin-top: rem(35);
+                              margin-bottom: rem(35);
+                        }
+                  }
+            }
+      }
+
+}

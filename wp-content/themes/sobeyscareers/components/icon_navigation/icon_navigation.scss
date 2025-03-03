@@ -1,0 +1,283 @@
+@import 'component';
+
+$light-grey: #ddd !default;
+$gray-25: #404040 !default;
+$black: #000 !default;
+
+.component_icon_navigation {
+	position: relative;
+
+	.icon-navigation-row {
+
+		&.display-table {
+			display: table;
+			margin-left: auto;
+			margin-right: auto;
+			padding: rem(6) 0;
+			width: calc(100% - 40px);
+
+			.icon-nav-item {
+				border-right: rem(1) solid $light-grey;
+				display: table-cell;
+
+				&:first-child {
+					border-left: rem(1) solid $light-grey;
+				}
+
+			}
+		}
+
+		&.display-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 33%);
+
+			&::before {
+				content: '';
+				display: block;
+				grid-area: 'spacer';
+			}
+
+			&.grid-rows-1 {
+				grid-template-areas:
+					'item-1 item-2 item-3';
+
+				&.grid-spacer-2 {
+					grid-template-areas:
+						'item-1 item-2 spacer';
+				}
+
+				&.grid-spacer-1 {
+					grid-template-areas:
+						'item-1 spacer spacer';
+				}
+
+				&.grid-cols-2 {
+					grid-template-columns: repeat(2, 50%);
+					grid-template-areas:
+						'item-1 item-2';
+				}
+			}
+
+			&.grid-rows-2 {
+				grid-template-rows: repeat(2, 1fr);
+				grid-template-areas:
+					'item-1 item-2 item-3'
+					'item-4 item-5 item-6';
+
+				&.grid-spacer-2 {
+					grid-template-areas:
+						'item-1 item-2 item-3'
+						'item-4 item-5 spacer';
+				}
+
+				&.grid-spacer-1 {
+					grid-template-areas:
+						'item-1 item-2 item-3'
+						'item-4 spacer spacer';
+				}
+
+				&.grid-cols-2 {
+					grid-template-columns: repeat(2, 50%);
+					grid-template-areas:
+						'item-1 item-2'
+						'item-3 item-4';
+				}
+			}
+
+			&.grid-rows-3 {
+				grid-template-rows: repeat(3, 1fr);
+				grid-template-areas:
+					'item-1 item-2 item-3'
+					'item-4 item-5 item-6'
+					'item-7 item-8 item-9';
+
+				&.grid-spacer-2 {
+					grid-template-areas:
+						'item-1 item-2 item-3'
+						'item-4 item-5 item-6'
+						'item-7 item-8 spacer';
+				}
+
+				&.grid-spacer-1 {
+					grid-template-areas:
+						'item-1 item-2 item-3'
+						'item-4 item-5 item-6'
+						'item-7 spacer spacer';
+				}
+			}
+
+			&.grid-rows-4 {
+				grid-template-rows: repeat(4, 1fr);
+				grid-template-areas:
+					'item-1 item-2 item-3'
+					'item-4 item-5 item-6'
+					'item-7 item-8 item-9'
+					'item-10 spacer spacer';
+
+				&.grid-spacer-1 {
+					grid-template-areas:
+						'item-1 item-2 item-3'
+						'item-4 item-5 item-6'
+						'item-7 item-10 item-9'
+						'item-10 spacer spacer';
+				}
+			}
+
+			a {
+				&::after {
+					background: $light-grey;
+					content: '';
+					display: block;
+					height: calc(100% - 6px);
+					position: absolute;
+					right: 0;
+					top: rem(3);
+					width: rem(1);
+				}
+			}
+
+			.icon-nav-item {
+				border-bottom: rem(1) solid $light-grey;
+				display: block;
+			}
+
+			.item-1 {
+				grid-area: item-1;
+			}
+
+			.item-2 {
+				grid-area: item-2;
+			}
+
+			.item-3 {
+				grid-area: item-3;
+
+				a {
+					&::after {
+						display: none;
+					}
+				}
+			}
+
+			.item-4 {
+				grid-area: item-4;
+			}
+
+			&.grid-cols-2 {
+
+				.item-4,
+				.item-2 {
+					border-right: none;
+
+					a {
+						&::after {
+							display: none;
+						}
+					}
+				}
+
+				.item-3 {
+					a {
+						&::after {
+							display: block;
+						}
+					}
+				}
+			}
+
+			.item-5 {
+				grid-area: item-5;
+			}
+
+			.item-6 {
+				grid-area: item-6;
+
+				a {
+					&::after {
+						display: none;
+					}
+				}
+			}
+
+			.item-7 {
+				grid-area: item-7;
+			}
+
+			.item-8 {
+				grid-area: item-8;
+			}
+
+			.item-9 {
+				grid-area: item-9;
+
+				a {
+					&::after {
+						display: none;
+					}
+				}
+			}
+
+			.item-10 {
+				grid-area: item-10;
+			}
+
+		}
+	}
+
+	.spacer {
+		content: '';
+		display: block;
+	}
+
+	.icon-nav-item {
+		a {
+			color: $gray-25;
+			display: block;
+			padding: rem(15) 0;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+
+			&::before {
+				background: $gray-25;
+				bottom: rem(-6);
+				content: '';
+				left: 50%;
+				height: rem(4);
+				position: absolute;
+				right: 50%;
+				transition: (left, right) ease-out;
+				transition-duration: .3s;
+				z-index: -1;
+			}
+
+			&.active {
+				&::before {
+					left: 0;
+					right: 0;
+				}
+			}
+
+			&:hover {
+				&::before {
+					left: 0;
+					right: 0;
+				}
+			}
+
+			&:focus {
+				color: $black;
+			}
+
+			.navicon {
+				display: block;
+			}
+
+			.nav-label {
+				display: block;
+				margin-top: rem(6);
+				text-transform: uppercase;
+			}
+		}
+	}
+}

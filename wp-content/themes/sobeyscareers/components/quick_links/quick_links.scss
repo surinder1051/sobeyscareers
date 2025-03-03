@@ -1,0 +1,60 @@
+@import 'component';
+$gray-48: #757575 !default;
+
+.component_quick_links {
+	.quicklinks-inner {
+		text-align: right;
+	}
+
+	.quicklinks-label {
+		color: $gray-48;
+		font-size: rem(12);
+		font-weight: bold;
+	}
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+
+		li {
+			color: $gray-48;
+			font-size: rem(12);
+			font-weight: bold;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+		color: $gray-48;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+		&:visited {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&.-inline {
+		ul {
+			display: inline;
+
+			li {
+				display: inline;
+
+				&:not(:last-child) {
+					&::after {
+						content: ", ";
+					}
+				}
+			}
+		}
+	}
+}

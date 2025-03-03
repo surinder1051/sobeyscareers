@@ -1,0 +1,108 @@
+@import "component";
+
+$gray-medium: #e2e2e2 !default;
+
+.component_fp_downloads {
+
+    .pdf-content {
+
+		@include media-breakpoint-up(sm) {
+			border-top: 1px solid $gray-medium;
+        	border-bottom: 1px solid $gray-medium;
+			padding: 20px 0;
+		}
+		@include media-breakpoint-up(md) {
+			padding: 40px 0;
+		}
+
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+            display: flex;
+        }
+
+        span {
+            display: block;
+            font-family: "Bemio", sans-serif;
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 100%;
+			text-align: center;
+
+			@include media-breakpoint-up (sm) {
+				text-align: left;
+			}
+
+            @include media-breakpoint-up(lg) {
+                display: inline-block;
+                font-size: 24px;
+				margin-bottom: 0;
+                padding-right: 20px;
+                width: calc(100% - 130px);
+            }
+
+        }
+        a {
+            &.button {
+                @extend %button !optional;
+                margin-right: 0;
+				text-align: center;
+				width: 100%;
+				@include media-breakpoint-up(sm) {
+                	min-width: 140px;
+					width: auto;
+				}
+            }
+        }
+		&::after {
+			clear: both;
+			content: '';
+			display: table;
+			width: 100%;
+			@include media-breakpoint-up(lg) {
+				display: none;
+			}
+		}
+    }
+
+    &.-with-thumbnail {
+        .pdf-content {
+            position: relative;
+
+            @include media-breakpoint-up(sm) {
+                margin-left: 180px;
+                width: calc(100% - 180px);
+            }
+            @include media-breakpoint-up(md) {
+                margin-left: 240px;
+                width: calc(100% - 240px);
+            }
+        }
+        .pdf-thumbnail {
+            height: auto;
+			max-height: 100%;
+            margin-bottom: 30px;
+            top: 0;
+            width: 100%;
+            @include media-breakpoint-up(sm) {
+                height: calc(170px / 1.4);
+                left: -180px;
+                margin-bottom: 0;
+                position: absolute;
+                width: 170px;
+            }
+            @include media-breakpoint-up(md) {
+                height: 130px;
+                left: -240px;
+                width: 220px;
+
+            }
+        }
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+}

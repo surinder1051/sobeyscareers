@@ -1,0 +1,265 @@
+@import "component";
+
+/*
+Url : /en/at-the-heart-of-the-neighborhood/
+      /fr/au-coeur-du-quartier/
+*/
+body {
+    &.page-neighbourhood-stories,
+    &.page-histoires-de-quartier
+    {
+        // Module: facetwp-sort
+        // Reason: Added CSS for small screen spacing
+        .drop-spacing{
+            .fl-module-content{
+                &.fl-node-content{
+                    .facetwp-sort{
+                        .facetwp-sort-select{
+                            padding-right: rem(14);
+                            color: $gray-103;
+                        }
+                    }
+                }
+            }
+        }
+        .mob-drop-spacing{
+            .facetwp-sort-select{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        .stories_sec{
+            .fl-row-content-wrap{
+                @include media-breakpoint-only(lg) {
+                    padding-top: rem(50);
+                }
+            }
+        }
+        .top-heading-space{
+            .fl-module-content{
+                &.fl-node-content{
+                    @include media-breakpoint-only(lg) {
+                        margin-top: 0;
+                        margin-bottom: rem(30);
+                    }
+                }
+            }
+        }
+        .fl-module-class-sort{
+            .facetwp-sort{
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                    margin-top: rem(0);
+                }
+            }
+        }
+        // Module: facetwp-bb-module
+        // Reason: Added CSS for small screen spacing
+        .sm-screen-spacing{
+            .facetwp-facet{
+                @media (max-width: $extra-small-screen) {
+                    margin-bottom: rem(30);
+                }
+            }
+        } 
+        // Reason: Added CSS for ipad pro
+        .heading-tb-space{
+            .fl-module-content{
+                &.fl-node-content{
+                    @include media-breakpoint-only(lg) {
+                        margin-top: rem(55);
+                        margin-bottom: rem(60);
+                    }
+                }
+            } 
+        }
+        // Module: fl-module-list_module
+        // Reason: Added CSS to style listing
+        .fl-module-list_module {
+            .component_list_module {
+                .heading {
+                    display: none;
+                }
+                ul {
+                    li {
+                        font-family: $main-font;
+                        padding: 0;
+                        padding-left: rem(28);
+                        line-height: rem(24);
+                        margin-bottom: rem(6);
+                        min-height: auto;
+                        &:before {
+                            display: none;
+                        }
+
+                        span {
+                            background: $blue-101;
+                            width: rem(18);
+                            height: rem(18);
+                            border-radius: rem(100);
+                            top: rem(2);
+                            padding: 0;
+
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                bottom: rem(6);
+                                left: rem(7);
+                                width: rem(5);
+                                height: rem(8);
+                                border-radius: rem(1);
+                                border: solid $white;
+                                border-width: 0 rem(2) rem(2) 0;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Module: component_z_pattern
+        // Reason: Added CSS to style image object position
+        .page_top_banner {
+            .component_z_pattern {
+                .image-container {
+                    img {
+                        object-position: left;
+                    }
+                }
+            }
+        }
+        .facetwp-template {
+            .card-deck {
+                .fl-module-bs_card {
+                    -webkit-box-flex: 1;
+                    -webkit-flex: 1;
+                    -moz-box-flex: 1;
+                    flex: 1;
+                    min-width: 33%;
+                    max-width: 33%;
+                    width: 33%;
+                    @include media-breakpoint-only(md) {
+                        min-width: 48%;
+                        max-width: 48%;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        min-width: 100%;
+                        max-width: 100%;
+                        width: 100% !important;
+                    }
+                    @include media-breakpoint-only(md) {
+                        &:nth-child(odd) {
+                            margin-left: 0;
+                            margin-right: rem(10);
+                        }
+                        &:nth-child(even) {
+                            margin-left: rem(10);
+                            margin-right: 0;
+                        }
+                    }
+                    @include media-breakpoint-down(sm) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .fl-module-bs_card {
+            &:last-child {
+                .component_bs_card {
+                    &.-image-top{
+                        @media (max-width: $extra-small-screen) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .component_bs_card {
+                // Reason: css added to style articles archive block
+                &.-image-top {
+                    margin-bottom: rem(20);
+                    margin-left: rem(5);
+                    margin-right: rem(5);
+                    @include media-breakpoint-down(sm) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    .overlay {
+                        .button{
+                            @extend %button_white;
+                        }
+                    }
+                    .card-body {
+                        .card-title {
+                            margin-bottom: rem(20);
+                            font-size: rem(18);
+                            color:#4d4d4f;
+                            margin-top: rem(24);
+                            line-height: rem(26);
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                        .row {
+                            align-items: center;
+                        }
+                        .col-md-6 {
+                            width: 60%;
+                            max-width: 60%;
+                            flex: 0 0 60%;
+                            @media (max-width: $extended-screen-lg) {
+                                width: 100%;
+                                max-width: 100%;
+                                flex: 0 0 100%;
+                            }
+                            @include media-breakpoint-down(sm) {
+                                width: 60%;
+                                max-width: 60%;
+                                flex: 0 0 60%;
+                            }
+                            &.date {
+                                width: 40%;
+                                max-width: 40%;
+                                flex: 0 0 40%;
+                                @media (max-width: $extended-screen-lg) {
+                                    width: 100%;
+                                    max-width: 100%;
+                                    flex: 0 0 100%;
+                                    margin-bottom: rem(10);
+                                }
+                                @include media-breakpoint-down(sm) {
+                                    width: 40%;
+                                    max-width: 40%;
+                                    flex: 0 0 40%;
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                        .date {
+                            font-size: rem(14);
+                        }
+                        .category {
+                            font-size: rem(14);
+                            border: rem(1) solid $gray-102;
+                            padding: rem(5) rem(12);
+                            border-radius: rem(50);
+                            display: inline-block;
+                            text-align: center;
+                            line-height: normal;
+                            float: right;
+                            @media (max-width: $extended-screen-lg) {
+                                float: left;
+                            }
+                            @include media-breakpoint-down(sm) {
+                                float: right;
+                            }
+                        }
+                        .card-text {
+                            margin-top: rem(25);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

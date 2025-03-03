@@ -1,0 +1,113 @@
+body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height{
+  background:#fffac2;
+}
+
+body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count{
+  padding:3.125rem 0;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count .fl-node-content .fl-module-photo .fl-photo,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count .fl-node-content .fl-module-photo .fl-photo{
+    padding:0 2.1875rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count:first-child .fl-node-content .fl-module-photo .fl-photo,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count:first-child .fl-node-content .fl-module-photo .fl-photo{
+    padding:0 2.625rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count:last-child .fl-node-content .fl-module-photo .fl-photo,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count:last-child .fl-node-content .fl-module-photo .fl-photo{
+    padding:0 1.875rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count{
+    padding:1.875rem 0;
+    font-size:1rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count{
+    padding:1.875rem 0;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count{
+    padding:0;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count .fl-module-content .fl-heading,body.page-interview-with-denis-and-jean-francois-tremblay .left_content_section .fl-col-group-equal-height .article_singlur_count .fl-module-content .fl-heading{
+    font-size:1.25rem;
+  }
+}
+
+body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share{
+  border-top:0;
+  padding-top:0;
+  padding-bottom:2.5rem;
+  padding-right:3.4375rem;
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share{
+    padding-right:1.5625rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share{
+    float:left;
+    padding:1.875rem 0;
+  }
+}
+
+@media (max-width:1600px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a{
+    padding:0 .1875rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a{
+    float:left;
+    margin-right:.625rem;
+  }
+}
+
+body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a span,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a span{
+  background-color:#ea0028;
+  border-color:#ea0028;
+}
+
+body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a:last-child,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share.show_print_button a:last-child{
+  display:none;
+}
+
+body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share .title,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share .title{
+  font-size:1.25rem;
+  font-weight:300;
+}
+
+@media (max-width:767.98px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .fl-module-social_share .component_social_share .title,body.page-interview-with-denis-and-jean-francois-tremblay .fl-module-social_share .component_social_share .title{
+    padding-top:0;
+    padding-right:3.125rem;
+  }
+}
+
+@media (max-width:1600px){
+  body.page-entrevue-avec-denis-et-jean-francois-tremblay .right_content_section .fl-module-heading .fl-heading a,body.page-interview-with-denis-and-jean-francois-tremblay .right_content_section .fl-module-heading .fl-heading a{
+    font-size:1rem;
+    line-height:1.375rem;
+  }
+}
+
+/*# sourceMappingURL=page-interview-with-denis-and-jean-francois-tremblay.min.css.map */

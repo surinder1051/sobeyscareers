@@ -1,0 +1,19 @@
+.component_steps{
+  color:#000;
+}
+
+.component_steps tr{
+  border-bottom:.0625rem solid #dee2e6;
+}
+
+.component_steps td{
+  padding:.5rem;
+}
+
+.component_steps b{
+  display:inline-block;
+  width:100px;
+  width:6.25rem;
+}
+
+/*# sourceMappingURL=steps.min.css.map */

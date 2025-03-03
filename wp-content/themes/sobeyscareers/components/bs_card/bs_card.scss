@@ -1,0 +1,292 @@
+@import "component";
+
+$gray-100: #ccc !default;
+$gray-25: #404040 !default;
+$red: #c00 !default;
+$green: #48a548 !default;
+
+$grid-breakpoints2: (small-screen: 413px, extended-screen-lg: 1299px, ultra-screen: 1600px, ultra-screen-lg: 1850px);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
+
+.component_bs_card {
+
+	&:hover {
+		.overlay {
+			height: 100%;
+		}
+	}
+
+	.overlay {
+
+		bottom: 0;
+		height: 0;
+		left: 0;
+		margin: 0;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		transition: .5s ease;
+		width: 100%;
+
+		&::before {
+			background-color: $primary;
+			content: '';
+			display: block;
+			height: 100%;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+		}
+
+		button {
+			display: inline-block;
+			font-size: 16px;
+			margin: 0 auto;
+			padding: 14px 30px;
+			text-transform: capitalize;
+
+
+			@include media-breakpoint-only(md) {
+				font-size: 14px;
+				padding: 12px 24px;
+			}
+		}
+		.align-self-center {
+			@extend %button !optional;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.card,
+	&.card { 
+		background-size: cover;
+		border: 0;
+		border-radius: 0;
+		height: 100%;
+
+		&:not(.is-tabbing) {
+			&:focus {
+				outline: 0;
+			}
+		}
+
+		.card_link_wrap {
+			display: block;
+			position: relative;
+		}
+
+		.card-img-top {
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 0;
+			border: none;
+		}
+
+		.card-title {
+			a {
+				color: inherit;
+			}
+		}
+
+		.card-text {
+			button {
+				&.no-style {
+					background: $white;
+					border: none;
+					float: none;
+					padding: 0;
+					&::before {
+						display: none;
+					}
+				}
+				.icon {
+					height: 20px;
+					width: 20px;
+					&::before {
+						font-size: 20px;
+					}
+				}
+			}
+			.hidden {
+				display: none;
+			}
+			.bs-more-description {
+				font-size: 0;
+				transform: .4s all ease-in-out;
+				visibility: hidden;
+				&.expanded {
+					font-size: unset;
+					visibility: visible;
+				}
+			}
+		}
+
+		.text-links {
+			h6 {
+				border-top: 1px solid $gray-500;
+				font-size: 14px;
+				font-weight: bold;
+				padding-top: 10px;
+			}
+
+			a {
+				font-size: 16px;
+				font-weight: bold;
+				text-decoration: none;
+				&.button {
+					@extend %button !optional;
+				}
+			}
+		}
+	}
+
+	&.-border {
+		border: 1px solid $gray-500;
+	}
+
+	&.-image-background {
+		.card-body {
+
+			.card-title {
+				font-size: 22px;
+				margin-bottom: 10px;
+			}
+
+			.card-text {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&.-theme-light {
+		.card-body {
+			background-color: $main-font-colour;
+			color: $white;
+		}
+	}
+
+	&.-theme-dark {
+		.card-body {
+			color: $main-font-colour;
+		}
+	}
+}
+
+.fl-module-bs_card {
+	height: 100%;
+
+	.fl-module-content,
+	.component_bs_card {
+		height: 100%;
+	}
+
+
+	&.text-white {
+		.card {
+			.card-body {
+				.card-title,
+				.card-text {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+.mob_bordered_bottom_card_block {
+	.component_bs_card {
+		&.-border {
+			.card {
+				.card-body {
+					@include media-breakpoint-down(sm) {
+						border-bottom: 1px solid $gray-soft;
+					}
+				}
+			}
+		}
+	}
+}
+
+.img_480_400 {
+	&.img_heading {
+		.component_bs_card {
+			.card {
+				.card-img-top {
+					@include media-breakpoint-only(md) {
+						height: 160px;
+					}
+				}
+			}
+		}
+	}
+
+	.component_bs_card {
+		.card {
+			.card-img-top {
+				height: calc(25vw / 1.2);
+				max-height: 400px;
+
+				@include media-breakpoint-only(md) {
+					height: calc(50vw / 1.2);
+				}
+
+				@include media-breakpoint-down(sm) {
+					height: calc(100vw / 1.2);
+				}
+			}
+		}
+	}
+}
+
+.img_960_500 {
+	.component_bs_card {
+		.card {
+			.card-img-top {
+				height: calc(50vw / 1.95);
+				max-height: 500px;
+
+				@include media-breakpoint-down(sm) {
+					height: calc(100vw / 1.95);
+				}
+			}
+		}
+	}
+}
+
+.img_360_300 {
+	.component_bs_card {
+		.card {
+			.card-img-top {
+				height: 300px;
+
+				@include media-breakpoint-down(ultra-screen) {
+					height: 220px;
+				}
+
+				@include media-breakpoint-between(xl, extended-screen-lg) {
+					height: 200px;
+				}
+
+				@include media-breakpoint-only(lg) {
+					height: 170px;
+				}
+
+				@include media-breakpoint-down(sm) {
+					height: rem(260);
+				}
+
+				@include media-breakpoint-down(small-screen) {
+					height: 200px;
+				}
+
+				@include media-breakpoint-down(sm) {
+					height: calc(100vw / 1.95);
+				}
+			}
+		}
+	}
+}

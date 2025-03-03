@@ -1,0 +1,11 @@
+body.page-concours .contest-text .fl-module-content .fl-rich-text p a,body.page-contest .contest-text .fl-module-content .fl-rich-text p a{
+  color:#ea0028;
+}
+
+@media (max-width:374px){
+  body.page-concours .contest-text .fl-module-content .fl-rich-text p a,body.page-contest .contest-text .fl-module-content .fl-rich-text p a{
+    word-break:break-word;
+  }
+}
+
+/*# sourceMappingURL=page-contest.min.css.map */

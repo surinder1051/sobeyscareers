@@ -1,0 +1,17 @@
+@import 'component';
+$black: #000 !default;
+
+.component_iframe {
+	color: $black;
+
+	iframe {
+		overflow: hidden;
+		border: 0;
+
+		&:not(.is-tabbing) {
+			&:focus {
+				outline: 0;
+			}
+		}
+	}
+}

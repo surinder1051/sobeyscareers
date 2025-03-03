@@ -1,0 +1,64 @@
+@import "component";
+
+.card-deck {
+	.recipe-card {
+		&.article-card {
+			margin-right: rem(20);
+			border: rem(1) solid $gray-102;
+			min-width: 23%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.card-body {
+				.card-title {
+					border-bottom: 0;
+					font-size: rem(18);
+					line-height: rem(28);
+				}
+
+			}
+		}
+
+		.recipe_card_link {
+			.overlay {
+				span {
+					&.button {
+						@extend %button;
+						margin: auto;
+					}
+				}
+			}
+		}
+
+		.card-body {
+			.card-title {
+				color: $gray-25;
+				font-family: $heading-font;
+				font-size: rem(24);
+				line-height: rem(28);
+				font-weight: 600;
+
+				@include media-breakpoint-down(md) {
+					font-size: rem(20);
+					line-height: rem(26);
+				}
+			}
+
+			.bottom-col-wrap {
+				.col {
+					span {
+						&:before {
+							color: $brand-dark;
+						}
+					}
+
+					.description-term {
+						font-family: $heading-font;
+					}
+				}
+			}
+		}
+	}
+}

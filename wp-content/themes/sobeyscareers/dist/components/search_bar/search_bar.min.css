@@ -1,0 +1,101 @@
+.component_search_bar{
+  background-color:#fff;
+}
+
+.component_search_bar .fl-builder-module-template{
+  padding:0;
+}
+
+.component_search_bar .search-col{
+  width:100%;
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  .component_search_bar .search-col{
+    max-width:28.75rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_search_bar .search-col{
+    max-width:23.75rem;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_search_bar .search-col{
+    display:none;
+    padding-top:.9375rem;
+  }
+}
+
+.component_search_bar .search-col .header-search{
+  position:relative;
+  background:transparent;
+}
+
+.component_search_bar .search-col .header-search .search-input{
+  border:.0625rem solid #e2e2e2;
+  color:grey;
+  font-size:.875rem;
+  height:inherit;
+  line-height:normal;
+  padding:.9375rem 1.25rem;
+  width:100%;
+}
+
+.component_search_bar .search-col .header-search .search-input::-webkit-search-cancel-button{
+  display:none;
+}
+
+.component_search_bar .search-col .header-search .search-btn{
+  background:none;
+  border:0;
+  padding:0;
+  position:absolute;
+  right:.625rem;
+  top:.9375rem;
+}
+
+.component_search_bar .search-col .header-search .search-btn span{
+  font-size:1.125rem;
+}
+
+.component_search_bar .search-col .header-search .search-btn span:before{
+  color:#48a548;
+}
+
+.component_search_bar button.mob_search_toggle{
+  display:none;
+}
+
+@media (max-width:767.98px){
+  .component_search_bar button.mob_search_toggle{
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    background:transparent;
+    border:0;
+    cursor:pointer;
+    display:inline-block;
+    position:absolute;
+    right:1.5625rem;
+    top:0;
+    margin-top:1.5rem;
+    color:#ea0028;
+    padding:0;
+  }
+}
+
+@media (max-width:374px){
+  .component_search_bar button.mob_search_toggle{
+    right:.9375rem;
+    top:1.0625rem;
+  }
+}
+
+.component_search_bar span{
+  font-size:1.375rem;
+}
+
+/*# sourceMappingURL=search_bar.min.css.map */

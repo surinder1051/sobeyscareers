@@ -1,0 +1,518 @@
+@import "component";
+
+/**
+Url : /en/recipes/baluchons-de-crevettes-et-de-brie-3/
+      /fr/recipes/baluchons-de-crevettes-et-de-brie-3/
+**/
+body {
+    &.single-recipe {
+        .z_pattern_text_col {
+            .fl-col-content {
+                @media (max-width: $ultra-screen) {
+	                padding-left: rem(45);
+	                padding-right: rem(45);
+	                min-height: rem(400) !important;
+                }
+                @include media-breakpoint-only(md) {
+                    padding-left: rem(30);
+                    padding-right: rem(30);
+                    min-height: rem(350) !important;
+                }
+                @include media-breakpoint-down(sm) {
+                    padding-left: rem(25);
+                    padding-right: rem(25);
+                    min-height: auto !important;
+                }
+            }
+            .fl-module-separator {
+                .fl-module-content {
+                    @media (max-width: $ultra-screen) {
+                        margin-top: rem(70);
+                        margin-bottom: rem(40);
+                    }
+                    @include media-breakpoint-only(md) {
+                        margin-top: rem(40);
+                        margin-bottom: rem(20);
+                    }
+                    @include media-breakpoint-down(sm) {
+                        margin-top: rem(40);
+                        margin-bottom: rem(30);
+                    }
+                }
+            }
+            .fl-heading {
+                @media (max-width: $ultra-screen) {
+                    font-size: rem(36);
+                    line-height: rem(42);
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: rem(36);
+                    line-height: rem(42);
+                }
+            }
+        }
+        .z_pattern_top_col {
+            .fl-col-content {
+                @media (max-width: $ultra-screen) {
+                min-height: rem(400) !important;
+                }
+                @include media-breakpoint-only(md) {
+                    min-height: rem(350) !important;
+                }
+                @include media-breakpoint-down(sm) {
+                    min-height: rem(260) !important;
+                }
+            }
+        }
+        // Module :fl-module-recipe_details
+        // Reason: Added css to manage styling of recipe details
+        .fl-module-recipe_details {
+            .component_recipe_details {
+                height: auto;
+                @include media-breakpoint-down(sm) {
+                    border: none;
+                    padding-bottom: 0;
+                }
+                .tile {
+                    &.tile_makes {
+                        @include media-breakpoint-down(sm) {
+                            padding: rem(32) rem(5);
+                            border-right: none;
+                            position: relative;
+                        }
+                        &:nth-child(odd) {
+                            &:before {
+                                @include media-breakpoint-down(sm) {
+                                content: "";
+                                position: absolute;
+                                top: rem(24);
+                                background: $gray-102;
+                                width: rem(1);
+                                height: rem(100);
+                                right: 0;
+                                }
+                            }
+                        }
+                        .icon {
+                            height: auto;
+                            color: $brand-dark;
+                            &:before {
+                                font-size: rem(34);
+                                @media (max-width: $ultra-screen) {
+                                    font-size: rem(24);
+                                }
+                            }
+                            &.icon-serve {
+                                margin-bottom: 0;
+                                &:before {
+                                    font-size: rem(44);
+                                    @media (max-width: $ultra-screen) {
+                                        font-size: rem(36);
+                                    }
+                                }
+                            }
+                        }
+                        dl {
+                            dt {
+                                font-size: rem(16);
+                                margin-bottom: rem(5);
+                                font-family: $heading-font;
+                                line-height: 1;
+                                @media (min-width: $ultra-screen-sm) {
+                                    font-size: rem(20);
+                                }
+                                @include media-breakpoint-down(sm) {
+                                    font-size: rem(20);
+                                }
+                                @media (max-width: $small-screen) {
+                                    font-size: rem(16);
+                                }
+                            }
+                            dd {
+                                color: $gray-103;
+                                font-size: rem(18);
+                                @media (max-width: $ultra-screen) {
+                                    font-size: rem(14);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Reason: Added SCSS to manage styling of social share icons
+        .fl-module-social_share {
+            .component_social_share {
+                padding: 0;
+                @include media-breakpoint-down(sm) {
+                    text-align: right;
+                }
+                @media (max-width: $small-screen) {
+                    text-align: left;
+                }
+                h4 {
+                    &.title {
+                        @media (max-width: $small-screen) {
+                            width: 100%;
+                            margin-bottom: rem(10);
+                            line-height: rem(30);
+                        }
+                    }
+                }
+                a {
+                    @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                        padding: 0 rem(4);
+                    }
+                    @include media-breakpoint-only(lg) {
+                        padding: 0 rem(2);
+                    }
+                    span {
+                        &.dashicons-email-alt {
+                            &::before {
+                                font-size: rem(52);
+                            }
+                        }
+                    }
+                }
+                &.show_print_button {
+                    a {
+                        .icon-recipe-print {
+                            &:before{
+                                color: $brand-dark;
+                            }
+                        }
+                        &:last-child {
+                            @include media-breakpoint-only(md) {
+                                margin-left: rem(2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Reason: Added css to manage styling of recipe characteristics
+        .fl-module-recipe_characteristics {
+            .component_recipe_characteristics {
+                a {
+                    color: $gray-103;
+                }
+            }
+        }
+        // Reason: Added scss to manage styling of recipe steps
+        .fl-module-recipe_steps {
+            .component_recipe_steps {
+                .title {
+                    font-size: rem(36);
+                    line-height: rem(42);
+                    font-weight: 700;
+                    color: $gray-103;
+                    margin-bottom: rem(0);
+                    @include media-breakpoint-down(sm) {
+                        font-size: rem(30);
+                        line-height: rem(38);
+                    }
+                }
+                dl {
+                    padding: rem(30) 0;
+                    @media (max-width: $extra-small-screen) {
+                        padding: rem(20) 0;
+                    }
+                    dt {
+                        font-size: rem(18);
+                        color: $gray-103;
+                        font-family: $heading-font;
+                        min-width: rem(70);
+                        @include media-breakpoint-down(sm) {
+                            min-width: rem(75);
+                        }
+                    }
+                    dd {
+                        color: $gray-103;
+                        padding-left: 0;
+                        @include media-breakpoint-down(sm) {
+                            padding-left: rem(40);
+                        }
+                        @media (max-width: $small-screen) {
+                            padding-left: rem(50);
+                        }
+                        @media (max-width: $extra-small-screen) {
+                            padding-left: rem(22);
+                        }
+                    }
+                }
+            }
+        }
+        // Module :fl-module-related
+        // Reason: Added css to manage styling of related recipe
+        .fl-module-related {
+            margin:0 rem(-6);
+            .component_related {
+                h2 {
+                    font-size: rem(36);
+                    font-weight: 700;
+                    color: $gray-103;
+                    @include media-breakpoint-only(md) {
+                        line-height: rem(42);
+                        margin-bottom: rem(30);
+                    }
+                    @include media-breakpoint-down(sm) {
+                        font-size: rem(30);
+                    }
+                    @media (max-width: $small-screen) {
+                        line-height: rem(36);
+                    }
+                }
+                .card-deck {
+                    .card {
+                        &.recipe-card {
+                            border-radius: 0;
+                            border-top: 0;
+                            margin: rem(10) rem(6);
+                            min-width: 24%;
+                            border: rem(1) solid $gray-102;
+                            @include media-breakpoint-only(lg) {
+                                min-width: 23%;
+                            }
+                            @include media-breakpoint-only(md) {
+                                min-width: 31.6%;
+                            }
+                            @include media-breakpoint-down(sm) {
+                                min-width: 80vw;
+                                margin-left: rem(30);
+                                margin-right: rem(30);
+                                margin-bottom: rem(20);
+                            }
+                            .overlay {
+                                .container {
+                                    justify-content: center;
+                                    .button{
+                                        @extend %button_white;
+                                        margin-right: 0;
+                                        margin-left: 0;
+                                    }
+                                    &.row {
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                            .card-img-top {
+                                @include media-breakpoint-down(sm) {
+                                    height: 75.33333vw;
+                                    border: 0;
+                                }
+                            }
+                            .card-body {
+                                border-left: 0;
+                                border-right: 0;
+                                border-bottom: 0;
+                                padding: 0 rem(35);
+                                @media (max-width: $ultra-screen) {
+                                    padding: 0 rem(20);
+                                }
+                                @include media-breakpoint-only(lg) {
+                                    padding: 0 rem(15);
+                                }
+                                @include media-breakpoint-down(sm) {
+                                    padding: 0 rem(25);
+                                }
+                                .card-title {
+                                    font-family: $heading-font;
+                                    font-size: rem(24);
+                                    font-weight: 600;
+                                    line-height: rem(28);
+                                    padding: rem(25) 0;
+                                    border-bottom-color: $gray-102;
+                                    @media (max-width: $ultra-screen) {
+                                        font-size: rem(20);
+                                        line-height: rem(24);
+                                    }
+                                    a{
+                                        color: $gray-103;
+                                    }
+                                }
+                                .bottom-col-wrap {
+                                    .col {
+                                        min-width: 50%;
+                                        border-right-color: $gray-102;
+                                        @include media-breakpoint-down(sm) {
+                                            padding: rem(24) 0 rem(20) 0;
+                                        }
+                                        &:last-child{
+                                            margin-left: rem(25);
+                                            @include media-breakpoint-only(lg){
+                                                margin-left: rem(10);
+                                            }
+                                            @include media-breakpoint-only(md){
+                                                margin-left: 0;
+                                            }
+                                            @media (max-width: $extra-small-screen) {
+                                                margin-left: rem(10);
+                                            }
+                                            dl{
+                                                margin-left: rem(8);
+                                                @include media-breakpoint-only(lg){
+                                                    margin-left: rem(4);
+                                                }
+                                                @include media-breakpoint-only(md){
+                                                    text-align: center;
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                        }
+                                        span {
+                                            top: rem(30);
+                                            @include media-breakpoint-only(md) {
+                                                top: 0;
+                                                display: flex;
+                                            }
+                                            @include media-breakpoint-down(sm){
+                                                top: rem(-2);
+                                                display: flex;
+                                            }
+                                            &.icon-total-time {
+                                                &:before {
+                                                    @include media-breakpoint-only(md){
+                                                        margin:0 auto;
+                                                    }
+                                                    @include media-breakpoint-down(sm) {
+                                                        font-size: rem(24);
+                                                    }
+                                                }
+                                            }
+                                            &.icon-serve {
+                                                top: rem(30);
+                                                @include media-breakpoint-only(lg){
+                                                   top: rem(25);
+                                                }
+                                                @include media-breakpoint-only(md){
+                                                   top: 0;
+                                                }
+                                                @include media-breakpoint-down(sm) {
+                                                   top: rem(-4);
+                                                }
+                                                &:before {
+                                                    font-size: rem(34);
+                                                    @include media-breakpoint-only(md){
+                                                        margin: 0 auto;
+                                                    }
+                                                    @include media-breakpoint-between(md, sm) {
+                                                        font-size: rem(22);
+                                                        margin-top: rem(-5);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        dl {
+                                            @include media-breakpoint-only(lg) {
+                                                margin-top: rem(-7);
+                                            }
+                                            @include media-breakpoint-only(md) {
+                                                text-align: center;
+                                            }
+                                            @include media-breakpoint-down(sm) {
+                                                margin-top: rem(-34);
+                                                text-align: left;
+                                                padding-left: rem(40);
+                                            }
+                                            @media (max-width: $extra-small-screen) {
+                                                padding-left: rem(35);
+                                            }
+                                            dt {
+                                                font-size: rem(16);
+                                                line-height: rem(20);
+                                                font-family: $heading-font;
+                                                margin: 0;
+                                                margin-bottom: rem(5);
+                                                @media (max-width: $ultra-screen) {
+                                                    font-size: rem(14);
+                                                }
+                                                @include media-breakpoint-between(lg, md) {
+                                                    font-size: rem(12);
+                                                }
+                                                @include media-breakpoint-down(sm) {
+                                                    font-size: rem(14);
+                                                }
+                                            }
+                                            dd {
+                                                font-size: rem(16);
+                                                color: $gray-103;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @include media-breakpoint-only(md) {
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        // Module :component_recipe_ingredients
+        // Reason: Added scss to manage styling of recipe ingredients
+        .component_recipe_ingredients {
+            .title {
+                font-size: rem(36);
+                color: $gray-103;
+                font-weight: 700;
+                margin-bottom: rem(40);
+                @include media-breakpoint-down(sm) {
+                    font-size: rem(30);
+                    margin-bottom: rem(30);
+                }
+            }
+            dl {
+                color:$gray-103;
+                padding: rem(25) rem(30);
+                @include media-breakpoint-down(sm) {
+                    padding: rem(20);
+                }
+                &:nth-child(even) {
+                    background-color: $gray-light;
+                }
+                &:nth-child(odd) {
+                    background-color: $white;
+                }
+                dt {
+                    font-weight: 400;
+                    &.lb {
+                        @include media-breakpoint-down(sm) {
+                            min-width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+        // Module :component_recipe_tips
+        // Reason: Added css to manage styling of recipe tips
+        .fl-module-recipe_tips{
+            .component_recipe_tips{
+                h2{
+                    &.title{
+                        font-size: rem(36);
+
+                    }
+                }
+            }
+        }
+    }
+    @media print {
+        .fl-module-related {
+           .component_related {
+                .card-deck {
+                   .card {
+                        &.recipe-card {
+                            .card-body {
+                                .bottom-col-wrap {
+                                    height: auto !important;
+                                }
+                            }
+                        }
+                    }
+                }
+           }
+        }
+    }
+}

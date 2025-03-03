@@ -1,0 +1,116 @@
+@import "component";
+
+.component_z_pattern {
+  &.-right-to-left {
+    // Reason : Added css for module container width and height
+    .safety-container {
+      display: flex;
+      flex-direction: row-reverse;
+      height: auto !important;
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+        height: auto;
+        max-height: inherit;
+      }
+
+      // Reason : Added css for module text block spacing, fonts and height
+      .text-container {
+        -webkit-print-color-adjust: exact;
+        height: auto;
+        padding: 0 rem(90);
+        @media (max-width: $ultra-screen-lg) {
+          padding: 0 rem(45);
+        }
+        @media (max-width: $extended-screen-lg) {
+          padding: 0 rem(30);
+        }
+        @include media-breakpoint-down(sm) {
+          padding: rem(45) rem(25);
+          text-align: left;
+        }
+        .display-table {
+          display: block;
+          height: inherit;
+
+          @include media-breakpoint-down(sm) {
+            display: table;
+            height: 100%;
+          }
+
+          .display-cell {
+            display: block;
+            @include media-breakpoint-down(sm) {
+              display: table-cell;
+            }
+            .block {
+              display: block;
+              @include media-breakpoint-down(sm) {
+                display: inline;
+              }
+            }
+
+            .field_editor {
+              p {
+                font-size: rem(16);
+                color: $yellow;
+                font-family: $heading-font;
+                font-weight: 600;
+                @include media-breakpoint-only(md) {
+                  font-weight: normal;
+                }
+                @include media-breakpoint-down(sm) {
+                  margin-bottom: 0;
+                }
+              }
+            }
+
+            .heading {
+              margin-bottom: rem(20);
+              font-size: rem(40);
+              font-weight: 700;
+              @media (max-width: $ultra-screen-lg) {
+                font-size: rem(30);
+              }
+              @media (max-width: $extended-screen-lg) {
+                margin-bottom: rem(15);
+              }
+              @include media-breakpoint-down(sm) {
+                font-size: rem(36);
+                line-height: rem(40);
+              }
+              .article_text_style{
+                font-size: rem(16);
+                margin-top: rem(20);
+                font-family: $main-font;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+
+      // Reason : Added css for module image block height
+      .image-container {
+        img {
+          width: 100%;
+          min-height: rem(350);
+          object-fit: cover;
+          height: 100%;
+          @media (max-width: $ultra-screen) {
+            min-height: rem(300);
+          }
+          @include media-breakpoint-only(md) {
+            min-height: rem(250);
+          }
+          @include media-breakpoint-down(sm) {
+            min-height: rem(200);
+          }
+        }
+      }
+    }
+  }
+}

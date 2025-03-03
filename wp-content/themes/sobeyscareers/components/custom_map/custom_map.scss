@@ -1,0 +1,187 @@
+@import 'component';
+
+$gray-medium: #e2e2e2 !default;
+.scrollscreen-slider::after {
+    background: #999;
+}
+.scrollscreen {
+    position: relative;
+}
+
+.component_custom_map {
+    @media (min-width: 1300px) {
+        padding-bottom: 120px;
+    }
+    @media (min-width: 1200px) and (max-width: 1299px) {
+        padding-bottom: 100px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding-bottom: 90px;
+
+    }
+
+    .map-legend {
+        display: none;
+        height: 0;
+        overflow: hidden;
+    }
+    .cta-list {
+        display: none;
+        margin: 0;
+        padding: 0;
+        li {
+            border-bottom: 1px solid $gray-medium;
+            list-style: none;
+            padding: 30px;
+            position: relative;
+            span {
+                position: absolute;
+                left: 30px;
+                width: 20px;
+                img {
+                    width: 100;
+                }
+            }
+            h4 {
+                margin-bottom: 0;
+                margin-left: 30px;
+                width: calc(100% - 30px);
+            }
+        }
+    }
+
+    .location-info {
+        height: auto;
+        display: inline-block;
+        padding: 5px 0;
+        @media (max-width: 767px) {
+            padding: 0;
+            height: auto;
+        }
+        > p {
+            margin-bottom: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        > h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            width: calc(100% - 15px);
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            line-height: 1.4rem;
+            @media (max-width: 767px) {
+                margin: 0;
+            }
+        }
+    }
+    button {
+        &.gm-ui-hover-effect {
+            top: 4px !important;
+            right: 4px !important;
+            img {
+                width: 24px !important;
+                height: 24px !important;
+                margin: 8px 0 !important;
+            }
+        }
+    }
+
+    > .safety-container {
+        > .interactive-map-module-component-inner {
+            > .heading {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                padding: 30px 0;
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }
+            }
+            .map-title {
+                margin-bottom: 0;
+                text-align: center;
+            }
+            > .map-container {
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                &:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                .map-area {
+                    position: relative;
+                    *[id^='map']{
+                        width: 100%;
+                        height: 60vh;
+
+                        @include media-breakpoint-up(sm) {
+                            height: calc(100vw / 1.7);
+                            max-height: 500px;
+                        }
+                    }
+                    .mapshadow {
+                        box-shadow: inset -10px 0 9px -7px rgba(162, 161, 161, 0.7);
+                        position: absolute;
+                        top:0;
+                        width: 10px;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.interactive-map-lightbox-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    > .interactive-map-lightbox-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        @media (max-width: 767px) {
+            padding: 40px;
+        }
+        > .interactive-map-lightbox-content {
+            display: inline-block;
+            position: relative;
+            > .lightbox-close {
+                position: absolute;
+                right: -24px;
+                color: $white;
+                top: -30px;
+                font-weight: 300;
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                line-height: 24px;
+            }
+        }
+        .map-preview-large {
+            box-shadow: 1px 1px 13px 1px lighten($black, 30%);
+            max-height: 400px;
+            overflow: auto;
+            img {
+                height: auto;
+                max-width: 600px;
+            }
+        }
+    }
+}

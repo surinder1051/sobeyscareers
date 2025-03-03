@@ -1,0 +1,89 @@
+@import "component";
+// Reason: Added SCSS to Design "Fp-Slider"
+body {
+  .fl-module-bbmodule-slider {
+    .bbmodule-slider {
+      &.dot-style-dot {
+        .slider {
+          .slick-arrow {
+            top: calc(50% - 85px);
+            bottom: auto;
+            z-index: 1;
+            @include media-breakpoint-down(sm) {
+              top: calc(50% - 71px);
+              background-color: $black-transparent;
+            }
+            &::after {
+              left: 0;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              position: absolute;
+              @include media-breakpoint-down(sm) {
+                color: $white;
+              }
+            }
+            &.slick-prev {
+              &:after {
+                content: $fpicon-prev;
+              }
+            }
+            &.slick-next {
+              &:after {
+                content: $fpicon-next;
+              }
+            }
+          }
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                margin-left: rem(10);
+                @include media-breakpoint-down(sm) {
+                  margin-left: rem(5);
+                }
+                .slider_box_wrap {
+                  .slider_img {
+                    img {
+                      @include media-breakpoint-down(sm) {
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .slick-nav {
+          margin-top: 0;
+          &.has-play {
+            .slick-dots {
+              margin-top: rem(15);
+              margin-bottom: rem(20);
+              vertical-align: middle;
+              border-color: $light-grey;
+              li {
+                button {
+                  font-size: 0;
+                }
+              }
+            }
+            .play {
+              font-size: rem(18);
+              margin-top: rem(25);
+              &:after {
+                content: $fpicon-play;
+                font-family: brand;
+              }
+              &.paused {
+                &:after {
+                  content: $fpicon-pause;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

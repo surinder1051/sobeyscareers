@@ -1,0 +1,217 @@
+@import "component";
+
+/*
+Url : /en/nb_coop_trad/
+      /fr/nb_trad_co-op/
+*/
+body {
+    &.page-nb_coop_trad,
+    &.page-nb_trad_co-op
+    {
+        .fl-module-rich-text {
+            &.memberCoopText {
+                .fl-rich-text {
+                    p {
+                        margin-bottom: rem(12);
+                    }
+                    ul {
+                        padding-left: 0;
+                        li {
+                            position: relative;
+                            list-style-type: none;
+                            padding: 0 0 rem(5) rem(17);
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                width: rem(6);
+                                height: rem(6);
+                                top: rem(9);
+                                border-radius: 50%;
+                                background-color: $brand-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stores_section {
+            .fl-col-group {
+                @include media-breakpoint-only(md) {
+                    display: block;
+                }
+                .fl-col-content {
+                    .fl-module-heading {
+                        h4 {
+                            &.fl-heading {
+                                @media (min-width :$ultra-screen) and (max-width: $ultra-screen-lg) {
+                                    font-size: rem(22);
+                                }
+                                @media (min-width: $extended-screen-sm) and (max-width: $ultra-screen) {
+                                    font-size: rem(18);
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        @media (min-width :$extended-screen-sm) and (max-width: $ultra-screen-lg) {
+                            font-size: rem(15);
+                        }
+                    }
+                    .stores_btn_col {
+                        .fl-col-content {
+                            flex-direction: row;
+                            .fl-module-button {
+                                @include media-breakpoint-down(sm) {
+                                    width: 100%;
+                                }
+                                a {
+                                    &.fl-button {
+                                        @media (min-width:$ultra-screen-lg) {
+                                            padding: rem(15) rem(40);
+                                        }
+                                        @include media-breakpoint-between(md, lg) {
+                                            padding: rem(12) rem(16);
+                                            font-size: rem(14);
+                                        }
+                                        @include media-breakpoint-down(sm) {
+                                            width: 100%;
+                                            text-align: center;
+                                        }
+                                        @media (max-width: $small-screen) {
+                                            padding: rem(12) rem(15);
+                                            font-size: rem(15);
+                                        }
+                                        @media (max-width: $extra-small-screen) {
+                                            padding: rem(10) rem(11);
+                                            font-size: rem(12);
+                                        }
+                                    }
+                                }
+                            }
+                            &.white-btn {
+                                a {
+                                    border-color: $brand-dark;
+                                }
+                            }
+                        }
+                    }
+                    .store_link {
+                        a {
+                            position: relative;
+                            &::after {
+                                content: $icon-arrow-right;
+                                font-family: "Brand";
+                                margin-left: rem(8);
+                                vertical-align: middle;
+                            }
+                            &:hover {
+                                &:after {
+                                    margin-left: rem(10);
+                                    transition: all .5s ease;
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .comunity_col {
+            .fl-col-content {
+                .fl-module-list_module {
+                    .component_list_module {
+                        .list-wrapper {
+                            ul {
+                                li {
+                                    font-weight: 300;
+                                    span {
+                                        width: rem(6);
+                                        height: rem(6);
+                                        top: rem(9);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .community_col_text {
+                .fl-col-content {
+                    @include media-breakpoint-down(sm) {
+                        justify-content: start !important;
+                    }
+                    .fl-module-button {
+                        a {
+                            @media (min-width:$ultra-screen-lg) {
+                                padding: rem(15) rem(40);
+                            }
+                        }
+                    }
+                }
+            }
+            &.mobileColumnSlider {
+                .slick-dots {
+                    margin-top: rem(12);
+                    li {
+                        padding: 0 rem(4.5);
+                        button {
+                            width: rem(50);
+                            height: rem(5);
+                            border-radius: rem(5);
+                        }
+                    }
+                }
+            }
+        }
+        .search_section_bottom {
+            &.sign-up-newsletter {
+                .frm_style_formidable-style {
+                    &.with_frm_style {
+                        .frm_form_fields {
+                            .form-field {
+                                @include media-breakpoint-down(sm) {
+                                    margin-bottom: rem(12);
+                                }
+                                .frm_primary_label {
+                                    font-size: rem(24);
+                                    line-height: rem(34);
+                                    font-family: $heading-font;
+                                    margin-bottom: rem(5);
+                                    color: $gray-103;
+                                }
+                                input {
+                                    font-weight: 300;
+                                    @include media-breakpoint-down(sm) {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .frm_submit {
+                                top: rem(23);
+                                @include media-breakpoint-down(sm) {
+                                    position: inherit;
+                                    width: 100%;
+                                }
+                                button {
+                                    padding: rem(15) rem(40);
+                                    font-size: rem(16);
+                                    line-height: rem(24);
+                                    height: auto;
+                                    @include media-breakpoint-down(sm) {
+                                        margin-top: rem(10);
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

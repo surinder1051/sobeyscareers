@@ -1,0 +1,251 @@
+@import "component";
+
+/*
+Page(s):
+    - en/gift-cards-every-occasion/
+    - en/gift-cards-every-occasion/make-gifting-a-breeze/
+    - en/gift-cards-every-occasion/make-gifting-a-breeze/bulk-gift-card-program/
+*/
+
+.purple-btn-outline {
+    &.fl-module-button {
+        .fl-button-wrap {
+            a {
+                &.fl-button {
+                    @extend %button_purple_outline;
+                }
+            }
+        }
+    }
+}
+// buttons UI responsive
+.gc-custom-btn {
+    .fl-col-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: rem(20);
+        @include media-breakpoint-down(sm) {
+            justify-content: left !important;
+        }
+        @media (max-width: $small-screen) {
+            gap: rem(10);
+        }
+        .gc-btns {
+            &.fl-module-button {
+                width: auto;
+                .fl-button-wrap {
+                    a {
+                        &.fl-button {
+                            @media (max-width: $small-screen) {
+                                font-size: rem(12);
+                                padding: rem(9) rem(20);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.gc-idea {
+    &.fl-module-bs_card {
+        .component_bs_card {
+            &.card {
+                .card-img-top {
+                    max-height: 100%;
+                    @include media-breakpoint-down(sm) {
+                        max-height: rem(300);
+                    }
+                    @media (max-width: $extra-small-screen) {
+                        max-height: rem(230);
+                    }
+                }
+                .card-body {
+                    @include media-breakpoint-down(sm) {
+                        height: 100% !important;
+                    }
+                    .card-title {
+                        margin-bottom: rem(30);
+                    }
+                    .card-text {
+                        p {
+                            margin-bottom: rem(30);
+                            font-weight: 400;
+                            font-family: $font-futura-book;
+                            color: $gray-25;
+                            font-size: rem(16);
+                        }
+                        .gc-list {
+                            list-style-type: none;
+                            padding: 0;
+                            li {
+                                margin-bottom: rem(10);
+                                padding-left: rem(34);
+                                position: relative;
+                                font-family: $font-futura-book;
+                                line-height: 1.5;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                &::before {
+                                    content: '';
+                                    background-color: $purple-theme;
+                                    width: rem(24);
+                                    height: rem(24);
+                                    position: absolute;
+                                    border-radius: 50%;
+                                    left: 0;
+                                }
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: rem(9);
+                                    bottom: 0;
+                                    top: rem(6);
+                                    width: rem(6);
+                                    height: rem(10);
+                                    border: rem(1) solid $white;
+                                    border-width: 0 rem(2) rem(2) 0;
+                                    transform: rotate(45deg);
+                                    z-index: 99;
+                                    border-radius: rem(1);
+                                }
+                            }
+                        }
+                    }
+                    .text-links {
+                        a {
+                            &.button {
+                                @extend %button;
+                                background-color: $purple-theme;
+                                border: rem(2) solid $purple-theme;
+                                padding: rem(15) rem(30);
+                                margin-right: 0;
+                                font-family: $font-futura-bold;
+                                @include media-breakpoint-between(md, lg){
+                                    font-size: rem(16);
+                                    padding: rem(15);
+                                }
+                                &:hover {
+                                    color: $purple-theme;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.gc-idea-list {
+    .component_list_module {
+        &.-ordered {
+            ol {
+                &.style-checkmark {
+                    max-width: 100%;
+                    li {
+                        padding: 0;
+                        padding-left: rem(54);
+                        font-family: $font-futura-book;
+                        line-height: 1.5;
+                        >span {
+                            top: rem(13);
+                            margin-right: 0;
+                            &::before {
+                                width: rem(6);
+                                height: rem(10);
+                                bottom: rem(8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.gc-program-col {
+    .fl-col-content {
+        border-bottom: rem(6) solid $purple-theme;
+    }
+}
+.gc-program-list {
+    .component_list_module {
+        &.-ordered {
+            ol {
+                &.style-checkmark {
+                    max-width: 100%;
+                    li {
+                        padding: 0;
+                        padding-left: rem(46);
+                        font-family: $font-futura-book;
+                        line-height: 1.5;
+                        >span {
+                            display: none;
+                        }
+                        &::before {
+                            position: absolute;
+                            display: block !important;
+                            background-color: $purple-theme;
+                            color: $white;
+                            width: rem(36);
+                            height: rem(36);
+                            border-radius: 50%;
+                            font-size: rem(16);
+                            line-height: rem(36);
+                            text-align: center;
+                            margin-right: 0;
+                            padding: 0;
+                            top: rem(-6);
+                            font-family: $font-futura-bold;
+                        }
+                        &:nth-child(1) {
+                            &::before {
+                                content: '0%';
+                            }
+                        }
+                        &:nth-child(2) {
+                            &::before {
+                                content: '2%';
+                            }
+                        }
+                        &:nth-child(3) {
+                            &::before {
+                                content: '5%';
+                            }
+                        }
+                        &:nth-child(4) {
+                            &::before {
+                                content: '6%';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.gc-banner-text-col {
+    .fl-col-content {
+        @media (min-width: $ultra-screen-lg) {
+            padding-left: rem(100);
+        }
+        .banner-heading {
+            .fl-heading {
+                @media (min-width: $ultra-screen-lg) {
+                    font-size: rem(60);
+                }
+            }
+        }
+    }
+}
+.gc-text-bold {
+    font-family: $font-futura-bold;
+    display: inline !important;
+}
+.gc-text-block {
+    @media (min-width: $ultra-screen-lg) {
+        display: block;
+    }
+}

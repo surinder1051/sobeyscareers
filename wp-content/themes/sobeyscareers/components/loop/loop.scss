@@ -1,0 +1,41 @@
+@import 'component';
+
+.component_loop {
+    .card-deck {
+        &.columns_4 {
+            .recipe-card {
+                .card-img-top {
+                    @include media-breakpoint-only(md) {
+                        height: calc(25vw / 1.2);
+                    }
+                }
+            }
+        }
+
+        &.columns_3 {
+            .card {
+                .card-img-top {
+                    height: calc(33.3333vw / 1.54);
+                    max-height: rem(420);
+
+                    @include media-breakpoint-down(sm) {
+                        height: calc(100vw / 1.54);
+                    }
+                }
+            }
+        }
+
+        &.columns_2 {
+            .card {
+                .card-img-top {
+                    height: calc(50vw / 1.95);
+                    max-height: rem(500);
+
+                    @include media-breakpoint-down(sm) {
+                        height: calc(100vw / 1.95);
+                    }
+                }
+            }
+        }
+    }
+}

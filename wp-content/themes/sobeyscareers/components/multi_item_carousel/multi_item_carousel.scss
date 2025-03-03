@@ -1,0 +1,557 @@
+@import "component";
+$form-border: #ccc !default;
+$gray-25: #404040 !default;
+$green: #006241 !default;
+$icon-arrow-left: '\e801' !default;
+$icon-arrow-right:'\e802' !default;
+$light-grey: #ddd !default;
+$secondary-colour: 404040 !default;
+$transparent-black: rgba(0, 0, 0, .7) !default;
+$transparent-white: rgba(255, 255, 255, 0.4) !default;
+$white: #fff !default;
+
+.component_multi_item_carousel {
+	.slick-arrow {
+		height: rem(60);
+		width: rem(60);
+		top: 30%;
+		font-size: 0;
+		border: none;
+		margin: 0;
+		z-index: 11;
+		padding: 0;
+
+		&::before {
+			width: rem(20);
+			height: rem(20);
+			line-height: rem(20);
+			color: $secondary-colour;
+			font-family: 'brand';
+			font-size: rem(16);
+			position: absolute;
+			left: calc(50% - 10px);
+			top: calc(50% - 10px);
+			transition: none;
+			transform: none;
+		}
+
+		&:hover {
+			&::before {
+				transition: none;
+				transform: none;
+			}
+		}
+
+		&.slick-prev {
+			&::before {
+				content: $icon-arrow-left;
+			}
+		}
+
+		&.slick-next {
+			&::before {
+				content: $icon-arrow-right;
+			}
+		}
+	}
+
+	.component-content-wrapper {
+		&:focus {
+			outline: 0;
+		}
+
+		.carousel-item {
+			margin: 0;
+
+			.card {
+				border: none;
+				border-radius: 0;
+
+				&:hover {
+					.card-overlay {
+						bottom: 0;
+						height: 100%;
+					}
+				}
+
+				.card-image-wrap {
+					position: relative;
+					display: block;
+					height: 60vw;
+					overflow: hidden;
+
+					@include media-breakpoint-up(sm) {
+						height: 30vw;
+					}
+
+					@include media-breakpoint-up(md) {
+						height: 20vw;
+					}
+
+					.card-img-top {
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.card-body {
+					margin: 0;
+					padding: 0;
+					text-align: center;
+
+					.card-title {
+						color: $gray-25;
+						padding: 30px;
+
+						@include media-breakpoint-up(md) {
+							padding: 20px;
+						}
+
+						@include media-breakpoint-up(lg) {
+							padding: 30px 15px;
+						}
+					}
+
+					.card-description {
+						padding: 0 30px;
+
+						@include media-breakpoint-up(md) {
+							padding: 0 20px;
+						}
+
+						@include media-breakpoint-up(lg) {
+							padding: 0 30px;
+						}
+					}
+				}
+
+				a {
+					&.-button {
+						@extend %button;
+						text-decoration: none;
+						padding: rem(13) rem(25);
+						display: inline-block;
+					}
+				}
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+
+			&.slick-prev {
+				left: 2%;
+			}
+
+			&.slick-next {
+				right: 2%;
+			}
+		}
+
+		.slick-dots {
+			text-align: center;
+			padding: 0;
+			margin-top: rem(30);
+
+			li {
+				display: inline-block;
+				margin: auto;
+				padding: 0 4px;
+				outline: none !important;
+
+				&.slick-active {
+					button {
+						background-color: $gray-25;
+					}
+				}
+
+				button {
+					padding: 0;
+					width: 15px;
+					height: 3px;
+					line-height: 1.5;
+					border-radius: 15px;
+					outline: none !important;
+					background-color: $light-grey;
+					border: none;
+					font-size: 0;
+
+					@include media-breakpoint-up(md) {
+						width: 70px;
+						height: 5px;
+					}
+
+					&:hover {
+						&::before {
+							height: auto;
+							width: auto;
+						}
+					}
+				}
+			}
+		}
+
+		.card-overlay {
+			position: absolute;
+			left: 0;
+			bottom: -100%;
+			background-color: $transparent-black;
+			height: 0;
+			width: 100%;
+			z-index: 10;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			flex-wrap: wrap;
+			transition: height .5s ease;
+		}
+
+		.card-overlay-inner {
+			position: relative;
+
+			@include media-breakpoint-down(md) {
+				padding-top: 0;
+			}
+
+			.card-cta {
+				.button {
+					@extend %button;
+				}
+			}
+
+		}
+
+		.products {
+			float: left;
+			width: 30%;
+
+			@include media-breakpoint-down(lg) {
+				width: 25%;
+				padding: 0 10px;
+			}
+
+			.images {
+				display: block;
+				margin-bottom: 10px;
+
+				img {
+					max-width: 70px;
+					height: auto;
+
+					@include media-breakpoint-down(lg) {
+						max-width: 50px;
+					}
+				}
+			}
+		}
+
+		.card-cta {
+			&.-video {
+				button {
+					background: none;
+					border: 0;
+					border-radius: 0;
+					padding: 0;
+
+					span {
+						color: $white;
+						font-size: 40px;
+						transition: .4s color ease;
+					}
+
+					&:hover {
+						&::before {
+							display: none;
+						}
+
+						span {
+							color: $light-grey;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.default {
+		.component-content-wrapper {
+			.carousel-item {
+				@media all and (-ms-high-contrast: none) {
+					.card {
+						display: block;
+						height: auto;
+
+						.card-image-wrap {
+							display: block;
+							height: auto;
+
+							a {
+								display: block;
+							}
+						}
+
+						.card-body {
+							display: block;
+						}
+					}
+				}
+
+				@supports (-ms-ime-align:auto) {
+					.card {
+						display: block;
+						height: auto;
+
+						.card-image-wrap {
+							display: block;
+							height: auto;
+
+							a {
+								display: block;
+							}
+						}
+
+						.card-body {
+							display: block;
+						}
+					}
+				}
+
+				.card {
+					.card-body {
+						display: table;
+					}
+				}
+			}
+		}
+	}
+
+	&.-page-chevrons {
+		.component-content-wrapper {
+			.slick-arrow {
+				border-radius: 0;
+				display: none !important;
+				height: 60vw;
+				padding: 0;
+				top: 10px;
+				transition: .4s visibility ease;
+				width: 5%;
+
+				@include media-breakpoint-up(sm) {
+					height: calc(71vw / 1.7);
+					width: 7vw;
+				}
+
+				@include media-breakpoint-up(md) {
+					background: $transparent-white;
+					height: calc(70vw / 1.7);
+					width: 14vw;
+					top: 10px;
+				}
+
+				&.slick-next {
+					right: 0;
+
+					&::before {
+						content: "\f345";
+						font-size: 20px;
+						font-family: 'dashicons';
+
+						@include media-breakpoint-up(sm) {
+							font-size: 40px;
+						}
+					}
+
+					@include media-breakpoint-down(sm) {
+						height: calc(100vw/1.7);
+
+					}
+				}
+
+				&.slick-prev {
+					left: 0;
+
+					&::before {
+						content: "\f341";
+						font-size: 20px;
+						font-family: 'dashicons';
+						left: 0;
+
+						@include media-breakpoint-up(sm) {
+							font-size: 40px;
+							left: calc(50% - 20px);
+						}
+					}
+
+					@include media-breakpoint-down(sm) {
+						height: calc(100vw/1.7);
+					}
+				}
+			}
+
+			.slick-slider {
+				&:hover {
+					.slick-arrow {
+						display: block !important;
+					}
+				}
+			}
+		}
+
+		button {
+			&.slick-arrow {
+				&::before {
+					background: transparent;
+					height: auto;
+					width: auto;
+					position: absolute;
+				}
+			}
+		}
+	}
+
+	&.-title-card {
+		.carousel-header {
+			width: 25%;
+			float: left;
+		}
+
+		.container-fluid {
+			width: 75%;
+			float: left;
+		}
+	}
+
+	&.-showcase {
+		.component-content-wrapper {
+			.carousel-item {
+				width: 90vw;
+
+				@include media-breakpoint-up(sm) {
+					width: 60vw;
+				}
+
+				@include media-breakpoint-up(md) {
+					width: 70vw;
+				}
+
+				.card {
+					.card-image-wrap {
+						background: $form-border;
+						height: calc(100vw / 1.7);
+
+						@include media-breakpoint-up(sm) {
+							height: 40vw;
+						}
+
+						@include media-breakpoint-up(md) {
+							height: calc(70vw / 1.7);
+						}
+					}
+
+					.card-body {
+						text-align: center;
+
+						h3 {
+							border-right: 0;
+							padding-left: 0;
+							padding-right: 0;
+						}
+
+						.card-description {
+							@include media-breakpoint-up(md) {
+								margin-left: auto;
+								margin-right: auto;
+								width: 80%;
+							}
+						}
+
+						&.-with-description {
+							height: inherit !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.-ordered-list {
+		.component-content-wrapper {
+			.slick-track {
+				padding-top: rem(100);
+
+				.carousel-item {
+					.card {
+						padding: rem(50) rem(40);
+
+						@include media-breakpoint-only(md) {
+							padding: rem(40) rem(25);
+						}
+
+						.card-image-wrap {
+							height: auto;
+						}
+
+
+						span {
+							&.number {
+								position: absolute;
+								top: rem(-45);
+								left: rem(0);
+								right: rem(0);
+								margin: 0 auto;
+								text-align: center;
+								width: rem(80);
+								height: rem(80);
+								line-height: rem(80);
+								font-size: rem(30);
+								border-radius: rem(100);
+								color: $white;
+								background: $gray-25;
+
+								@include media-breakpoint-down(md) {
+									width: rem(60);
+									height: rem(60);
+									line-height: rem(60);
+									top: rem(-30);
+								}
+							}
+						}
+
+						.card-body {
+							height: auto;
+
+							.card-title {
+								padding: rem(0);
+								margin: rem(0);
+							}
+						}
+					}
+				}
+			}
+
+			.slick-dots {
+				display: none !important;
+			}
+
+			.slick-arrow {
+				background: $green;
+				top: 50%;
+
+				&::before {
+					color: $white;
+					background: none;
+				}
+
+				&.slick-next {
+					right: rem(-18);
+				}
+
+				&.slick-prev {
+					left: rem(-18);
+				}
+			}
+		}
+	}
+}

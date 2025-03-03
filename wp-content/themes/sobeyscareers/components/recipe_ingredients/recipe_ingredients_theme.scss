@@ -1,0 +1,29 @@
+@import "component";
+// Reason: css added to manage width of Ingrédients column
+.component_recipe_ingredients {
+  dl {
+    background-color: $white;
+    &:nth-child(even){
+      background-color: $gray-light;
+    }
+    &:nth-child(odd){
+      background-color: $white;
+    }
+    dt {
+        font-weight: 600;
+    }
+    dd {
+      &.weight {
+        flex: 0 0 30%;
+        max-width: 30%;
+        font-weight: 600;
+        &:nth-child(3) {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .title {
+    font-weight: 600;
+  }
+}

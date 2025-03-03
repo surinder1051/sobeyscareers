@@ -1,0 +1,17 @@
+@import "component";
+
+.component_social_links {
+    .title{
+        font-size: rem(18);
+        color: $gray-25;
+    }
+	a {
+		border-radius: 50%;
+		font-size: rem(20);
+		height: rem(54);
+		width: rem(54);
+		margin-left: rem(-10);
+		margin-right: rem(0);
+        color: $orange-1;
+	}
+}

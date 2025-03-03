@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+/* '' */
+#print-flyer .fl-button-wrap .fl-button {
+  padding: 0.9375rem 3.75rem;
+  height: inherit;
+  border-radius: 2.125rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Open Sans, sans-serif;
+  margin: 1.25rem 0 0 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  line-height: normal; }
+  @media (max-width: 1600px) {
+    #print-flyer .fl-button-wrap .fl-button {
+      padding: 1.125rem 3.125rem; } }
+
+#print-flyer {
+  float: right; }
+  #print-flyer .fl-button-wrap {
+    position: relative; }
+    #print-flyer .fl-button-wrap .fl-button {
+      padding: 0.875rem 1.875rem;
+      font-size: 1.25rem;
+      font-family: inherit !important; }
+      @media (max-width: 767.98px) {
+        #print-flyer .fl-button-wrap .fl-button {
+          font-size: 1rem;
+          padding: 0.6875rem 0.625rem;
+          width: 8.4375rem; } }
+      @media (max-width: 767.98px) {
+        #print-flyer .fl-button-wrap .fl-button:hover {
+          width: 8.4375rem !important; } }
+      #print-flyer .fl-button-wrap .fl-button:focus * {
+        color: inherit; }
+      #print-flyer .fl-button-wrap .fl-button .icon-icon-print {
+        font-size: 1.25rem;
+        margin-right: 0.25rem; }
+        @media (max-width: 767.98px) {
+          #print-flyer .fl-button-wrap .fl-button .icon-icon-print {
+            font-size: 1rem;
+            margin-right: 0; } }
+      #print-flyer .fl-button-wrap .fl-button .fl-button-text {
+        color: inherit; }
+      #print-flyer .fl-button-wrap .fl-button i {
+        color: inherit !important; }
+      #print-flyer .fl-button-wrap .fl-button:after {
+        color: inherit; }
+  #print-flyer .dropdown-menu {
+    min-width: 100%; }
+    #print-flyer .dropdown-menu .dropdown-item {
+      color: #212529 !important; }

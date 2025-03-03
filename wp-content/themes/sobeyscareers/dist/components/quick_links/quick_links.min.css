@@ -1,0 +1,48 @@
+.component_quick_links .quicklinks-inner{
+  text-align:right;
+}
+
+.component_quick_links .quicklinks-label{
+  color:#757575;
+  font-size:.75rem;
+  font-weight:700;
+}
+
+.component_quick_links ul{
+  list-style:none;
+  margin-left:0;
+  padding-left:0;
+}
+
+.component_quick_links ul li{
+  color:#757575;
+  font-size:.75rem;
+  font-weight:700;
+}
+
+.component_quick_links a{
+  text-decoration:underline;
+  color:#757575;
+}
+
+.component_quick_links a:focus,.component_quick_links a:hover{
+  text-decoration:none;
+}
+
+.component_quick_links a:visited{
+  text-decoration:underline;
+}
+
+.component_quick_links a:visited:hover{
+  text-decoration:none;
+}
+
+.component_quick_links.-inline ul,.component_quick_links.-inline ul li{
+  display:inline;
+}
+
+.component_quick_links.-inline ul li:not(:last-child):after{
+  content:", ";
+}
+
+/*# sourceMappingURL=quick_links.min.css.map */

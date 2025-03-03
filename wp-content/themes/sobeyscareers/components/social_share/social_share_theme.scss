@@ -1,0 +1,36 @@
+@import "component";
+
+// Reason: Added SCSS to change background of icons
+.fl-module-social_share {
+  .component_social_share {
+      @media (max-width: $small-screen) {
+        text-align: left;
+      }
+    h4 {
+      &.title {
+        @include media-breakpoint-down(sm) {
+          width: auto;
+          padding-top: 0;
+        }
+      }
+    }
+    a {
+      &.social-share {
+        span {
+          &.social-icon {
+            display: flex;
+            justify-content: center;
+              &.dashicons-email-alt {
+                &::before {
+                    content: $icon-email;
+                    font-family: 'brand';
+                    width: auto;
+                    height: auto;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+}

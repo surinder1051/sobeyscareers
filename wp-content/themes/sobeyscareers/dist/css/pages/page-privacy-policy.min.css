@@ -1,0 +1,54 @@
+body.page-politique-de-confidentialite .fl-module-rich-text ol,body.page-politique-de-confidentialite .fl-module-rich-text ul,body.page-privacy-policy .fl-module-rich-text ol,body.page-privacy-policy .fl-module-rich-text ul{
+  padding-left:.9375rem;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text ol li,body.page-politique-de-confidentialite .fl-module-rich-text ul li,body.page-privacy-policy .fl-module-rich-text ol li,body.page-privacy-policy .fl-module-rich-text ul li{
+  font-size:1rem;
+  line-height:1.5rem;
+  padding-bottom:.625rem;
+  font-family:Roboto,sans-serif;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text ol li a,body.page-politique-de-confidentialite .fl-module-rich-text ul li a,body.page-privacy-policy .fl-module-rich-text ol li a,body.page-privacy-policy .fl-module-rich-text ul li a{
+  color:#ea0028;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text h4,body.page-privacy-policy .fl-module-rich-text h4{
+  color:#4d4d4f;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text h2,body.page-politique-de-confidentialite .fl-module-rich-text h3,body.page-privacy-policy .fl-module-rich-text h2,body.page-privacy-policy .fl-module-rich-text h3{
+  font-size:1.125rem;
+  color:#4d4d4f;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text hr,body.page-privacy-policy .fl-module-rich-text hr{
+  border:.0625rem solid #ddd;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text p,body.page-privacy-policy .fl-module-rich-text p{
+  font-size:1rem;
+  line-height:1.5rem;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text p a,body.page-privacy-policy .fl-module-rich-text p a{
+  color:#ea0028;
+  word-wrap:break-word;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text h1,body.page-privacy-policy .fl-module-rich-text h1{
+  font-size:1.875rem;
+  font-weight:700;
+  color:#4d4d4f;
+  margin-bottom:1rem;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text .fl-rich-text>h1,body.page-privacy-policy .fl-module-rich-text .fl-rich-text>h1{
+  display:none;
+}
+
+body.page-politique-de-confidentialite .fl-module-rich-text em,body.page-politique-de-confidentialite .fl-module-rich-text span.s1 i,body.page-privacy-policy .fl-module-rich-text em,body.page-privacy-policy .fl-module-rich-text span.s1 i{
+  font-family:Palanquin Dark SemiBold,sans-serif;
+}
+
+/*# sourceMappingURL=page-privacy-policy.min.css.map */

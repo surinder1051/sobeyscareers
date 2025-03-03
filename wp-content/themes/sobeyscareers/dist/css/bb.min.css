@@ -1,0 +1,113 @@
+.fl-builder-settings .fl-form-table .fl-field-description{
+  display:block;
+  font-style:italic !important;
+  padding:.3125rem;
+}
+
+.fl-row>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 1";
+  display:inline-block;
+  float:left;
+  font-family:arial;
+  padding:.25rem;
+}
+
+body:not(.single-event) .fl-builder-block[data-type=event]{
+  display:none !important;
+}
+
+html.fl-builder-edit .fl-form-field-preview-text{
+  padding-bottom:.625rem;
+}
+
+.fl-row :nth-child(2)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 2";
+}
+
+.fl-row :nth-child(3)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 3";
+}
+
+.fl-row :nth-child(4)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 4";
+}
+
+.fl-row :nth-child(5)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 5";
+}
+
+.fl-row :nth-child(6)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 6";
+}
+
+.fl-row :nth-child(7)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 7";
+}
+
+.fl-row :nth-child(8)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 8";
+}
+
+.fl-row :nth-child(9)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 9";
+}
+
+.fl-row :nth-child(10)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 10";
+}
+
+.fl-row :nth-child(11)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 11";
+}
+
+.fl-row :nth-child(12)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 12";
+}
+
+.fl-row :nth-child(13)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 13";
+}
+
+.fl-row :nth-child(14)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 14";
+}
+
+.fl-row :nth-child(15)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 15";
+}
+
+.fl-row :nth-child(16)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 16";
+}
+
+.fl-row :nth-child(17)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 17";
+}
+
+.fl-row :nth-child(18)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 18";
+}
+
+.fl-row :nth-child(19)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 19";
+}
+
+.fl-row :nth-child(20)>.fl-row-overlay>.fl-block-overlay-header>.fl-block-overlay-actions:before{
+  content:"Row 20";
+}
+
+.js .tmce-active .wp-editor-area{
+  height:auto !important;
+}
+
+.fl-builder-settings-fields select[multiple],.js .tmce-active .wp-editor-area{
+  min-height:100px;
+  min-height:6.25rem;
+}
+
+.fl-builder-settings-fields select[multiple][name="hidden_regions[]"],.fl-builder-settings-fields select[multiple][name="visible_regions[]"]{
+  min-height:250px;
+  min-height:15.625rem;
+}
+
+/*# sourceMappingURL=bb.min.css.map */

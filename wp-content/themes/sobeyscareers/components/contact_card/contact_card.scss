@@ -1,0 +1,55 @@
+@import 'component';
+
+.component_contact_card {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-size: rem(30);
+		font-weight: 300;
+		line-height: normal;
+
+		@include media-breakpoint-only(md) {
+			font-size: rem(20);
+		}
+	}
+
+	.item-location_summary {
+		h4 {
+			font-size: rem(18);
+			font-family: Open Sans, sans-serif;
+			margin-top: rem(30);
+			margin-bottom: rem(15);
+			line-height: normal;
+
+			&:nth-of-type(1) {
+				margin-top: 0;
+			}
+
+			@include media-breakpoint-only(md) {
+				font-size: rem(14);
+			}
+		}
+
+		p {
+			margin-bottom: rem(10);
+			position: relative;
+			padding-left: rem(30);
+			word-wrap: break-word;
+
+			@include media-breakpoint-only(md) {
+				font-size: rem(14);
+			}
+		}
+	}
+
+	&.mob_bottom_border {
+		@include media-breakpoint-down(sm) {
+			border-bottom: rem(1) solid $light-grey;
+			padding-bottom: rem(30);
+		}
+	}
+}

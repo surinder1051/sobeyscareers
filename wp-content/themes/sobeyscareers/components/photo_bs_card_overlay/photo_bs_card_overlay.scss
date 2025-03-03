@@ -1,0 +1,760 @@
+@import "component";
+
+$gray-25: #404040 !default;
+$white: #fff !default;
+$black: #000 !default;
+$black-transparent: rgba($black, .3) !default;
+
+.component_photo_bs_card_overlay {
+	.card-grid-row {
+		display: grid;
+		display: -ms-grid;
+		-ms-grid-columns: 1fr 1fr 1fr 1fr;
+		-ms-grid-rows: rem(350) rem(350);
+		grid-template-rows: repeat(2, 800px);
+
+		&.half-full,
+		&.half-half,
+		&.full-full,
+		&.full-half {
+			grid-template-columns: repeat(2, 50%);
+			-ms-grid-columns: repeat(2, 50%);
+			grid-template-rows: repeat(2, 220px);
+			-ms-grid-rows: repeat(2, 220px);
+
+			@include media-breakpoint-up(sm) {
+				grid-template-rows: repeat(2, 300px);
+			}
+
+			@include media-breakpoint-up(md) {
+				grid-template-rows: repeat(2, 22vw);
+			}
+		}
+
+		&.half-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-3";
+			}
+		}
+
+		&.half-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-4";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-4";
+			}
+		}
+
+		&.full-full {
+			grid-template-areas:
+				"card-area-1 card-area-3";
+		}
+
+		&.full-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-4";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-4";
+			}
+		}
+
+		&.half-half-full,
+		&.half-full-half,
+		&.full-half-half,
+		&.half-half-half,
+		&.full-full-half,
+		&.full-half-full,
+		&.half-full-full,
+		&.full-full-full {
+			grid-template-columns: repeat(2, 50%);
+			-ms-grid-columns: repeat(2, 50%);
+			grid-template-rows: repeat(3, 220px);
+			-ms-grid-rows: repeat(3, 220px);
+
+			@include media-breakpoint-up(sm) {
+				grid-template-columns: repeat(2, 50%);
+				grid-template-rows: repeat(3, 300px);
+			}
+
+			@include media-breakpoint-up(md) {
+				grid-template-columns: 33% 34% 33%;
+				grid-template-rows: repeat(2, 22vw);
+			}
+		}
+
+		&.half-half-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-5";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-2 card-area-4 card-area-5";
+			}
+		}
+
+		&.half-full-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-6";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-2 card-area-3 card-area-6";
+			}
+		}
+
+		&.full-half-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-6";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-1 card-area-4 card-area-6";
+			}
+		}
+
+		&.half-half-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-6";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-2 card-area-4 card-area-6";
+			}
+		}
+
+		&.full-full-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-6";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-1 card-area-3 card-area-6";
+			}
+		}
+
+		&.full-half-full {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-5";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-1 card-area-4 card-area-5";
+			}
+		}
+
+		&.half-full-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-5";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-2 card-area-3 card-area-5";
+			}
+		}
+
+		&.full-full-full {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-5";
+
+			@include media-breakpoint-up(md) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5"
+					"card-area-1 card-area-3 card-area-5";
+			}
+		}
+
+		&.half-half-half-half,
+		&.half-half-half-full,
+		&.half-half-full-half,
+		&.half-full-half-full,
+		&.full-half-half-half,
+		&.half-half-full-full,
+		&.half-full-full-half,
+		&.full-half-full-half,
+		&.full-full-half-half,
+		&.full-full-full-half,
+		&.full-full-half-full,
+		&.full-half-full-full,
+		&.half-full-full-full,
+		&.full-full-full-full,
+		&.half-full-half-half {
+			grid-template-columns: repeat(2, 50%);
+			-ms-grid-columns: repeat(2, 50%);
+			grid-template-rows: repeat(4, 220px);
+			-ms-grid-rows: repeat(4, 220px);
+
+			@include media-breakpoint-up(sm) {
+				grid-template-columns: repeat(2, 50%);
+				grid-template-rows: repeat(4, 300px);
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-columns: repeat(4, 25%);
+				grid-template-rows: repeat(2, 22vw);
+			}
+		}
+
+		&.half-half-half-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-4"
+					"card-area-5 card-area-7"
+					"card-area-6 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-4 card-area-6 card-area-8";
+			}
+		}
+
+		&.half-half-half-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-4"
+					"card-area-5 card-area-7"
+					"card-area-6 card-area-7";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-4 card-area-6 card-area-7";
+			}
+		}
+
+		&.half-half-full-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-4"
+					"card-area-5 card-area-7"
+					"card-area-5 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-4 card-area-5 card-area-8";
+			}
+		}
+
+		&.half-full-half-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-3"
+					"card-area-7 card-area-5"
+					"card-area-7 card-area-6";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-3 card-area-6 card-area-7";
+			}
+		}
+
+		&.half-half-full-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-5 card-area-5"
+				"card-area-3 card-area-4"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-5"
+					"card-area-2 card-area-5"
+					"card-area-7 card-area-3"
+					"card-area-7 card-area-4";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-4 card-area-5 card-area-7";
+			}
+		}
+
+		&.full-half-half-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-4"
+					"card-area-5 card-area-7"
+					"card-area-6 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-4 card-area-6 card-area-8";
+			}
+		}
+
+		&.half-full-full-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-5 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-3 card-area-5 card-area-8";
+			}
+		}
+
+		&.full-half-full-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-4"
+					"card-area-7 card-area-5"
+					"card-area-8 card-area-5";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-4 card-area-5 card-area-8";
+			}
+		}
+
+		&.full-full-half-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-6 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-3 card-area-6 card-area-8";
+			}
+		}
+
+		&.full-full-full-half {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-5 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-3 card-area-5 card-area-8";
+			}
+		}
+
+		&.full-full-half-full {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-6 card-area-7";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-3 card-area-6 card-area-7";
+			}
+		}
+
+		&.full-half-full-full {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-4"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-4"
+					"card-area-5 card-area-7"
+					"card-area-5 card-area-7";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-4 card-area-5 card-area-7";
+			}
+		}
+
+		&.half-full-full-full {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-5 card-area-7";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-3 card-area-5 card-area-7";
+			}
+		}
+
+		&.full-full-full-full {
+			grid-template-areas:
+				"card-area-1 card-area-1"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-5"
+				"card-area-7 card-area-7";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-1 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-5 card-area-7";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-1 card-area-3 card-area-5 card-area-7";
+			}
+		}
+
+		&.half-full-half-half {
+			grid-template-areas:
+				"card-area-1 card-area-2"
+				"card-area-3 card-area-3"
+				"card-area-5 card-area-6"
+				"card-area-7 card-area-8";
+
+			@include media-breakpoint-up(sm) {
+				grid-template-areas:
+					"card-area-1 card-area-3"
+					"card-area-2 card-area-3"
+					"card-area-5 card-area-7"
+					"card-area-6 card-area-8";
+			}
+
+			@include media-breakpoint-up(lg) {
+				grid-template-areas:
+					"card-area-1 card-area-3 card-area-5 card-area-7"
+					"card-area-2 card-area-3 card-area-6 card-area-8";
+			}
+		}
+
+		.card-img-overlay{
+			padding:0;
+			.card-img-overlay-inner{
+				padding: rem(40);
+				@media (max-width: $ultra_screen) {
+					padding: rem(30);
+				}
+				@media (min-width:$extended_screen_sm) and (max-width: $extended_screen_lg) {
+					padding: rem(20);
+				}
+				@include media-breakpoint-only(lg) {
+					padding: rem(20);
+				}
+				@include media-breakpoint-only(md) {
+					padding: rem(30);
+				}
+				@include media-breakpoint-down(sm) {
+					padding: 0 rem(15) rem(15);
+				}
+				@media (max-width: $extra_small_screen) {
+					padding: 0 rem(10) rem(10);
+				}
+			}
+		}
+
+		.card-item-1-0 {
+			grid-area: card-area-1;
+			-ms-grid-row: 1;
+			-ms-grid-column: 1;
+		}
+
+		.card-item-1-1 {
+			grid-area: card-area-2;
+			-ms-grid-row: 2;
+			-ms-grid-column: 1;
+		}
+
+		.card-item-2-0 {
+			grid-area: card-area-3;
+			-ms-grid-row: 1;
+			-ms-grid-column: 2;
+		}
+
+		.card-item-2-1 {
+			grid-area: card-area-4;
+			-ms-grid-row: 2;
+			-ms-grid-column: 2;
+		}
+
+		.card-item-3-0 {
+			grid-area: card-area-5;
+			-ms-grid-row: 1;
+			-ms-grid-column: 3;
+		}
+
+		.card-item-3-1 {
+			grid-area: card-area-6;
+			-ms-grid-row: 2;
+			-ms-grid-column: 3;
+		}
+
+		.card-item-4-0 {
+			grid-area: card-area-7;
+			-ms-grid-row: 1;
+			-ms-grid-column: 4;
+		}
+
+		.card-item-4-1 {
+			grid-area: card-area-8;
+			-ms-grid-row: 2;
+			-ms-grid-column: 4;
+		}
+
+		@media all and (-ms-high-contrast:none) {
+
+			*::-ms-backdrop,
+			.card-item-2-0 {
+				height: rem(600);
+			}
+
+			*::-ms-backdrop,
+			.card-item-4-0 {
+				height: rem(600);
+			}
+		}
+	}
+
+	.card {
+		border: none;
+		border-radius: 0;
+
+		&.bg-image {
+			background: $gray-25;
+			background-position: center top;
+			background-repeat: none;
+			background-size: cover;
+
+			@media all and (-ms-high-contrast: none) {
+				*::-ms-backdrop,
+				.card-img-overlay {
+					align-items: center !important;
+				}
+			}
+
+			.card-title {
+				color: $white;
+			}
+
+			p {
+				&.sub-title {
+					color: $white;
+				}
+			}
+
+			.card-img-overlay {
+				background: $black-transparent;
+				bottom: 0;
+				height: 0;
+				left: 0;
+				overflow: hidden;
+				padding: 0;
+				right: 0;
+				top: auto;
+				transition: .4s all ease;
+
+				p,
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6,
+				.card-button {
+					padding: 0 rem(20);
+				}
+			}
+
+			&:hover,
+			&.hover {
+				.card-img-overlay {
+					background: $black-transparent;
+					height: 100%;
+					padding: rem(20) 0;
+					overflow: auto;
+
+					.sub-title {
+						padding: 0;
+					}
+
+					.card-title {
+						padding: 0;
+					}
+
+					.card-button {
+						padding: 0;
+					}
+				}
+			}
+		}
+
+		.card-title {
+			line-height: 1.25;
+			margin-bottom: rem(10);
+			text-align: left;
+
+			@include media-breakpoint-only(lg) {
+				font-size: rem(18);
+			}
+
+			@media (max-width: $small-screen) {
+				font-size: rem(14);
+			}
+		}
+
+		p {
+			&.sub-title {
+				margin-bottom: rem(5);
+				text-transform: capitalize;
+
+				@include media-breakpoint-down(xs) {
+					font-size: rem(12) !important;
+				}
+			}
+		}
+
+		a {
+			&.button {
+				@extend %button;
+
+				@include media-breakpoint-down(xs) {
+					font-size: rem(12) !important;
+					padding: rem(4) rem(15);
+				}
+			}
+		}
+	}
+}

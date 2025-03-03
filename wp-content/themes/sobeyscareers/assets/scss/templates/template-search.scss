@@ -1,0 +1,302 @@
+@import "component";
+/*
+URL : Search page
+*/
+body {
+    .filter_button{
+        .fl-module-content{
+            .fl-button-wrap{
+                .icon-filter{
+                    &::before{
+                        color: $brand-dark;
+                    }
+                }
+            }
+        }
+    }
+    &.search {
+        // Module: fl-module-bs_card_horizontal_dynamic
+        // Reason: Added css to manage styling of bs card
+        .fl-module-bs_card_horizontal_dynamic {
+            &:last-child {
+                border-bottom: solid rem(1) $light-grey;
+            }
+            .component_bs_card_horizontal_dynamic {
+                border: none;
+                border-top: solid rem(1) $light-grey;
+                padding: rem(40) 0;
+                word-wrap: break-word;
+                border-radius: 0;
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                    display: block;
+                }
+                .col-auto {
+                    width: rem(150);
+                    max-width: rem(150);
+                    margin-right: rem(30);
+                    @include media-breakpoint-only(md) {
+                        margin-right: rem(20);
+                    }
+                    @include media-breakpoint-down(sm) {
+                        margin-right: rem(15);
+                    }
+                    @media (max-width: $extra-small-screen) {
+                        width: rem(100);
+                    }
+                    img {
+                        margin-right: 0;
+                        width: rem(150);
+                        height: rem(110);
+                        margin-top: rem(13);
+                        object-fit: cover;
+                        @include media-breakpoint-down(md) {
+                            margin-top: rem(9);
+                        }
+                        @include media-breakpoint-down(sm) {
+                            max-width: 100%;
+                            width: 100%;
+                        }
+                        @media (max-width: $extra-small-screen) {
+                            height: rem(90);
+                        }
+                    }
+                }
+                .col {
+                    @include media-breakpoint-down(sm) {
+                        width: 100%;
+                    }
+                    .card-block {
+                        .card-title {
+                            @include media-breakpoint-down(sm) {
+                                line-height: rem(28);
+                            }
+                            @media (max-width: $extra-small-screen) {
+                                line-height: rem(20);
+                            }
+                            a {
+                                color: $gray-103;
+                                font-size: rem(24);
+                                line-height: rem(24);
+                                text-decoration: none;
+                                @include media-breakpoint-down(sm) {
+                                    font-size: rem(20);
+                                }
+                                @media (max-width: $extra-small-screen) {
+                                     font-size: rem(16);
+                                     line-height: rem(20);
+                                }
+                            }
+                        }
+                        .card-text {
+                            color: $gray-25;
+                            p {
+                                color: $gray-25;
+                            }
+                            a {
+                                display: inline-block;
+                                color: $brand-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Reason: Added css to manage styling uper column for ipad pro
+        .search-col{
+            @include media-breakpoint-only(lg) {
+                width: 55%;
+            }
+        }
+        .search-col-1{
+            @include media-breakpoint-only(lg) {
+                width: 11%;
+            }
+        }
+        //Module: fl-module-class-sort
+        //Reason: Added css to manage sort by fields
+        .sortby_col {
+            .fl-col-content {
+                flex-direction: row;
+                @include media-breakpoint-down(sm) {
+                    flex-direction: column;
+                }
+                .fl-heading {
+                    font-weight: normal;
+                }
+            }
+            .fl-module-class-sort {
+                width: 100%;
+                margin-left: rem(20);
+                @include media-breakpoint-down(sm) {
+                    margin-left: rem(0);
+                }
+            }
+        }
+        // Module: fl-module-class-counts
+        // Reason: Added css to style facetwp-counts
+        .fl-module-class-counts {
+            &.count {
+                color: $gray-103;
+            }
+        }
+        // Module: facetwp-bb-module
+        // Reason: Added css to manage the filter
+        .facetwp-bb-module {
+            .facetwp-facet-keyword_search {
+                .facetwp-search-wrap {
+                    .facetwp-btn {
+                        opacity: 1;
+                        right: 0;
+                        top: rem(12);
+
+                        &::before {
+                            background: url("#{$asset-path}/svg/search-soft-gray.svg")
+                                no-repeat;
+                        }
+                    }
+                }
+            }
+            // Reason: Added css to manage the title of filters
+            .facetwp-facet-title {
+                color: $gray-103;
+                font-size: rem(18);
+                margin: 0 0 rem(25);
+            }
+
+            // Reason: Added css for checkboxes on filters
+            .facetwp-type-checkboxes {
+                .facetwp-checkbox {
+                    padding-left: rem(30);
+                    background: url("#{$asset-path}/img/checkbox.png");
+                    background-size: rem(16) rem(16);
+                    background-repeat: no-repeat !important;
+                    background-position: left top rem(4);
+                    color: $gray-103;
+                    font-size: rem(16);
+                    margin-bottom: rem(18);
+                    &.checked {
+                        background: url("#{$asset-path}/img/checkbox-on.png");
+                        background-position: left top rem(4);
+                    }
+                }
+            }
+        }
+        .search_sec {
+            // Reason : Added css to set width of columns for different screens
+            .search_left_section {
+                @media (max-width: $ultra-screen) {
+                    width: 31%;
+                }
+                @include media-breakpoint-only(lg) {
+                    width: 24%;
+                }
+                .fl-module-separator {
+                    @media (max-width: $ultra-screen) {
+                        width: 65%;
+                    }
+                    @include media-breakpoint-only(md) {
+                        width: 100%;
+                    }
+                }
+            }
+            .search_right_section {
+                @media (max-width: $ultra-screen) {
+                    width: 69%;
+                }
+                @include media-breakpoint-only(lg) {
+                    width: 76%;
+                }
+            }
+        }
+        // Reason: Added css to manage sorting dropdown
+        .fl-module-class-sort {
+            .facetwp-sort {
+                margin-bottom: rem(40);
+                max-width: 100%;
+                margin-top: rem(-3);
+
+                .selectric {
+                    .label {
+                        color: $gray-103;
+                        border-bottom: rem(2) solid $light-grey;
+                        margin-top: rem(-7);
+                    }
+                }
+                .selectric-items {
+                    li {
+                        border-top: 0;
+                    }
+                }
+                .facetwp-sort-select {
+                    background: transparent;
+                    color: $gray-103;
+                }
+            }
+        }
+
+        .facetwp-facet {
+            @include media-breakpoint-down(sm) {
+                margin-bottom: rem(0);
+            }
+            .facetwp-search-wrap {
+                display: block;
+                width: 100%;
+
+                .facetwp-search {
+                    border: none;
+                    border-bottom: rem(2) solid $light-grey;
+                    color: $gray-25;
+                    padding: rem(10) rem(30) rem(15) 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        .search_left_filter {
+            padding-right: rem(30);
+        }
+    }
+    // Reason: Added css to manage the filter on mobile
+    .mobile_category_menu {
+        @include media-breakpoint-down(sm) {
+            display: block !important;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            right: auto;
+            bottom: 0;
+            padding: rem(25);
+            z-index: 99999;
+            background: $gray-light;
+            width: 100% !important;
+            transition: left 400ms ease;
+            height: auto;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        &.active {
+            @include media-breakpoint-down(sm) {
+                left: 0;
+                height: 100%;
+            }
+        }
+
+        // Reason: Added css for close button styling
+        .close_category_menu {
+            @include media-breakpoint-down(sm) {
+                margin-top: rem(10);
+                margin-bottom: rem(30);
+                text-align: right;
+            }
+            .icon-close {
+                @include media-breakpoint-down(sm) {
+                    position: relative;
+                    left: rem(5);
+                }
+                &::before{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

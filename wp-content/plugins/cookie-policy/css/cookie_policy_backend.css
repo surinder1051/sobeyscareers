@@ -1,0 +1,60 @@
+.frm_scp {
+    background: #fff;
+    padding: 31px;
+    margin: 20px 0px;
+    margin-right: 20px;
+}
+.frm_scp form {
+    padding: 30px 0;
+    padding-bottom: 0;
+}
+.frm_scp #cookie_policy_css{
+    width:100%;
+    padding: 15px;
+}
+.frm_scp .scp_enable span{
+    margin-right:10px;
+}
+.frm_scp h2.main_scp {
+    font-size: 24px;
+    margin: 0px;
+    color: #404040;
+    font-weight: bold;
+    padding: 0px 0px 24px;
+    border-bottom: 1px solid #ddd;
+}
+.frm_scp .tbl_scp {
+    display: table;
+    width: 100%;
+}
+.frm_scp .tbl_scp .scp_col {
+    float: left;
+    width: 40%;
+}
+.frm_scp .scp_col p, .scp_enable{
+    margin: 0px;
+    padding: 10px 0px;
+    color: #404040;
+    font-weight: bold;
+    font-size: 16px;
+}
+.frm_scp .scp_col input {
+    line-height: 30px;
+    width: 79%;
+}
+.tbl_scp_btn input.v_btn_save{
+    background: #48a548;
+    color: #fff;
+    border: none;
+    padding: 8px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 45px;
+    text-transform: uppercase;
+}
+.tbl_scp_btn {
+    display: inline-block;
+}
+.frm_scp .scp_none {
+    display: none;
+}

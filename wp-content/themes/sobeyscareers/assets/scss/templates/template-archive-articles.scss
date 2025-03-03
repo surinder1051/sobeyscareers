@@ -1,0 +1,156 @@
+@import "component";
+
+/**
+Url : /en/articles/
+**/
+body {
+    &.post-type-archive-article,
+    &.tax-article-category,
+    &.post-type-archive-story {
+        // Module: facetwp-sort
+        // Reason: Added css to manage spacing 
+        .fl-col-group-nested{
+            .fl-col-content{
+                .fl-module-content{
+                    margin-top: 0px;
+                }
+                .facetwp-sort{
+                    margin-top:0;
+                    &:after{
+                        top:28%;
+                        transform: translate(-50%, 0) rotate(45);
+                    }
+                    .facetwp-sort-select{
+                        margin: 6px 0px 15px 0px;
+                        color: #4d4d4f;
+                    }
+                }
+            }
+        }
+        .facetwp-template {
+            .card-deck {
+                .fl-module-bs_card {
+                    -webkit-box-flex: 1;
+                    -webkit-flex: 1;
+                    -moz-box-flex: 1;
+                    flex: 1;
+                    min-width: 25%;
+                    max-width: 25%;
+                    width: 25%;
+                    @include media-breakpoint-only(md) {
+                        min-width: 48%;
+                        max-width: 48%;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        min-width: 100%;
+                        max-width: 100%;
+                    }
+                    @include media-breakpoint-only(md) {
+                        &:nth-child(odd) {
+                            margin-left: 0;
+                            margin-right: rem(10);
+                        }
+                        &:nth-child(even) {
+                            margin-left: rem(10);
+                            margin-right: 0;
+                        }
+                    }
+                    @include media-breakpoint-down(sm) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .fl-module-bs_card {
+            .component_bs_card {
+                height:auto;
+                // Reason: css added to style articles archive block
+                &.-image-top {
+                    margin-bottom: rem(20);
+                    margin-left: rem(5);
+                    margin-right: rem(5);
+                    .overlay {
+                        .button{
+                            @extend %button_white;
+                        }
+                    }
+                    .card-img-top {
+                        min-height: rem(240);
+                    }
+                    .card-body {
+                        .card-title {
+                            margin-bottom: rem(20);
+                            font-size: rem(24);
+                            color:#4d4d4f;
+                            margin-top: 0;
+                            @media (max-width: $ultra-screen) {
+                                font-size: rem(18);
+                            }
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                        .row {
+                            align-items: center;
+                        }
+                        .col-md-6 {
+                            width: 60%;
+                            max-width: 60%;
+                            flex: 0 0 60%;
+                            @media (max-width: $extended-screen-lg) {
+                                width: 100%;
+                                max-width: 100%;
+                                flex: 0 0 100%;
+                            }
+                            @include media-breakpoint-down(sm) {
+                                width: 60%;
+                                max-width: 60%;
+                                flex: 0 0 60%;
+                            }
+                            &.date {
+                                width: 40%;
+                                max-width: 40%;
+                                flex: 0 0 40%;
+                                @media (max-width: $extended-screen-lg) {
+                                    width: 100%;
+                                    max-width: 100%;
+                                    flex: 0 0 100%;
+                                    margin-bottom: rem(10);
+                                }
+                                @include media-breakpoint-down(sm) {
+                                    width: 40%;
+                                    max-width: 40%;
+                                    flex: 0 0 40%;
+                                    margin-bottom:0;
+                                }
+                            }
+                        }
+                        .date {
+                            font-size: rem(14);
+                        }
+                        .category {
+                            font-size: rem(14);
+                            border: rem(1) solid $gray-102;
+                            padding: rem(5) rem(12);
+                            border-radius: rem(50);
+                            display: inline-block;
+                            text-align: center;
+                            line-height: normal;
+                            float: right;
+                            @media (max-width: $extended-screen-lg) {
+                                float: left;
+                            }
+                            @include media-breakpoint-down(sm) {
+                                float: right;
+                            }
+                        }
+                        .card-text {
+                            margin-top: rem(25);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

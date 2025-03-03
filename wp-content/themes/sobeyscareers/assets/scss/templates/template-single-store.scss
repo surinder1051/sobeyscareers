@@ -1,0 +1,390 @@
+@import "component";
+
+/*
+Url : /en/stores/chalo-freshco-goreway-derry/
+*/
+body {
+	&.single-store {
+		// Module: fl-module-heading
+		// Reason: Added CSS to style main heading
+		.fl-module-heading {
+			.fl-heading {
+				font-family: $heading-font;
+				@media (max-width: $ultra-screen) {
+					line-height: rem(36);
+				}
+			}
+		}
+		// Reason: Added CSS to headline spacing on tab
+		.store-heading{
+			.fl-row-content-wrap{
+				@include media-breakpoint-only(lg) {
+					padding-left: rem(30);
+					padding-right: rem(30);
+				}
+			}
+		}
+		// Reason: Added CSS to style button on mobile and tab
+		.fl-module-bbmodule-store-info {
+			&.fr-btn{
+				.button_save_as_my_store{
+					&.button_save_as_my_store{
+						button{
+							@include media-breakpoint-only(md) {
+								padding: rem(13) rem(0);
+								font-size: rem(15);
+							}
+							@include media-breakpoint-down(sm) {
+								padding: rem(13) rem(0);
+							}
+						}
+					}
+				}
+			}
+			.single_store_info {
+				&.manager{
+					span{
+						&.store_manager{
+							padding-left: 0;
+							.manager_photo {
+								.icon-store-manager {
+									&:before {
+										@media (max-width: $ultra-screen) {
+											font-size: rem(17);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				&.owner, &.manager{
+					float: left;
+					width: 100%;
+					margin-bottom: rem(20);
+					@include media-breakpoint-down(sm) {
+						border-bottom: rem(1) solid $light-grey;
+						padding-bottom: rem(30);
+					}
+					span{
+					    font-size: rem(16);
+						font-weight: normal;
+						position: relative;
+						padding-left: rem(40);
+						@media (max-width: $ultra-screen){
+						   font-size: rem(14);
+						}
+						&.store_manager{
+							.manager_photo{
+								display:none;
+							}
+							padding-left: 0;
+							.manager_photo{
+								max-width: rem(25);
+							}
+							.owner_name{
+								font-size: rem(16);
+								font-weight: 400;
+								width:100%;
+								@media (max-width: $ultra-screen) {
+									font-size: rem(14);
+								}
+								@include media-breakpoint-only(md){
+									font-size: rem(12);
+								}
+								@include media-breakpoint-down(sm) {
+									font-size: rem(16);
+								}
+							}
+						}
+						&:before {
+						    content: $icon-user;
+							font-family: brand;
+							position: absolute;
+							left: 0;
+							font-size: rem(20);
+							color: $blue-101;
+							@media (max-width: $ultra-screen) {
+								font-size: rem(17);
+							}
+						}
+					}
+				}
+				h3 {
+					font-size: rem(24);
+					color: $gray-103;
+					font-family: $heading-font;
+					margin-bottom: rem(15);
+					@include media-breakpoint-down(sm) {
+						font-size: rem(22);
+						margin-bottom: rem(25);
+					}
+				}
+				p,
+				span {
+					font-size: rem(16);
+					line-height: rem(24);
+					color: $gray-103;
+					font-family: $main-font;
+					@media (max-width: $ultra-screen) {
+						font-size: rem(14);
+						line-height: rem(20);
+					}
+					@include media-breakpoint-only(md) {
+						font-size: rem(12);
+					}
+					@include media-breakpoint-down(sm) {
+						font-size: rem(16);
+					}
+				}
+				span {
+					&.city {
+						padding: 0;
+					}
+					&.phone {
+						a {
+							color: $gray-103;
+						}
+					}
+					i {
+						color: $blue-101;
+						&.icon-store-address,
+						&.icon-store-fax,
+						&.icon-store-phone {
+							position: absolute;
+							left: 0;
+						}
+					}
+				}
+				.location_address,
+				.store_manager,
+				.phone {
+					position: relative;
+					padding-left: rem(40);
+					@include media-breakpoint-only(lg) {
+						padding-left: rem(28);
+					}
+					@include media-breakpoint-only(md) {
+						padding-left: rem(28);
+					}
+				}
+				.location_address{
+					line-height: 1.5;
+				}
+				.direction_link {
+					a {
+						color: $blue-101;
+						font-size: rem(14);
+						position:relative;
+						@include media-breakpoint-down(sm) {
+							font-size: rem(16);
+						}
+						&::after {
+							margin-left: rem(5);
+							position: absolute;
+							top:50%;
+							transform:translateY(-50%);
+							-ms-transform: translateY(-38%);
+							transition: all 0.5s ease;
+						}
+						&:hover {
+							text-decoration: none;
+							&::after {
+								margin-left: rem(8);
+								transition: all 0.5s ease;
+							}
+						}
+					}
+				}
+				&.services {
+					h3 {
+						font-size: rem(36);
+						line-height: rem(42);
+						@include media-breakpoint-down(sm) {
+							font-size: rem(27);
+							line-height: rem(30);
+						}
+					}
+					span {
+						&.get_info_button {
+							color: $blue-101;
+						}
+					}
+				}
+				&.address,
+				&.manager,
+				&.contact {
+					@include media-breakpoint-down(sm) {
+						border-bottom: rem(1) solid $light-grey;
+						padding-bottom: rem(30);
+					}
+				}
+				// Reason: Added CSS to style store buttons
+				&.button_save_as_my_store {
+					button {
+						@extend %button;
+						padding: rem(15) rem(30);
+						font-size: rem(16);							
+						@media (max-width: $ultra-screen) {
+							padding: rem(13);
+						}
+						@include media-breakpoint-down(sm) {
+							font-size: rem(15);
+						}
+						@media (max-width: $small-screen) {
+							font-size: rem(11);
+							padding: rem(10) 0;
+							float: right;
+							margin: 0;
+						}
+					}
+				}
+				&.button_flyer {
+					a {
+						@extend %button_animated_outline;
+						@media (max-width: $ultra-screen) {
+							padding: rem(13);
+						}
+						@include media-breakpoint-only(lg) {
+							margin-bottom: rem(10);
+						}
+						@include media-breakpoint-down(sm) {
+							font-size: rem(15);
+						}
+						@media (max-width: $small-screen) {
+							font-size: rem(11);
+							padding: rem(10) rem(10);
+						}
+					}
+				}
+				// Reason: Added CSS to style get information bottom section
+				.depart_list_service_main {
+					.collapseDept {
+						h3 {
+							color: $blue-101;
+						}
+						.service-col {
+							color: $gray-103;
+							font-family: $main-font;
+						}
+					}
+					.depart_list_service_heading {
+						h2 {
+							color: $blue-101;
+						}
+					}
+				}
+				span{
+					i{
+						&::before{
+							margin-left: 0;
+						}
+					}
+				}
+			}
+			.single-store-list {
+				.store-services-col {
+					padding-left: 0;
+
+					@include media-breakpoint-down(sm) {
+						padding: 0;
+					}
+					.icon{
+						img{
+							@include media-breakpoint-down(sm) {
+								max-width: rem(35);
+    							width: 100%;
+							}
+						}
+					}
+				}
+				.department-detail {
+					width: 100%;
+				}
+			}
+		}
+		// Module: fl-module-bbmodule-store-map-image
+		// Reason: Added CSS to style store map heading and text
+		.fl-module-bbmodule-store-map-image {
+			.store-map-hours {
+				.hours{
+					&.holiday-hours{
+						h3{
+							color : $red-101;
+						}
+						table {
+							tr{
+								th{
+									color : $red-101;
+								}
+							}
+						}
+					}
+				} 				
+				.hours,
+				.map-container {
+					h3,
+					h4 {
+						color: $blue-101;
+						text-align: left;
+						@include media-breakpoint-down(sm) {
+							line-height: rem(30);
+						}
+					}
+					h4 {
+						font-size: rem(20);
+					}
+					h3{
+						color: $gray-103;
+					}
+					.holiday_hours_tbl {
+						thead {
+							border-bottom: rem(2) solid $light-grey;
+						}
+					}
+					table {
+						tr {
+							@include media-breakpoint-down(sm) {
+								&:last-child {
+									border-bottom: rem(1) solid $gray-102;
+								}
+							}
+							th {
+								font-family: $heading-font;
+								color: $blue-101;
+								font-weight: 600;
+							}
+							td {
+								color: $gray-103;
+								@include media-breakpoint-down(sm) {
+									font-size: rem(14);
+									line-height: rem(20);
+								}
+							}
+						}
+					}
+					.static_map_overlay {
+						.load-btn-map {
+							@extend %button;
+							&:focus{
+								box-shadow: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		// Reason: Added css to remove default margin and padding of dynamic columns
+		.service_section {
+			.fl-col-content {
+				margin: 0;
+			}
+		}
+	}
+	// Reason: css added to hide blank manager column
+	&.store_without_manager {
+		.no-manager {
+			display: none;
+		}
+	}
+}

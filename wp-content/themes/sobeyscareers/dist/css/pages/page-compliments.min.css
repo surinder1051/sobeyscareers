@@ -1,0 +1,86 @@
+@media (max-width:767.98px){
+  body.page-compliments .text-border .fl-col.fl-col-small{
+    margin-right:.9375rem;
+  }
+}
+
+@media (min-width:1601px){
+  body.page-compliments .text-border .fl-module-bs_card .component_bs_card.card .card-body{
+    padding-right:6.25rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-compliments .mobile_carousel .slick-list .fl-col.fl-col-small{
+    width:100% !important;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-compliments .mobile_carousel .slick-dots{
+    position:relative;
+    right:.75rem;
+  }
+}
+
+@media (min-width:992px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card{
+    margin:0 .9375rem;
+  }
+}
+
+body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card:first-child{
+  margin-left:0;
+}
+
+@media (max-width:991.98px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card:first-child .card-body{
+    border-left:.0625rem solid #ddd;
+  }
+}
+
+body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card:last-child{
+  margin-right:0;
+}
+
+@media (max-width:767.98px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card:last-child{
+    margin-bottom:0;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card{
+    margin-bottom:1.875rem;
+    min-width:100%;
+  }
+}
+
+@media (min-width:992px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card .card-body{
+    border-left:.0625rem solid #ddd;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card .card-body{
+    padding:0 1.875rem;
+    border-left:.0625rem solid #ddd;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card .card-body .card-title{
+    font-size:1.5rem;
+  }
+}
+
+body.page-compliments .compliments-recipes-row .fl-row-content-wrap .compliments-recipes .component-related .card-deck .recipe-card .card-body .bottom-col-wrap .col .description-term{
+  font-size:1.125rem;
+}
+
+body.page-compliments .footer-top-row .fl-row-content-wrap .white-btn .fl-button-wrap .fl-button{
+  color:#404040;
+}
+
+/*# sourceMappingURL=page-compliments.min.css.map */

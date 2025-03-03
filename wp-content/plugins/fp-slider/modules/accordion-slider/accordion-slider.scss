@@ -1,0 +1,674 @@
+@import "component";
+
+$heading-font: "Dirty-Headline", sans-serif !default;
+$hd-screen: 1920px !default; //custom styling is needed for the content width on the vertical slider styling at this size
+
+$grid-breakpoints2: (extra-small-screen: 376px, ultra-screen: 1600px, hd-screen: 1920px);
+$grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
+
+.bbmodule-accordion-slider {
+	.card {
+		border: 0;
+		border-radius: 0;
+
+		&.slide-0,
+		&.slide-2 {
+			&.collapsed {
+				.button-icon {
+					position: relative;
+
+					&::after {
+						content: "";
+						width: 60px;
+						height: 60px;
+						line-height: 60px;
+						border-radius: 50%;
+						position: absolute;
+						z-index: -1;
+						left: 0;
+						right: 0;
+						top: 0;
+						margin: 0 auto;
+
+						@include media-breakpoint-between(md, ultra-screen) {
+							width: 50px;
+							height: 50px;
+							line-height: 50px;
+						}
+
+						@include media-breakpoint-down(md) {
+							left: 7px;
+						}
+
+						@include media-breakpoint-down(sm) {
+							width: 30px;
+							height: 30px;
+							line-height: 30px;
+							left: 0;
+							top: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		&.expand {
+			.button-icon {
+				color: $black;
+
+				&::after {
+					background: transparent;
+				}
+			}
+
+			&.collapsed {
+				.button-icon {
+					color: $default-button-default-colour;
+				}
+			}
+		}
+
+		&:first-child {
+			.button-icon {
+				color: $black;
+			}
+		}
+
+		&.collapsed {
+			@include media-breakpoint-down(lg) {
+				.button-icon {
+					color: $default-button-default-colour;
+				}
+			}
+
+			&:first-child {
+				.button-icon {
+					color: $default-button-default-colour;
+				}
+			}
+		}
+	}
+
+	.card-header {
+		background: inherit;
+		border-bottom: 0;
+		padding: 0;
+
+		@include media-breakpoint-up(ultra-screen) {
+			padding-top: 28px;
+		}
+
+		button {
+			display: inline-block;
+			padding: 8px 15px;
+			margin-right: 0;
+			text-align: left;
+			transition: 0.1s transform ease;
+			width: 100%;
+			background: inherit;
+
+			background: none;
+			border: 0;
+			border-radius: 0;
+			font-weight: normal;
+
+			&::before,
+			&::after {
+				display: none;
+			}
+
+			&:hover {
+				color: $text-links-hover-colour;
+			}
+
+			&.active {
+				font-weight: bold;
+			}
+
+			@include media-breakpoint-up(extra-small-screen) {
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+
+			@include media-breakpoint-down(md) {
+				line-height: 40px;
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.button-text {
+				font-family: $heading-font;
+				font-size: 20px;
+				line-height: 25px;
+				margin-right: 0;
+				width: calc(100% - 55px);
+
+				@include media-breakpoint-between(xs, md) {
+					width: calc(100% - 50px);
+				}
+
+				@include media-breakpoint-up(sm) {
+					font-size: 22px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					font-size: 28px;
+					line-height: 38px;
+					width: calc(100% - 80px);
+				}
+
+				@include media-breakpoint-up(xl) {
+					font-size: 28px;
+					line-height: 38px;
+				}
+
+				@include media-breakpoint-up(ultra-screen) {
+					font-family: $heading-font;
+					font-size: 36px;
+					width: calc(100% - 68px);
+				}
+			}
+
+			.button-icon {
+				color: $default-button-default-colour;
+				font-size: 25px;
+				margin-left: 10px;
+				padding-top: 0;
+
+				@include media-breakpoint-up(ultra-screen) {
+					font-size: 40px;
+				}
+			}
+
+			&.focus-visible {
+				outline: 2px solid $default-button-default-colour;
+				outline-offset: -2px;
+			}
+		}
+	}
+
+	.card-body {
+		height: 100%;
+		padding: 0;
+
+		>div {
+			height: 100%;
+		}
+	}
+
+	.slider_box_wrap {
+		position: relative;
+
+		.slider_img {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			padding: 30px 15px;
+
+			@include media-breakpoint-up(extra-small-screen) {
+				padding: 15px 25px;
+			}
+
+			@include media-breakpoint-between(sm, md) {
+				margin: 0 auto;
+				padding: 30px;
+				width: 100%;
+			}
+
+			a {
+				display: inline-block;
+				height: auto;
+
+				@include media-breakpoint-down(md) {
+					display: block;
+				}
+
+				img {
+					margin: 0 auto;
+					max-width: 100%;
+
+					@include media-breakpoint-down(md) {
+						display: block;
+					}
+				}
+			}
+		}
+
+		.slider_text_box {
+			padding: 30px 25px 50px;
+
+			@include media-breakpoint-down(sm) {
+				position: relative;
+				text-align: left !important;
+				width: 100% !important;
+			}
+
+			@include media-breakpoint-down(extra-small-screen) {
+				padding: 30px 15px 50px;
+			}
+
+			&.transparent_box {
+				background: transparent;
+				max-width: 100%;
+				padding: 0 30px;
+				width: 100%;
+			}
+
+			.slider_btn {
+				@extend %button !optional;
+				display: inline-block;
+				margin-top: 20px;
+				padding: 16px 35px;
+				font-weight: 700;
+				font-size: 16px;
+
+				&:hover {
+					box-shadow: none;
+					text-decoration: none;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-top: 45px;
+				}
+			}
+
+			h1 {
+				font-size: 36px;
+				line-height: 46px;
+			}
+
+			p {
+				font-size: 18px;
+				line-height: 26px;
+			}
+		}
+	}
+
+	.slider {
+		&.large-screen {
+			display: flex;
+			height: calc(100vw / 2);
+			max-height: 500px;
+			position: relative;
+			width: 100%;
+
+			@include media-breakpoint-up(ultra-screen) {
+				height: calc(140vw / 2);
+				max-height: 700px;
+			}
+
+			@include media-breakpoint-up(hd-screen) {
+				overflow: hidden;
+				max-width: $hd-screen;
+			}
+
+			&.has-2 {
+				.slide-1 {
+					left: calc(100vw - 80px);
+
+					&:not(.resizing) {
+						transition: 0.5s left cubic-bezier(0.37, 0, 0.63, 1);
+
+						@media (prefers-reduced-motion) {
+							transition: none;
+						}
+					}
+
+					&.expand {
+						left: 80px;
+					}
+
+					@include media-breakpoint-up(hd-screen) {
+						left: calc(100% - 130px);
+					}
+				}
+			}
+
+			&.has-3 {
+				.slide-1 {
+					left: calc(100vw - 160px);
+
+					@include media-breakpoint-up(xl) {
+						left: calc(100vw - 178px);
+					}
+
+					@include media-breakpoint-up(ultra-screen) {
+						left: calc(100vw - 240px);
+					}
+
+					@include media-breakpoint-up(hd-screen) {
+						left: calc(100% - 260px);
+					}
+
+					&:not(.resizing) {
+						transition: 0.5s left cubic-bezier(0.37, 0, 0.63, 1);
+
+						@media (prefers-reduced-motion) {
+							transition: none;
+						}
+					}
+
+					&.expand {
+						left: 80px;
+
+						@include media-breakpoint-up(ultra-screen) {
+							left: 120px;
+						}
+					}
+				}
+
+				.slide-2 {
+					left: calc(100vw - 80px);
+
+
+					@include media-breakpoint-up(xl) {
+						left: calc(100vw - 98px);
+					}
+
+					@include media-breakpoint-up(ultra-screen) {
+						left: calc(100vw - 120px);
+					}
+
+					@include media-breakpoint-up(hd-screen) {
+						left: calc(100% - 130px);
+					}
+
+					&:not(.resizing) {
+						transition: 0.5s left cubic-bezier(0.37, 0, 0.63, 1);
+
+						@media (prefers-reduced-motion) {
+							transition: none;
+						}
+					}
+
+					&.expand {
+						left: 160px;
+
+						@include media-breakpoint-up(ultra-screen) {
+							left: 240px;
+						}
+					}
+				}
+			}
+
+			.card {
+				flex-direction: row;
+				height: 100%;
+				position: absolute;
+				min-width: min-content;
+
+				@include media-breakpoint-up(hd-screen) {
+					max-width: $hd-screen;
+					min-width: $hd-screen;
+				}
+
+				.collapse {
+					display: block;
+
+					&:not(.show) {
+						visibility: hidden;
+					}
+
+					&.show {
+						visibility: visible;
+					}
+				}
+			}
+
+			.card-header {
+				height: 100%;
+				width: 80px;
+
+				@include media-breakpoint-up(ultra-screen) {
+					padding: 32px 0 50px;
+					width: 120px;
+				}
+
+				@include media-breakpoint-up(hd-screen) {
+					width: 130px;
+				}
+
+				button {
+					height: inherit;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					transition: 0.1s transform ease;
+					transform: rotate(180deg);
+					width: 80px;
+
+					@include media-breakpoint-up(ultra-screen) {
+						width: 120px;
+					}
+
+					@include media-breakpoint-up(hd-screen) {
+						width: 130px;
+					}
+
+					@media (prefers-reduced-motion) {
+						transition: none;
+					}
+
+					.button-text {
+						height: 430px;
+						width: 100%;
+						writing-mode: vertical-rl;
+						display: flex;
+						justify-content: start;
+						align-items: center;
+						padding-top: 0;
+
+						@include media-breakpoint-up(ultra-screen) {
+							height: 552px;
+						}
+					}
+
+					.button-icon {
+						margin: 0 auto;
+						transform: rotate(-180deg);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+
+			.card-body {
+				>div {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					width: calc(100vw - 240px);
+
+					@include media-breakpoint-up(ultra-screen) {
+						max-width: 1560px;
+					}
+				}
+
+				&.has-1 {
+					>div {
+						width: calc(100vw - 80px);
+					}
+				}
+
+				&.has-2 {
+					>div {
+						width: calc(100vw - 160px);
+					}
+				}
+			}
+
+			.slider_box_wrap {
+				height: 100%;
+				overflow: hidden;
+				width: 100%;
+				margin-left: 0;
+
+				@include media-breakpoint-up(ultra-screen) {
+					margin-right: 0;
+				}
+			}
+
+			&.layout-text-image,
+			&.layout-text-video {
+				.slider_img {
+					height: 100%;
+					margin: 0 auto;
+					text-align: right;
+					width: 80%;
+
+					@include media-breakpoint-up(lg) {
+						width: 90%;
+					}
+
+					@include media-breakpoint-up(ultra-screen) {
+						margin-left: 31%;
+						max-width: 1470px;
+						width: 64%;
+					}
+
+					@include media-breakpoint-up(hd-screen) {
+						margin: 0 auto 0 80px;
+						width: 90%;
+					}
+
+					img {
+						height: 100%;
+						margin-bottom: 40px;
+						max-width: 100%;
+						object-fit: cover;
+						width: 100%;
+
+						@include media-breakpoint-up(md) {
+							margin-bottom: 0;
+						}
+
+						@include media-breakpoint-only(ultra-screen) {
+							width: 80%;
+						}
+					}
+				}
+			}
+
+			&.layout-image,
+			&.layout-video {
+				.slider_img {
+					height: 100%;
+					margin: 0 auto;
+					max-width: 1470px;
+					width: 80%;
+				}
+
+				>div {
+					@include media-breakpoint-up(hd-screen) {
+						max-width: 1560px;
+					}
+				}
+			}
+
+			.slider_text_box {
+				color: $white;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				justify-content: center;
+				left: 0;
+				padding: 0 15px 0 30px;
+				position: absolute;
+				top: 0;
+				width: 40%;
+				z-index: 99999;
+
+				@include media-breakpoint-up(md) {
+					width: 50%;
+				}
+
+				@include media-breakpoint-up(xl) {
+					padding: 0 15px 0 45px;
+					width: 34%;
+				}
+
+				@include media-breakpoint-up(ultra-screen) {
+					padding: 0 45px;
+				}
+
+				@include media-breakpoint-up(hd-screen) {
+					max-width: 650px;
+					width: 30%;
+				}
+
+				&.box_align_right {
+					left: auto;
+					right: 0;
+
+					h1 {
+						text-align: left;
+					}
+				}
+
+				&.box_align_left {
+					left: 0;
+					right: auto;
+					text-align: left;
+					padding-left: 20px;
+
+					@include media-breakpoint-up(ultra-screen) {
+						padding-left: 45px;
+					}
+
+					h1 {
+						font-size: 55px;
+						text-align: left;
+						line-height: 60px;
+					}
+				}
+
+				&.box_align_center {
+					background: transparent;
+					right: 0;
+					display: inline-block;
+					left: 0;
+					margin: auto;
+					text-align: center;
+				}
+
+
+				h1 {
+					text-align: left;
+					font-size: 50px;
+					line-height: 60px;
+					margin-bottom: 16px;
+					font-weight: 400;
+
+					@include media-breakpoint-up(lg) {
+						font-size: 65px;
+						line-height: 80px;
+					}
+
+					@include media-breakpoint-up(ultra-screen) {
+						font-size: 72px;
+						line-height: 87px;
+					}
+				}
+
+				p {
+					font-size: 22px;
+					line-height: 28px;
+					font-weight: 400;
+					padding-right: 25px;
+					margin: 0;
+
+					@include media-breakpoint-up(ultra-screen) {
+						font-size: 24px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+}

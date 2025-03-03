@@ -1,0 +1,59 @@
+// Global mixins get put into here
+// Note this file gets overwritten by FP Foundations Update Script
+
+
+@function rem($pixels, $context: $baseFontSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1rem;
+}
+
+@mixin transition($transition...) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+@mixin transition-property($property...) {
+	-moz-transition-property: $property;
+	-o-transition-property: $property;
+	-webkit-transition-property: $property;
+	transition-property: $property;
+}
+
+@mixin transition-duration($duration...) {
+	-moz-transition-property: $duration;
+	-o-transition-property: $duration;
+	-webkit-transition-property: $duration;
+	transition-property: $duration;
+}
+
+@mixin transition-timing-function($timing...) {
+	-moz-transition-timing-function: $timing;
+	-o-transition-timing-function: $timing;
+	-webkit-transition-timing-function: $timing;
+	transition-timing-function: $timing;
+}
+
+@mixin transition-delay($delay...) {
+	-moz-transition-delay: $delay;
+	-o-transition-delay: $delay;
+	-webkit-transition-delay: $delay;
+	transition-delay: $delay;
+}
+
+@mixin transform($transform...) {
+	-webkit-transform: $transform;
+	transform: $transform;
+}
+
+@mixin accent_long_green_arrow($color) {
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns#' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' height='10' width='147' id='svg8' version='1.1' viewBox='0 0 147 10'><metadata id='metadata14'><rdf:RDF><cc:Work rdf:about=''><dc:format>image/svg+xml</dc:format><dc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /></rdf:RDF></metadata><defs id='defs12' /><g style='fill:#66ca00' id='g6'><path id='path2' d='m 0,0 v 10 h 122.62 l 7.2,-5 -7.2,-5 z' /><path id='path4' d='m 139.8,0 h -9.09 l 7.2,5 -7.2,5 h 9.09 L 147,5 Z' /></g><g stroke='#{$color}' ... /></g></svg>");
+}

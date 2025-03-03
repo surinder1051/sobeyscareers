@@ -1,0 +1,136 @@
+@import "component";
+
+/*
+URL: /fr/compliments/
+     /en/compliments/
+*/
+
+body {
+    &.page-compliments {
+
+        // Module: Builder Column
+        // Reason: Added css for column spacing on small screen
+        .text-border {
+            .fl-col {
+                &.fl-col-small {
+                    @include media-breakpoint-down(sm) {
+                        margin-right: rem(15);
+                    }
+                }
+            }
+
+            .fl-module-bs_card {
+                .component_bs_card {
+                    &.card {
+
+                        // Module: fl-module-bs_card
+                        // Reason: Added css for card body styling
+                        .card-body {
+                            @media (min-width: $ultra-screen-sm) {
+                                padding-right: rem(100);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Reason: Added css for mange card width on mobile
+        .mobile_carousel {
+            .slick-list {
+                .fl-col {
+                    &.fl-col-small {
+                        @include media-breakpoint-down(sm) {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                @include media-breakpoint-down(sm) {
+                    position: relative;
+                    right: rem(12);
+                }
+            }
+        }
+
+        // Module: Related Recipes Module
+        // Reason: Added styling for maange recipies cards
+        .compliments-recipes-row {
+            .fl-row-content-wrap {
+                .compliments-recipes {
+                    .component-related {
+                        .card-deck {
+                            .recipe-card {
+                                @include media-breakpoint-up(lg) {
+                                    margin: 0 rem(15);
+                                }
+
+                                &:first-child {
+                                    margin-left: 0;
+
+                                    .card-body {
+                                        @include media-breakpoint-down(md) {
+                                            border-left: rem(1) solid $gray-102;
+                                        }
+                                    }
+                                }
+
+                                &:last-child {
+                                    margin-right: 0;
+
+                                    @include media-breakpoint-down(sm) {
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                @include media-breakpoint-down(sm) {
+                                    margin-bottom: rem(30);
+                                    min-width: 100%;
+                                }
+
+                                .card-body {
+                                    @include media-breakpoint-up(lg) {
+                                        border-left: rem(1) solid $gray-102;
+                                    }
+
+                                    @include media-breakpoint-down(sm) {
+                                        padding: 0 rem(30);
+                                        border-left: rem(1) solid $gray-102;
+                                    }
+
+                                    .card-title {
+                                        @include media-breakpoint-down(sm) {
+                                            font-size: rem(24);
+                                        }
+                                    }
+
+                                    .bottom-col-wrap {
+                                        .col {
+                                            .description-term {
+                                                font-size: rem(18);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-top-row {
+            .fl-row-content-wrap {
+                .white-btn {
+                    .fl-button-wrap {
+                        .fl-button {
+                            color: $gray-25;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

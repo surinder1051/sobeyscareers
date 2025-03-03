@@ -1,0 +1,23 @@
+<svg id="play" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>        
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #E2131F;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="37.5" cy="37.5" r="37.5"/>
+  <path class="cls-2" d="M1448.22,1773.04l-9.48,6.65a1.691,1.691,0,0,1-1.81.09,1.837,1.837,0,0,1-.93-1.61v-13.3a1.837,1.837,0,0,1,.93-1.61,1.693,1.693,0,0,1,1.81.09l9.48,6.65A1.871,1.871,0,0,1,1448.22,1773.04Z" transform="translate(-1403 -1734)"/>
+</svg>

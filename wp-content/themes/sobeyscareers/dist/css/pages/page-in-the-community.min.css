@@ -1,0 +1,47 @@
+body.page-in-the-community .fl-module-list_module .component_list_module .heading,body.page-on-simplique .fl-module-list_module .component_list_module .heading{
+  display:none;
+}
+
+body.page-in-the-community .fl-module-list_module .component_list_module ul li,body.page-on-simplique .fl-module-list_module .component_list_module ul li{
+  color:#02243e;
+  font-family:Roboto,sans-serif;
+  padding:0 0 0 1.75rem;
+  line-height:1.5rem;
+  margin-bottom:.375rem;
+  min-height:auto;
+}
+
+body.page-in-the-community .fl-module-list_module .component_list_module ul li:before,body.page-on-simplique .fl-module-list_module .component_list_module ul li:before{
+  display:none;
+}
+
+body.page-in-the-community .fl-module-list_module .component_list_module ul li span,body.page-on-simplique .fl-module-list_module .component_list_module ul li span{
+  background:#ea0028;
+  width:1.125rem;
+  height:1.125rem;
+  -webkit-border-radius:6.25rem;
+     -moz-border-radius:6.25rem;
+          border-radius:6.25rem;
+  top:.125rem;
+  padding:0;
+}
+
+body.page-in-the-community .fl-module-list_module .component_list_module ul li span:before,body.page-on-simplique .fl-module-list_module .component_list_module ul li span:before{
+  content:"";
+  position:absolute;
+  bottom:.375rem;
+  left:.4375rem;
+  width:.3125rem;
+  height:.5rem;
+  -webkit-border-radius:.0625rem;
+     -moz-border-radius:.0625rem;
+          border-radius:.0625rem;
+  border:solid #fff;
+  border-width:0 .125rem .125rem 0;
+  -webkit-transform:rotate(45deg);
+     -moz-transform:rotate(45deg);
+       -o-transform:rotate(45deg);
+          transform:rotate(45deg);
+}
+
+/*# sourceMappingURL=page-in-the-community.min.css.map */

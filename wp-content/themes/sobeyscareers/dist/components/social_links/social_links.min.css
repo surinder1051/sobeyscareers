@@ -1,0 +1,27 @@
+.component_social_links{
+  color:#404040;
+}
+
+.component_social_links .social-link{
+  background-color:transparent;
+  color:#404040;
+  -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+          border-radius:50%;
+  display:inline-block;
+  font-size:1rem;
+  line-height:2.1875rem;
+  margin:0 .125rem;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  width:2.1875rem;
+  height:2.1875rem;
+  z-index:1;
+}
+
+.component_social_links .social-link:focus,.component_social_links .social-link:hover{
+  text-decoration:none;
+}
+
+/*# sourceMappingURL=social_links.min.css.map */

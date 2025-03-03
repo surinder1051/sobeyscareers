@@ -1,0 +1,499 @@
+@charset "UTF-8";
+
+body .is-tabbing:focus,body :focus:focus,body a:focus,body button:focus,body input:focus{
+  outline:.0625rem solid #e2131f !important;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .offers_rows,body.page-economic-choices .offers_rows{
+    padding-right:0;
+  }
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid{
+  padding-left:0;
+  padding-right:0;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list{
+  padding:.25rem 0;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list{
+    padding-right:8%;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list{
+    padding-right:12%;
+  }
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-body .card-title,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-body .card-title{
+  padding:1.25rem;
+  color:#4d4d4f;
+  margin-bottom:0;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-body .card-title,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-body .card-title{
+    padding:.9375rem;
+    font-size:1rem;
+  }
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-image-wrap,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-image-wrap{
+  height:auto;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-image-wrap .card-img-top,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-list .carousel-item .card .card-image-wrap .card-img-top{
+  -o-object-fit:contain;
+     object-fit:contain;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow{
+  background-color:#fff;
+  width:3.125rem;
+  height:3.125rem;
+  border:none;
+  -webkit-box-shadow:0 .125rem .375rem 0 rgba(0, 0, 0, .25);
+     -moz-box-shadow:0 .125rem .375rem 0 rgba(0, 0, 0, .25);
+          box-shadow:0 .125rem .375rem 0 rgba(0, 0, 0, .25);
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next,body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev{
+    display:none !important;
+  }
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next:before,body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev:before,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next:before,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev:before{
+  top:50%;
+  left:50%;
+  height:auto;
+  -webkit-transform:translate(-50%, -50%);
+     -moz-transform:translate(-50%, -50%);
+       -o-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+  -webkit-transition:none;
+  -o-transition:none;
+  -moz-transition:none;
+  transition:none;
+  font-family:brand;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev{
+  left:-1.25rem;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev:before,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-prev:before{
+  content:"";
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next{
+  right:-1.25rem;
+  font-size:0;
+}
+
+@media (min-width:1850px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next{
+    right:-1rem;
+  }
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next:before,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow.slick-next:before{
+  content:"";
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow:before,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-arrow:before{
+  color:#ea0028;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots{
+  display:none;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots{
+    display:block;
+    padding-right:8%;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots{
+    padding-right:12%;
+  }
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots li button,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots li button{
+  border:none;
+  height:.75rem;
+  width:.75rem;
+  margin-right:.375rem;
+}
+
+body.page-choix-economiques .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots li.slick-active button,body.page-economic-choices .offers_rows .component_multi_item_carousel .container-fluid .component-content-wrapper .slick-dots li.slick-active button{
+  background-color:#ea0028;
+  border:none;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row,body.page-economic-choices .economic_row{
+    padding-right:0;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group,body.page-economic-choices .economic_row .economic-choice-col-group{
+  margin-left:-.625rem;
+  margin-right:-.625rem;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group,body.page-economic-choices .economic_row .economic-choice-col-group{
+    margin-left:0;
+    margin-right:-1.25rem;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  width:100%;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice{
+    display:inline-block;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list{
+  padding:.25rem 0;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list{
+    padding-right:8%;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list{
+    padding-right:12%;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col{
+  display:inline-block;
+  width:33%;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content{
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+     -moz-box-align:center;
+          align-items:center;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+     -moz-box-pack:center;
+          justify-content:center;
+  padding-left:.625rem;
+  padding-right:.625rem;
+  width:100%;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content{
+    padding-left:0;
+    padding-right:1.25rem;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col{
+  padding:1.875rem;
+  border:.0625rem solid #ddd;
+}
+
+@media (max-width:1850px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col{
+    padding:1.8125rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col{
+    padding:1.25rem;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2{
+  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-weight:600;
+  font-size:1.5rem;
+  line-height:1.42;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2{
+    font-size:1.25rem;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2 a,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2 a{
+  color:#4d4d4f;
+  word-break:break-word;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2 a:hover,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col h2 a:hover{
+  color:#4d4d4f;
+  text-decoration:none;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-content,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-content{
+  margin-top:1.25rem;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-content p,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-content p{
+  font-size:1rem;
+  line-height:1.5rem;
+  font-family:Roboto,sans-serif;
+  font-weight:300;
+  margin-bottom:1.25rem;
+  color:#4d4d4f;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-content p:last-child,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-content p:last-child{
+  margin-bottom:0;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-link,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-link{
+  margin-top:1.25rem;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-link a,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-link a{
+  position:relative;
+  font-family:Roboto,sans-serif;
+  font-weight:400;
+  color:#ea0028;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-link a:after,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-txt-col .text-link a:after{
+  content:"";
+  color:#ea0028;
+  position:absolute;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+     -moz-transform:translateY(-50%);
+       -o-transform:translateY(-50%);
+          transform:translateY(-50%);
+  right:-24px;
+  right:-1.5rem;
+  font-family:brand;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-img-col,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-img-col{
+  border:.0625rem solid #ddd;
+  border-bottom:0;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-img-col .img-col-content img,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-img-col .img-col-content img{
+    width:100%;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-img-col .img-col-content img a,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-list .economic-choice-col .economic-choice-col-content .economic-choice-img-col .img-col-content img a{
+  display:inline-block;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-next,body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-prev,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-next,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-prev{
+  display:none !important;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots{
+  padding:0;
+  list-style:none;
+  text-align:center;
+  width:100%;
+  margin:1.5625rem 0 0;
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots{
+    padding-right:8%;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots{
+    padding-right:12%;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots li,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots li{
+  display:-webkit-inline-box;
+  display:-webkit-inline-flex;
+  display:-moz-inline-box;
+  display:inline-flex;
+  padding:0 .1875rem;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots li.slick-active button,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots li.slick-active button{
+  border:.125rem solid #ea0028;
+  background:#ea0028;
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots button,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots button{
+  width:1.875rem;
+  height:.25rem;
+  padding:0;
+  border:.125rem solid #ddd;
+  background:#fff;
+  -webkit-border-radius:3.125rem;
+     -moz-border-radius:3.125rem;
+          border-radius:3.125rem;
+  font-size:0;
+  margin:0;
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots button,body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots button{
+    width:1.5625rem;
+  }
+}
+
+body.page-choix-economiques .economic_row .economic-choice-col-group .economic-choice .slick-dots button:not(.is-tabbing),body.page-economic-choices .economic_row .economic-choice-col-group .economic-choice .slick-dots button:not(.is-tabbing){
+  outline:none;
+}
+
+body.page-choix-economiques .essentiels_row .fl-row-content,body.page-economic-choices .essentiels_row .fl-row-content{
+  background-color:#ffea3d;
+  padding:2.5rem 3.75rem;
+}
+
+@media (max-width:1299px){
+  body.page-choix-economiques .essentiels_row .fl-row-content,body.page-economic-choices .essentiels_row .fl-row-content{
+    padding:2.5rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content,body.page-economic-choices .essentiels_row .fl-row-content{
+    padding:3.75rem 2.5rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content,body.page-economic-choices .essentiels_row .fl-row-content{
+    padding:3.75rem 1.875rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col{
+    width:60%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .fl-module-photo .fl-module-content,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .fl-module-photo .fl-module-content{
+    margin-top:1.875rem;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content{
+    margin-left:1.25rem;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1299px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading{
+    font-size:2.5rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading{
+    font-size:1.875rem;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading{
+    font-size:1.5625rem;
+  }
+}
+
+@media (max-width:374px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading{
+    font-size:1.25rem;
+  }
+}
+
+@media (min-width:1601px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading span .title-break,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_text_col .essentiels_title .fl-module-content .fl-heading span .title-break{
+    display:block;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_button_col,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_button_col{
+    width:40%;
+  }
+}
+
+@media (max-width:1299px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_button_col .fl-button,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_button_col .fl-button{
+    padding:.75rem 1.875rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .essentiels_row .fl-row-content .essentiels_button_col .fl-button,body.page-economic-choices .essentiels_row .fl-row-content .essentiels_button_col .fl-button{
+    font-size:.875rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .discover_offers_row .offers_left_col,body.page-economic-choices .discover_offers_row .offers_left_col{
+    width:40%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .discover_offers_row .offers_text_col,body.page-economic-choices .discover_offers_row .offers_text_col{
+    width:45%;
+  }
+}
+
+@media (min-width:1601px){
+  body.page-choix-economiques .discover_offers_row .offers_text_col .fl-heading span .title-break,body.page-economic-choices .discover_offers_row .offers_text_col .fl-heading span .title-break{
+    display:block;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-choix-economiques .discover_offers_row .offers_text_col .fl-heading span .title-break-sm,body.page-economic-choices .discover_offers_row .offers_text_col .fl-heading span .title-break-sm{
+    display:block;
+  }
+}
+
+@media (max-width:413px){
+  body.page-choix-economiques .discover_offers_row .offers_text_col .fl-heading span .title-break-sm,body.page-economic-choices .discover_offers_row .offers_text_col .fl-heading span .title-break-sm{
+    display:inline;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px){
+  body.page-choix-economiques .discover_offers_row .offers_right_col,body.page-economic-choices .discover_offers_row .offers_right_col{
+    width:15%;
+  }
+}
+
+/*# sourceMappingURL=page-economic-choices.min.css.map */

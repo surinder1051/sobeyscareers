@@ -1,0 +1,113 @@
+@import "component";
+
+/*
+Url : /en/contest-groceriesandgetaways/
+      /fr/concours-epicerieetescapade/
+*/
+body {
+    &.page-contest-groceriesandgetaways,
+    &.page-concours-epicerieetescapade {
+        .grocery-contest-font {
+            font-family: $heading-font-1;
+        }
+        .red-color {
+            color: $red-106 !important;
+            font-weight: 500;
+        }
+        .accordion {
+            .group {
+                border-top: rem(1) solid $gray-102;
+                &:last-child {
+                    border-bottom: rem(1) solid $gray-102;
+                }
+                .accordion-header {
+                    padding: rem(30) 0 0;
+                    @include media-breakpoint-down(sm) {
+                        padding: rem(20) 0 0;
+                    }
+                    a {
+                        display: block;
+                        font-size: rem(30);
+                        position: relative;
+                        color: $black;
+                        line-height: 1.3;
+                        text-transform: uppercase;
+                        font-weight: 700 !important;
+                        span {
+                            font-weight: 700 !important;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: rem(24);
+                        }
+                        &:after {
+                            content: $icon-expand;
+                            font-size: rem(24);
+                            font-weight: 900;
+                            top: 50%;
+                            transform: translate(0%, -50%);
+                            color: $brand-dark;
+                            position: absolute;
+                            right: 0;
+                            font-family: $icomoon-font-family;
+                        }
+                    }
+                }
+                .accordion-body {
+                    padding-right: rem(30);
+                    padding-bottom: rem(30);
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: rem(20);
+                    }
+                }
+                .body-part {
+                    display: none;
+                    h3 {
+                        font-size: rem(30);
+                        line-height: 1.3;
+                        text-transform: uppercase;
+                        color: $black;
+                        font-weight: 700;
+                        @include media-breakpoint-down(sm) {
+                            font-size: rem(24);
+                        }
+                    }
+                    h5 {
+                        font-size: rem(24);
+                        line-height: 1.3;
+                        color: $black;
+                        font-weight: 700 !important;
+                        margin: rem(50) 0 rem(20) 0;
+                        @include media-breakpoint-down(sm) {
+                            font-size: rem(20);
+                        }
+                    }
+                    h4 {
+                        font-size: rem(24);
+                        line-height: 1.3;
+                        color: $black;
+                        font-weight: 600;
+                    }
+                    ul {
+                        margin-left: rem(15);
+                        padding-left: 0;
+                    }
+                    &:first-child {
+                        padding-top: rem(30);
+                    }
+                }
+            }
+            &.active {
+                .group {
+                    .accordion-header {
+                        a {
+                            &::after {
+                                content: $icon-collapse;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

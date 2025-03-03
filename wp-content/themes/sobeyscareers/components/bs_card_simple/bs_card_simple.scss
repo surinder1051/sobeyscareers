@@ -1,0 +1,229 @@
+@import "component";
+
+$white-grad: rgba(255, 255, 255, 0) !default;
+$black-grad: rgba(0, 0, 0, 0.3) !default;
+$main-font-colour: #404040 !default;
+$ultra-screen: 1600px !default;
+$extra-small-screen: 374px !default;
+
+.component_bs_card_simple {
+	.card-grid-row {
+		display: -ms-grid;
+		display: grid;
+		row-gap: rem(15);
+		grid-row-gap: rem(15);
+		grid-template-columns: 100%;
+
+		@include media-breakpoint-up(sm) {
+			column-gap: rem(15);
+			grid-column-gap: rem(15);
+		}
+
+		&.-one {
+			-ms-grid-columns: 1fr;
+			grid-template-columns: repeat(1, 100%);
+			-ms-grid-rows: rem(315);
+			grid-template-rows: repeat(1, rem(315));
+		}
+
+		&.-two {
+			-ms-grid-columns: 1fr 1fr;
+			grid-template-columns: repeat(2, calc(50% - 15px));
+			-ms-grid-rows: rem(365);
+			grid-template-rows: repeat(1, rem(365));
+
+			@media (max-width: $ultra-screen) {
+				-ms-grid-rows: rem(315);
+				grid-template-rows: repeat(1, rem(315));
+			}
+
+			@include media-breakpoint-only(lg) {
+				-ms-grid-rows: rem(250);
+				grid-template-rows: repeat(1, rem(250));
+			}
+
+			@include media-breakpoint-only(md) {
+				-ms-grid-rows: rem(230);
+				grid-template-rows: repeat(1, rem(230));
+			}
+
+			@include media-breakpoint-down(sm) {
+				grid-template-columns: repeat(1, 100%);
+				grid-template-rows: repeat(2, rem(245));
+			}
+
+			@media all and (-ms-high-contrast: none) {
+
+				*::-ms-backdrop,
+				.card {
+					margin-right: rem(15);
+				}
+			}
+		}
+
+		&.-three {
+			-ms-grid-columns: 1fr 1fr 1fr;
+			grid-template-columns: calc(33.3% - 10px) calc(33.4% - 10px) calc(33.3% - 10px);
+			-ms-grid-rows: rem(365);
+			grid-template-rows: repeat(1, rem(365));
+
+			@media (max-width: $ultra-screen) {
+				-ms-grid-rows: rem(315);
+				grid-template-rows: repeat(1, rem(315));
+			}
+
+			@include media-breakpoint-only(lg) {
+				-ms-grid-rows: rem(250);
+				grid-template-rows: repeat(1, rem(250));
+			}
+
+			@include media-breakpoint-only(md) {
+				-ms-grid-rows: rem(230);
+				grid-template-rows: repeat(1, rem(230));
+			}
+
+			@include media-breakpoint-down(sm) {
+				grid-template-columns: repeat(1, 100%);
+				grid-template-rows: repeat(3, rem(245));
+			}
+
+			@media all and (-ms-high-contrast: none) {
+
+				*::-ms-backdrop,
+				.card {
+					margin-right: rem(10);
+				}
+			}
+		}
+
+		.card {
+			background: $main-font-colour;
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: cover;
+			border: none;
+			border-radius: 0;
+
+			&.card-item-0 {
+				-ms-grid-column: 1;
+			}
+
+			&.card-item-1 {
+				-ms-grid-column: 2;
+			}
+
+			&.card-item-2 {
+				-ms-grid-column: 3;
+			}
+
+			.card-img-overlay {
+				padding: rem(16) rem(10);
+
+				@media (min-width: $extra-small-screen) {
+					padding: rem(16);
+				}
+
+				>div {
+					display: block;
+					position: relative;
+					width: 100%;
+
+					@media (min-width: $extra-small-screen) {
+						display: flex;
+						align-items: center;
+					}
+
+					@include media-breakpoint-up(md) {
+						display: block;
+					}
+
+					@include media-breakpoint-up(xl) {
+						display: flex;
+					}
+				}
+
+				span {
+					&.gradient-overlay {
+						background-color: $white-grad;
+						background: linear-gradient(to bottom, $white-grad 0%, $black-grad 100%);
+						content: '';
+						display: block;
+						height: 100%;
+						left: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
+					}
+				}
+
+				.card-content {
+					display: inline-block;
+					width: 100%;
+
+					.card-title {
+						margin-bottom: rem(10);
+
+						@media (min-width: $extra-small-screen) {
+							margin-bottom: 0;
+						}
+
+						@include media-breakpoint-up(md) {
+							margin-bottom: rem(10);
+						}
+
+						@include media-breakpoint-up(xl) {
+							margin-bottom: 0;
+						}
+					}
+				}
+
+				.card-button {
+					text-align: left;
+					width: auto;
+
+					a {
+						&.button {
+							font-size: rem(16);
+							padding: rem(12) rem(16);
+							white-space: nowrap;
+							margin: 0;
+							text-transform: capitalize;
+							transition: .4s all ease;
+
+							&:hover {
+								text-decoration: none;
+							}
+
+							@include media-breakpoint-up(md) {
+								padding: rem(12) rem(25);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.-compact {
+		.card-grid-row {
+			.card {
+				.card-img-overlay {
+					>div {
+						@include media-breakpoint-down(sm) {
+							display: flex;
+							align-items: center;
+						}
+					}
+
+					.card-content {
+						.card-title {
+							@include media-breakpoint-down(sm) {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

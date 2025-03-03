@@ -1,0 +1,157 @@
+@media (min-width:768px){
+  .component_faq .container{
+    -ms-grid-columns:40% 10px calc(60% - 10px);
+    -ms-grid-columns:40% .625rem calc(60% - .625rem);
+    display:-ms-grid;
+    display:grid;
+    grid-template-columns:40% -webkit-calc(60% - 10px);
+    grid-template-columns:40% -webkit-calc(60% - .625rem);
+    grid-template-columns:40% -moz-calc(60% - 10px);
+    grid-template-columns:40% -moz-calc(60% - .625rem);
+    grid-template-columns:40% calc(60% - 10px);
+    grid-template-columns:40% calc(60% - .625rem);
+    grid-template-areas:"left right";
+    grid-gap:10px;
+    grid-gap:.625rem;
+  }
+}
+
+@media (min-width:992px){
+  .component_faq .container{
+    -ms-grid-columns:25% 40px calc(75% - 40px);
+    -ms-grid-columns:25% 2.5rem calc(75% - 2.5rem);
+    grid-template-columns:25% -webkit-calc(75% - 40px);
+    grid-template-columns:25% -webkit-calc(75% - 2.5rem);
+    grid-template-columns:25% -moz-calc(75% - 40px);
+    grid-template-columns:25% -moz-calc(75% - 2.5rem);
+    grid-template-columns:25% calc(75% - 40px);
+    grid-template-columns:25% calc(75% - 2.5rem);
+    grid-gap:40px;
+    grid-gap:2.5rem;
+  }
+}
+
+.component_faq .button-icon-right{
+  float:right;
+}
+
+.component_faq .category-list{
+  display:block;
+  margin:0 0 .625rem;
+  padding:0;
+}
+
+@media (min-width:768px){
+  .component_faq .category-list{
+    -ms-grid-column:1;
+    -ms-grid-row:1;
+    grid-area:left;
+    margin-bottom:0;
+  }
+}
+
+.component_faq .category-list>span{
+  cursor:pointer;
+  display:block;
+  font-size:18px;
+  font-size:1.125rem;
+  font-weight:400;
+  line-height:normal;
+  padding:.75rem 0;
+}
+
+.component_faq .category-list>span span.active-icon{
+  display:none;
+  font-size:13px;
+  font-size:.8125rem;
+  position:relative;
+  right:-15px;
+  right:-.9375rem;
+  top:0;
+  width:14px;
+  width:.875rem;
+  height:14px;
+  height:.875rem;
+  -webkit-transform:rotate(90deg);
+     -moz-transform:rotate(90deg);
+       -o-transform:rotate(90deg);
+          transform:rotate(90deg);
+}
+
+@media (min-width:768px){
+  .component_faq .category-list>span span.active-icon{
+    -webkit-transform:none;
+       -moz-transform:none;
+         -o-transform:none;
+            transform:none;
+    top:5px;
+    top:.3125rem;
+  }
+}
+
+.component_faq .category-list>span.-active span.active-icon{
+  display:block;
+}
+
+@media (min-width:768px){
+  .component_faq .question-section{
+    -ms-grid-column:3;
+    -ms-grid-row:1;
+    grid-area:right;
+  }
+}
+
+.component_faq .question-section .accordion{
+  display:none;
+}
+
+.component_faq .question-section .accordion .card{
+  border-bottom:.0625rem solid #ccc;
+  margin-bottom:.9375rem;
+}
+
+.component_faq .question-section .accordion .card .card-header{
+  padding:0;
+  position:relative;
+}
+
+.component_faq .question-section .accordion .card .card-header button{
+  border:0;
+  background:inherit;
+  cursor:pointer;
+  display:block;
+  float:none;
+  margin-right:2.1875rem;
+  padding:.9375rem .625rem;
+  text-align:left;
+  width:100%;
+}
+
+.component_faq .question-section .accordion .card .card-header button .-opened{
+  display:none;
+}
+
+.component_faq .question-section .accordion .card .card-header button .-closed,.component_faq .question-section .accordion .card .card-header button.collapsed .-opened{
+  display:block;
+}
+
+.component_faq .question-section .accordion .card .card-header button.collapsed .-closed,.component_faq .question-section .accordion .card .card-header button:before{
+  display:none;
+}
+
+.component_faq .question-section .accordion .card .card-header span{
+  position:absolute;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+     -moz-transform:translateY(-50%);
+       -o-transform:translateY(-50%);
+          transform:translateY(-50%);
+  right:30px;
+  right:1.875rem;
+}
+
+.component_faq .question-section.-active .accordion{
+  display:block;
+}
+
+/*# sourceMappingURL=faq.min.css.map */

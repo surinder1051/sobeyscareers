@@ -1,0 +1,388 @@
+@import "component";
+
+/*
+URL: /fr/page-choix-economiques
+     /en/page-economic-choices
+*/
+body {
+	:focus,
+    a,
+    button,
+    input,
+    .is-tabbing {
+        &:focus {
+            outline: rem(1) solid $red!important;
+        }
+    }
+    &.page-economic-choices,
+    &.page-choix-economiques {
+		.offers_rows {
+			@include media-breakpoint-down(sm) {
+				padding-right: 0;
+			}
+			.component_multi_item_carousel {
+				.container-fluid {
+					padding-left: rem(0);
+					padding-right: rem(0);
+					.component-content-wrapper {
+						.slick-list {
+							padding: 4px 0;
+							@include media-breakpoint-down(sm) {
+								padding-right: 8%;
+							}
+							@media (max-width: $small-screen) {
+								padding-right: 12%;
+							}
+							.carousel-item {
+								.card {
+									.card-body {
+										.card-title {
+											padding: rem(20);
+											color: $gray-103;
+											margin-bottom: 0;
+											@include media-breakpoint-only(md) {
+												padding: rem(15);
+												font-size: rem(16);
+											}
+										}
+									}
+									.card-image-wrap {
+										height: auto;
+										.card-img-top {
+											object-fit: contain;
+										}
+									}
+								}
+							}
+						}
+						.slick-arrow {
+							background-color: $white;
+							width: rem(50);
+							height: rem(50);
+							border: none;
+							box-shadow: rem(0) rem(2) rem(6) rem(0) $gray-dark-transparent;
+							&.slick-prev, &.slick-next {
+								@include media-breakpoint-down(sm) {
+									display: none !important;
+								}
+								&::before {
+									top: 50%;
+									left: 50%;
+									height: auto;
+									transform: translate(-50%, -50%);
+									transition: none;
+									font-family: $icomoon-font-family;
+								}
+							}
+							&.slick-prev {
+								left: rem(-20);
+								&::before {
+									content: $icon-prev-button;
+								}
+							}
+							&.slick-next {
+								right: rem(-20);
+								font-size: rem(0);
+								@media (min-width: $ultra-screen-lg) {
+									right: rem(-16);
+								}
+								&::before {
+									content: $icon-next-button;
+								}
+							}
+							&::before {
+								color: $brand-dark;
+							}
+						}
+						.slick-dots {
+							display: none;
+							@include media-breakpoint-down(sm) {
+								display: block;
+								padding-right: 8%;
+							}
+							@media (max-width: $small-screen) {
+								padding-right: 12%;
+							}
+							li {
+								button {
+									border: none;
+									height: rem(12);
+									width: rem(12);
+									margin-right: rem(6);
+								}
+								&.slick-active {
+									button {
+										background-color: $brand-dark;
+										border: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.economic_row {
+			@include media-breakpoint-down(sm) {
+				padding-right: rem(0);
+			}
+			.economic-choice-col-group {
+				margin-left: rem(-10);
+				margin-right: rem(-10);
+				@include media-breakpoint-down(sm) {
+					margin-left: rem(0);
+					margin-right: rem(-20);
+				}
+				.economic-choice {
+					display: flex;
+					width: 100%;
+					@include media-breakpoint-down(sm) {
+						display: inline-block;
+					}
+					.slick-list {
+						padding: 4px 0;
+						@include media-breakpoint-down(sm) {
+							padding-right: 8%;
+						}
+						@media (max-width: $small-screen) {
+							padding-right: 12%;
+						}
+						.economic-choice-col {
+							display: inline-block;
+							width: 33%;
+							.economic-choice-col-content {
+								align-items: center;
+								justify-content: center;
+								padding-left: rem(10);
+								padding-right: rem(10);
+								width: 100%;
+								@include media-breakpoint-down(sm) {
+									padding-left: rem(0);
+									padding-right: rem(20);
+								}
+								.economic-choice-txt-col {
+									padding: rem(30);
+									border: rem(1) solid $gray-102;
+									@media (max-width: $ultra-screen-lg) {
+										padding: rem(29);
+									}
+									@include media-breakpoint-only(md) {
+										padding: rem(20);
+									}
+									h2 {
+										font-family: $heading-font;
+										font-weight: 600;
+										font-size: rem(24);
+										line-height: 1.42;
+										@include media-breakpoint-only(md) {
+											font-size: rem(20);
+										}
+										a {
+											color: $gray-103;
+											word-break: break-word;
+											&:hover {
+												color: $gray-103;
+												text-decoration: none;
+											}
+										}
+									}
+									.text-content {
+										margin-top: rem(20);
+										p {
+											font-size: rem(16);
+											line-height: rem(24);
+											font-family: $main-font;
+											font-weight: 300;
+											margin-bottom: rem(20);
+											color: $gray-103;
+											&:last-child {
+												margin-bottom: 0;
+											}
+										}
+									}
+									.text-link {
+										margin-top: rem(20);
+										a{
+											position: relative;
+											font-family: $main-font;
+											font-weight: 400;
+											color: $brand-dark;
+											&::after {
+												content: $icon-arrow-right;
+												color: $brand-dark;
+												position: absolute;
+												top: 50%;
+												transform: translateY(-50%);
+												right: -24px;
+												font-family: $icomoon-font-family;
+											}
+										}
+									}
+								}
+								.economic-choice-img-col {
+									border: rem(1) solid $gray-102;
+									border-bottom: 0;
+									.img-col-content {
+										img {
+											@include media-breakpoint-down(sm) {
+												width: 100%;
+											}
+										}
+										img a{
+											display: inline-block;
+										}
+									}
+								}
+							}
+						}
+					}
+					.slick-prev, .slick-next{
+						display: none !important;
+					}
+					.slick-dots {
+						margin: 0;
+						padding: 0;
+						list-style: none;
+						text-align: center;
+						width: 100%;
+						margin-top: rem(25);
+						@include media-breakpoint-down(sm) {
+							padding-right: 8%;
+						}
+						@media (max-width: $small-screen) {
+							padding-right: 12%;
+						}
+					li {
+						display: inline-flex;
+						padding: 0 rem(3);
+						&.slick-active {
+							button {
+								border: rem(2) solid $brand-dark;
+								background: $brand-dark;
+								}
+							}
+						}
+					button {
+							width: rem(30);
+							height: rem(4);
+							padding: 0;
+							border: rem(2) solid $gray-102;
+							background: $white;
+							border-radius: rem(50);
+							font-size: 0;
+							margin: 0;
+							@media (max-width: $small-screen) {
+								width: rem(25);
+							}
+							&:not(.is-tabbing) {
+								outline: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.essentiels_row {
+			.fl-row-content {
+				background-color: $yellow-02;
+				padding: rem(40) rem(60);
+				@media (max-width: $extended-screen-lg) {
+					padding: rem(40);
+				}
+				@include media-breakpoint-only(md) {
+					padding: rem(60) rem(40);
+				}
+				@include media-breakpoint-down(sm) {
+					padding: rem(60) rem(30);
+				}
+				.essentiels_text_col {
+					@include media-breakpoint-only(lg) {
+						width: 60%;
+					}
+					.fl-module-photo {
+						.fl-module-content {
+							@include media-breakpoint-only(lg) {
+								margin-top: rem(30);
+							}
+						}
+					}
+					.essentiels_title {
+						.fl-module-content {
+							@media (max-width: $small-screen) {
+								margin-left: rem(20);
+							}
+							.fl-heading {
+								@media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+									font-size: rem(40);
+								}
+								@include media-breakpoint-only(lg) {
+									font-size: rem(30);
+								}
+								@media (max-width: $small-screen) {
+									font-size: rem(25);
+								}
+								@media (max-width: $extra-small-screen) {
+									font-size: rem(20);
+								}
+								span {
+									.title-break {
+										@media (min-width:$ultra-screen-sm) {
+											display: block;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.essentiels_button_col {
+					@include media-breakpoint-only(lg) {
+						width: 40%;
+					}
+					.fl-button {
+						@media (max-width: $extended-screen-lg) {
+							padding: rem(12) rem(30);
+						}
+						@include media-breakpoint-only(lg) {
+							font-size: rem(14);
+						}
+					}
+				}
+			}
+		}
+		.discover_offers_row {
+			.offers_left_col {
+				@include media-breakpoint-only(lg) {
+					width: 40%;
+				}
+			}
+			.offers_text_col {
+				@include media-breakpoint-only(lg) {
+					width: 45%;
+				}
+				.fl-heading {
+					span {
+						.title-break {
+							@media (min-width:$ultra-screen-sm) {
+								display: block;
+							}
+						}
+						.title-break-sm {
+							@include media-breakpoint-down(sm) {
+								display: block;
+							}
+							@media (max-width: $small-screen) {
+								display: inline;
+							}
+						}
+					}
+				}
+			}
+			.offers_right_col {
+				@include media-breakpoint-only(lg) {
+					width: 15%;
+				}
+			}
+		}
+    }
+}

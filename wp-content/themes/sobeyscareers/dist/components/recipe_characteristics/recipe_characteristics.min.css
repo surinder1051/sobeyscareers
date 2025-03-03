@@ -1,0 +1,48 @@
+.fl-module-recipe_characteristics .component_recipe_characteristics .title{
+  font-size:1.125rem;
+  line-height:normal;
+  margin-bottom:1.25rem;
+  color:#404040;
+  font-family:Roboto,sans-serif;
+}
+
+.fl-module-recipe_characteristics .component_recipe_characteristics a{
+  border:.0625rem solid #cccaca;
+  -webkit-border-radius:1.875rem;
+     -moz-border-radius:1.875rem;
+          border-radius:1.875rem;
+  color:#404040;
+  display:inline-block;
+  font-style:normal;
+  margin-bottom:.625rem;
+  margin-right:.3125rem;
+  padding:.3125rem .9375rem;
+  text-decoration:none;
+  -webkit-transition:all .5s ease;
+  -o-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  transition:all .5s ease;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .fl-module-recipe_characteristics .component_recipe_characteristics a{
+    font-size:.75rem;
+    padding:.3125rem .625rem;
+  }
+}
+
+.fl-module-recipe_characteristics .component_recipe_characteristics a:hover{
+  background:#f4f4f4;
+  -webkit-transition:all .5s ease;
+  -o-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  transition:all .5s ease;
+}
+
+@media print{
+  .fl-module-recipe_characteristics{
+    display:none;
+  }
+}
+
+/*# sourceMappingURL=recipe_characteristics.min.css.map */

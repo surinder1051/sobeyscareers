@@ -1,0 +1,135 @@
+{
+	"constant": {
+		"FP_POST_TYPES": {
+			"store": {
+				"plural": "stores",
+				"public": true,
+				"has_archive": "store-locator",
+				"show_in_nav_menus": false,
+				"supports": ["title", "thumbnail"],
+				"advanced_permissions": false,
+				"rewrite": {
+					"slug": "stores"
+				}
+			},
+			"recipe": {
+				"plural": "recipes",
+				"public": true,
+				"has_archive": true,
+				"rewrite": {
+					"slug": "recipes"
+				},
+				"supports": ["title", "thumbnail", "editor", "excerpt"],
+				"advanced_permissions": false
+			},
+			"article": {
+				"plural": "articles",
+				"public": true,
+				"has_archive": true,
+				"show_in_rest": true,
+				"supports": ["title", "thumbnail", "editor", "excerpt"],
+				"advanced_permissions": false
+			},
+			"story": {
+				"plural": "stories",
+				"public": true,
+				"has_archive": true,
+				"show_in_rest": true,
+				"supports": ["title", "thumbnail", "editor", "excerpt"],
+				"advanced_permissions": false,
+				"exclude_from_search": false
+			},
+			"product": {
+				"plural": "products",
+				"public": true,
+				"has_archive": true,
+				"show_in_rest": true,
+				"supports": ["title", "thumbnail", "editor", "excerpt"],
+				"advanced_permissions": false
+			},
+			"video": {
+				"plural": "videos",
+				"public": true,
+				"has_archive": true,
+				"show_in_rest": true,
+				"supports": ["title", "thumbnail", "editor", "excerpt"],
+				"advanced_permissions": false
+			},
+			"food-alert": {
+				"plural": "food-alerts",
+				"public": true,
+				"has_archive": true,
+				"supports": ["title", "editor"],
+				"advanced_permissions": false,
+				"hierarchical": false,
+				"rewrite": {
+					"slug": "food-alerts"
+				}
+			}
+		},
+		"FP_TAXONOMIES": {
+			"store-feature": {
+				"plural": "store-features",
+				"post_types": ["store"],
+				"show_in_nav_menus": false,
+				"hierarchical": true,
+				"supports": {
+					"hierarchical": true
+				}
+			},
+			"department": {
+				"plural": "departments",
+				"post_types": ["store"],
+				"show_in_nav_menus": false,
+				"hierarchical": true,
+				"supports": {
+					"hierarchical": true
+				}
+			},
+			"service": {
+				"plural": "services",
+				"post_types": ["store"],
+				"show_in_nav_menus": false,
+				"hierarchical": true,
+				"supports": {
+					"hierarchical": true
+				}
+			},
+			"region": {
+				"plural": "regions",
+				"post_types": ["store"],
+				"hierarchical": true,
+				"show_in_nav_menus": false,
+				"supports": {
+					"hierarchical": true
+				}
+			},
+			"recipe-tag": {
+				"plural": "recipe-tags",
+				"post_types": ["recipe"],
+				"show_in_nav_menus": false,
+				"supports": {
+					"hierarchical": true
+				}
+			},
+			"article-category": {
+				"plural": "article-categories",
+				"post_types": ["article"],
+				"show_in_rest": true,
+				"hierarchical": true
+			},
+			"story-category": {
+				"plural": "story-categories",
+				"post_types": ["story"],
+				"show_in_rest": true,
+				"hierarchical": true
+			}
+		},
+		"FP_MODULE_TEST_SUITES": {
+
+		},
+		"FP_MODULE_TESTS": {
+
+		}
+	}
+}

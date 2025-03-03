@@ -1,0 +1,29 @@
+@media (min-width:768px) and (max-width:991.98px){
+  .component_loop .card-deck.columns_4 .recipe-card .card-img-top{
+    height:20.83333vw;
+  }
+}
+
+.component_loop .card-deck.columns_3 .card .card-img-top{
+  height:21.645vw;
+  max-height:26.25rem;
+}
+
+@media (max-width:767.98px){
+  .component_loop .card-deck.columns_3 .card .card-img-top{
+    height:64.93506vw;
+  }
+}
+
+.component_loop .card-deck.columns_2 .card .card-img-top{
+  height:25.64103vw;
+  max-height:31.25rem;
+}
+
+@media (max-width:767.98px){
+  .component_loop .card-deck.columns_2 .card .card-img-top{
+    height:51.28205vw;
+  }
+}
+
+/*# sourceMappingURL=loop.min.css.map */

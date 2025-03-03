@@ -1,0 +1,86 @@
+@import "component";
+
+// Reason: Added css to set font size of cross icon in mobile view
+.fl-module-header_logo_search {
+	.component_header_logo_search {
+			&.-expand-above {
+				.search-col {
+					@media (min-width:$ultra-screen-sm)
+					{
+						max-width: rem(520);
+					}
+					.search-input {
+						border-radius: 0;
+						padding: 0 rem(70) 0 rem(25);
+						color: $gray-25;
+						border: rem(1) solid $grey-medium-dark;
+						@include media-breakpoint-down(sm) {
+							padding: 0 rem(110) 0 rem(25);
+							border: none;
+						}
+						font-size: rem(14);
+					}
+				}
+				button {
+					&.mob_menu_toggle {
+						right: unset;
+						span {
+							background: $brand-dark;
+							&::before,
+							&::after {
+								background: $brand-dark;
+							}
+						}
+					}
+					&.mob_search_toggle {
+						right: 0;
+						span{
+							&.icon-search{
+								&:hover{
+									color: $blue-101;
+								}
+							}
+						}
+					}
+				}				
+			}
+		.search-col {
+			.header-search {
+				.search-btn {
+					top: calc(50% - 1px);
+					span {
+						font-size: rem(20);
+						&::before{
+							@include media-breakpoint-down(sm){
+								font-size: rem(18);
+							}
+						}
+					}
+					&.close{
+						opacity: 1;
+						.icon-close {
+							&:before {
+								color: $brand-dark;
+								@include media-breakpoint-down(sm) {
+									font-size: rem(14);
+								}
+							}
+
+						}
+						&:hover{
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.component_header_logo_search {
+	button {
+		&.mob_menu_toggle {
+			top: rem(20);
+			transform: translateY(50%);
+		}
+	}
+}

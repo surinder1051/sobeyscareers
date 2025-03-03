@@ -1,0 +1,132 @@
+@import 'component';
+
+$small-screen: 413px !default;
+$ultra-screen-lg: 1850 !default;
+$gray-25: #404040 !default;
+
+.component_recipe_details {
+
+    border-bottom: solid rem(1) $gray-400;
+    height: rem(120);
+    padding: 0 0 rem(30);
+
+    &:not(.is-tabbing) {
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        display: block !important;
+        height: inherit;
+        overflow: auto;
+    }
+
+    .tile {
+        border-right: solid rem(1) $gray-400;
+        color: $gray-25;
+        flex: 1;
+        padding: 0 rem(5);
+        text-align: center;
+
+        @include media-breakpoint-only(md) {
+            font-size: rem(14);
+        }
+
+        @include media-breakpoint-down(sm) {
+            border-bottom: solid rem(1) $gray-400;
+            float: left;
+            padding: rem(15) rem(5);
+            width: 50%;            
+        }
+
+        @media (max-width: $small-screen) {
+            font-size: rem(14);
+        }
+        &:last-child {
+            border-right: none;
+        }
+
+        &:nth-of-type(2) {
+            @include media-breakpoint-down(sm) {
+                border-right: none;
+            }
+        }       
+
+        &:nth-of-type(4) {
+            @include media-breakpoint-down(sm) {
+                border-right: none;
+            }
+        }
+        &:nth-of-type(5) {
+            @include media-breakpoint-down(sm) {
+                border-bottom: none;
+                border-right: solid rem(1) $gray-400;
+            }
+        }
+
+        .icon {
+            display: block;
+            font-size: rem(31);
+            height: rem(36);
+            margin-bottom: rem(10);
+            padding-top: rem(10);
+			&:before{
+				font-size: rem(26);	
+			}
+			&.icon-serve{
+				&:before {
+					font-size: rem(30);
+				}				
+			}
+        }
+
+        dl {
+            margin-bottom: 0;
+        }
+
+        dt {
+            line-height: normal;
+        }
+
+        dd {
+            margin: 0;
+			line-height: rem(18);
+        }
+    }
+}
+
+.single_recipe_detail_section {
+    .fl-row-content-wrap {
+        .fl-row-content {
+            >.fl-col-group {
+                margin-left: rem(-50);
+                margin-right: rem(-50);
+
+                @media (max-width: $ultra-screen-lg) {
+                    margin-left: rem(-15);
+                    margin-right: rem(-15);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+
+            .fl-col-group {
+                .fl-col {
+                    padding: 0 rem(50);
+
+                    @media (max-width: $ultra-screen-lg) {
+                        padding: 0 rem(15);
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

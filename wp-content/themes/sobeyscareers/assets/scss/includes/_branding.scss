@@ -1,0 +1,355 @@
+$base_path: "/wp-content/themes/marches-tradition/";
+$asset_path: $base_path + "assets/";
+$baseFontSize: 16;
+$header-height: 90;
+$brand-dark: $secondary-colour;
+
+$dark-blue-02: rgba(1, 22, 37, 0.7);
+$green: #006241;
+$green-1: #47A347;
+$white-gray: #ebebeb;
+$color-5: #2a4052;
+$gray-25: #404040;
+$gray-48: #757575;
+$gray-51: #808080;
+$gray-96: #f7f5f5;
+$gray-100: #ccc;
+$gray-101: #f0f0f0;
+$gray-102: #dddddd;
+$gray-103: #4d4d4f;
+$gray-104: #adadad;
+$orange: #d84a28;
+$blur_blue: #4d759f;
+$blue-102: #02243e;
+$light_blue: #4e6678;
+$blue-103: #254071;
+$blue-104: #9ed2f1;
+$yellow: #fffac2;
+$dark-yellow:#ffc20e;
+$yellow-01: #d0ca8b;
+$yellow-02: #ffea3d;
+$transparent-red:rgba(234, 0, 40, 0.8);
+$transparent:transparent;
+$black:#000000;
+$purple-light: #9C42FF;
+
+// Need defaults for all of these
+$medium_black: $gray-100;
+$soft_black: $color-5;
+$medium-light-grey: $gray-48;
+$error-color: #e2131f;
+$slate-grey: $gray-96;
+$dark_green: green;
+$dusty-gray: $gray-96;
+$dark-blue: blue;
+$white_grey: $white-gray;
+$medium-grey: $white-gray;
+$naval-grey: $white-gray;
+$branding_bg_light: $white-gray;
+$supernova: $white-gray;
+$dark-grey: $gray-25;
+$light-black: $gray-25;
+$green-transparent: rgba(0, 98, 65, 0.85) !default;
+$bordergreen: #007c51;
+
+$gray-soft: #cccaca;
+$gray-light: #f4f4f4;
+$gray-light-transparent: rgba(255, 255, 255, 0.9);
+$gray-medium: #e2e2e2;
+$grey-medium-dark:#737373;
+$light-red1: #fa7c81;
+$light-red: #de3a43;
+$light-blue: #cfecfa;
+$medium-blue: #053148;
+
+$purple-dark: #67305f;
+$error-red: #721c24;
+$error-light-red: #f8d7da;
+$red: #e2131f;
+$red-101:#ed1c2e;
+$red-102:#b21226;
+$red-103:#b21226bf;
+$red-104:#ed001d;
+$red-105: #FA002A;
+$red-106:#F8384B;
+$red-107:#E2001F;
+$medium-red: #e41720;
+$red-transparent: rgba($red, 0.7);
+$red-dark:#e00025;
+$maroon: #8e1537;
+$magenta: #8e1238;
+$magenta-transparent: rgba($magenta, 0.7);
+$white: #fff;
+$light-green: #4da34b;
+$purple-1: #712762;
+$yellow-1: #f5a81c;
+$blue-1: #1e99a8;
+$white-1: #dadada;
+$orange-1: #d84a28;
+$grey-1: #e1e1e1;
+$light-grey: #ddd;
+$alizarin: #e03a3e;
+$cherry: #d04a3a;
+$black-transparent: rgba(0, 0, 0, 0.5);
+$black-light-transparent: rgba(0, 0, 0, 0.1);
+$black-101: #333333;
+$gray-transparent: rgba(0, 0, 0, 0.314);
+$gray-dark-transparent: rgba(0, 0, 0, 0.25);
+$brand-primary: #48a548;
+$brand-dark: #ea0028;
+$brand-dark-transparent: rgba($brand-dark, 0.6);
+$blue-101: $brand-dark;
+
+$brand-buttons: $brand-primary;
+
+$ul-purple: #712762;
+$ul-yellow: #f5a81c;
+$ul-blue: #1e99a8;
+$purple-theme: #6b5a8f;
+$sinbad_green: #a1d0c0;
+$surfie_green: #127e7d;
+$blue: #9ed2f1;
+$primary: $brand-primary;
+$secondary: $brand-dark;
+
+//fonts
+$heading-font: 'Palanquin Dark SemiBold', sans-serif;
+$heading-font-medium: 'Palanquin Dark Medium', sans-serif;
+$main-font: 'Roboto', sans-serif;
+$main-font-2: $main-font;
+$main-font-3: $main-font;
+$heading-font-1: "Noe Display";
+$bemio-font: 'Bemio';
+$font-futura-bold: "Futura PT Bold";
+$font-futura-book: "Futura PT Book";
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 100%,
+    xl: 100%,
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12;
+$grid-gutter-width: 10px;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+//Define new screens sizes
+
+$extended-screen-sm: 1200px;
+$extended-screen-lg: 1299px;
+$ultra-screen-sm: 1601px;
+$ultra-screen-lg: 1850px;
+$ultra-screen: 1600px;
+$small-screen: 413px;
+$extra-small-screen: 374px;
+
+%button {
+    background-color: $blue-101;
+    border: rem(2) solid $blue-101;
+    border-radius: 50px;
+    color: $white;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+    z-index: 1;
+    font-family: $main-font;
+    font-weight: 500;
+
+    &:not(.is-tabbing) {
+        outline: none;
+    }
+
+    @include media-breakpoint-only(lg) {
+        font-size: rem(15);
+        padding: rem(12) rem(25);
+    }
+
+    @include media-breakpoint-only(md) {
+        font-size: rem(15);
+        padding: rem(12) rem(25);
+    }
+
+    &::before {
+        background: $white;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(-100%) skew(-45deg);
+        transform-origin: 0 0;
+        transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+        width: 150%;
+        z-index: -1;
+    }
+
+    &:hover,
+    &.hover {
+        color: $blue-101;
+
+        &::before {
+            transform: translateX(0) skew(-45deg);
+        }
+    }
+}
+
+%button_white {
+    background-color: $white;
+    border: rem(2) solid $white;
+    border-radius: 50px;
+    color: $brand-dark;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+    z-index: 1;
+
+    &:not(.is-tabbing) {
+        outline: none;
+    }
+
+    @include media-breakpoint-only(lg) {
+        font-size: rem(15);
+        padding: rem(12) rem(25);
+    }
+
+    @include media-breakpoint-only(md) {
+        font-size: rem(15);
+        padding: rem(12) rem(25);
+    }
+
+    &::before {
+        background: $brand-dark;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(-100%) skew(-45deg);
+        transform-origin: 0 0;
+        transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+        width: 150%;
+        z-index: -1;
+    }
+
+    &:hover,
+    &.hover {
+        color: $white;
+
+        &::before {
+            transform: translateX(0) skew(-45deg);
+        }
+    }
+}
+
+%button_animated_outline {
+    font-size: rem(12);
+    background-color: $white;
+    border: rem(2) solid $blue-101;
+    border-radius: rem(50);
+    color: $blue-101;
+    font-size: rem(16);
+    font-family: $main-font;
+    line-height: normal;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: rem(13) rem(25);
+    position: relative;
+    transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+    z-index: 1;
+
+    &:not(.is-tabbing) {
+        outline: none;
+    }
+
+    @include media-breakpoint-only(lg) {
+        font-size: rem(15);
+        padding: rem(12) rem(25);
+    }
+
+    @include media-breakpoint-only(md) {
+        font-size: rem(15);
+        padding: rem(12) rem(25);
+    }
+
+    &::before {
+        background: $white;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(-100%) skew(-45deg);
+        transform-origin: 0 0;
+        transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+        width: 150%;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: $blue-101;
+
+        &::before {
+            transform: translateX(0) skew(-45deg);
+        }
+    }
+}
+
+%input_field {
+    background: transparent;
+    border: 0;
+    border-bottom: rem(2) solid $light-grey;
+    height: rem(45);
+    position: relative;
+    width: 100%;
+    z-index: 888;
+
+    &.error_field {
+        border-color: $red;
+    }
+
+    &:not(.is-tabbing) {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+%button_load_map {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 98;
+    background-color: $brand-dark;
+    border: none;
+    color: $white;
+    display: inline-block;
+    font-size: rem(15);
+    text-align: center;
+    padding: rem(8) (25);
+    border-radius: rem(30);
+    display: inline-block;
+    box-shadow: 0 rem(5) (10) rgba(0, 0, 0, 0.2);
+    transition: all 200ms;
+    margin: 0;
+}

@@ -1,0 +1,9 @@
+# Browsers that we support.
+# This helps Autoprefixer, and other modules.
+# NOTE: This may need to be adjusted per project.
+# https://github.com/ai/browserslist
+
+> 1%
+Last 2 versions
+ie > 8
+cover 99.5%, not dead

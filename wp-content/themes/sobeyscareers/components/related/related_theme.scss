@@ -1,0 +1,189 @@
+@import "component";
+
+.fl-module-related {
+    &.related_sidebar {
+        // Reason: Added css to manage module heading style
+        .component_related {
+            h2 {
+                font-size: rem(30);
+                color: $blue-102;
+                font-family: $heading-font;
+                padding: rem(10) 0;
+                margin-bottom: rem(40);
+                font-weight: 700;
+                line-height: 0;
+
+                @media (max-width: $ultra-screen) {
+                    font-size: rem(30);
+                }
+                @include media-breakpoint-only(md) {
+                    font-size: rem(22);
+                    line-height: rem(22);
+                    margin-bottom: rem(25);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    font-size: rem(30);
+                    margin-bottom: rem(30);
+                    padding: rem(10) 0;
+                }
+            }
+            // Reason: Added css to manage card body heading and anchor styling
+            .card-deck {
+                .recipe-card {
+                    &.card {
+                        border-radius: 0;
+                        padding-bottom: rem(30);
+                        &:last-child {
+                            margin-bottom: rem(0);
+                            @include media-breakpoint-down(sm) {
+                                margin-bottom: rem(20);
+                            }
+                        }
+                        @include media-breakpoint-down(sm) {
+                            min-width: 100%;
+                        }
+                    }
+                    .card-body {
+                        a {
+                            text-decoration: none;
+                            font-size: rem(20);
+                            font-family: $heading-font;
+                            color: $blue-103;
+                            margin: 0;
+                            padding: 0;
+                            line-height: 0;
+                            font-weight: 700;
+                            @include media-breakpoint-only(md) {
+                                font-size: rem(14);
+                            }
+                            @media (max-width: $small-screen) {
+                                font-size: rem(16);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /**  added css for homepage slider section styling **/
+    &.grid_slider {
+        .card-deck {
+            .fl-module-bs_card {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -moz-box-flex: 1;
+                flex: 1;
+                min-width: 25%;
+                max-width: 25%;
+                width: 25%;
+                @include media-breakpoint-only(md) {
+                    min-width: 49%;
+                    max-width: 49%;
+                }
+                @include media-breakpoint-down(sm) {
+                    min-width: 100%;
+                    max-width: 100%;
+                }
+                @include media-breakpoint-only(md) {
+                    &:nth-child(odd) {
+                        margin-left: 0;
+                        margin-right: rem(5);
+                    }
+                    &:nth-child(even) {
+                        margin-left: rem(5);
+                        margin-right: 0;
+                    }
+                }
+                @include media-breakpoint-down(sm) {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+        .fl-module-bs_card {
+            .component_bs_card {
+                &.card {
+                    .card-img-top {
+                        border-bottom: rem(1) solid $gray-102;
+                    }
+                }
+                // Reason: css added to style articles archive block
+                &.-image-top {
+                    margin-bottom: rem(20);
+                    margin-left: rem(5);
+                    margin-right: rem(5);
+                    border: rem(1) solid $gray-102;
+                    .overlay {
+                        .button {
+                            @extend %button_white;
+                        }
+                    }
+                    .card-title {
+                        margin: 0;
+                        padding: 0;
+                        font-size: rem(24);
+                        line-height: rem(26);
+                        margin-bottom: rem(10);
+                    }
+                    .card-body {
+                        .card-title {
+                            margin-bottom: rem(20);
+                            margin-top: rem(24);
+                            font-size: rem(18);
+                            color: #4d4d4f;
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                        .row {
+                            align-items: center;
+                        }
+                        .col-md-6 {
+                            width: 40%;
+                            max-width: 40%;
+                            flex: 0 0 40%;
+                            @include media-breakpoint-down(lg)  {
+                                width: 50%;
+                                max-width: 50%;
+                                flex: 0 0 50%;
+                            }
+                            &.date {
+                                width: 60%;
+                                max-width: 60%;
+                                flex: 0 0 60%;
+                                @include media-breakpoint-down(lg)  {
+                                    width: 50%;
+                                    max-width: 50%;
+                                    flex: 0 0 50%;
+                                }
+                            }
+                        }
+                        .date {
+                            font-size: rem(14);
+                        }
+                        .category {
+                            font-size: rem(14);
+                            border: rem(1) solid $gray-102;
+                            padding: rem(5) rem(12);
+                            border-radius: rem(50);
+                            display: inline-block;
+                            text-align: center;
+                            line-height: normal;
+                            float: right;
+                            @media (max-width: $extended-screen-lg) {
+                                float: left;
+                            }
+                            @include media-breakpoint-down(sm) {
+                                float: right;
+                            }     
+                        }
+                        .card-text {
+                            margin-top: rem(25);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

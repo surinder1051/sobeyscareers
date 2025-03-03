@@ -1,0 +1,29 @@
+.component_bs_accordion.-toggle-icon .card.collapsed .card-header .accordion-header:after{
+  -webkit-transform:rotate(90deg);
+     -moz-transform:rotate(90deg);
+       -o-transform:rotate(90deg);
+          transform:rotate(90deg);
+}
+
+.component_bs_accordion.-toggle-icon .card .card-header .accordion-header{
+  position:relative;
+}
+
+.component_bs_accordion.-toggle-icon .card .card-header .accordion-header:after{
+  content:"\276F";
+  position:absolute;
+  right:0;
+  -webkit-transform:rotate(270deg);
+     -moz-transform:rotate(270deg);
+       -o-transform:rotate(270deg);
+          transform:rotate(270deg);
+}
+
+.component_bs_accordion .card .card-body .card-content-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:10px;
+  grid-gap:.625rem;
+}
+
+/*# sourceMappingURL=bs_accordion.min.css.map */

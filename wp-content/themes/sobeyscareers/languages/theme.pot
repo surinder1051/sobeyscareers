@@ -1,0 +1,2529 @@
+# Copyright (C) 2020 WordPress Translations
+# This file is distributed under the same license as the WordPress Translations package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Translations\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../plugins/sobeys-lightbox-popup/video-lightbox-view.php:8
+msgid "close lightbox"
+msgstr ""
+
+#: ../../plugins/sobeys-lightbox-popup/video-lightbox-view.php:11
+msgid "Video lightbox frame"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/api.php:114
+msgid "ID Missing"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/settings.php:19
+msgid "Config"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/settings.php:28
+msgid "Ratings Remote POST URL"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:87
+msgid "calories"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:91
+msgid "fatContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:95
+msgid "saturatedFatContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:99
+msgid "carbohydrateContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:103
+msgid "sugarContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:107
+msgid "proteinContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:111
+msgid "cholesterolContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:115
+msgid "fiberContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:119
+msgid "sodiumContent"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:142
+msgid "HowToStep"
+msgstr ""
+
+#: ../../plugins/sobeys-recipe-schema/sobeys-recipe-schema.php:166
+msgid "Recipe"
+msgstr ""
+
+#: ../../plugins/sobeys-store-importer/default-stores-config.php:6, ../../plugins/sobeys-store-importer/default-stores-config.php:25
+msgid "Service code"
+msgstr ""
+
+#: ../../plugins/sobeys-store-importer/default-stores-config.php:43
+msgid "Services code"
+msgstr ""
+
+#: ../../plugins/sobeys-store-importer/sobeys-store-importer-setting.php:43
+msgid "Save"
+msgstr ""
+
+#: functions.php:89
+msgid "Product"
+msgstr ""
+
+#: functions.php:90
+msgid "Products"
+msgstr ""
+
+#: functions.php:296
+msgid "Showing "
+msgstr ""
+
+#: header.php:32
+msgid "Skip to Content"
+msgstr ""
+
+#: ../../plugins/sobeys-flyer/modules/bbmodule-sobeys-flipp-flyer.php:17, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:578
+msgid "Weekly Flyer"
+msgstr ""
+
+#: ../../plugins/sobeys-flyer/modules/bbmodule-sobeys-flipp-flyer.php:18
+msgid "Display weekly flyer."
+msgstr ""
+
+#: ../../plugins/sobeys-flyer/modules/bbmodule-sobeys-flipp-flyer.php:19
+msgid "Sobeys Flyer"
+msgstr ""
+
+#: ../../plugins/sobeys-flyer/modules/bbmodule-sobeys-flipp-flyer.php:30, ../../plugins/sobeys-ratings/modules/sr-advanced-ratings/bbmodule-ratings-advanced.php:28, ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:28, ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:29, ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:29, components/animated_images/animated_images.php:115, components/breadcrumbs/breadcrumbs.php:58, components/bs_accordion/bs_accordion.php:136, components/bs_card/bs_card.php:75, components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.php:57, components/bs_card_simple/bs_card_simple.php:99, components/bs_nav/bs_nav.php:94, components/collection/collection.php:54, components/custom_map/custom_map.php:93, components/facts/facts.php:119, components/faq/faq.php:145, components/faq/faq.php:148, components/fp_downloads/fp_downloads.php:114, components/header_logo_search/header_logo_search.php:90, components/iframe/iframe.php:99, components/list_module/list_module.php:97, components/loop/loop.php:66, components/loop_terms/loop_terms.php:54, components/mega_menu/mega_menu.php:93, components/menu_dropdown/menu_dropdown.php:192, components/menu_dropdown/menu_dropdown.php:195, components/multi_item_carousel/multi_item_carousel.php:116, components/photo_bs_card_overlay/photo_bs_card_overlay.php:101, components/post_taxonomies_list/post_taxonomies_list.php:99, components/recipes/recipes.php:92, components/recipe_card/recipe_card.php:55, components/recipe_card_slider/recipe_card_slider.php:79, components/recipe_characteristics/recipe_characteristics.php:100, components/recipe_ingredients/recipe_ingredients.php:91, components/recipe_nutrition_facts/recipe_nutrition_facts.php:116, components/recipe_slider/recipe_slider.php:78, components/recipe_steps/recipe_steps.php:91, components/recipe_tips/recipe_tips.php:56, components/recipe_upc/recipe_upc.php:91, components/related/related.php:119, components/search_bar/search_bar.php:90, components/simple_video/simple_video.php:140, components/simple_video/simple_video.php:143, components/slider/slider.php:92, components/social_links/social_links.php:138, components/social_share/social_share.php:99, components/steps/steps.php:115, components/store_feature/store_feature.php:143, components/timeline_header/timeline_header.php:115, components/z_pattern/z_pattern.php:117, components/z_pattern_recipe/z_pattern_recipe.php:66
+msgid "Settings"
+msgstr ""
+
+#: ../../plugins/sobeys-flyer/modules/bbmodule-sobeys-flipp-flyer.php:37, ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:33, ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:56, components/bs_accordion/bs_accordion.php:118, components/bs_accordion/bs_accordion.php:143, components/bs_card/bs_card.php:82, components/bs_nav/bs_nav.php:101, components/collection/collection.php:61, components/contact_card/contact_card.php:99, components/menu_dropdown/menu_dropdown.php:134, components/multi_item_carousel/multi_item_carousel.php:223, components/post_taxonomies_list/post_taxonomies_list.php:118, components/recipe_card/recipe_card.php:62, components/recipe_card/recipe_card.php:85, components/recipe_card_slider/recipe_card_slider.php:98, components/recipe_characteristics/recipe_characteristics.php:107, components/recipe_ingredients/recipe_ingredients.php:98, components/recipe_nutrition_facts/recipe_nutrition_facts.php:123, components/recipe_slider/recipe_slider.php:85, components/recipe_steps/recipe_steps.php:98, components/recipe_tips/recipe_tips.php:64, components/related/related.php:126, components/social_links/social_links.php:145, components/social_share/social_share.php:106, components/steps/steps.php:122, components/store_feature/store_feature.php:190, components/z_pattern/z_pattern.php:78, components/z_pattern/z_pattern.php:200
+msgid "Title"
+msgstr ""
+
+#: ../../plugins/sobeys-store-importer/inc/export_json_feed.php:70
+msgid "Failed to create json file"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/libs/config_admin.php:9
+msgid "Store Settings"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/libs/config_admin.php:10
+msgid "Store"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-formidable.php:94
+msgid "Thank you. Your registration is successfully received."
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:25
+msgid "Formidable settings"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:32
+msgid "Enable Subscribe Popup"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:40
+msgid "Enable Formidable support"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:48
+msgid "PROD Endpoint"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:56
+msgid "QA Endpoint"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:64
+msgid "Subscribe Page Slug"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-settings.php:123
+msgid "Include support for Fomidable-based subscription"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-widget.php:28
+msgid "Subscribe"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-widget.php:33
+msgid "Subscribe to our eFlyer"
+msgstr ""
+
+#: ../../plugins/sobeys-subscribe/inc/sobeys_subscribe-widget.php:36, components/contact_card/contact_card.php:78
+msgid "Email"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-cron.php:78, ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-lang.php:10
+msgid "French"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-cron.php:81, ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-lang.php:6
+msgid "English"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:45
+msgid " WpContent (Client)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:64
+msgid "Host domain name must be a valid URL"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:84
+msgid "Host Server URL eg:(https://domain.com)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:92
+msgid "Client ID/Key"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:100
+msgid "Language Options"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:108
+msgid "Update Content Manually"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:116
+msgid "Set Auto Update Schedule"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:124
+msgid "Content Replace"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:132
+msgid "Available Shortcodes"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:140
+msgid "Plugin settings"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:198
+msgid "Minute(s)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:199
+msgid "Hour(s)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:200
+msgid "Day(s)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:201
+msgid "Week(s)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:204, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:46, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:806
+msgid "Sunday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:205, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:40, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:782
+msgid "Monday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:206, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:41, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:786
+msgid "Tuesday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:207, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:42, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:790
+msgid "Wednesday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:208, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:43, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:794
+msgid "Thursday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:209, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:44, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:798
+msgid "Friday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-settings.php:210, ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:45, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:802
+msgid "Saturday"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/classes/wpcontent-client-shortcodes.php:52
+msgid "Content not found"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-cron.php:11
+msgid "Enabled"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-cron.php:16
+msgid "Disabled"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-cron.php:28
+msgid "Update content <em>Every</em>:"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-cron.php:73, ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-manual-sync.php:8
+msgid "Last Run:"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-cron.php:74
+msgid "Next Run:"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-manual-sync.php:5
+msgid "Update Now"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-manual-sync.php:6
+msgid "Syncing data"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-manual-sync.php:9
+msgid "Done! Shortcodes are now updated"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-shortcodes.php:4
+msgid "Listed below are the available shortcodes. Choose one of the available display options. If a format is not listed in a shortcode, that option is not available for that content."
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-shortcodes.php:6
+msgid "Format: (html|iframe|pdf)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-shortcodes.php:7
+msgid "Text Replace: (yes|no)"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-shortcodes.php:22
+msgid "There are no shortcodes available."
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:7
+msgid "Search Text"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:8
+msgid "Replace Text"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:18
+msgid "Add Search Keywords"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:25
+msgid "Add Replace String"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:27, ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:27
+msgid "Delete this row"
+msgstr ""
+
+#: ../../plugins/sobeys-wpcontent-client/views/wpcontent-client-settings-url-replace.php:37
+msgid "Add Row"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-advanced-ratings/bbmodule-ratings-advanced.php:15
+msgid "Advanced Ratings"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-advanced-ratings/bbmodule-ratings-advanced.php:16
+msgid "Display advanced star ratings, including visual bar chart."
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-advanced-ratings/bbmodule-ratings-advanced.php:17, ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:17
+msgid "Sobeys Ratings"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-advanced-ratings/bbmodule-ratings-advanced.php:35
+msgid "Rating Bar Title"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-advanced-ratings/bbmodule-ratings-advanced.php:39
+msgid "Rating Stars Title"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:15
+msgid "Basic Ratings"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:16
+msgid "Display basic star ratings."
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:35
+msgid "Rate"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:39
+msgid "Detail level"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:42
+msgid "Basic"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:43
+msgid "Detailed"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:48
+msgid "View Only"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:57
+msgid "Current user or global average"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:60
+msgid "Current user"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/bbmodule-ratings-basic.php:61
+msgid "Global average"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/sr-basic-ratings.php:36
+msgid "Overall"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/sr-basic-ratings.php:44
+msgid "Quality"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/sr-basic-ratings.php:51
+msgid "Value"
+msgstr ""
+
+#: ../../plugins/sobeys-ratings/modules/sr-basic-ratings/sr-basic-ratings.php:64
+msgid "You have already rated this item."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:16
+msgid "Header"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:17
+msgid "Module to display store info in the header."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:18, ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:18, ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:18, ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:18, ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:18, ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:18
+msgid "Store Locator"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:36
+msgid "Link Store Name"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:44, ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:60
+msgid "Show Hours"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:52
+msgid "Show Address"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:61
+msgid "Store Locator Link"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:65
+msgid "Store Locator Title"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:70
+msgid "Store Locator Tooltip"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/header/bbmodule-header.php:75
+msgid "Colour theme (background + fonts)"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:16
+msgid "List Stores"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:17
+msgid "Module to display store listing."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:38, ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:32, ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:29, ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:26
+msgid "Facet"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:45
+msgid "Stores Per Page"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:50
+msgid "Weekly Flyer URL Template"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:55, ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:54, ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:41
+msgid "Use Main Query"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:65
+msgid "Fetch Each Store Service"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/bbmodule-list-stores.php:75
+msgid "Fetch Each Store Type"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/list-stores/sl-list-stores.php:164
+msgid "No stores found"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:16
+msgid "Map of Stores"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:17
+msgid "Module to display map of store listing."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:39
+msgid "Width"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:44
+msgid "Height"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:49
+msgid "Load Dynamic Map Button Text"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:64
+msgid "User Location Marker"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:69
+msgid "Store Location Marker"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/bbmodule-store-map-dynamic.php:74
+msgid "Map Marker Popup Logo"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:36, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:870, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:986
+msgid "Closed"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:37, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:778, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:897, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:845, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:935, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:975
+msgid "Day"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:38
+msgid "Today"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-dynamic/sl-map-dynamic.php:39, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:779, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:898, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:846, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:936, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:976
+msgid "Hours"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:16
+msgid "Map of Stores with Hours"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:17
+msgid "Module to display map of store listing with hours."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:36
+msgid "Get Directions Map Button Text"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:51
+msgid "Text Colors"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:70
+msgid "Button Colors"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:90
+msgid "Map Selection"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:94
+msgid "Default Static Image"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:95
+msgid "Store Static Image"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:100
+msgid "Map Call-To-Action"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:103
+msgid "Google Link to Store Lat/Long"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:104
+msgid "Custom URL"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:127
+msgid "Day Start"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:134
+msgid "Day End"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/bbmodule-store-map-image.php:141
+msgid "Maximum Number of Days/Results"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/map-image/sl-map-image.php:66
+msgid "How to Get There?"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:16
+msgid "Store Search"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:17
+msgid "Module to display store search fields."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:41
+msgid "Show Services"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:49
+msgid "Show Types"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:54
+msgid "Services Listing Type"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:64
+msgid "Show Search Button"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:74
+msgid "Show Search Fields"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:84
+msgid "Expand List Label"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:89
+msgid "Collapse List Label"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/bbmodule-store-search.php:94
+msgid "Aria Label Expand List"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:35
+msgid "Search for stores by postal code"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:36
+msgid "Postal Code"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:38
+msgid "Insert Postal code"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:58
+msgid "Search for stores by city"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:59
+msgid "Select City"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:63
+msgid "All Cities"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:90
+msgid "Search for stores by province"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:91
+msgid "Select Province"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:95
+msgid "All Provinces"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:122
+msgid "Our services"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:123
+msgid "+ %s to show"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:124
+msgid "Fewer"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:125
+msgid "click to show all services"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/search/sl-search.php:198, components/bs_nav/bs_nav.tpl.php:43, components/bs_nav/bs_nav.tpl.php:44, components/header_logo_search/header_logo_search.tpl.php:28, components/search_bar/search_bar.tpl.php:14, components/search_bar/search_bar.tpl.php:15
+msgid "Search"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:16
+msgid "Store Info"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:17
+msgid "Module to display individual store info."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/bbmodule-store-info.php:36
+msgid "Field"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:558
+msgid "Saving my store..."
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:558
+msgid "Save "
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:558
+msgid " as my store"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:558
+msgid "Save as my store"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:578
+msgid "View Store Flyer"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:600
+msgid "View directions to "
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:600
+msgid "Directions"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:751
+msgid "Department Info"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:753
+msgid "Manager:"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:756
+msgid "Proprietor:"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:760
+msgid "Email:"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:764
+msgid "Phone:"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:768
+msgid "Fax:"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:774
+msgid "Department Hours"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:891, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:841, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:928
+msgid "Store Hours"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:892, ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:931
+msgid "Open 24 Hours"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/sl-single-store.php:972
+msgid "Holiday Hours"
+msgstr ""
+
+#: components/animated_images/animated_images.php:118, components/bs_card/bs_card.php:167, components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.php:60, components/bs_nav/bs_nav.php:97, components/collection/collection.php:57, components/contact_card/contact_card.php:95, components/header_logo_search/header_logo_search.php:93, components/iframe/iframe.php:102, components/list_module/list_module.php:68, components/list_module/list_module.php:100, components/loop/loop.php:69, components/loop_terms/loop_terms.php:57, components/mega_menu/mega_menu.php:97, components/multi_item_carousel/multi_item_carousel.php:219, components/post_taxonomies_list/post_taxonomies_list.php:114, components/recipes/recipes.php:95, components/recipe_card/recipe_card.php:58, components/recipe_card_slider/recipe_card_slider.php:94, components/recipe_card_slider/recipe_card_slider.php:193, components/recipe_card_slider/recipe_card_slider.php:203, components/recipe_characteristics/recipe_characteristics.php:103, components/recipe_ingredients/recipe_ingredients.php:94, components/recipe_nutrition_facts/recipe_nutrition_facts.php:119, components/recipe_slider/recipe_slider.php:81, components/recipe_steps/recipe_steps.php:94, components/recipe_tips/recipe_tips.php:60, components/recipe_upc/recipe_upc.php:94, components/search_bar/search_bar.php:93, components/slider/slider.php:95, components/social_links/social_links.php:141, components/social_share/social_share.php:102, components/steps/steps.php:118, components/store_feature/store_feature.php:146, components/timeline_header/timeline_header.php:144
+msgid "Attributes"
+msgstr ""
+
+#: components/animated_images/animated_images.php:122
+msgid "Static Image"
+msgstr ""
+
+#: components/animated_images/animated_images.php:128
+msgid "Static Image Size"
+msgstr ""
+
+#: components/animated_images/animated_images.php:135
+msgid "Left Image"
+msgstr ""
+
+#: components/animated_images/animated_images.php:141
+msgid "Left Image Size"
+msgstr ""
+
+#: components/animated_images/animated_images.php:148
+msgid "Right Image"
+msgstr ""
+
+#: components/animated_images/animated_images.php:154
+msgid "Right Image Size"
+msgstr ""
+
+#: components/breadcrumbs/breadcrumbs.tpl.php:5
+msgid "HOME"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:99, components/bs_accordion/bs_accordion.php:102
+msgid "Drawer Details"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:109
+msgid "State"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:112
+msgid "Collapsed"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:113
+msgid "Expanded"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:122, components/list_module/list_module.php:78, components/store_feature/store_feature.php:129, components/z_pattern/z_pattern.php:186
+msgid "Text"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:139, components/post_taxonomies_list/post_taxonomies_list.php:102, components/recipe_card_slider/recipe_card_slider.php:82
+msgid "Section 2"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:144, components/z_pattern/z_pattern.php:201
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:149, components/bs_nav/bs_nav.php:117, components/contact_card/contact_card.php:111, components/list_module/list_module.php:110, components/multi_item_carousel/multi_item_carousel.php:233, components/post_taxonomies_list/post_taxonomies_list.php:128, components/recipes/recipes.php:109, components/recipe_card_slider/recipe_card_slider.php:109, components/recipe_characteristics/recipe_characteristics.php:118, components/recipe_ingredients/recipe_ingredients.php:108, components/recipe_nutrition_facts/recipe_nutrition_facts.php:133, components/recipe_slider/recipe_slider.php:95, components/recipe_steps/recipe_steps.php:108, components/recipe_tips/recipe_tips.php:83, components/social_links/social_links.php:150, components/social_share/social_share.php:112, components/steps/steps.php:133, components/timeline_header/timeline_header.php:157
+msgid "Title Tag"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:152, components/bs_accordion/bs_accordion.php:164, components/bs_nav/bs_nav.php:120, components/contact_card/contact_card.php:115, components/list_module/list_module.php:114, components/multi_item_carousel/multi_item_carousel.php:236, components/post_taxonomies_list/post_taxonomies_list.php:131, components/recipes/recipes.php:112, components/recipe_card_slider/recipe_card_slider.php:113, components/recipe_characteristics/recipe_characteristics.php:121, components/recipe_ingredients/recipe_ingredients.php:111, components/recipe_slider/recipe_slider.php:98, components/recipe_steps/recipe_steps.php:111, components/recipe_tips/recipe_tips.php:87, components/social_links/social_links.php:153, components/social_share/social_share.php:115, components/steps/steps.php:137, components/timeline_header/timeline_header.php:161
+msgid "H2"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:153, components/bs_accordion/bs_accordion.php:165, components/bs_nav/bs_nav.php:121, components/contact_card/contact_card.php:116, components/list_module/list_module.php:115, components/multi_item_carousel/multi_item_carousel.php:237, components/post_taxonomies_list/post_taxonomies_list.php:132, components/recipes/recipes.php:113, components/recipe_card_slider/recipe_card_slider.php:114, components/recipe_characteristics/recipe_characteristics.php:122, components/recipe_ingredients/recipe_ingredients.php:112, components/recipe_slider/recipe_slider.php:99, components/recipe_steps/recipe_steps.php:112, components/recipe_tips/recipe_tips.php:88, components/social_links/social_links.php:154, components/social_share/social_share.php:116, components/steps/steps.php:138, components/timeline_header/timeline_header.php:162
+msgid "H3"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:154, components/bs_accordion/bs_accordion.php:166, components/bs_nav/bs_nav.php:122, components/contact_card/contact_card.php:117, components/list_module/list_module.php:116, components/multi_item_carousel/multi_item_carousel.php:238, components/post_taxonomies_list/post_taxonomies_list.php:133, components/recipes/recipes.php:114, components/recipe_card_slider/recipe_card_slider.php:115, components/recipe_characteristics/recipe_characteristics.php:123, components/recipe_ingredients/recipe_ingredients.php:113, components/recipe_slider/recipe_slider.php:100, components/recipe_steps/recipe_steps.php:113, components/recipe_tips/recipe_tips.php:89, components/social_links/social_links.php:155, components/social_share/social_share.php:117, components/steps/steps.php:139
+msgid "H4"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:155, components/bs_accordion/bs_accordion.php:167, components/bs_nav/bs_nav.php:123, components/contact_card/contact_card.php:118, components/list_module/list_module.php:117, components/multi_item_carousel/multi_item_carousel.php:239, components/post_taxonomies_list/post_taxonomies_list.php:134, components/recipes/recipes.php:115, components/recipe_card_slider/recipe_card_slider.php:116, components/recipe_characteristics/recipe_characteristics.php:124, components/recipe_ingredients/recipe_ingredients.php:114, components/recipe_slider/recipe_slider.php:101, components/recipe_steps/recipe_steps.php:114, components/recipe_tips/recipe_tips.php:90, components/social_links/social_links.php:156, components/social_share/social_share.php:118, components/steps/steps.php:140
+msgid "H5"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:156, components/bs_accordion/bs_accordion.php:168, components/bs_nav/bs_nav.php:124, components/contact_card/contact_card.php:119, components/list_module/list_module.php:118, components/multi_item_carousel/multi_item_carousel.php:240, components/post_taxonomies_list/post_taxonomies_list.php:135, components/recipes/recipes.php:116, components/recipe_card_slider/recipe_card_slider.php:117, components/recipe_characteristics/recipe_characteristics.php:125, components/recipe_ingredients/recipe_ingredients.php:115, components/recipe_slider/recipe_slider.php:102, components/recipe_steps/recipe_steps.php:115, components/recipe_tips/recipe_tips.php:91, components/social_links/social_links.php:157, components/social_share/social_share.php:119, components/steps/steps.php:141
+msgid "H6"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:161
+msgid "Card Header Tag"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:174
+msgid "Items"
+msgstr ""
+
+#: components/bs_accordion/bs_accordion.php:179
+msgid "Item"
+msgstr ""
+
+#: components/bs_card/bs_card.php:40, components/social_links/social_links.php:163, components/z_pattern/z_pattern.php:87, components/z_pattern/z_pattern.php:215
+msgid "Link"
+msgstr ""
+
+#: components/bs_card/bs_card.php:43, components/bs_card_simple/bs_card_simple.php:43, components/contact_card/contact_card.php:59, components/custom_map/custom_map.php:73, components/facts/facts.php:72, components/faq/faq.php:122, components/icon_navigation/icon_navigation.php:71, components/list_module/list_module.php:71, components/menu_dropdown/menu_dropdown.php:122, components/menu_dropdown/menu_dropdown.php:165, components/multi_item_carousel/multi_item_carousel.php:59, components/photo_bs_card_overlay/photo_bs_card_overlay.php:43, components/quick_links/quick_links.php:71, components/recipe_card_slider/recipe_card_slider.php:59, components/related/related.php:99, components/social_links/social_links.php:104, components/store_feature/store_feature.php:118, components/z_pattern/z_pattern.php:71, components/z_pattern/z_pattern.php:120
+msgid "General"
+msgstr ""
+
+#: components/bs_card/bs_card.php:50
+msgid "Link Title"
+msgstr ""
+
+#: components/bs_card/bs_card.php:54, components/bs_card_simple/bs_card_simple.php:76, components/photo_bs_card_overlay/photo_bs_card_overlay.php:87, components/z_pattern/z_pattern.php:95, components/z_pattern/z_pattern.php:211
+msgid "Aria Label"
+msgstr ""
+
+#: components/bs_card/bs_card.php:60, components/bs_card_simple/bs_card_simple.php:50, components/photo_bs_card_overlay/photo_bs_card_overlay.php:50
+msgid "Link To"
+msgstr ""
+
+#: components/bs_card/bs_card.php:78, components/contact_card/contact_card.php:91, components/related/related.php:122, components/z_pattern/z_pattern.php:136, components/z_pattern/z_pattern.php:173
+msgid "Content"
+msgstr ""
+
+#: components/bs_card/bs_card.php:87
+msgid "Choose the heading type for the title"
+msgstr ""
+
+#: components/bs_card/bs_card.php:88, components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.php:77, components/recipe_card/recipe_card.php:68
+msgid "h5"
+msgstr ""
+
+#: components/bs_card/bs_card.php:100, components/social_share/social_share.php:123
+msgid "Title Color"
+msgstr ""
+
+#: components/bs_card/bs_card.php:106, components/bs_nav/bs_nav.php:182, components/recipe_tips/recipe_tips.php:70
+msgid "Title Typography"
+msgstr ""
+
+#: components/bs_card/bs_card.php:119, components/timeline_header/timeline_header.php:182
+msgid "Description"
+msgstr ""
+
+#: components/bs_card/bs_card.php:125
+msgid "Photo"
+msgstr ""
+
+#: components/bs_card/bs_card.php:134
+msgid "Image Min Height"
+msgstr ""
+
+#: components/bs_card/bs_card.php:140, components/z_pattern_recipe/z_pattern_recipe.php:117
+msgid "Image Position"
+msgstr ""
+
+#: components/bs_card/bs_card.php:149
+msgid "Image Size"
+msgstr ""
+
+#: components/bs_card/bs_card.php:156, components/loop/loop.php:79, components/loop_terms/loop_terms.php:67
+msgid "Hide Container Div"
+msgstr ""
+
+#: components/bs_card/bs_card.php:157, components/loop/loop.php:80, components/loop_terms/loop_terms.php:68
+msgid "Turn off automatic container created by BB."
+msgstr ""
+
+#: components/bs_card/bs_card.php:160, components/loop/loop.php:83, components/loop/loop.php:94, components/loop_terms/loop_terms.php:71, components/related/related.php:166, components/related/related.php:177
+msgid "False"
+msgstr ""
+
+#: components/bs_card/bs_card.php:161, components/loop/loop.php:84, components/loop/loop.php:93, components/loop_terms/loop_terms.php:72, components/related/related.php:165, components/related/related.php:176
+msgid "True"
+msgstr ""
+
+#: components/bs_card/bs_card.php:171, components/multi_item_carousel/multi_item_carousel.php:155
+msgid "Enable Overlay"
+msgstr ""
+
+#: components/bs_card/bs_card.php:181, components/bs_card/bs_card.php:264, components/multi_item_carousel/multi_item_carousel.php:80, components/multi_item_carousel/multi_item_carousel.tpl.php:126
+msgid "Learn More"
+msgstr ""
+
+#: components/bs_card/bs_card.php:191, components/store_feature/store_feature.php:150, components/z_pattern/z_pattern.php:245
+msgid "Theme"
+msgstr ""
+
+#: components/bs_card/bs_card.php:200
+msgid "Border"
+msgstr ""
+
+#: components/bs_card/bs_card.php:212, components/quick_links/quick_links.php:98, components/z_pattern/z_pattern.php:235, components/z_pattern_recipe/z_pattern_recipe.php:147
+msgid "Links"
+msgstr ""
+
+#: components/bs_card/bs_card.php:216
+msgid "Link Section Title"
+msgstr ""
+
+#: components/bs_card/bs_card.php:221
+msgid "Choose the heading type"
+msgstr ""
+
+#: components/bs_card/bs_card.php:222
+msgid "h6"
+msgstr ""
+
+#: components/bs_card/bs_card.php:235
+msgid "Link(s)"
+msgstr ""
+
+#: components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.php:64
+msgid "Id"
+msgstr ""
+
+#: components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.php:69
+msgid "Thumbnail Image Size"
+msgstr ""
+
+#: components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.php:76, components/recipe_card/recipe_card.php:67, components/related/related.php:132
+msgid "Choose the title tag"
+msgstr ""
+
+#: components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.tpl.php:5, components/bs_card_horizontal_dynamic/bs_card_horizontal_dynamic.tpl.php:14
+msgid "Read more about"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:40, components/photo_bs_card_overlay/photo_bs_card_overlay.php:40
+msgid "Callout Attributes"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:54, components/photo_bs_card_overlay/photo_bs_card_overlay.php:64
+msgid "Optional: Override Post Title"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:58
+msgid "Heading Colour"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:62, components/photo_bs_card_overlay/photo_bs_card_overlay.php:68
+msgid "Optional: Override Featured Background Image"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:66, components/photo_bs_card_overlay/photo_bs_card_overlay.php:77
+msgid "Select Button Theme"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:71, components/photo_bs_card_overlay/photo_bs_card_overlay.php:82
+msgid "Button Label"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:72, components/bs_card_simple/bs_card_simple.php:77, components/photo_bs_card_overlay/photo_bs_card_overlay.php:83, components/photo_bs_card_overlay/photo_bs_card_overlay.php:88
+msgid "Read More"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:81
+msgid "Add gradient overlay to image"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:102, components/fp_downloads/fp_downloads.php:117, components/photo_bs_card_overlay/photo_bs_card_overlay.php:104
+msgid "Basic Settings"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:106, components/photo_bs_card_overlay/photo_bs_card_overlay.php:108, components/z_pattern_recipe/z_pattern_recipe.php:86
+msgid "Heading Type"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:119, components/photo_bs_card_overlay/photo_bs_card_overlay.php:121
+msgid "Set the heading font size"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:131
+msgid "Add Cards (Max 3)"
+msgstr ""
+
+#: components/bs_card_simple/bs_card_simple.php:135
+msgid "Add Card"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:102
+msgid "Nav Title"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:107
+msgid "Title Visibility"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:108
+msgid "For accessibilty, a title is required, but you can choose to visually hide it"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:129
+msgid "Brand HTML"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:130
+msgid "Logo, shortcode, or link can be inserted"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:135, components/mega_menu/mega_menu.php:106
+msgid "Select Menu"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:136, components/mega_menu/mega_menu.php:107
+msgid "Select a menu to load"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:142, components/header_logo_search/header_logo_search.php:134
+msgid "Show Search"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:143, components/header_logo_search/header_logo_search.php:135
+msgid "Show search input box"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:152, components/mega_menu/mega_menu.php:173
+msgid "Show Mobile Toggler"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:153, components/mega_menu/mega_menu.php:174
+msgid "Show hamburger menu in mobile"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:165, components/bs_nav/bs_nav.php:168, components/contact_card/contact_card.php:134, components/z_pattern/z_pattern.php:242, components/z_pattern_recipe/z_pattern_recipe.php:109
+msgid "Style"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:172, components/mega_menu/mega_menu.php:163
+msgid "Vertical"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:173, components/mega_menu/mega_menu.php:164
+msgid "Is the menu to be shown stacked?"
+msgstr ""
+
+#: components/bs_nav/bs_nav.php:196
+msgid "Item Typography"
+msgstr ""
+
+#: components/bs_nav/bs_nav.tpl.php:10
+msgid "Click to view menu"
+msgstr ""
+
+#: components/bs_nav/bs_nav.tpl.php:21
+msgid "Menu"
+msgstr ""
+
+#: components/bs_nav/bs_nav.tpl.php:42
+msgid "Enter search keywords"
+msgstr ""
+
+#: components/contact_card/contact_card.php:56, components/contact_card/contact_card.php:124
+msgid "Contacts"
+msgstr ""
+
+#: components/contact_card/contact_card.php:66
+msgid "Location"
+msgstr ""
+
+#: components/contact_card/contact_card.php:70
+msgid "Contact"
+msgstr ""
+
+#: components/contact_card/contact_card.php:74
+msgid "Phone"
+msgstr ""
+
+#: components/contact_card/contact_card.php:105
+msgid "Title2"
+msgstr ""
+
+#: components/contact_card/contact_card.php:114, components/list_module/list_module.php:113, components/recipe_card_slider/recipe_card_slider.php:112, components/recipe_tips/recipe_tips.php:86, components/steps/steps.php:136, components/timeline_header/timeline_header.php:160
+msgid "H1"
+msgstr ""
+
+#: components/contact_card/contact_card.php:137, components/custom_map/custom_map.php:100, components/facts/facts.php:79, components/facts/facts.php:145, components/timeline_header/timeline_header.php:152, components/z_pattern/z_pattern.php:140
+msgid "Heading"
+msgstr ""
+
+#: components/custom_map/custom_map.php:70
+msgid "Choose Post"
+msgstr ""
+
+#: components/custom_map/custom_map.php:79
+msgid "Post must have lat/long custom fields"
+msgstr ""
+
+#: components/custom_map/custom_map.php:96
+msgid "Top Content"
+msgstr ""
+
+#: components/custom_map/custom_map.php:101, components/facts/facts.php:146, components/list_module/list_module.php:105, components/z_pattern/z_pattern.php:141
+msgid "Sample Heading"
+msgstr ""
+
+#: components/custom_map/custom_map.php:111
+msgid "Select the heading colour"
+msgstr ""
+
+#: components/custom_map/custom_map.php:116
+msgid "Optional: Add a Heading Background"
+msgstr ""
+
+#: components/custom_map/custom_map.php:120
+msgid "Set the heading style"
+msgstr ""
+
+#: components/custom_map/custom_map.php:130
+msgid "Set the heading styling"
+msgstr ""
+
+#: components/custom_map/custom_map.php:136
+msgid "Filters"
+msgstr ""
+
+#: components/custom_map/custom_map.php:140
+msgid "Select Map Content"
+msgstr ""
+
+#: components/custom_map/custom_map.php:154
+msgid "Map by Post Type"
+msgstr ""
+
+#: components/custom_map/custom_map.php:156
+msgid "Post Type must have latitude and longitude fields"
+msgstr ""
+
+#: components/custom_map/custom_map.php:160
+msgid "Type"
+msgstr ""
+
+#: components/custom_map/custom_map.php:162, components/custom_map/custom_map.php:167
+msgid "Post Type(s) must have latitude and longitude fields"
+msgstr ""
+
+#: components/custom_map/custom_map.php:166
+msgid "Add Map Marker"
+msgstr ""
+
+#: components/custom_map/custom_map.php:175
+msgid "Map Content"
+msgstr ""
+
+#: components/custom_map/custom_map.php:179
+msgid "Google Map API Key"
+msgstr ""
+
+#: components/custom_map/custom_map.php:183
+msgid "Select a Map Marker"
+msgstr ""
+
+#: components/custom_map/custom_map.php:187
+msgid "Select a Map Colour Theme"
+msgstr ""
+
+#: components/custom_map/custom_map.php:192
+msgid "Set the button text"
+msgstr ""
+
+#: components/custom_map/custom_map.php:193
+msgid "View More Info"
+msgstr ""
+
+#: components/custom_map/custom_map.php:197
+msgid "Map Pop-up Content"
+msgstr ""
+
+#: components/custom_map/custom_map.tpl.php:18
+msgid "Map Legend"
+msgstr ""
+
+#: components/custom_map/custom_map.tpl.php:39
+msgid "Map Marker"
+msgstr ""
+
+#: components/facts/facts.php:69
+msgid "Fact Attributes"
+msgstr ""
+
+#: components/facts/facts.php:88
+msgid "Sub Heading"
+msgstr ""
+
+#: components/facts/facts.php:97
+msgid "Supporting Text"
+msgstr ""
+
+#: components/facts/facts.php:122
+msgid "Style Attributes "
+msgstr ""
+
+#: components/facts/facts.php:126, components/recipe_card_slider/recipe_card_slider.php:148
+msgid "Background"
+msgstr ""
+
+#: components/facts/facts.php:132
+msgid "Support Text"
+msgstr ""
+
+#: components/facts/facts.php:135
+msgid "Show"
+msgstr ""
+
+#: components/facts/facts.php:136
+msgid "Hide"
+msgstr ""
+
+#: components/facts/facts.php:142
+msgid "Data Attributes "
+msgstr ""
+
+#: components/facts/facts.php:157
+msgid "Choose the heading tag"
+msgstr ""
+
+#: components/facts/facts.php:158, components/related/related.php:133
+msgid "h2"
+msgstr ""
+
+#: components/facts/facts.php:170
+msgid "Choose the fact heading tag"
+msgstr ""
+
+#: components/facts/facts.php:171, components/z_pattern/z_pattern.php:147
+msgid "h3"
+msgstr ""
+
+#: components/facts/facts.php:184
+msgid "Fact"
+msgstr ""
+
+#: components/faq/faq.php:119
+msgid "Category Item"
+msgstr ""
+
+#: components/faq/faq.php:129
+msgid "Term"
+msgstr ""
+
+#: components/faq/faq.php:152
+msgid "Category Items"
+msgstr ""
+
+#: components/faq/faq.php:160
+msgid "Active Icon"
+msgstr ""
+
+#: components/faq/faq.php:166
+msgid "Active Color"
+msgstr ""
+
+#: components/faq/faq.php:172
+msgid "Open Icon"
+msgstr ""
+
+#: components/faq/faq.php:178
+msgid "Closed Icon"
+msgstr ""
+
+#: components/faq/faq.php:184, components/simple_video/simple_video.php:179, components/slider/slider.php:112
+msgid "Icon Color"
+msgstr ""
+
+#: components/fp_downloads/fp_downloads.php:121, components/recipe_card/recipe_card.php:113, components/store_feature/store_feature.php:219, components/z_pattern_recipe/z_pattern_recipe.php:142
+msgid "Button Text"
+msgstr ""
+
+#: components/fp_downloads/fp_downloads.tpl.php:8
+msgid "PDF Featured Image"
+msgstr ""
+
+#: components/fp_post_navigation/fp_post_navigation.php:136, components/fp_post_navigation/fp_post_navigation.php:150
+msgid "Post Link"
+msgstr ""
+
+#: components/fp_post_navigation/fp_post_navigation.tpl.php:7, components/fp_post_navigation/fp_post_navigation.tpl.php:22
+msgid "Featured Image - Previous Post"
+msgstr ""
+
+#: components/fp_post_navigation/fp_post_navigation.tpl.php:10
+msgid "Previous Post"
+msgstr ""
+
+#: components/fp_post_navigation/fp_post_navigation.tpl.php:25
+msgid "Next Post"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.php:98, components/mega_menu/mega_menu.php:102
+msgid "Optional: Set a logo image if not set in Options"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.php:102
+msgid "Optional: Set the logo alternate text (accessibility)"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.php:144, components/search_bar/search_bar.php:97
+msgid "Search Button Icon"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.tpl.php:6
+msgid "Click to view the main menu"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.tpl.php:16, components/search_bar/search_bar.tpl.php:6
+msgid "Click to access site search form"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.tpl.php:23, components/search_bar/search_bar.tpl.php:12
+msgid "Enter search keywords or phrase"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.tpl.php:26, components/search_bar/search_bar.tpl.php:14
+msgid "Enter search text"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.tpl.php:29, components/search_bar/search_bar.tpl.php:16
+msgid "Submit Search"
+msgstr ""
+
+#: components/header_logo_search/header_logo_search.tpl.php:32, components/search_bar/search_bar.tpl.php:19
+msgid "Submit"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:68, components/z_pattern/z_pattern.php:68
+msgid "Link Attributes"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:78
+msgid "Set the link label"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:83
+msgid "Choose an icon"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:88
+msgid "Choose the Hover/Active colour"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:92
+msgid "Set the link URL"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:106
+msgid "Icon Navigation Items"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:109
+msgid "Navigation Items Settings"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:113
+msgid "New Item"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:122
+msgid "Set the icon size"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:128
+msgid "Choose the label font size"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:134
+msgid "Set the navigation item separator colour"
+msgstr ""
+
+#: components/icon_navigation/icon_navigation.php:139
+msgid "Optional: Set the breakpoint from table to grid"
+msgstr ""
+
+#: components/iframe/iframe.php:106
+msgid "iFrame Title (accessibility)"
+msgstr ""
+
+#: components/iframe/iframe.php:111
+msgid "iFrame URL"
+msgstr ""
+
+#: components/list_module/list_module.php:82, components/social_links/social_links.php:121
+msgid "URL"
+msgstr ""
+
+#: components/list_module/list_module.php:104
+msgid "Heading ( optional )"
+msgstr ""
+
+#: components/list_module/list_module.php:123
+msgid "Heading Alignment"
+msgstr ""
+
+#: components/list_module/list_module.php:128
+msgid "Columns"
+msgstr ""
+
+#: components/list_module/list_module.php:131
+msgid "One"
+msgstr ""
+
+#: components/list_module/list_module.php:132
+msgid "Two"
+msgstr ""
+
+#: components/list_module/list_module.php:133
+msgid "Three"
+msgstr ""
+
+#: components/list_module/list_module.php:138
+msgid "Ordered / Unordered"
+msgstr ""
+
+#: components/list_module/list_module.php:141
+msgid "Ordered"
+msgstr ""
+
+#: components/list_module/list_module.php:142
+msgid "Unordered"
+msgstr ""
+
+#: components/list_module/list_module.php:147
+msgid "Intro ( optional )"
+msgstr ""
+
+#: components/list_module/list_module.php:148
+msgid "Sample Intro Content"
+msgstr ""
+
+#: components/list_module/list_module.php:157
+msgid "List Item"
+msgstr ""
+
+#: components/list_module/list_module.php:171
+msgid "Mobile Layout"
+msgstr ""
+
+#: components/list_module/list_module.php:172
+msgid "The \"Dropdown\" works best if all list items work as links"
+msgstr ""
+
+#: components/list_module/list_module.php:175
+msgid "View as List"
+msgstr ""
+
+#: components/list_module/list_module.php:176
+msgid "View as Dropdown Menu"
+msgstr ""
+
+#: components/loop/loop.php:73, components/loop_terms/loop_terms.php:61, components/related/related.php:145
+msgid "Shortcode"
+msgstr ""
+
+#: components/loop/loop.php:89, components/related/related.php:172
+msgid "Enabled Mobile Slider"
+msgstr ""
+
+#: components/loop/loop.php:90, components/related/related.php:173
+msgid "On mobile view a slider will be used to display one item at a time"
+msgstr ""
+
+#: components/loop_terms/loop_terms.php:77, components/post_taxonomies_list/post_taxonomies_list.php:140, components/recipe_characteristics/recipe_characteristics.php:130
+msgid "Taxonomies"
+msgstr ""
+
+#: components/loop_terms/loop_terms.php:78, components/post_taxonomies_list/post_taxonomies_list.php:141, components/recipe_characteristics/recipe_characteristics.php:131
+msgid "Choose which taxnomies's terms you would like listed."
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:113
+msgid "Main Theme"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:119
+msgid "Dropdown Item Theme"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:125
+msgid "Item BG Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:129
+msgid "Item Text Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:133
+msgid "Item BG Hover Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:137
+msgid "Item Text Hover Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:142
+msgid "Dropdown Item BG Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:146
+msgid "Dropdown Item Text Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:150
+msgid "Dropdown Item BG Hover Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:154
+msgid "Dropdown Item Text Hover Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:159
+msgid "Dropdown Item Border Color"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:270
+msgid "Click to hide/show the main menu"
+msgstr ""
+
+#: components/mega_menu/mega_menu.php:271
+msgid "Main Menu"
+msgstr ""
+
+#: components/mega_menu/mega_menu.tpl.php:15
+msgid "Return to home page"
+msgstr ""
+
+#: components/mega_menu/mega_menu.tpl.php:21
+msgid "Menu: "
+msgstr ""
+
+#: components/mega_menu/mega_menu.tpl.php:22
+msgid "Main menu navigation list items"
+msgstr ""
+
+#: components/menu_dropdown/menu_dropdown.php:119, components/menu_dropdown/menu_dropdown.php:162, components/menu_dropdown/menu_dropdown.php:199
+msgid "Menu Item"
+msgstr ""
+
+#: components/menu_dropdown/menu_dropdown.php:129
+msgid "Menu Item Text"
+msgstr ""
+
+#: components/menu_dropdown/menu_dropdown.php:130
+msgid "Where to buy?"
+msgstr ""
+
+#: components/menu_dropdown/menu_dropdown.php:139
+msgid "Dropdown Item"
+msgstr ""
+
+#: components/menu_dropdown/menu_dropdown.php:172
+msgid "Store Image"
+msgstr ""
+
+#: components/menu_dropdown/menu_dropdown.php:207
+msgid "Dropdown Icon"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:56
+msgid "Slide Attributes"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:65
+msgid "Optional: Title"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:66
+msgid "Slide"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:70
+msgid "Optional: Description"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:71
+msgid "Slide Description"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:75
+msgid "Add CTA Link"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:79
+msgid "Set Button Text"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:84
+msgid "Set Button Type"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:94
+msgid "Set Button Target"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:103
+msgid "Choose a background phto"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:119
+msgid "Set Carousel Options"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:123
+msgid "Choose a layout"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:137
+msgid "Choose the dots colour"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:142
+msgid "Choose the hover overlay colour"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:146
+msgid "Show the post/slide description/excerpt?"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:164
+msgid "Set the arrows style"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:173
+msgid "Enable Dots"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:182
+msgid "Slides Per Scroll"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:194
+msgid "Slides To Show"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:207
+msgid "Static Content Options"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:211
+msgid "Static Content Override"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:228, components/post_taxonomies_list/post_taxonomies_list.php:123, components/recipes/recipes.php:104, components/recipe_card_slider/recipe_card_slider.php:104, components/recipe_characteristics/recipe_characteristics.php:113, components/recipe_ingredients/recipe_ingredients.php:103, components/recipe_slider/recipe_slider.php:90, components/recipe_steps/recipe_steps.php:103, components/related/related.php:156, components/steps/steps.php:128
+msgid "Title Align"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.php:245
+msgid "Slides Typography"
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.tpl.php:126
+msgid "Learn More: "
+msgstr ""
+
+#: components/multi_item_carousel/multi_item_carousel.tpl.php:118
+msgid "Play the video: "
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:54
+msgid "Choose Format"
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:72
+msgid "Select Callout Theme"
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:133
+msgid "Column 1"
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:137, components/photo_bs_card_overlay/photo_bs_card_overlay.php:150, components/photo_bs_card_overlay/photo_bs_card_overlay.php:163, components/photo_bs_card_overlay/photo_bs_card_overlay.php:176
+msgid "callout content"
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:146
+msgid "Column 2"
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:159
+msgid "Column 3"
+msgstr ""
+
+#: components/photo_bs_card_overlay/photo_bs_card_overlay.php:172
+msgid "Column 4"
+msgstr ""
+
+#: components/post_taxonomies_list/post_taxonomies_list.php:106, components/recipe_card_slider/recipe_card_slider.php:86
+msgid "Hidden Text Field"
+msgstr ""
+
+#: components/post_taxonomies_list/post_taxonomies_list.php:107, components/recipe_card_slider/recipe_card_slider.php:87, components/recipe_card_slider/recipe_card_slider.php:200
+msgid "This can be shown by selecting option 2 in the dropdown box"
+msgstr ""
+
+#: components/post_taxonomies_list/post_taxonomies_list.php:146
+msgid "Show All Terms or Assigned Only"
+msgstr ""
+
+#: components/post_taxonomies_list/post_taxonomies_list.php:149
+msgid "All"
+msgstr ""
+
+#: components/post_taxonomies_list/post_taxonomies_list.php:150
+msgid "Assigned"
+msgstr ""
+
+#: components/quick_links/quick_links.php:68
+msgid "Stats Attributes"
+msgstr ""
+
+#: components/quick_links/quick_links.php:78
+msgid "Link text (Limit 20)"
+msgstr ""
+
+#: components/quick_links/quick_links.php:84
+msgid "Set the URL"
+msgstr ""
+
+#: components/quick_links/quick_links.php:101
+msgid "Module Display"
+msgstr ""
+
+#: components/quick_links/quick_links.php:105
+msgid "Navigation Title"
+msgstr ""
+
+#: components/quick_links/quick_links.php:110
+msgid "Add Links"
+msgstr ""
+
+#: components/quick_links/quick_links.php:118
+msgid "Choose a navigation layout"
+msgstr ""
+
+#: components/quick_links/quick_links.php:120
+msgid "Inline"
+msgstr ""
+
+#: components/quick_links/quick_links.php:121, components/related/related.php:161
+msgid "Stacked"
+msgstr ""
+
+#: components/quick_links/quick_links.php:127
+msgid "Content Alignment"
+msgstr ""
+
+#: components/quick_links/quick_links.php:132
+msgid "Choose link colour theme"
+msgstr ""
+
+#: components/recipes/recipes.php:99
+msgid "Punctuation"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:80
+msgid "Title Length"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:90
+msgid "Choose the overlay type"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:91
+msgid "button"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:118
+msgid "Aria Label (Learn More)"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:122
+msgid "Overlay Icon"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:126
+msgid "Overlay Icon Aria"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:131
+msgid "Meta Key for Overlay Short Description"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:135
+msgid "Index"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:168, components/recipe_card/recipe_card.php:187, components/recipe_details/recipe_details.tpl.php:42, components/recipe_details/recipe_details.tpl.php:54, components/z_pattern_recipe/z_pattern_recipe.tpl.php:39
+msgid "Total Time"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:175, components/recipe_details/recipe_details.tpl.php:61, components/z_pattern_recipe/z_pattern_recipe.tpl.php:50
+msgid "Serves"
+msgstr ""
+
+#: components/recipe_card/recipe_card.php:181
+msgid "Temp"
+msgstr ""
+
+#: components/recipe_card/recipe_card.tpl.php:48, components/recipe_characteristics/recipe_characteristics.tpl.php:10
+msgid "View"
+msgstr ""
+
+#: components/recipe_card/recipe_card.tpl.php:48
+msgid "recipe"
+msgstr ""
+
+#: components/recipe_card/recipe_card.tpl.php:74, components/recipe_details/recipe_details.tpl.php:104, components/recipe_details/recipe_details.tpl.php:95
+msgid "min"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:56, components/related/related.php:96, components/social_links/social_links.php:101
+msgid "My Form Field"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:66, components/related/related.php:106
+msgid "Label"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:122
+msgid "Extra Content"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:129
+msgid "Content Typography"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:142
+msgid "Color Picker"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:154
+msgid "Select Field"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:155
+msgid "This will toggle tabs at the top"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:158
+msgid "Blue"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:159
+msgid "Pink"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:175
+msgid "My Form"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:182
+msgid "Multiple Text"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:190
+msgid "Tab 2 Settings"
+msgstr ""
+
+#: components/recipe_card_slider/recipe_card_slider.php:199
+msgid "Tab 3 Settings"
+msgstr ""
+
+#: components/recipe_characteristics/recipe_characteristics.tpl.php:10
+msgid "recipe tag"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:11
+msgid "Makes"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:16
+msgid "Level"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:21
+msgid "Marinate Time"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:28, components/z_pattern_recipe/z_pattern_recipe.tpl.php:28
+msgid "Prep Time"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:35
+msgid "Cooking Time"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:49
+msgid "Temperature"
+msgstr ""
+
+#: components/recipe_details/recipe_details.tpl.php:102, components/recipe_details/recipe_details.tpl.php:93
+msgid "h"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:124
+msgid "Nutritional Facts"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:145
+msgid "Show Daily Value"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:201
+msgid "Per"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:205
+msgid "Calories"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:209
+msgid "Fat"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:213
+msgid "Saturated Fat"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:217
+msgid "Monounsaturated Fats"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:221, components/recipe_nutrition_facts/recipe_nutrition_facts.php:225
+msgid "Trans"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:229
+msgid "Carbs"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:233
+msgid "Fibre"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:237
+msgid "Sugar"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:241
+msgid "Sugar Alcohols"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:245
+msgid "Cholesterol"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:249
+msgid "Protein"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:253
+msgid "Iron"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:257
+msgid "Sodium"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:261
+msgid "Potassium"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:265
+msgid "Calcium"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:269
+msgid "Omega 3"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:273
+msgid "Omega 6"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:277
+msgid "Vitamin A"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.php:281
+msgid "Vitamin C"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.tpl.php:13
+msgid "Amount"
+msgstr ""
+
+#: components/recipe_nutrition_facts/recipe_nutrition_facts.tpl.php:14
+msgid "% of Daily Value"
+msgstr ""
+
+#: components/recipe_steps/recipe_steps.tpl.php:11
+msgid "Step"
+msgstr ""
+
+#: components/recipe_upc/recipe_upc.tpl.php:5
+msgid "UPC CODE:"
+msgstr ""
+
+#: components/related/related.php:152
+msgid "Styling"
+msgstr ""
+
+#: components/related/related.php:162
+msgid "This stack the cards vertically"
+msgstr ""
+
+#: components/related/related.php:183, components/z_pattern_recipe/z_pattern_recipe.php:69
+msgid "Data"
+msgstr ""
+
+#: components/related/related.php:187
+msgid "Data Source"
+msgstr ""
+
+#: components/related/related.php:188, components/related/related.php:203
+msgid "Manually or dynamically assigned related content."
+msgstr ""
+
+#: components/related/related.php:191
+msgid "Dynamic"
+msgstr ""
+
+#: components/related/related.php:192
+msgid "Manual"
+msgstr ""
+
+#: components/related/related.php:202
+msgid "Manual Data Source"
+msgstr ""
+
+#: components/related/related.php:206
+msgid "Related Articles"
+msgstr ""
+
+#: components/related/related.php:207
+msgid "Related Recipes"
+msgstr ""
+
+#: components/related/related.php:208
+msgid "Related How To"
+msgstr ""
+
+#: components/related/related.php:209
+msgid "Related Products"
+msgstr ""
+
+#: components/related/related.php:210
+msgid "Inline Linked"
+msgstr ""
+
+#: components/related/related.php:224
+msgid "Related Content"
+msgstr ""
+
+#: components/simple_video/simple_video.php:147
+msgid "YouTube URL"
+msgstr ""
+
+#: components/simple_video/simple_video.php:153
+msgid "Video Thumbnail"
+msgstr ""
+
+#: components/simple_video/simple_video.php:157
+msgid "Set the image that displays when the video is not being played"
+msgstr ""
+
+#: components/simple_video/simple_video.php:172, components/slider/slider.php:106
+msgid "Custom Play Icon"
+msgstr ""
+
+#: components/simple_video/simple_video.php:174, components/slider/slider.php:108
+msgid "Set the a custom play icon by providing an icon slug."
+msgstr ""
+
+#: components/simple_video/simple_video.php:191, components/slider/slider.php:124
+msgid "Play Icon Background Color"
+msgstr ""
+
+#: components/slider/slider.php:99
+msgid "Slides"
+msgstr ""
+
+#: components/slider/slider.php:136
+msgid "Slide peek width"
+msgstr ""
+
+#: components/slider/slider.php:147
+msgid "Autoplay"
+msgstr ""
+
+#: components/slider/slider.php:150
+msgid "On"
+msgstr ""
+
+#: components/slider/slider.php:151
+msgid "Off"
+msgstr ""
+
+#: components/slider/slider.tpl.php:1
+msgid "Promotional Image Slider"
+msgstr ""
+
+#: components/social_links/social_links.php:111, components/store_feature/store_feature.php:125
+msgid "Icon"
+msgstr ""
+
+#: components/social_links/social_links.php:117
+msgid "Icon Font Size"
+msgstr ""
+
+#: components/social_links/social_links.php:125
+msgid "Accessibilty Label eg: like us on facebook"
+msgstr ""
+
+#: components/social_share/social_share.php:127
+msgid "Choose theme color for default state"
+msgstr ""
+
+#: components/social_share/social_share.php:133
+msgid "Show print button"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:6
+msgid "Share this recipe on facebook"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:6
+msgid "Share on Facebook"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:9
+msgid "Share this recipe on twitter"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:9
+msgid "Share on Twitter"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:12
+msgid "Share this recipe by email"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:12
+msgid "Share by Email"
+msgstr ""
+
+#: components/social_share/social_share.tpl.php:17, components/social_share/social_share.tpl.php:17
+msgid "Print Recipe"
+msgstr ""
+
+#: components/steps/steps.php:146
+msgid "Steps Meta Key"
+msgstr ""
+
+#: components/store_feature/store_feature.php:115, components/store_feature/store_feature.php:303
+msgid "Feature Points"
+msgstr ""
+
+#: components/store_feature/store_feature.php:151
+msgid "Toggle different versions of a store feature."
+msgstr ""
+
+#: components/store_feature/store_feature.php:154
+msgid "Default"
+msgstr ""
+
+#: components/store_feature/store_feature.php:155
+msgid "Image"
+msgstr ""
+
+#: components/store_feature/store_feature.php:205
+msgid "Sub-Title"
+msgstr ""
+
+#: components/store_feature/store_feature.php:233
+msgid "Background Color"
+msgstr ""
+
+#: components/store_feature/store_feature.php:239, components/z_pattern/z_pattern.php:272
+msgid "Background Image"
+msgstr ""
+
+#: components/store_feature/store_feature.php:265
+msgid "Background Image Position"
+msgstr ""
+
+#: components/store_feature/store_feature.php:266
+msgid "Toggle between left or right."
+msgstr ""
+
+#: components/store_feature/store_feature.php:269, components/z_pattern/z_pattern.php:127, components/z_pattern_recipe/z_pattern_recipe.php:120
+msgid "Left"
+msgstr ""
+
+#: components/store_feature/store_feature.php:270, components/z_pattern/z_pattern.php:128, components/z_pattern_recipe/z_pattern_recipe.php:121
+msgid "Right"
+msgstr ""
+
+#: components/store_feature/store_feature.php:271
+msgid "Full"
+msgstr ""
+
+#: components/store_feature/store_feature.php:288
+msgid "Background Aria Label"
+msgstr ""
+
+#: components/store_feature/store_feature.php:292
+msgid "Font Color"
+msgstr ""
+
+#: components/store_feature/store_feature.php:298
+msgid "CTA Link"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:118
+msgid "Background Attributes"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:122
+msgid "Choose a background image (optional: one per breakpoint)"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:127
+msgid "Optional: Set a background overlay"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:137
+msgid "Optional: Set a overlay opacity"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:148
+msgid "Choose a icon/logo"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:167
+msgid "Heading Typography"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:188
+msgid "Description Typography"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:202
+msgid "Scroll Options"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:206
+msgid "Select the row to scroll to"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:208
+msgid "Scroll to Row #1"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:209
+msgid "Scroll to Row #2"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:210
+msgid "Scroll to Row #3"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:211
+msgid "Scroll to Row #4"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:212
+msgid "Scroll to Row #5"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:213
+msgid "Scroll to Row #6"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:214
+msgid "Scroll to Row #7"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:215
+msgid "Scroll to Row #8"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:216
+msgid "Scroll to Row #9"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:217
+msgid "Scroll to Row #10"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:218
+msgid "Scroll to Row #11"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:219
+msgid "Scroll to Row #12"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:220
+msgid "Scroll to Row #13"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:221
+msgid "Scroll to Row #14"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:222
+msgid "Scroll to Row #15"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:223
+msgid "Scroll to Row #16"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:224
+msgid "Scroll to Row #17"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:225
+msgid "Scroll to Row #18"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:226
+msgid "Scroll to Row #19"
+msgstr ""
+
+#: components/timeline_header/timeline_header.php:227
+msgid "Scroll to Row #20"
+msgstr ""
+
+#: components/timeline_header/timeline_header.tpl.php:18
+msgid "Scroll down to the timeline"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:99, components/z_pattern/z_pattern.php:225
+msgid "Target Window"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:124
+msgid "Alignment"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:129, components/z_pattern_recipe/z_pattern_recipe.php:122
+msgid "Background + Text Left"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:130, components/z_pattern_recipe/z_pattern_recipe.php:123
+msgid "Background + Text Right"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:146
+msgid "Choose the Heading Type"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:159
+msgid "Headting Typography"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:179, components/z_pattern_recipe/z_pattern_recipe.php:138
+msgid "CTA"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:183
+msgid "Link Type  ( optional )"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:187
+msgid "Button"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:220, components/z_pattern_recipe/z_pattern_recipe.php:152
+msgid "Choose the button color"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:250
+msgid "Heading Color"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:255
+msgid "Textbox Header Image"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:256
+msgid "Optional: Add an image/icon above the text header. Max height 84px"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:281
+msgid "Background Image Size (Desktop)"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:288
+msgid "Background Image Size (Medium)"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:295
+msgid "Background Image Size (Responsive)"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:314, components/z_pattern_recipe/z_pattern_recipe.php:128
+msgid "Image Edging"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:317, components/z_pattern_recipe/z_pattern_recipe.php:131
+msgid "Square"
+msgstr ""
+
+#: components/z_pattern/z_pattern.php:318, components/z_pattern_recipe/z_pattern_recipe.php:132
+msgid "Diagonal"
+msgstr ""
+
+#: components/z_pattern/z_pattern.tpl.php:44, components/z_pattern/z_pattern.tpl.php:28
+msgid "Read more regarding"
+msgstr ""
+
+#: components/z_pattern/z_pattern.tpl.php:46
+msgid "resource"
+msgstr ""
+
+#: components/z_pattern/z_pattern.tpl.php:31
+msgid " regarding "
+msgstr ""
+
+#: components/z_pattern_recipe/z_pattern_recipe.php:73
+msgid "Select Recipe"
+msgstr ""
+
+#: components/z_pattern_recipe/z_pattern_recipe.php:81
+msgid "Select the content theme"
+msgstr ""
+
+#: components/z_pattern_recipe/z_pattern_recipe.php:96
+msgid "Heding Style"
+msgstr ""
+
+#: components/z_pattern_recipe/z_pattern_recipe.php:113
+msgid "Optional: Override Featured Image"
+msgstr ""
+
+#: components/z_pattern_recipe/z_pattern_recipe.php:143, components/z_pattern_recipe/z_pattern_recipe.php:148
+msgid "Get the recipe"
+msgstr ""
+
+#: components/z_pattern_recipe/z_pattern_recipe.tpl.php:14
+msgid "Featured Recipe"
+msgstr ""
+
+#: ../../plugins/sobeys-store-locator/modules/store-info/includes/frontend.php:28
+msgid "Get Directions"
+msgstr ""

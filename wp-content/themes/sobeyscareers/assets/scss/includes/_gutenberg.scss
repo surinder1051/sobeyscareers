@@ -1,0 +1,135 @@
+main {
+  @include make-container;
+  padding: 0;
+}
+
+article {
+  @include make-container-max-widths;
+  margin: 0 auto;
+}
+
+.entry-content {
+  margin: 0 auto;
+}
+
+.wp-block-table {
+  background-color: $white;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: $gray-light;
+  border-style: solid;
+  color: $black;
+
+  td,
+  th {
+    border-width: 1px;
+    border-color: $gray-light;
+    border-style: solid;
+    padding: 5px;
+  }
+
+  thead {
+    background-color: $gray-light;
+  }
+}
+
+.wp-block-quote {
+  background: $gray-light;
+  border-left: 5px solid $secondary;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 10px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.wp-block-coblocks-accordion {
+  margin: 60px 0;
+}
+
+.wp-block-coblocks-accordion-item__title {
+  background: none;
+  border-radius: 0;
+  font-family: Bemio, sans-serif;
+  font-size: 18px;
+}
+
+.wp-block-coblocks-accordion-item__content {
+  border: 0;
+  border-radius: 0;
+}
+
+.wp-block-coblocks-accordion-item {
+  border-bottom: 1px solid $gray-101;
+  margin-bottom: 0;
+
+  details {
+    summary {
+      border-radius: 0;
+      padding: 15px 20px;
+      position: relative;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        content: "\e808";
+        color: $secondary;
+        display: block;
+        font-family: "brand";
+        font-size: 12px;
+        left: 5px;
+        position: absolute;
+        top: 13px;
+      }
+    }
+
+    &[open] {
+      summary {
+        &::before {
+          content: "\e806";
+        }
+      }
+    }
+  }
+}
+
+.fl-rich-text {
+  .para-heading {
+    color: $brand-dark;
+  }
+
+  .lh-26 {
+    padding-top: rem(7);
+
+    @include media-breakpoint-down(sm) {
+      padding-top: rem(0);
+    }
+  }
+
+  blockquote {
+    border-left: rem(5) solid $brand-dark;
+    padding: rem(25);
+    padding-top: rem(35);
+    margin: 0;
+    margin-bottom: rem(30);
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.single-article {
+  .fl-rich-text {
+    p {
+      font-size: rem(16);
+      line-height: rem(26);
+    }
+
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

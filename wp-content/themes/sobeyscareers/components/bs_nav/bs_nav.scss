@@ -1,0 +1,123 @@
+@import "component";
+
+.fl-builder-content {
+	.fl-module-custom {
+		.component_bs_nav {
+			button {
+				&.bs-nav-expander {
+					background-color: $white;
+					border: none;
+					border-radius: 0;
+					color: $text-links-default-colour;
+					font-size: 14px;
+					display: inline-block;
+					margin: 0;
+					padding: 5px 8px;
+					position: absolute;
+					right: 0;
+					top: 0;
+
+					&::before {
+						display: none;
+					}
+
+					&:hover {
+						color: $text-links-hover-colour;
+					}
+				}
+			}
+		}
+	}
+}
+
+.component_bs_nav {
+	&.vertical {
+		.title {
+			width: 100%;
+		}
+
+		ul {
+			display: block;
+		}
+
+		&.navbar-expand-lg {
+			.navbar-nav {
+				.nav-link {
+					padding: 0;
+				}
+
+				.dropdown-menu {
+					border: 0;
+					position: static;
+				}
+			}
+		}
+
+		&.expand-collapse {
+			&.navbar-expand-lg {
+				.navbar-nav {
+					.nav-link {
+						padding: 0;
+					}
+
+					.dropdown-menu {
+						border: 0;
+						position: static;
+					}
+				}
+			}
+
+			@include media-breakpoint-up(md) {
+
+				.dropdown,
+				.btn-group {
+					&:hover {
+						.dropdown-menu {
+							display: block;
+						}
+
+						&.layout-columns {
+							>.dropdown-menu {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+
+			.dropdown-item {
+				background: none;
+				border: none;
+				color: $main-font-colour;
+				text-align: left;
+
+				&.active {
+					color: $main-font-colour;
+					text-align: left;
+				}
+
+				&:hover {
+					color: $text-links-hover-colour;
+				}
+			}
+
+			.menu-item-has-children {
+				&:not(.expanded) {
+					.dropdown-menu {
+						height: 0;
+						overflow: hidden;
+						transition: .4s all easeInOutQuint;
+						display: none;
+					}
+				}
+
+				&.expanded {
+					>.dropdown-menu {
+						height: auto;
+						overflow: visible;
+					}
+				}
+			}
+		}
+	}
+}

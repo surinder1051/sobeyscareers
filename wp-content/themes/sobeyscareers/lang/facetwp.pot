@@ -1,0 +1,1074 @@
+# Copyright (C) 2021 FP
+# This file is distributed under the same license as the FP package.
+msgid ""
+msgstr ""
+"Project-Id-Version: FP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../plugins/facetwp/includes/class-ajax.php:80
+msgid "Error: invalid JSON"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:73
+msgid "Settings saved"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:67
+msgid "Settings saved, please re-index"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:138
+msgid "Done, please re-index"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:200
+msgid "Error"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:238
+msgid "Nothing to import"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:274
+msgid "Imported"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-ajax.php:277
+msgid "Skipped"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-builder.php:228, ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:70, ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:457
+msgid "On Sale"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-builder.php:223, ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:449
+msgid "In Stock"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-builder.php:223, ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:449
+msgid "Out of Stock"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-display.php:153, ../../plugins/facetwp/includes/facets/fselect.php:80
+msgid "No results found"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:479, ../../plugins/facetwp/includes/class-settings.php:489
+msgid "Posts"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:481, ../../plugins/facetwp/includes/class-settings.php:492
+msgid "Post Type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:482, ../../plugins/facetwp/includes/class-settings.php:493
+msgid "Post Date"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:483, ../../plugins/facetwp/includes/class-settings.php:494
+msgid "Post Modified"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:484, ../../plugins/facetwp/includes/class-settings.php:490
+msgid "Post Title"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:485
+msgid "Post Author"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:490
+msgid "Taxonomies"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-helper.php:495, ../../plugins/facetwp/includes/class-settings.php:496
+msgid "Custom Fields"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-init.php:133, ../../plugins/facetwp/templates/page-settings.php:110
+msgid "Settings"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:566
+msgid "of"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:600, ../../plugins/facetwp/includes/class-settings.php:178, ../../plugins/facetwp/includes/class-settings.php:488, ../../plugins/facetwp/includes/facets/sort.php:40
+msgid "Sort by"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:604
+msgid "Title (A-Z)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:611
+msgid "Title (Z-A)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:618
+msgid "Date (Newest)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:625
+msgid "Date (Oldest)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-renderer.php:691, ../../plugins/facetwp/includes/facets/pager.php:201
+msgid "Per page"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-request.php:363
+msgid "FacetWP was unable to auto-detect the post listing"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:13
+msgid "General"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:16
+msgid "License key"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:20
+msgid "Google Maps API key"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:24
+msgid "Separators"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:29
+msgid "URL prefix"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:35
+msgid "Load jQuery?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:43
+msgid "Debug mode"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:53, ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:63
+msgid "WooCommerce"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:56
+msgid "Support product variations?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:57
+msgid "Enable if your store uses variable products."
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:61
+msgid "Include all products?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:62
+msgid "Show facet choices for out-of-stock products?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:68
+msgid "Import / Export"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:71, ../../plugins/facetwp/includes/class-settings.php:346
+msgid "Export"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:75, ../../plugins/facetwp/includes/class-settings.php:354
+msgid "Import"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:101, ../../plugins/facetwp/includes/facets/pager.php:255, ../../plugins/facetwp/includes/facets/sort.php:38
+msgid "Default label"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:103, ../../plugins/facetwp/includes/facets/dropdown.php:34, ../../plugins/facetwp/includes/facets/fselect.php:36, ../../plugins/facetwp/includes/facets/fselect.php:73, ../../plugins/facetwp/includes/facets/hierarchy.php:26
+msgid "Any"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:106
+msgid "Placeholder text"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:109
+msgid "Parent term"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:115
+msgid "Hierarchical"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:121
+msgid "Show expanded"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:127
+msgid "Multi-select"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:135
+msgid "Show ghosts"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:140
+msgid "Preserve ghost order"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:151
+msgid "Value modifiers"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:154
+msgid "Off"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:155
+msgid "Exclude these values"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:156
+msgid "Show only these values"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:169
+msgid "Facet logic"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:172
+msgid "AND (match all)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:173
+msgid "OR (match any)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:180
+msgid "Highest count"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:181
+msgid "Display value"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:182
+msgid "Raw value"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:183
+msgid "Term order"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:187
+msgid "Count"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:192
+msgid "Soft limit"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:197
+msgid "Other data source"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:203
+msgid "Compare type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:205
+msgid "Basic"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:206
+msgid "Enclose"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:207
+msgid "Intersect"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:211
+msgid "UI type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:351
+msgid "Paste the import code here"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:352
+msgid "Overwrite existing items?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:329
+msgid "Get an API key"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:323
+msgid "Activate"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:414
+msgid "Not yet activated"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:421
+msgid "Valid until"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:438
+msgid "Grid columns"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:439
+msgid "Grid gap"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:440
+msgid "Text style"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:441
+msgid "Text color"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:442
+msgid "Font size"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:443
+msgid "Background color"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:444
+msgid "Border"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:445
+msgid "Border style"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:446, ../../plugins/facetwp/includes/facets/proximity.php:213
+msgid "None"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:447
+msgid "Solid"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:448
+msgid "Dashed"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:449
+msgid "Dotted"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:450
+msgid "Double"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:451
+msgid "Border color"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:452
+msgid "Border width"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:453
+msgid "Button text"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:454
+msgid "Button text color"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:455
+msgid "Button padding"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:456
+msgid "Separator"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:457
+msgid "Custom CSS"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:458
+msgid "Column widths"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:459, ../../plugins/facetwp/includes/class-settings.php:505
+msgid "Content"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:460
+msgid "Image size"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:461
+msgid "Author field"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:462
+msgid "Display name"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:463
+msgid "User login"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:464
+msgid "User ID"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:465
+msgid "Field type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:466
+msgid "Text"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:467, ../../plugins/facetwp/includes/facets/date_range.php:23
+msgid "Date"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:468, ../../plugins/facetwp/includes/facets/number_range.php:23
+msgid "Number"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:469
+msgid "Date format"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:470
+msgid "Input format"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:471
+msgid "Number format"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:472
+msgid "Link"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:473
+msgid "Link type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:474
+msgid "Post URL"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:475
+msgid "Custom URL"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:476
+msgid "Open in new tab?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:477, ../../plugins/facetwp/includes/facets/slider.php:162
+msgid "Prefix"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:478, ../../plugins/facetwp/includes/facets/slider.php:166
+msgid "Suffix"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:479
+msgid "Hide item?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:480
+msgid "Padding"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:481
+msgid "CSS class"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:482
+msgid "Button border"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:483
+msgid "Term URL"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:484
+msgid "Fetch"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:485
+msgid "All post types"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:486
+msgid "and show"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:487
+msgid "per page"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:491
+msgid "Post Name"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:495
+msgid "Menu Order"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:497
+msgid "Narrow results by"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:498
+msgid "Hit Enter"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:499
+msgid "Add sort"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:500
+msgid "Add filter"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:501, ../../plugins/facetwp/includes/facets/date_range.php:282
+msgid "Clear"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:502
+msgid "Enter term slugs"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:503
+msgid "Enter values"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:504
+msgid "Layout"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:506
+msgid "Style"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:507
+msgid "Row"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:508
+msgid "Column"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:509, ../../plugins/facetwp/includes/facets/autocomplete.php:58
+msgid "Start typing"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:510
+msgid "Label"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:511
+msgid "Name"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:512
+msgid "Facet type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:513
+msgid "Copy shortcode"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:514
+msgid "Data source"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:515
+msgid "Switch to advanced mode"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:516
+msgid "Switch to visual mode"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:517
+msgid "Display"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:518
+msgid "Query"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:519
+msgid "Help"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:520
+msgid "Display Code"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:521
+msgid "Query Arguments"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:522
+msgid "Saving"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:523
+msgid "Indexing"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:524
+msgid "The index table is empty"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:525
+msgid "Indexing complete"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:526
+msgid "Looking"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:527
+msgid "Purging"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:528
+msgid "Copied!"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:529
+msgid "Press CTRL+C to copy"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:530
+msgid "Activating"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:531, ../../plugins/facetwp/templates/page-settings.php:116
+msgid "Re-index"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:532
+msgid "Stop indexer"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:533, ../../plugins/facetwp/includes/facets/autocomplete.php:153
+msgid "Loading"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:534
+msgid "Importing"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:535
+msgid "Convert to query args"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:536
+msgid "Delete item?"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-settings.php:580
+msgid "full"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-updater.php:164
+msgid "Please activate your FacetWP license for automatic updates."
+msgstr ""
+
+#: ../../plugins/facetwp/includes/class-updater.php:159
+msgid "Please <a href=\"%s\" target=\"_blank\">renew your license</a> for automatic updates."
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/autocomplete.php:10
+msgid "Autocomplete"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/autocomplete.php:61, ../../plugins/facetwp/includes/facets/number_range.php:32
+msgid "Go"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/autocomplete.php:94, ../../plugins/facetwp/includes/facets/autocomplete.php:155
+msgid "No results"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/autocomplete.php:154
+msgid "Enter {n} or more characters"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/checkboxes.php:7
+msgid "Checkboxes"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/checkboxes.php:131
+msgid "See {num} more"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/checkboxes.php:132, ../../plugins/facetwp/includes/facets/hierarchy.php:161
+msgid "See less"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:7
+msgid "Date Range"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:26, ../../plugins/facetwp/includes/facets/date_range.php:123
+msgid "Start Date"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:29, ../../plugins/facetwp/includes/facets/date_range.php:124
+msgid "End Date"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:119, ../../plugins/facetwp/includes/facets/number_range.php:112
+msgid "Fields to show"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:121
+msgid "Start + End Dates"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:122
+msgid "Exact Date"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/date_range.php:133
+msgid "Display format"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/dropdown.php:7, ../../plugins/facetwp/includes/facets/proximity.php:211
+msgid "Dropdown"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/fselect.php:7
+msgid "Dropdown (fSelect)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/fselect.php:78
+msgid "{n} selected"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/fselect.php:79, ../../plugins/facetwp/includes/facets/search.php:7
+msgid "Search"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/hierarchy.php:7
+msgid "Hierarchy"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/hierarchy.php:160
+msgid "See more"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/number_range.php:7
+msgid "Number Range"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/number_range.php:26, ../../plugins/facetwp/includes/facets/number_range.php:116
+msgid "Min"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/number_range.php:29, ../../plugins/facetwp/includes/facets/number_range.php:117
+msgid "Max"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/number_range.php:114
+msgid "Min + Max"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/number_range.php:115
+msgid "Exact"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:10
+msgid "Pager"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:196
+msgid "Pager type"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:198
+msgid "Page numbers"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:199
+msgid "Result counts"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:200
+msgid "Load more"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:205
+msgid "Inner size"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:211
+msgid "Dots label"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:217
+msgid "Prev button label"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:223
+msgid "Next button label"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:229
+msgid "Count text (plural)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:235
+msgid "Count text (singular)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:240
+msgid "Count text (no results)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:245
+msgid "Load more text"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:250
+msgid "Loading text"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/pager.php:260
+msgid "Per page options"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:14
+msgid "Proximity"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:67
+msgid "Enter location"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:181
+msgid "Clear location"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:193
+msgid "Longitude"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:201
+msgid "Unit of measurement"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:203
+msgid "Miles"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:204
+msgid "Kilometers"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:209
+msgid "Radius UI"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:212, ../../plugins/facetwp/includes/facets/slider.php:7
+msgid "Slider"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:217
+msgid "Radius options"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:223
+msgid "Range (min)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:228
+msgid "Range (max)"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:233
+msgid "Default radius"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/proximity.php:286
+msgid "Distance"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/radio.php:7
+msgid "Radio"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/rating.php:7
+msgid "Star Rating"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/rating.php:111
+msgid "& up"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/rating.php:112
+msgid "Undo"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/search.php:20
+msgid "Enter keywords"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/search.php:60
+msgid "WP Default"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/search.php:69
+msgid "Search engine"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/search.php:74
+msgid "Auto refresh"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/slider.php:23
+msgid "Reset"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/slider.php:174
+msgid "Format"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/slider.php:180
+msgid "Step"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/sort.php:7
+msgid "Sort"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/facets/sort.php:45
+msgid "Sort options"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/acf/acf.php:293
+msgid "Yes"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/acf/acf.php:293
+msgid "No"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/searchwp/searchwp.php:203
+msgid "Default"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:65
+msgid "Price"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:66
+msgid "Sale Price"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:67
+msgid "Regular Price"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:68
+msgid "Average Rating"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:69
+msgid "Stock Status"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:71, ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:466
+msgid "Featured"
+msgstr ""
+
+#: ../../plugins/facetwp/includes/integrations/woocommerce/woocommerce.php:72
+msgid "Product Type"
+msgstr ""
+
+#: ../../plugins/facetwp/index.php:72
+msgid "FacetWP requires PHP %s or above. Please contact your host and request a PHP upgrade."
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:108, ../../plugins/facetwp/templates/page-settings.php:148, ../../plugins/facetwp/templates/page-settings.php:152
+msgid "Facets"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:109, ../../plugins/facetwp/templates/page-settings.php:175, ../../plugins/facetwp/templates/page-settings.php:179
+msgid "Templates"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:111
+msgid "Support"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:120
+msgid "Show indexer stats"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:121
+msgid "Show indexable post types"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:122
+msgid "Purge the index table"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:127
+msgid "Save changes"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:153, ../../plugins/facetwp/templates/page-settings.php:180
+msgid "Add new"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:159
+msgid "Facet"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:161
+msgid "Type"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:162
+msgid "Source"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:163
+msgid "Rows"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:186
+msgid "Template"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:188
+msgid "Display mode"
+msgstr ""
+
+#: ../../plugins/facetwp/templates/page-settings.php:189
+msgid "Post types"
+msgstr ""

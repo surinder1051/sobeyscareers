@@ -1,0 +1,133 @@
+@import "component";
+
+$gray-soft: #cccaca !default;
+$dark-grey: #404040 !default;
+
+.component_social_share {
+	text-align: right;
+	width: 100%;
+	height: inherit;
+	padding: rem(25) 0;
+
+	@include media-breakpoint-only(md) {
+		text-align: left;
+	}
+
+	@include media-breakpoint-down(xs) {
+		text-align: left;
+	}
+
+	.title {
+		float: left;
+		font-weight: bold;
+		margin: 0;
+		display: block;
+		padding: 0;
+		line-height: rem(60);
+		font-size: rem(20);
+
+		@include media-breakpoint-only(md) {
+			width: 100%;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding-top: rem(8);
+		}
+
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+		}
+	}
+
+	.social-share {
+		display: inline-block;
+		padding-left: rem(8);
+		text-decoration: none;
+		vertical-align: middle;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		.social-icon {
+			border-radius: 100%;
+			color-adjust: exact;
+			padding: 0;
+			text-align: center;
+			transition: transform 1s cubic-bezier(.07, .51, .12, 1);
+			background-color: $dark-grey;
+			border: solid 2px $dark-grey;
+			color: $gray-soft;
+			height: rem(60);
+			width: rem(60);
+
+			&::before {
+				display: inline;
+				font-size: rem(24);
+				line-height: rem(60);
+			}
+		}
+	}
+
+	// Module Variants
+	&.-compact {
+		text-align: left;
+
+		.title {
+			margin-right: rem(25);
+
+			@include media-breakpoint-only(lg) {
+				width: 100%;
+				margin-right: rem(10);
+			}
+		}
+
+		.social-share {
+			padding: 0 rem(4);
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	&.-vertical {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		> * {
+			display: flex;
+		}
+	}
+
+	&.-show-print-option {
+		@media print {
+			display: none;
+		}
+
+		.social-share {
+			&.print {
+				border-left: rem(1) solid $gray-soft;
+				margin-left: rem(8);
+
+				&:hover {
+					.social-icon {
+						color: $dark-grey;
+					}
+				}
+
+				.social-icon {
+					background: none;
+					border: none;
+					color: $dark-grey;
+
+					&::before {
+						font-size: rem(60);
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}

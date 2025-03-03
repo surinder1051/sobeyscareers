@@ -1,0 +1,445 @@
+@import "component";
+
+body {
+	&.page-tradition_contest,
+	&.page-tradition_concours,
+	&.page-entertainlikegrandma,
+	&.page-christmas-contest,
+	&.page-concours-de-noel,
+	&.page-lesfetescommechezmamie {
+		.overlay-box {
+			float: left;
+			width: 100%;
+			display: flex;
+			@include media-breakpoint-only(md) {
+				display: block;
+				width: 100%;
+			}
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+			.title {
+				color: $white;
+				text-align: center;
+				margin-bottom: rem(10);
+			}
+		}
+		.overlay-image {
+			margin: 0;
+		}
+		.content-desktop {
+			display: block;
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+		.content-mobile {
+			display: none;
+			@include media-breakpoint-down(sm) {
+				display: block;
+			}
+		}
+		.content {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			@include media-breakpoint-only(md) {
+				width: 50%;
+				float: left;
+			}
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+			.content-overlay {
+				background: rgba(0,0,0,0.7);
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				opacity: 0;
+				-webkit-transition: all 0.4s ease-in-out 0s;
+				-moz-transition: all 0.4s ease-in-out 0s;
+				transition: all 0.4s ease-in-out 0s;
+			}
+			&:hover {
+				.content-overlay {
+					opacity: 1;
+				}
+				.content-details {
+					top: auto;
+					left: 50%;
+					opacity: 1;
+					bottom: 0;
+				}
+			}
+		}
+		.content-image {
+			max-width: 100%;
+			height: 100%;
+			width: 100%;
+		}
+		.content-details {
+			position: absolute;
+			text-align: left;
+			padding: 0 rem(30) rem(25);
+			width: 100%;
+			top: auto;
+			left: 50%;
+			opacity: 0;
+			-webkit-transform: translate(-50%, 0);
+			-moz-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+			-webkit-transition: all 0.3s ease-in-out 0s;
+			-moz-transition: all 0.3s ease-in-out 0s;
+			transition: all 0.3s ease-in-out 0s;
+			@include media-breakpoint-only(lg) {
+				padding: 0 rem(15) rem(10);
+			}
+			@include media-breakpoint-only(md) {
+				padding: 0 rem(30) rem(20);
+			}
+			@include media-breakpoint-down(sm) {
+				display: flex;
+				padding: 0 rem(30) rem(20);
+			}
+			@media (max-width: $small-screen) {
+				padding: 0 rem(25);
+			}
+			.content-details-image {
+				@include media-breakpoint-down(sm) {
+					width: 20%;
+					display: inline-block;
+					float: left;
+				}
+				img {
+					@include media-breakpoint-only(lg) {
+						width: 50%;
+					}
+					@include media-breakpoint-down(sm) {
+						float: left;
+						margin-right: rem(20);
+						display: inline-block;
+					}
+				}
+			}
+			.content-details-description {
+				@include media-breakpoint-down(sm) {
+					margin-left: rem(20);
+					display: inline-block;
+					width: calc(100% - 100px);
+				}
+				@media (max-width: $small-screen) {
+					width: 100%;
+				}
+				h3 {
+					color: $white;
+					font-weight: 500;
+					margin: rem(20) 0;
+					font-size: rem(30);
+					line-height: 1.2;
+					@include media-breakpoint-only(lg) {
+						font-size: rem(24);
+					}
+					@include media-breakpoint-down(sm) {
+						margin: 0 0 rem(10) 0;
+						font-size: rem(24);
+						line-height: 1.2;
+					}
+					@media (max-width: $small-screen) {
+						font-size: rem(18);
+						margin: 0 0 rem(10) 0;
+					}
+				}
+				p {
+					color: $white !important;
+					font-size: rem(18);
+					font-weight: 300;
+					@include media-breakpoint-only(lg) {
+						font-size: rem(16);
+					}
+					@include media-breakpoint-down(sm) {
+						font-size: rem(16);
+						line-height: 1.2;
+						margin-bottom: rem(10); 
+					}
+					@media (max-width: $small-screen) {
+						font-size: rem(14);
+					}
+					@media (max-width: $extra-small-screen) {
+						font-size: rem(12);
+					}
+				}
+			}
+		}
+		.fadeIn-bottom {
+			top: auto;
+		}
+		.component_z_pattern {
+			&.-right-to-left {
+				.safety-container {
+					.image-container {
+						img {
+							@include media-breakpoint-only(md) {
+								min-height: rem(300);
+							}
+							@include media-breakpoint-down(sm) {
+								object-position: right;
+							}
+						}
+					}
+				}
+			}
+		}
+		.logo-icon-img {
+			max-width: 25%;
+			margin-right: rem(40);
+			@include media-breakpoint-down(sm) {
+				max-width: 20%;
+				margin-right: rem(15);
+			}
+		}
+		.red_button {
+			.fl-button-wrap {
+				a {
+					&.fl-button {
+						@include media-breakpoint-only(lg) {
+							font-size: rem(14);
+						}
+					}
+				}
+			}
+		}
+		.christmas-product-image {
+			@media (min-width: $ultra-screen) {
+				width: 20%
+			}
+			@include media-breakpoint-only(lg) {
+				width: 100%;
+			}
+			> .fl-col-content {
+				@include media-breakpoint-only(lg) {
+					min-height: rem(600);
+				}
+			}
+		}
+		.christmas-product-text {
+			@media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+				width: 60%;
+			}
+			@include media-breakpoint-only(lg) {
+				width: 100%;
+			}
+			> .fl-col-content {
+				@media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+					padding: rem(20);
+				}
+				@include media-breakpoint-only(lg) {
+					padding: rem(20);
+				}
+			}
+		}
+		.contest_heading {
+			.fl-module-content {
+				span.block {
+					display: block;
+					@include media-breakpoint-down(sm) {
+						padding-top: rem(20);
+					}
+				}
+			}
+		}
+		.how_to_enter_section {
+			.fl-col-content {
+				@include media-breakpoint-only(lg) {
+					padding: rem(30) rem(60);
+				}
+				@include media-breakpoint-only(md) {
+					padding: rem(30) rem(60);
+				}
+				h2 {
+					@media (max-width: $extra-small-screen) {
+						font-size:rem(21);
+					}
+				}
+				.fl-module-list_module {
+					.component_list_module {
+						.list_content {
+							max-width: 100%;
+							li {
+								@media (min-width:$ultra-screen-sm) {
+									font-size:rem(24);
+								}
+								@media (max-width: $extra-small-screen) {
+									font-size:rem(13);
+								}
+								color: $white;
+								position:relative;
+								font-size:rem(20);
+								line-height: 1.5;
+								&::before {
+									top: 50%;
+									transform: translateY(-50%);
+									@include media-breakpoint-down(sm) {
+										top: unset;
+										transform: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.christmas-price-text {
+			.fl-col-content {
+				@media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+					margin-right: rem(40);
+				}
+				@include media-breakpoint-only(lg) {
+					margin-right: rem(40);
+				}
+			}
+		}
+		.christ_products {
+			.fl-col-content {
+				.fl-button-wrap {
+					a {
+						padding: rem(15) rem(40);
+					}
+				}
+			}
+		}
+		.mamie_section {
+			.fl-col-content {
+				.mamie_image {
+					@include media-breakpoint-only(lg) {
+						width: 100%;
+					}
+					@include media-breakpoint-only(md) {
+						width: 100%;
+					}
+					.fl-col-content {
+						@include media-breakpoint-only(lg) {
+							height: rem(710);
+						}
+						@include media-breakpoint-only(md) {
+							height: rem(710);
+						}
+						@include media-breakpoint-down(sm) {
+							background-image: none;
+							padding-bottom: 0;
+							padding-top: 0;
+							min-height: auto;
+						}
+					}
+				}
+			}
+		}
+		.newsletter-form-col {
+			.fl-col-content {
+				.fl-rich-text {
+					p {
+						&:empty{
+							display: none;
+						}
+					}
+				}
+				.newsletter-form-en {
+					input {
+						width: calc(100% - 200px) !important;
+						@include media-breakpoint-only(lg) {
+							width: 100% !important;
+						}
+						@include media-breakpoint-down(sm) {
+							width: 100% !important;
+						}
+					}
+				}
+				.newsletter-form-fr {
+					input {
+						width: calc(100% - 290px) !important;
+						@include media-breakpoint-only(lg) {
+							width: 100% !important;
+						}
+						@include media-breakpoint-down(sm) {
+							width: 100% !important;
+						}
+					}
+				}
+
+			}
+		}
+		.christmas_newsletter_section {
+			.fl-row-content-wrap {
+				.fl-col-content {
+					@include media-breakpoint-down(sm) {
+						padding: rem(20);
+					}
+					form {
+						.frm_form_fields {
+							height: auto !important;
+							.frm_form_field {
+								margin-bottom: 0 !important;
+								.frm_primary_label {
+									font-size: rem(24);
+									line-height: 1.4;
+									margin-bottom: rem(10);
+									font-family: $heading-font;
+									@include media-breakpoint-down(sm) {
+										font-size: rem(22);
+									}
+								}
+							}
+							fieldset {
+								padding-bottom: rem(10);
+								.frm_submit {
+									top: rem(30);
+									@include media-breakpoint-only(lg) {
+										position: relative;
+										margin: 0 auto;
+										top: rem(10);
+									}
+									@include media-breakpoint-down(sm) {
+										position: relative;
+										margin: 0 auto;
+										top: rem(10);
+									}
+									button {
+										@include media-breakpoint-down(sm) {
+											padding: rem(15) rem(40) !important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.christmas-overlay-card {
+			.fl-module-content {
+				.overlay-box {
+					.product_hover_images {
+						img {
+							@media (max-width: $ultra-screen) {
+								width: 65%;
+							}
+							@include media-breakpoint-between(md, lg) {
+								width: 50%;
+							}
+							@include media-breakpoint-down(sm) {
+								float: left;
+								margin-right: rem(20);
+								display: inline-block;
+								width: unset;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

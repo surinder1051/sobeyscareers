@@ -1,0 +1,160 @@
+@import "component";
+
+body { 
+    &.tax-recipe-tag {
+        .recipe-tag-filter{
+            .fl-col-group{
+                .fl-col {
+                    .fl-module-heading {
+                        .fl-heading {
+                            font-size: rem(16);
+                            line-height: normal;
+                        }
+                    }
+                    .fl-module-content,
+                    .fl-col-content {
+                        @include media-breakpoint-down(sm) {
+                            margin: 0;
+                        }
+                        .fl-module-class-sort {
+                            .facetwp-sort {
+                                max-width:100%;
+                                margin-bottom:0;
+                                margin-top:rem(2);
+                                @include media-breakpoint-down(sm) {
+                                    margin-bottom: rem(20);   
+                                } 
+                                .facetwp-sort-select{
+                                    color:$gray-103;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    -ms-appearance: none;
+                                    -o-appearance: none;
+                                    appearance: none;	
+                                    padding-left: 0;
+                                    padding-right: 0;		
+                                    /* IE11 hide hacks*/
+                                    &::-ms-expand {
+                                        display: none;
+                                    }
+                                }            
+                            }
+                        }
+                    }
+                    .facetwp-facet-title {
+                        font-size: rem(16);
+                        margin-bottom: rem(2);
+                        line-height: normal;
+                    }
+                    .facetwp-facet {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 100%;
+                        border-bottom: rem(1) solid $gray-102;
+                        position:relative;
+                        margin-bottom:0;
+                        color:$gray-103;
+                        @include media-breakpoint-down(sm) {
+                            margin-bottom: rem(20);   
+                        }   
+                        &.facetwp-type-dropdown{
+                            &:after
+                            {
+                                border: rem(2) solid $brand-dark;
+                                border-width: 0 rem(2) rem(2) 0;
+                                content: "";
+                                height: .5rem;
+                                padding: .1875rem;
+                                position: absolute;
+                                right: rem(2);
+                                transform: rotate(45deg);
+                                top: calc(50% - .75rem);
+                            }
+                        }
+                        .facetwp-input-wrap{
+                            width: 100%;
+                            .facetwp-icon {
+                                opacity: 1;
+                                &::before{
+                                    font-family: "brand";
+                                    content: $icon-search;
+                                    color: $brand-dark;
+                                    background: none;
+                                    width: rem(20);
+                                    font-style: normal;
+                                    font-size: rem(16);
+                                }
+                            }
+                            .facetwp-search{
+                                border:none;
+                                width:100%;
+                                margin-bottom: rem(8);
+                                min-width: auto;
+                                padding-bottom: rem(0);
+                            }
+                        }
+                        .facetwp-dropdown {
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            -ms-appearance: none;			
+                            border: 0;
+                            width: 100%;
+                            margin-bottom: rem(10);
+                            cursor: pointer;
+                            position: relative;
+                            z-index: 9;
+                            background: none;
+                            color:$gray-103;
+                            padding-left: 0;
+                            padding-right: 0;
+                            /* IE11 hide hacks*/
+                            &::-ms-expand {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .facetwp-template {
+            .card-deck {
+                .fl-module-recipe_card {
+                    .card {
+                        border: none;
+                        @include media-breakpoint-down(sm) {
+                            min-width: 80vw;
+                            margin-left: 1.875rem;
+                            margin-right: 1.875rem;
+                            margin-bottom: 1.25rem;
+                            margin-top: 0;
+                        }
+                        .card-body{
+                            border-left: rem(1) solid $gray-soft;
+                            .col{
+                                display: flex;
+                                align-items: center;
+                                span{
+                                    margin-right: 15px;
+                                }
+                                dl{
+                                    text-align:left;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-of-type(4n+0) {
+                        .card-body {
+                            border-right: rem(1) solid $gray-soft;
+                        }
+                    }
+                }
+            }
+            .recipe-card{
+                .card-img-top{
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

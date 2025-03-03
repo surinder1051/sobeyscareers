@@ -1,0 +1,115 @@
+@import "component";
+
+$card-font: "GT-Eesti-Pro-Display-Light", sans-serif;
+$grid-breakpoints2: (
+  extra-small-screen: 374px,
+  small-screen: 413px,
+  extended-screen-lg: 1299px,
+  ultra-screen: 1600px,
+  ultra-screen-lg: 1850px,
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
+
+.fl-module-bs_card {
+  .component_bs_card {
+    .overlay {
+      opacity: 1;
+      background-color: $transparent-red !important;
+    }
+    &:hover {
+      .overlay {
+        height: 100%;
+        opacity: 1;
+      }
+    }
+    &.-image-background {
+      &.card {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        height: calc(33vw / 2);
+        max-height: 390px;
+        min-height: 300px;
+        padding: 0;
+        height: inherit;
+        @include media-breakpoint-down(md) {
+          min-height: 250px;
+        }
+        h2 {
+          font-weight: 300;
+          min-height: inherit;
+          .block {
+            @include media-breakpoint-down(lg) {
+              display: inline;
+            }
+          }
+        }
+        h5 {
+          &.card-title {
+            font-size: 16px;
+            font-family: $card-font;
+          }
+        }
+        .text-links {
+          a {
+            @extend %button !optional;
+          }
+        }
+        .card-body {
+          padding: 30px;
+          @include media-breakpoint-down(md) {
+            padding: 15px;
+          }
+        }
+      }
+    }
+    &.card {
+      .overlay {
+        background-color: $brand-dark-transparent;
+        &::before {
+          background-color: $brand-dark;
+          height: 100%;
+          opacity: 0.1;
+        }
+      }
+      .card-img-top {
+        background-position: center;
+        @media (min-width: $ultra-screen-sm) {
+          max-height: 380px;
+        }
+        @include media-breakpoint-only(md) {
+          max-height: 150px;
+        }
+        @include media-breakpoint-down(sm) {
+          max-height: 230px;
+        }
+      }
+
+      // Module: fl-module-bs_card
+      // Reason: Added css for card body styling
+      .card-body {
+        border: 1px solid $light-grey;
+        border-top: none;
+        .card-text {
+          @include media-breakpoint-only(md) {
+            height: auto;
+          }
+          p {
+            color: $gray-103;
+            margin: 0;
+            font-family: $heading-font;
+            font-size: 18px;
+            line-height: 1.5;
+            @include media-breakpoint-only(md) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    &.-border {
+      border: none;
+    }
+  }
+}

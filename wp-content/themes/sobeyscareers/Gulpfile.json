@@ -1,0 +1,69 @@
+{
+	"dev_domain": "localhost",
+	"dev_port": "3001",
+	"paths": {
+		"in_svg": "assets/img/svg-icons/*.svg",
+		"groups": {
+			"sass": [{
+					"in": [
+						"assets/scss/index.scss",
+						"assets/scss/**/*.scss"
+					],
+					"out": "dist/css/",
+					"includePaths": ["assets/scss/", "assets/scss/includes/", "assets/scss/includes-foundation", "node_modules/bootstrap/scss/"]
+				},
+				{
+					"in": [
+						"components/**/*.scss"
+					],
+					"out": "dist/components/",
+					"includePaths": ["assets/scss/", "assets/scss/includes/", "assets/scss/includes-foundation", "node_modules/bootstrap/scss/"]
+				}
+			],
+			"js": [{
+					"_comment": "These js bootstrap files are optional, once commented out they need to be enqueued in enqueue.php...",
+					"enabled": true,
+					"in": [
+						"node_modules/bootstrap/js/dist/alert.*",
+						"node_modules/bootstrap/js/dist/button.*",
+						"node_modules/bootstrap/js/dist/carousel.*",
+						"node_modules/bootstrap/js/dist/collapse.*",
+						"node_modules/bootstrap/js/dist/dropdown.*",
+						"node_modules/bootstrap/js/dist/modal.*",
+						"node_modules/bootstrap/js/dist/popover.*",
+						"node_modules/bootstrap/js/dist/scrollspy.*",
+						"node_modules/bootstrap/js/dist/tab.*",
+						"node_modules/bootstrap/js/dist/toast.*",
+						"node_modules/bootstrap/js/dist/tooltip.*",
+						"node_modules/bootstrap/js/dist/util.*"
+					],
+					"out": "dist/js/bootstrap/",
+					"minify": false
+				},
+				{
+					"in": [
+						"assets/js/*.js"
+					],
+					"out": "dist/js/"
+				},
+				{
+					"in": [
+						"components/**/*.js"
+					],
+					"out": "dist/components/"
+				}
+			]
+		},
+		"in_img": [
+			"assets/img/*",
+			"assets/img/**/*",
+			"!assets/img/*.svg"
+		],
+		"in_svg": "assets/img/svg-icons/*.svg",
+		"out_img": "dist/img/",
+		"php": [
+			"./*.php",
+			"./**/*.php"
+		]
+	}
+}

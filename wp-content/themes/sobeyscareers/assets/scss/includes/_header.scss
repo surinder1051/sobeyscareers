@@ -1,0 +1,428 @@
+@import "component";
+
+// Reason: Added css to set the header spacing
+header {
+
+	.header-brand,
+	.header-top {
+		.fl-row-content-wrap {
+			@media (max-width: $extended-screen-lg) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
+.header-brand {
+	.fl-module-mega_menu {
+		@include media-breakpoint-only(lg) {
+			padding-top: 10px;
+		}
+	}
+
+	.fl-module-mega_menu {
+		@include media-breakpoint-only(lg) {
+			padding-top: 10px;
+		}
+	}
+
+	// Reason: Added css to set color
+	.fl-module-mega_menu {
+		.component_mega_menu {
+			button {
+				&.navbar-toggler {
+					.transformicon {
+						&::after {
+							@include media-breakpoint-down(sm) {
+								background: $gray-25;
+							}
+						}
+
+						&::before {
+							@include media-breakpoint-down(sm) {
+								background: $gray-25;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Reason: Added css for navigation width
+	.menu_col {
+		&.hide_on_medium {
+			@include media-breakpoint-only(lg) {
+				display: none;
+			}
+
+			@include media-breakpoint-only(md) {
+				display: none;
+			}
+		}
+
+		@media (max-width: $ultra-screen) {
+			width: 62%;
+			padding: 0 rem(10);
+		}
+
+		@include media-breakpoint-only(lg) {
+			display: inline-block;
+			margin-top: rem(7);
+		}
+
+		@include media-breakpoint-only(md) {
+			width: 80%;
+			padding: 0 0 0 rem(25);
+			margin-bottom: rem(15);
+		}
+	}
+
+	.search-sec {
+		@media (max-width: $ultra-screen) {
+			width: 20%;
+		}
+	}
+
+	// Reason: Added css for logo width
+	.logo-col {
+		@media (max-width: $ultra-screen) {
+			width: 18%;
+		}
+
+		@include media-breakpoint-only(lg) {
+			display: inline-block;
+			margin-top: rem(8);
+		}
+
+		@include media-breakpoint-only(md) {
+			width: 20%;
+		}
+
+		@include media-breakpoint-down(sm) {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+
+	// Reason: Added css for search sec alignment
+	.search-sec {
+		.fl-col-content {
+			@include media-breakpoint-only(lg) {
+				padding-top: rem(0);
+				margin-top: rem(8);
+			}
+		}
+	}
+}
+
+.header-top {
+	.new-tab {
+		a {
+			@extend %new-tab-hover;
+
+			&:hover,
+			&:focus,
+			&:focus-within,
+			&:active {
+				&::before {
+					top: rem(35);
+				}
+			}
+		}
+	}
+
+	.menu {
+		li {
+			display: inline-block;
+			vertical-align: middle;
+
+			a {
+				@include media-breakpoint-only(md) {
+					padding: rem(4) rem(5);
+					font-size: rem(13);
+				}
+
+				i {
+					color: $brand-primary !important;
+				}
+			}
+		}
+
+		>li {
+			height: 100%;
+		}
+
+		// Reason: Added css to manage top right menu
+		&.fl-menu-horizontal {
+			li {
+				border-right: rem(1) solid $gray-102;
+
+				&:first-child {
+					border-left: rem(1) solid $gray-102;
+				}
+
+				&.jobs {
+					border-right: 0;
+					border-left: rem(1) solid $gray-102;
+				}
+
+				&.air_miles {
+					border: 0;
+
+					a {
+						padding: 0;
+					}
+				}
+
+				&.lang-item-first {
+					border-left: 0;
+				}
+
+				&.current_page_item {
+					a {
+						font-weight: 700;
+					}
+				}
+
+				&.current-lang {
+					a {
+						font-weight: 700;
+						color: $brand-dark;
+					}
+				}
+
+				&:last-child {
+					@media (max-width: $ultra-screen) {
+						margin-right: 0;
+					}
+				}
+
+				span {
+					&:before {
+						color: $brand-dark;
+					}
+				}
+			}
+		}
+	}
+
+	// Reason: Added css to manage top left menu
+	#store-header {
+		font-size: rem(14);
+
+		i {
+			&:before {
+				margin-left: 0;
+				color: $brand-dark;
+			}
+		}
+
+		a {
+			&:hover {
+				color: $brand-dark;
+				;
+			}
+
+			&:focus {
+				color: $brand-dark;
+				;
+			}
+		}
+
+		//Reason: Added css for store locator popup buttons
+		.tooltip {
+			&.store-locator-popup {
+				opacity: 1;
+				font-size: rem(16);
+
+				.tooltip-inner {
+					padding-bottom: rem(45) !important;
+					color: $gray-25;
+					box-shadow: 0 rem(4) rem(17) rem(4) $black-transparent;
+					padding-right: rem(35);
+					padding-left: rem(35);
+
+					@include media-breakpoint-down(sm) {
+						max-width: 100%;
+						width: 100%;
+					}
+
+					@media (max-width: $extra-small-screen) {
+						padding: rem(16);
+					}
+
+					.store-search {
+						.preferred-store {
+							a {
+								background-color: $blue-101;
+								border: rem(2) solid $blue-101;
+								border-radius: 50px;
+								color: $white;
+								line-height: normal;
+								z-index: 1;
+								font-size: rem(16);
+								padding: rem(10) rem(45);
+								font-family: $heading-font;
+								font-weight: 600;
+							}
+						}
+
+						div {
+							&.current-store {
+								h4 {
+									font-size: rem(16);
+								}
+							}
+						}
+					}
+
+					.find-store {
+						.find-store-form {
+							input {
+								border-color: $gray-102;
+							}
+
+							a {
+								background: $white;
+								color: $blue-101;
+								font-size: rem(16);
+								font-family: $heading-font;
+								font-weight: 500;
+								border: rem(2) solid $blue-101;
+								border-radius: rem(30);
+								padding: rem(5) rem(10) rem(8) rem(10);
+								line-height: normal;
+							}
+						}
+					}
+
+					.store-select {
+						.store-list {
+							.store-result {
+								a {
+									background-color: $blue-101;
+									border: rem(2) solid $blue-101;
+									border-radius: 50px;
+									color: $white;
+									line-height: normal;
+									z-index: 1;
+									font-size: rem(16);
+									padding: rem(10) rem(17) rem(12);
+									font-family: $heading-font;
+									font-weight: 600;
+
+									@include media-breakpoint-down(sm) {
+										width: 100%;
+										max-width: 160px;
+									}
+
+									@media (max-width: $small-screen) {
+										padding: rem(5) rem(10);
+									}
+								}
+
+								.store-details {
+									text-align: left;
+
+									.store-name {
+										padding-right: rem(20);
+
+										@media (max-width: $small-screen) {
+											padding-right: 0;
+										}
+									}
+
+									@include media-breakpoint-down(sm) {
+										width: 100%;
+										margin-bottom: 20px;
+									}
+								}
+
+								&:last-of-type {
+									margin-bottom: rem(40);
+								}
+
+								@include media-breakpoint-down(sm) {
+									display: inline-block;
+									width: 100%;
+								}
+							}
+						}
+
+						.store-locator {
+							a {
+								background-color: $white;
+								border: rem(2) solid $blue-101;
+								border-radius: 50px;
+								color: $brand-dark;
+								line-height: normal;
+								z-index: 1;
+								font-size: rem(16);
+								padding: rem(10) rem(35) rem(12);
+								font-family: $heading-font;
+								font-weight: 600;
+
+								@include media-breakpoint-down(sm) {
+									padding: rem(10) rem(12) rem(12);
+								}
+							}
+						}
+					}
+				}
+
+				&.bs-tooltip-top {
+					.arrow {
+						&:before {
+							border-top-color: $white !important;
+						}
+					}
+
+					@include media-breakpoint-down(sm) {
+						transform: none !important;
+						top: 15px !important;
+					}
+				}
+
+				.close {
+					&:before {
+						color: $gray-25;
+					}
+				}
+			}
+		}
+	}
+
+	@media print {
+		header {
+			display: none;
+		}
+	}
+}
+
+.component_mega_menu {
+	.mm-language-switcher {
+		span {
+			&.mm-ls-button-item {
+				&.current {
+					a {
+						color: $brand-dark !important;
+						background-color: $transparent !important;
+
+						&:hover {
+							color: $brand-dark !important;
+						}
+					}
+				}
+
+				a {
+					color: $gray-103 !important;
+				}
+			}
+		}
+	}
+}

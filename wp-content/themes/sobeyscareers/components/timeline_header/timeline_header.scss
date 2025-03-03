@@ -1,0 +1,244 @@
+@import 'component';
+
+.fl-module-timeline_header {
+	&.cooking-class{
+		.component_timeline_header {
+			height: 60vh;
+			min-height: rem(700);
+			@media (min-width:$ultra_screen_sm) and (max-width: $ultra_screen_lg) {
+				min-height: rem(650);
+			}
+			@media (max-width: $ultra_screen) {
+				min-height: rem(500);
+			}
+			@include media-breakpoint-only(lg) {
+				height: 40vh;	
+				min-height: rem(450);
+			}
+			@include media-breakpoint-only(md) {
+				height: 40vh;	
+				min-height: rem(400);	
+			}
+			@include media-breakpoint-down(sm) {
+				min-height: 390px;
+			}
+			.timeline-header-container{
+				padding-top:0;
+				padding-bottom:0;
+			} 
+			.timeline-header-content {
+				.timeline-icon{
+					display:none;
+				}
+				.timeline-header {
+					margin-top:0;
+					margin-bottom:rem(30);
+					@include media-breakpoint-down(sm) {
+						margin-bottom:rem(15);
+					}
+				}				
+			}
+			.timeline-scoll-container{
+				display:none;
+			}			
+		}
+	}
+    .fl-module-content {
+        margin: 0;
+    }
+}
+
+.component_timeline_header {
+
+    background-color: $main-font-colour;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	height: rem(740);
+	min-height: auto;
+	@media (max-width: $ultra_screen) {
+		height: rem(600);
+    }
+	@include media-breakpoint-only(lg) {
+		height: rem(500);
+    }
+	@include media-breakpoint-only(md) {
+		height: rem(500);
+    }
+
+	@include media-breakpoint-down(sm) {
+		height: rem(620);
+	}
+	@media (max-width: $small_screen) {
+		height: rem(500);
+	}
+
+    &.-with-overlay {
+        position: relative;
+
+        &::before {
+            background: $black;
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    .timeline-header-container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        padding: 0 15px 100px;
+        width: 100%;
+		@include media-breakpoint-only(md) {
+			padding:  0 50px 100px;
+    }
+    }
+
+    .timeline-header-inner-container {
+        margin-left: auto;
+        margin-right: auto;
+
+        @include media-breakpoint-up(md) {
+            width: 750px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 970px;
+            padding: 70px 40px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 1170px;
+        }
+    }
+
+    .timeline-header-content {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        text-align: center;
+        width: 100%;
+		width:100%;
+		max-width: rem(1020);
+		padding: 0;
+        }
+
+    .text-box {
+        color: $white;
+        font-size: 14px;
+		line-height: rem(30);
+        @include media-breakpoint-up(sm) {
+            font-size: 16px;
+        }
+		@include media-breakpoint-down(sm) {
+			line-height: rem(24);
+		}		
+    }
+
+    h1,
+    h2,
+    h3 {
+        &.timeline-header {
+            color: $white;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+            text-transform: uppercase;
+			margin: rem(55) 0 rem(20);
+			@media (max-width: $ultra_screen) {
+				margin: rem(35) 0 rem(10);
+				font-size: rem(48);	
+				@include media-breakpoint-down(sm) {
+					font-size: rem(48);
+				}
+				@include media-breakpoint-down(sm) {
+					font-size: rem(30);
+				}
+				@media (max-width: $small_screen) {
+					font-size: rem(24);
+            }
+            }
+        }
+    }
+
+    .timeline-icon {
+        img {
+			width: rem(110);
+			margin:0;
+            height: auto;
+			@media (max-width: $ultra_screen) {
+				width: rem(90);
+			}
+			@include media-breakpoint-down(sm) {
+				width: rem(80);
+			}
+			@media (max-width: $small_screen) {
+				width: rem(70);
+			}
+        }
+    }
+
+    .timeline-scoll-container {
+        animation: 3000ms bounce infinite;
+        margin-top: rem(-60);
+        text-align: center;
+        button {
+            background: none;
+            border: none;
+            margin-left: calc(50% - 20px);
+            position: relative;
+
+            &::before {
+                display: none;
+            }
+
+            span {
+                display: block;
+                background: $white;
+                height: 20px;
+                margin-left: -10px;
+                transform: rotate(-48deg);
+                width: 3px;
+
+                &::after {
+                    background: #fff;
+                    content: "";
+                    display: block;
+                    height: 20px;
+                    left: 9px;
+                    position: absolute;
+                    top: 11px;
+                    transform: rotate(98deg);
+                    width: 3px;
+                }
+            }
+        }
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+     }
+}

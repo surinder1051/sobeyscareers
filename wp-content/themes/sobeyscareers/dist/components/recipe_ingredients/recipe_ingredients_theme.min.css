@@ -1,0 +1,34 @@
+.component_recipe_ingredients dl{
+  background-color:#fff;
+}
+
+.component_recipe_ingredients dl:nth-child(2n){
+  background-color:#f4f4f4;
+}
+
+.component_recipe_ingredients dl:nth-child(odd){
+  background-color:#fff;
+}
+
+.component_recipe_ingredients dl dt{
+  font-weight:600;
+}
+
+.component_recipe_ingredients dl dd.weight{
+  -webkit-box-flex:0;
+  -webkit-flex:0 0 30%;
+     -moz-box-flex:0;
+          flex:0 0 30%;
+  max-width:30%;
+  font-weight:600;
+}
+
+.component_recipe_ingredients dl dd.weight:nth-child(3){
+  font-weight:300;
+}
+
+.component_recipe_ingredients .title{
+  font-weight:600;
+}
+
+/*# sourceMappingURL=recipe_ingredients_theme.min.css.map */

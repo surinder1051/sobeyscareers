@@ -1,0 +1,378 @@
+@import "component";
+
+/*
+Url : /en/contest-aq-2024/
+      /fr/concours-aq-2024/
+*/
+body {
+    &.page-contest-aq-2024,
+    &.page-concours-aq-2024 {
+        .is-tabbing:focus, body :focus:focus, body a:focus, body button:focus, body input:focus {
+            outline: .125rem solid $error-color;
+        }
+        a {
+            &.underline_text {
+                word-break: break-word;
+            }
+        }
+        &.break_lg {
+            @media (min-width: $ultra-screen-lg) {
+                display: block;
+            }
+        }
+        &.break_sm {
+            @include media-breakpoint-down(sm) {
+                display: block;
+            }
+            @media (max-width: $small-screen) {
+                display: inline;
+            }
+        }
+        .winner_prize_row {
+            .winner_prize_container {
+                position: relative;
+                .winner_prize_desc {
+                    .fl-col-content {
+                        max-width: rem(510);
+                        float: right;
+                        @media (min-width: $extended-screen-lg) and (max-width: $ultra-screen-lg) {
+                            padding-bottom: rem(120);
+                            padding-top: rem(150);
+                        }
+                        @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                            padding: rem(90) 0 rem(70) 0;
+                        }
+                        @include media-breakpoint-only(lg) {
+                            padding: rem(80) 0 rem(70) 0;
+                            max-width: rem(320);
+                        }
+                        @include media-breakpoint-only(md) {
+                            max-width: rem(250);
+                        }
+                        @include media-breakpoint-down(sm) {
+                            max-width: rem(182);
+                        }
+                        @media (max-width: $small-screen) {
+                            max-width: rem(130);
+                            padding: rem(40) 0 rem(30) 0;
+                        }
+                        @media (max-width: $extra-small-screen) {
+                            padding: rem(20) 0 rem(20) rem(20);
+                        }
+                        .title {
+                            h1 {
+                                font-family: $main-font;
+                                font-weight: 900;
+                                line-height: 1;
+                                @include media-breakpoint-only(lg) {
+                                    font-size: rem(32);
+                                }
+                                @media (max-width: $extra-small-screen) {
+                                    font-size: rem(14);
+                                }
+                            }
+                        }
+                        .winning_amount {
+                            .fl-module-content {
+                                @media (min-width: $extended-screen-lg) and (max-width: $ultra-screen-lg) {
+                                    margin-bottom: rem(20);
+                                }
+                                @include media-breakpoint-only(lg) {
+                                    margin-bottom: rem(10);
+                                }
+                                @media (max-width: $small-screen) {
+                                    margin-bottom: rem(8);
+                                }
+                                h2 {
+                                    font-family: $main-font;
+                                    font-weight: 900;
+                                    line-height: 1;
+                                    @media (min-width: $extended-screen-lg) and (max-width: $ultra-screen-lg) {
+                                        font-size: rem(100);
+                                    }
+                                    @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                                        font-size: rem(100);
+                                    }
+                                    @include media-breakpoint-only(lg) {
+                                        font-size: rem(80);
+                                    }
+                                    @media (max-width: $small-screen) {
+                                        font-size: rem(30);
+                                    }
+                                    @media (max-width: $extra-small-screen) {
+                                        font-size: rem(24);
+                                    }
+                                }
+                            }
+                        }
+                        .groceries {
+                            .fl-module-content {
+                                @media (min-width: $extended-screen-lg) and (max-width: $ultra-screen-lg) {
+                                    margin-bottom: rem(15);
+                                }
+                                @include media-breakpoint-only(lg) {
+                                    margin-bottom: rem(20);
+                                }
+                                h2 {
+                                    font-family: $main-font;
+                                    font-weight: 900;
+                                    @include media-breakpoint-only(lg) {
+                                        font-size: rem(32);
+                                    }
+                                    @media (max-width: $extra-small-screen) {
+                                        font-size: rem(14);
+                                    }
+                                }
+                            }
+                        }
+                        .gift_basket_para {
+                            p {
+                                font-family: $main-font;
+                                font-weight: 900;
+                                @include media-breakpoint-only(lg) {
+                                    font-size: rem(26);
+                                }
+                                span {
+                                    @include media-breakpoint-only(lg) {
+                                        font-size: rem(26);
+                                    }
+                                    &.red_count {
+                                        color: $red-107;
+                                    }
+                                    &.break_lg {
+                                        @media (min-width: $ultra-screen-lg) {
+                                            display: block;
+                                        }
+                                    }
+                                    &.break_sm {
+                                        @include media-breakpoint-down(sm) {
+                                            display: block;
+                                        }
+                                        @media (max-width: $small-screen) {
+                                            display: inline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .winner_prize_img_col {
+                    .winner_prize {
+                        img {
+                            position: absolute;
+                            max-width: fit-content;
+                            right: rem(-25);
+                            top: -100px;
+                            bottom: 0;
+                            @media (min-width:$ultra-screen-sm) and (max-width: $ultra-screen-lg) {
+                                right: rem(80);
+                                max-width: 100%;
+                            }
+                            @media (min-width: $extended-screen-lg) and (max-width: $ultra-screen) {
+                                max-width: 100%;
+                                right: rem(60);
+                            }
+                            @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                                right: rem(40);
+                                top: rem(-90);
+                                max-width: 100%;
+                            }
+                            @include media-breakpoint-between(md, lg) {
+                                max-width: 100%;
+                            }
+                            @include media-breakpoint-only(lg) {
+                                right: rem(50);
+                                top: rem(-50);
+                            }
+                            @include media-breakpoint-only(md) {
+                                right: rem(60);
+                                top: rem(-30);
+                            }
+                            @include media-breakpoint-down(sm) {
+                                width: rem(260);
+                                right: rem(2);
+                                top: rem(-30);
+                                max-width: fit-content;
+                            }
+                            @media (max-width: $small-screen) {
+                                width: rem(200);
+                            }
+                            @media (max-width: $extra-small-screen) {
+                                width: rem(160);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .participate_col {
+            >.fl-col-content {
+                @include media-breakpoint-only(lg) {
+                    padding: rem(40);
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                h2 {
+                    @media (max-width: $small-screen) {
+                        &.fl-heading {
+                            font-size: rem(24);
+                        }
+                    }
+                }
+                .directions {
+                    &.step1 {
+                        .fl-col-content {
+                            @media (min-width: $ultra-screen-lg) {
+                                padding-left: rem(35);
+                                padding-right: rem(60);
+                            }
+                            @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                                padding-left: 0;
+                            }
+                            .prod_img {
+                                img {
+                                    @include media-breakpoint-down(sm) {
+                                        max-width: rem(65);
+                                    }
+                                }
+                            }
+                          }
+                    }
+                    &.step2 {
+                        .fl-col-content {
+                            @media (min-width: $ultra-screen-lg) {
+                                padding-left: rem(60);
+                                padding-right: rem(35);
+                            }
+                            @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                                padding-right: 0;
+                            }
+                            .prod_img {
+                                @include media-breakpoint-up(sm) {
+                                    margin-left: rem(50) !important;
+                                }
+                                img {
+                                    @include media-breakpoint-down(sm) {
+                                        max-width: rem(44);
+                                    }
+                                }
+                            }
+                          }
+                    }
+                    .participate_text_container {
+                        .text_wrapper {
+                            display: flex;
+                            align-items: center;
+                            .count {
+                                font-size: rem(70);
+                                line-height: 1.15;
+                                font-family: $main-font;
+                                font-weight: 900;
+                                margin-right: rem(20);
+                                @include media-breakpoint-only(lg) {
+                                    font-size: rem(50);
+                                }
+                                @include media-breakpoint-only(md) {
+                                    font-size: rem(50);
+                                }
+                                @media (max-width: $small-screen) {
+                                    font-size: rem(40);
+                                }
+                            }
+                            .desc {
+                                font-size: rem(24);
+                                line-height: 1.42;
+                                font-family: $heading-font;
+                                font-weight: 600;
+                                @media (max-width: $ultra-screen) {
+                                    font-size: rem(22);
+                                }
+                                @media (min-width:$extended-screen-sm) and (max-width: $extended-screen-lg) {
+                                    font-size: rem(18);
+                                }
+                                @include media-breakpoint-only(lg) {
+                                    font-size: rem(18);
+                                }
+                                @include media-breakpoint-only(md) {
+                                    font-size: rem(24);
+                                }
+                                @include media-breakpoint-down(sm) {
+                                    font-size: rem(18);
+                                }
+                                @media (max-width: $extra-small-screen) {
+                                    font-size: rem(16);
+                                }
+                            }
+                            .prod_img {
+                                margin-left: rem(20);
+                                @include media-breakpoint-only(md) {
+                                    margin-left: auto !important;
+                                }
+                                @include media-breakpoint-down(sm) {
+                                    margin-left: auto;
+                                }
+                                img {
+                                    @media (min-width: $ultra-screen-lg) {
+                                        max-width: fit-content;
+                                    }
+                                    @media (min-width:$extended-screen-sm) and (max-width: $ultra-screen-lg) {
+                                        max-width: fit-content;
+                                    }
+                                    @include media-breakpoint-between(md, lg) {
+                                        max-width: fit-content;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contest_buttons_row {
+            @include media-breakpoint-down(sm) {
+                .fl-button {
+                    width: 100%;
+                }
+            }
+        }
+        .newsletter_row {
+            h3 {
+                &.fl-heading {
+                    @media (max-width: $small-screen) {
+                        font-size: rem(28);
+                    }
+                }
+            }
+            .white-btn {
+                a {
+                    &.text-align {
+                        @include media-breakpoint-down(sm) {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.page-concours-aq-2024 {
+        .winner_prize_row {
+            .winner_prize_container {
+                position: relative;
+                .winner_prize_desc {
+                    .fl-col-content {
+                        .gift_basket_para {
+                            p {
+                                &.break_lg {
+                                    @media (min-width:$extended-screen-sm) {
+                                        font-size: rem(33);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

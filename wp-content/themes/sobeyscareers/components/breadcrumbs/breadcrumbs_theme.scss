@@ -1,0 +1,19 @@
+@import "component";
+
+//Reason: Added scss for breadcrumbs Icon Spacing
+.fl-module-breadcrumbs {
+    .component_breadcrumbs {
+        .breadcrumb {
+            .breadcrumb-item {
+                .separator {
+                    margin-right: 6px;
+                }
+                a {
+                    &:hover {
+                        color: $blue-102;
+                    }
+                }
+            }
+        }
+    }
+}

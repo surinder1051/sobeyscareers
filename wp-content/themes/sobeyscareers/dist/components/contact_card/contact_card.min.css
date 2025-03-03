@@ -1,0 +1,51 @@
+.component_contact_card h1,.component_contact_card h2,.component_contact_card h3,.component_contact_card h4,.component_contact_card h5,.component_contact_card h6{
+  font-size:1.875rem;
+  font-weight:300;
+  line-height:normal;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_contact_card h1,.component_contact_card h2,.component_contact_card h3,.component_contact_card h4,.component_contact_card h5,.component_contact_card h6{
+    font-size:1.25rem;
+  }
+}
+
+.component_contact_card .item-location_summary h4{
+  font-size:1.125rem;
+  font-family:Open Sans,sans-serif;
+  margin-top:1.875rem;
+  margin-bottom:.9375rem;
+  line-height:normal;
+}
+
+.component_contact_card .item-location_summary h4:first-of-type{
+  margin-top:0;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_contact_card .item-location_summary h4{
+    font-size:.875rem;
+  }
+}
+
+.component_contact_card .item-location_summary p{
+  margin-bottom:.625rem;
+  position:relative;
+  padding-left:1.875rem;
+  word-wrap:break-word;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_contact_card .item-location_summary p{
+    font-size:.875rem;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_contact_card.mob_bottom_border{
+    border-bottom:.0625rem solid #ddd;
+    padding-bottom:1.875rem;
+  }
+}
+
+/*# sourceMappingURL=contact_card.min.css.map */

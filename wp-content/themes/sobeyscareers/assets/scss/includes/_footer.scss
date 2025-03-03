@@ -1,0 +1,254 @@
+$shadow-green: #89b6a6 !default;
+
+.site-footer {
+  .col-app {
+    > div {
+      > .fl-module-text {
+        width: 60%;
+        float: left;
+        padding: rem(20);
+      }
+    }
+  }
+  .navbar {
+    padding: 0;
+    .container {
+      padding-left: rem(0);
+    }
+
+    .navbar {
+      padding: 0;
+      width: 100%;
+
+      .navbar-nav {
+        width: 100%;
+        display: block;
+
+        @include media-breakpoint-down(sm) {
+          display: block;
+          padding-bottom: rem(10);
+        }
+
+        li {
+          width: 100%;
+          a {
+            padding: rem(1) 0;
+            transition: all 0.25s ease;
+            font-size: rem(14);
+            font-weight: 400;
+            margin-bottom: rem(5);
+            width: auto;
+            display: inline;
+            @include media-breakpoint-only(lg) {
+              font-size: rem(12);
+            }
+            @include media-breakpoint-only(md) {
+              font-size: rem(12);
+              margin-right: rem(20);
+              line-height: normal;
+              margin-bottom: rem(10);
+            }
+            @media (max-width: $extra-small-screen) {
+              font-size: rem(13);;
+            }
+            &:hover {
+              color: $brand-dark;
+            }
+          }
+        }
+
+        &.footer-trademark {
+          text-align: left;
+
+          @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: left;
+            padding-bottom: rem(10);
+            border-bottom: none;
+          }
+
+          li {
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .title {
+        width: 100%;
+        margin-bottom: rem(15);
+
+        @include media-breakpoint-down(sm) {
+          padding: rem(15) 0;
+          margin-bottom: 0;
+
+          &::after {
+            content: "";
+            border: solid $white;
+            border-width: 0 rem(1) rem(1) 0;
+            padding: rem(3);
+            position: absolute;
+            transform: rotate(225deg);
+            right: rem(10);
+            margin-top: rem(8);
+            transition: all 0.5s ease;
+            display: none;
+          }
+        }
+        @include media-breakpoint-only(lg) {
+          font-size: rem(14);
+        }
+         &.navCollapsed {
+          border-bottom: none;
+
+          &::after {
+            @include media-breakpoint-down(sm) {
+              transform: rotate(45deg);
+              margin-top: rem(8);
+            }
+          }
+        }
+      }
+    }
+  }
+  //Reason: css added to change footer bottom order on mobile
+  .footer-row {
+    background: $black-101;
+    .fl-row-content-wrap {
+      max-width:  1810px;
+      margin: 0 auto;
+      @media (max-width: $extended_screen_lg) {
+        padding-left: rem(30);
+        padding-right: rem(30);
+      }
+      //Reason: css added for  font and spacing of right side address
+      .address_column {
+        .fl-col-group-nested {
+          @include media-breakpoint-down(sm) {
+            flex-direction: row;
+          }
+          .address_info {
+            .fl-rich-text {
+              p {
+                font-size: rem(14);
+                margin-bottom: rem(0);
+                line-height: rem(22);
+                @include media-breakpoint-only(lg) {
+                  font-size: rem(12);
+                }
+                @include media-breakpoint-only(md) {
+                  font-size: rem(12);
+                  padding-left: rem(10);
+                }
+                @include media-breakpoint-down(sm) {
+                  width: rem(240);
+                }
+                span {
+                  &.address_text {
+                    text-decoration: underline;
+                  }
+                  &.block {
+                    display: block;
+                    @include media-breakpoint-only(md) {
+                      display: inline;
+                    }
+                    @include media-breakpoint-down(sm) {
+                      display: inline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .bottom_link-right {
+            h3 {
+              display: none;
+            }
+            ul {
+              &.footer-right {
+                margin-top: rem(5);
+                li {
+                  a {
+                    text-decoration: underline;
+                    @include media-breakpoint-only(md) {
+                      padding-left: rem(10);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .fl-col-group-nested {
+        @include media-breakpoint-down(sm) {
+          display: flex;
+          flex-direction: column;
+        }
+        //Reason: css added for ordering
+        #copyright_div {
+          order: 1;
+          margin:0;
+          @include media-breakpoint-down(sm) {
+            order: 2;
+          }
+          .fl-rich-text {
+            p {
+              margin: rem(0);
+              display: flex;
+              span {
+                margin-left: rem(5);
+                @include media-breakpoint-down(sm) {
+                  display: block;
+                  margin-bottom: rem(20);
+                  margin-left: 0;
+                }
+                a {
+                  text-decoration: underline;
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+        #footer_right_link {
+          order: 2;
+          @include media-breakpoint-down(sm) {
+            order: 1;
+          }
+          //Reason: css added for space right bottom menu
+          .bottom_right_link {
+            a {
+              margin-left: rem(20);
+              color: $white;
+              &:first-child{
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-row {
+    :focus {
+      outline: rem(2) solid $red-105 !important;
+    }
+    .is-tabbing {
+      &:focus {
+        outline: rem(2) solid $red-105 !important;
+      }
+    }
+  }
+}
+
+@media print {
+  footer {
+    &.site-footer {
+      display: none !important;
+    }
+  }
+}

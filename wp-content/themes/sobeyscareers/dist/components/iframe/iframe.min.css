@@ -1,0 +1,14 @@
+.component_iframe{
+  color:#000;
+}
+
+.component_iframe iframe{
+  overflow:hidden;
+  border:0;
+}
+
+.component_iframe iframe:not(.is-tabbing):focus{
+  outline:0;
+}
+
+/*# sourceMappingURL=iframe.min.css.map */

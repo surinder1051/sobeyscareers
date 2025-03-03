@@ -1,0 +1,566 @@
+.facetwp-template {
+	.card-deck {
+		>.card {
+			border: 0;
+			margin: 0 0 rem(30);
+			max-width: 25%;
+
+			@include media-breakpoint-only(md) {
+				max-width: 33.33334%;
+			}
+
+			@include media-breakpoint-down(sm) {
+				max-width: 100%;
+			}
+		}
+
+		.fl-module-recipe_card {
+			.card {
+				max-width: 100%;
+				border: rem(1) solid $light-grey;
+				padding-bottom: rem(10);
+				-webkit-border-radius: 0;
+				-moz-border-radius: 0;
+				border-radius: 0;
+				border-top: 0;
+				margin: rem(6);
+			}
+		}
+
+		>* {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			-moz-box-flex: 1;
+			flex: 1;
+			min-width: 33%;
+			max-width: 33%;
+		}
+	}
+}
+
+.facetwp-counts {
+	display: inline;
+}
+
+.selectric-facetwp-sort-select {
+	.selectric .button {
+		display: none;
+	}
+}
+
+.top-pager {
+	padding: rem(40);
+	margin: 0 auto;
+	max-width: rem(1750);
+	width: 100%;
+
+	@include media-breakpoint-down(sm) {
+		padding: rem(30);
+	}
+
+	.facetwp-pager {
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}
+
+.fl-builder-content .facetwp-pager {
+	text-align: right;
+
+	@extend .d-flex;
+	@extend .justify-content-end;
+
+	@include media-breakpoint-down(sm) {
+		text-align: left;
+		justify-content: flex-start !important;
+	}
+
+	.facetwp-pager-label {
+		display: none;
+	}
+
+	.facetwp-page {
+		border-radius: 50%;
+		color: $gray-103;
+		display: inline-block;
+		font-size: rem(16);
+		height: rem(42);
+		line-height: rem(42);
+		margin: 0 rem(4);
+		text-align: center;
+		width: rem(42);
+		padding: 0 rem(4);
+		background-color: transparent;
+		border-color: transparent;
+		font-weight: normal;
+		margin-right: 0;
+		text-decoration: none;
+
+
+
+		@include media-breakpoint-down(md) {
+			margin: 0 rem(1);
+			font-size: rem(14);
+			width: rem(30);
+			height: rem(30);
+			line-height: rem(30);
+		}
+
+		@media (max-width: $extra-small-screen) {
+			height: rem(26);
+			line-height: rem(26);
+			width: rem(26);
+			font-size: rem(13);
+		}
+
+		&.active {
+			background: $blue-101;
+			border-color: $blue-101;
+			color: $white;
+			text-decoration: none;
+		}
+
+		&.active.next,
+		&.active.prev {
+			&:before {
+				color: $white;
+			}
+		}
+
+		&.first-page,
+		&.prev {
+			color: transparent;
+
+			&:hover {
+				text-decoration: none !important;
+			}
+
+			&:before {
+				font-family: $icomoon-font-family;
+				content: $icon-arrow-left;
+				color: $gray-103;
+				font-size: rem(18);
+
+				@include media-breakpoint-down(md) {
+					font-size: rem(16);
+					line-height: rem(30);
+				}
+
+				@media (max-width: $extra-small-screen) {
+					line-height: rem(26);
+				}
+
+				&:active {
+					color: $white;
+				}
+			}
+		}
+
+		&.prev {
+			color: $brand-dark;
+			font-size: 0;
+
+			&::before {
+				color: $gray-103;
+			}
+		}
+
+		&.next {
+			color: $brand-dark;
+			font-size: 0;
+			margin-right: 0;
+			text-align: right;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			&.active {
+				text-align: center;
+			}
+
+			&:before {
+				font-family: $icomoon-font-family;
+				content: $icon-arrow-right;
+				font-size: rem(18);
+				color: $brand-dark;
+
+				@include media-breakpoint-down(md) {
+					font-size: rem(16);
+					line-height: rem(30);
+				}
+
+				@media (max-width: $extra-small-screen) {
+					line-height: rem(26);
+				}
+
+				&:active {
+					color: $white;
+				}
+			}
+		}
+
+	}
+}
+
+.fl-module-class-sort {
+	.title {
+		display: inline-block;
+		float: none;
+		font-size: rem(16);
+		font-weight: 700;
+		margin-right: rem(20);
+	}
+
+	.facetwp-sort {
+		display: inline-block;
+		max-width: rem(330);
+		vertical-align: middle;
+		width: 100%;
+		border-bottom: rem(1) solid $gray-102;
+		position: relative;
+		margin-top: 0;
+
+		&:after {
+			border: rem(2) solid $brand-dark;
+			border-width: 0 rem(2) rem(2) 0;
+			content: "";
+			height: rem(8);
+			padding: rem(3);
+			position: absolute;
+			right: rem(2);
+			transform: rotate(45deg);
+			top: calc(50% - .75rem);
+
+			@media all and (-ms-high-contrast: none),
+			(-ms-high-contrast: active) {
+				height: rem(3);
+				top: calc(50% - 20px);
+			}
+		}
+
+		@media all and (-ms-high-contrast: none),
+		(-ms-high-contrast: active) {
+			margin-top: rem(23);
+		}
+
+		@include media-breakpoint-only(md) {
+			max-width: 100%;
+		}
+
+		@include media-breakpoint-down(sm) {
+			max-width: 100%;
+		}
+
+		.selectric {
+			.label {
+				border-bottom: rem(2) solid $gray-medium;
+				color: $gray-25;
+				font-size: rem(16);
+				padding: rem(5) 0 rem(10);
+
+				// Reason: Added css to manage arrow icon on sortby filter
+				&::after {
+					content: '';
+					border-bottom: rem(2) solid $blue-101;
+					border-right: rem(2) solid $blue-101;
+					display: inline-block;
+					margin-top: rem(3);
+					padding: rem(3);
+					position: absolute;
+					right: 0;
+					transform: rotate(45deg);
+				}
+			}
+		}
+
+		.selectric-items {
+			border: 0;
+
+			.selectric-scroll {
+				ul {
+					li {
+						font-size: rem(14);
+						padding: rem(10);
+						color: $gray-25;
+
+						&.highlighted {
+							background: $gray-medium;
+							color: $gray-25;
+						}
+					}
+				}
+			}
+		}
+
+		// Reason: added css to style sortby filter
+		.facetwp-sort-select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			-ms-appearance: none;
+			-o-appearance: none;
+			appearance: none;
+			border: 0;
+			width: 100%;
+			margin-bottom: rem(10);
+			cursor: pointer;
+			position: relative;
+			z-index: 9;
+			background: none;
+
+			/* IE11 hide hacks*/
+			&::-ms-expand {
+				display: none;
+			}
+		}
+	}
+}
+
+.bottom_pagination {
+	.fl-row-content-wrap {
+		width: 100%;
+
+		.fl-module-class-counts {
+			padding: rem(8) 0;
+		}
+	}
+}
+
+.facetwp-dropdown-store {
+	text-align: center;
+
+	.facetwp-facet-title {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: rem(15);
+		margin-bottom: 0;
+
+		@include media-breakpoint-down(sm) {
+			display: block;
+			margin: 0;
+			margin-bottom: rem(15);
+		}
+	}
+}
+
+.facetwp-facet {
+	&.facetwp-type-pager {
+		margin-bottom: 0;
+	}
+
+	&.facetwp-facet-store_regions {
+		margin: 0;
+		display: inline-block;
+		background: $white;
+		max-width: rem(170);
+		width: 100%;
+		vertical-align: middle;
+		text-align: left;
+
+		.selectric-wrapper {
+			.selectric {
+				.label {
+					border: rem(1) solid $gray-medium;
+					color: $gray-25;
+					font-size: rem(16);
+					padding: rem(15) rem(40) rem(15) rem(15);
+
+					&::after {
+						content: '';
+						border-bottom: rem(2) solid $text-links-default-colour;
+						border-right: rem(2) solid $text-links-default-colour;
+						display: inline-block;
+						margin-top: rem(7);
+						padding: rem(3);
+						position: absolute;
+						right: rem(15);
+						transform: rotate(45deg);
+					}
+				}
+			}
+
+			.selectric-items {
+				.selectric-scroll {
+					ul {
+						li {
+							font-size: rem(15);
+							color: $gray-25;
+							background: $white;
+							padding: rem(15) rem(8);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.facetwp-facet-recipe_tags_columns,
+	&.facetwp-facet-recipe_tags_columns_en,
+	&.facetwp-facet-recipe_tags_columns_fr {
+		columns: 2;
+
+		@include media-breakpoint-up(md) {
+			columns: 3;
+		}
+
+		@include media-breakpoint-up(lg) {
+			columns: 4;
+		}
+	}
+}
+
+.sort_by_col {
+	min-width: rem(65);
+	max-width: rem(65);
+
+	@include media-breakpoint-down(sm) {
+		min-width: 100%;
+		max-width: 100%;
+	}
+}
+
+// Module: facetwp-bb-module
+// Reason: Added css to manage the filter
+.facetwp-bb-module {
+	.facetwp-type-search {
+		.facetwp-input-wrap {
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+		}
+
+		.facetwp-search {
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+		}
+	}
+
+	.facetwp-facet-title {
+		margin-bottom: rem(30);
+	}
+
+	// Reason: Added css for checkboxes on filters
+	.facetwp-type-checkboxes {
+		.facetwp-checkbox {
+			padding-left: rem(30);
+			background: url("#{$asset-path}/img/checkbox.png");
+			background-size: rem(16) rem(16);
+			background-repeat: no-repeat !important;
+			background-position: left top rem(4);
+			color: $gray-103;
+			font-size: rem(16);
+			margin-bottom: rem(18);
+			margin-top: rem(15);
+
+			&.checked {
+				background: url("#{$asset-path}/img/checkbox-on.png");
+				background-position: left top rem(4);
+			}
+		}
+	}
+}
+
+// Module: fl-module-class-facet
+// Reason: Added css to manage search bar
+.fl-module-class-facet {
+	&.fact_search {
+		.facetwp-bb-module {
+			.facetwp-icon {
+				opacity: 1;
+
+				&::before {
+					font-family: "brand";
+					content: "\e839";
+					color: $brand-dark;
+					background: none;
+					width: rem(20);
+					font-style: normal;
+					font-size: rem(20);
+				}
+
+				&.f-loading {
+					&::before {
+						animation: none;
+					}
+				}
+			}
+
+			input {
+				&.facetwp-search {
+					border: none;
+					border-bottom: 1px solid $gray-102;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+// Added scss for Recipes Archive checkbox
+.recipes-archive-facet-tag {
+    .facetwp-facet-title {
+        font-size: rem(24);
+        line-height: 1.2;
+        margin-bottom: rem(30);
+    }
+    .facetwp-type-checkboxes {
+        .facetwp-checkbox {
+            background: none;
+            font-size: rem(18);
+            line-height: 1.5;
+            position: relative;
+            padding-left: rem(30);
+            margin-bottom: rem(15);
+            @media (max-width: $extra-small-screen) {
+                font-size: rem(16);
+            }
+            &::before {
+                position: absolute;
+                left: 0;
+                height: rem(16);
+                width: rem(16);
+                border: rem(1) solid $light-grey;
+                top: rem(5);
+                content: '';
+            }
+            &.checked {
+                background: none;
+                &::before {
+                    content: '';
+                    border-color: $brand-dark;
+                    background-color: $brand-dark;
+                    color: $white;
+                }
+                &::after {
+                    display: inline-block;
+                    transform: rotate(45deg);
+                    height: rem(10);
+                    width: rem(5);
+                    border-bottom: rem(2) solid $white;
+                    border-right: rem(2) solid $white;
+                    content: '';
+                    position: absolute;
+                    left: rem(6);
+                    top: rem(7);
+                }
+            }
+        }
+    }
+    .facetwp-facet {
+        &.facetwp-facet-recipe_tags_columns,
+        &.facetwp-facet-recipe_tags_columns_en,
+        &.facetwp-facet-recipe_tags_columns_fr {
+            column-count: 2;
+            @include media-breakpoint-up(md) {
+                column-count: 3;
+            }
+            @include media-breakpoint-up(lg) {
+                column-count: 4;
+            }
+            @media (max-width: $small-screen) {
+                column-count: 1;
+            }
+        }
+    }
+}

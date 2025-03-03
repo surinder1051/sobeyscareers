@@ -1,0 +1,43 @@
+@import "component";
+/*
+Url : 404 Page 
+*/
+body {
+	&.error404 {
+		// Module : breadcrumb
+		// Reason : Added css to hide breadcrumb
+		.row_breadcrumb {
+			display: none;
+		}
+		// Module : fl-heading
+		// Reason : Added css to fix text size for extra-small-screen
+		.fl-module-heading {
+			.fl-heading {
+				@media (max-width: $extra-small-screen) {
+					font-size: rem(24);
+					line-height: rem(30);
+				}
+			}
+		}
+		// Module : fl-button
+		// Reason : Added css for buttons alignment
+		.error404_row {
+			.fl-col-group-nested {
+				text-align: center;
+				.fl-module-button {
+					display: inline-block;
+					padding: 0 rem(10);
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+					}
+					.fl-button {
+						@include media-breakpoint-down(sm) {
+							width: 100%;
+							margin-bottom: rem(5);
+						}
+					}
+				}
+			}
+		}
+	}
+}

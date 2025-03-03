@@ -1,0 +1,17 @@
+body .cookie_policy .sobeys_container .col_right{
+  padding-right:0;
+}
+
+@media (max-width:767.98px){
+  body .cookie_policy .sobeys_container .col_right{
+    width:6.25rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body .cookie_policy .scp_desc{
+    line-height:1.25rem;
+  }
+}
+
+/*# sourceMappingURL=plugin-cookie-policy.min.css.map */

@@ -1,0 +1,171 @@
+@font-face{
+  font-family:Bemio;
+  src:url(/wp-content/themes/marches-tradition/assets/fonts/Bemio.eot);
+  src:url(/wp-content/themes/marches-tradition/assets/fonts/Bemio.eot?#iefix) format("embedded-opentype"), url(/wp-content/themes/marches-tradition/assets/fonts/Bemio.svg#Bemio) format("svg"), url(/wp-content/themes/marches-tradition/assets/fonts/Bemio.ttf) format("truetype"), url(/wp-content/themes/marches-tradition/assets/fonts/Bemio.woff) format("woff"), url(/wp-content/themes/marches-tradition/assets/fonts/Bemio.woff2) format("woff2");
+  font-weight:400;
+  font-style:normal;
+}
+
+body{
+  background-color:#fff;
+  font-family:Open Sans,sans-serif;
+  font-size:16px;
+  font-size:1rem;
+  color:#404040;
+}
+
+.editor-post-title__input,h1{
+  font-family:Bemio,sans-serif;
+  font-size:3.125rem;
+  font-weight:700;
+  line-height:3.5rem;
+  margin:3.125rem 0;
+  text-align:center;
+}
+
+@media (max-width:767.98px){
+  .editor-post-title__input,h1{
+    font-size:2.25rem;
+    line-height:2.625rem;
+  }
+}
+
+.editor-post-title__input{
+  text-align:left;
+}
+
+h2{
+  font-size:2.25rem;
+  line-height:2.625rem;
+  margin:0 0 1.25rem;
+  text-align:center;
+}
+
+h2,h3{
+  font-family:Bemio,sans-serif;
+  font-weight:700;
+}
+
+h3{
+  font-size:1.875rem;
+  line-height:2.25rem;
+  margin:0 0 .625rem;
+}
+
+h4{
+  font-size:1.5rem;
+  line-height:1.75rem;
+}
+
+h4,h5{
+  font-family:Bemio,sans-serif;
+  font-weight:700;
+  margin-bottom:.625rem;
+}
+
+h5{
+  font-size:1.25rem;
+  line-height:1.625rem;
+}
+
+h6{
+  font-family:Bemio,sans-serif;
+  font-size:1.125rem;
+  font-weight:700;
+  line-height:1.5rem;
+  margin-bottom:.625rem;
+}
+
+.wp-block-quote{
+  background:#f4f4f4;
+  border-left:.3125rem solid #ea0028;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1.25rem 1.25rem .625rem;
+  max-width:800px;
+  max-width:50rem;
+  width:90%;
+}
+
+.wp-block-coblocks-accordion{
+  margin:3.75rem 0;
+}
+
+.wp-block-coblocks-accordion-item__title{
+  background:none;
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+          border-radius:0;
+  font-family:Bemio,sans-serif;
+  font-size:18px;
+  font-size:1.125rem;
+}
+
+.wp-block-coblocks-accordion-item__content{
+  border:0;
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+          border-radius:0;
+}
+
+.wp-block-coblocks-accordion-item{
+  border-bottom:.0625rem solid #f0f0f0;
+  margin-bottom:0;
+}
+
+.wp-block-coblocks-accordion-item details summary{
+  -webkit-border-radius:0;
+     -moz-border-radius:0;
+          border-radius:0;
+  padding:.9375rem 1.25rem;
+  position:relative;
+}
+
+.wp-block-coblocks-accordion-item details summary::-webkit-details-marker{
+  display:none;
+}
+
+.wp-block-coblocks-accordion-item details summary:before{
+  content:"\e808";
+  color:#ea0028;
+  display:block;
+  font-family:brand;
+  font-size:12px;
+  font-size:.75rem;
+  left:5px;
+  left:.3125rem;
+  position:absolute;
+  top:13px;
+  top:.8125rem;
+}
+
+.wp-block-coblocks-accordion-item details[open] summary:before{
+  content:"\e806";
+}
+
+.wp-block-coblocks-accordion-item .wp-block-coblocks-accordion-item__title:before{
+  content:"\002B";
+  color:#ea0028;
+  font-family:Open-sans,sans-serif;
+  font-weight:400;
+  left:0;
+}
+
+.wp-block-coblocks-accordion-item--open .wp-block-coblocks-accordion-item__title:before{
+  content:"\2212";
+  color:#ea0028;
+  font-family:Open-sans,sans-serif;
+  font-weight:400;
+  left:0;
+}
+
+.fl-rich-text h2{
+  color:#ea0028;
+  font-size:1.875rem;
+}
+
+.fl-rich-text h3,.fl-rich-text h4{
+  color:#ea0028;
+}
+
+/*# sourceMappingURL=gutenberg.min.css.map */

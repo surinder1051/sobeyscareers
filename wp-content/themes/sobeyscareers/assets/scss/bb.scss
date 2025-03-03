@@ -1,0 +1,86 @@
+@import 'component';
+
+.fl-builder-settings {
+	.fl-form-table {
+		.fl-field-description {
+			display: block;
+			font-style: italic !important;
+			padding: 5px;
+		}
+	}
+}
+
+.fl-row {
+	>.fl-row-overlay {
+		>.fl-block-overlay-header {
+
+			>.fl-block-overlay-actions {
+				&::before {
+					content: "Row 1";
+					display: inline-block;
+					float: left;
+					font-family: arial;
+					padding: 4px;
+				}
+			}
+		}
+	}
+}
+
+body {
+	&:not(.single-event) {
+		.fl-builder-block {
+			&[data-type="event"] {
+				display: none !important;
+			}
+		}
+	}
+}
+
+html {
+
+	&.fl-builder-edit {
+		.fl-form-field-preview-text {
+			padding-bottom: 10px;
+		}
+	}
+}
+
+@for $i from 2 through 20 {
+
+	.fl-row &:nth-child(#{$i}) {
+		>.fl-row-overlay {
+			>.fl-block-overlay-header {
+				>.fl-block-overlay-actions {
+					&::before {
+						content: "Row #{$i}";
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.js {
+	.tmce-active {
+
+		.wp-editor-area {
+			height: auto !important;
+			min-height: 100px;
+		}
+	}
+}
+
+.fl-builder-settings-fields {
+	select {
+		&[multiple] {
+			min-height: 100px;
+
+			&[name="visible_regions[]"],
+			&[name="hidden_regions[]"] {
+				min-height: 250px;
+			}
+		}
+	}
+}

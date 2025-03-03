@@ -1,0 +1,134 @@
+@import 'component';
+
+.component_recipe_card_slider {
+	.title {
+		line-height: 1;
+	}
+
+	.component-content-wrapper {
+		&:focus {
+			outline: 0;
+		}
+
+		.carousel-item {
+			margin: 0;
+			display: flex;
+
+			.card {
+				border: none;
+
+				&.recipe-card {
+					border: none;
+					flex: 1;
+					margin: 0;
+					min-width: 25%;
+
+					.recipe-card_link {
+						display: block;
+						position: relative;
+					}
+
+					.overlay {
+						display: none;
+					}
+
+					.card-img-top {
+						background-position: center;
+						background-size: cover;
+						border: none;
+						border-radius: 0;
+						height: calc(25vw / 1.2);
+						max-height: rem(400);
+						min-height: rem(160);
+					}
+
+					.card-body {
+						.bottom-col-wrap {
+							display: none !important;
+						}
+					}
+				}
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+			top: 50%;
+			bottom: 50%;
+			width: rem(42);
+			height: rem(80);
+			background-color: rgba($black, 0.4);
+			border: none;
+			z-index: 1000;
+			margin: auto 0;
+			padding: 0;
+			font-size: 0;
+
+			&:after {
+				font-family: Brand, serif;
+				font-size: rem(22);
+				line-height: 1;
+				color: $white;
+			}
+
+			&.slick-prev {
+				border-radius: 0 rem(100) rem(100) 0;
+
+				&:after {
+					content: "\276E";
+					margin-right: 25%;
+				}
+			}
+
+			&.slick-next {
+				right: 0;
+				border-radius: rem(100) 0 0 rem(100);
+
+				&:after {
+					content: "\276F";
+					margin-left: 25%;
+				}
+			}
+		}
+
+		.slick-dots {
+			padding-top: rem(30);
+			text-align: center;
+
+			li {
+				display: inline-block;
+				margin: auto;
+				padding: rem(0) rem(4);
+				outline: none !important;
+
+				button {
+					padding: 0;
+					width: rem(15);
+					height: rem(3);
+					border-radius: rem(15);
+					outline: none !important;
+					background: #ddd;
+					border: none;
+					font-size: 0;
+					margin: 0;
+
+					@include media-breakpoint-up(md) {
+						width: rem(70);
+						height: rem(5);
+					}
+
+					&::before {
+						display: none;
+					}
+				}
+
+				&.slick-active {
+					button {
+						background: #8cb854;
+					}
+				}
+			}
+		}
+	}
+	
+}

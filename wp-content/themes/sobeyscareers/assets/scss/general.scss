@@ -1,0 +1,873 @@
+@import "component";
+@import "bootstrap";
+
+@import "header";
+@import "footer";
+@import "facetwp";
+@import "fonts";
+@import "forms";
+@import "gutenberg";
+@import "branding";
+@import "templates";
+
+// .btn-primary {
+// 	@include button-variant($brand-primary,
+// 		$brand-primary,
+// 		$brand-primary,
+// 		lighten($brand-primary, 5%),
+// 		lighten($brand-primary, 10%),
+// 		darken($brand-primary, 30%));
+// }
+
+// .btn-outline-primary {
+// 	// @include button-outline-variant($brand-primary, $brand-primary, lighten($brand-primary, 5%), $brand-primary);
+// }
+
+// button,
+
+body {
+    font-family: $main-font;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01";
+    background-color: $white;
+    color: $gray-25;
+
+    &.scroll_hidden {
+        overflow: hidden;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    p, input, button {
+        font-family: $main-font;
+    }
+
+    b {
+        font-weight: 600;
+    }
+    ::-moz-selection,
+    ::selection {
+        background: $brand-dark;
+        color: $white;
+    }
+    .block {
+        display: block;
+        @media (max-width: $ultra-screen) {
+            display: inline;
+        }
+    }
+    :focus {
+        outline: none;
+    }
+}
+.site {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+// This is a safety... sometimes seems like layout file doesn't regenerate... will invstigate futher
+header .fl-node-5e98a4b21645e img {
+    max-width: 280px;
+}
+
+.fl-builder-content {
+    h1 {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+    h4,
+    h5,
+    h6, label {
+        font-family: $heading-font;
+        font-weight: 700;
+    }
+
+
+    .fl-module-custom button {
+        @extend %button;
+    }
+
+    li,
+    button,
+    input,
+    textarea,
+    select {
+        &:not(.is-tabbing) {
+            outline: none !important;
+        }
+    }
+    a {
+        color: $brand-dark;
+        &:not(.is-tabbing) {
+            outline: none !important;
+        }
+    }
+
+    button,
+    .button,
+    .btn {
+        &:not(b) {
+            background: $brand-dark;
+            border: rem(2) solid $brand-dark;
+            border-radius: rem(30);
+            color: $default-button-text-colour;
+            float: left;
+            font-weight: 700;
+            margin-right: rem(15);
+            width: auto;
+            padding: rem(14) rem(30);
+            font-size: rem(16);
+            line-height: normal;
+        }
+    }
+
+    a {
+        &.button {
+            &.outline {
+                background: $white;
+                border: rem(2) solid $default-button-default-colour;
+                border-radius: rem(30);
+                color: $default-button-default-colour;
+                font-weight: 700;
+                margin-right: 0;
+                padding: rem(10) rem(8);
+                text-align: center;
+                padding: 10px 30px;
+                font-size: 16px;
+
+                &:hover {
+                    background: $brand-dark !important;
+                    color: $white;
+                    transition: background 0.3s !important;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+blockquote,
+.wp-block-quote {
+    background: #f4f4f4;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 10px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.site-content {
+    min-height: rem(600);
+}
+
+.sm_container {
+    /* autoprefixer: off */
+    display: flex;
+    /* autoprefixer: on */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1810px;
+    padding: 0 45px;
+    margin: 0 auto;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+
+    @media (max-width: $extended_screen_lg) {
+        padding: 0 rem(30);
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0 rem(25);
+    }
+    @include media-breakpoint-only(md) {
+        display: -webkit-box;
+    }
+}
+
+.fl-module-heading .fl-heading {
+    font-weight: 600;
+    font-size: rem(40);
+    line-height: normal;
+
+    @include media-breakpoint-down(sm) {
+        font-size: rem(34);
+    }
+}
+
+.fl-row-content-wrap {
+    width: 100%;
+}
+
+.flex-row {
+    @include media-breakpoint-down(sm) {
+        flex-direction: column !important;
+    }
+}
+
+.fl-col {
+    &.fl-col-small {
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
+    }
+}
+
+.fl-row {
+    &.fl-padding-row {
+        .fl-row-content-wrap {
+            .fl-row-content {
+                > .fl-col-group {
+                    margin-left: rem(-15);
+                    margin-right: rem(-15);
+
+                    @include media-breakpoint-down(sm) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    font-size: 0;
+    height: rem(1);
+    margin: rem(-1);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: rem(1);
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: $black;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: rem(5);
+    line-height: normal;
+    padding: rem(15) rem(23) rem(14);
+    text-decoration: none;
+    top: rem(5);
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+/**Common CSS Rules for multiple pages**/
+.fl-builder-content {
+    .red_button {
+        .fl-button-wrap {
+            a {
+                &.fl-button {
+                    background: $brand-dark;
+                    color: $white;
+                    font-size: rem(16);
+                    border: rem(2) solid $brand-dark;
+                    border-radius: rem(30);
+                    padding: rem(15) rem(30);
+                    line-height: normal;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    transition: transform 1s cubic-bezier(0.07, 0.51, 0.12, 1),
+                        -webkit-transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: rem(14);
+                        padding: rem(12) rem(20);
+                    }
+
+                    &:before {
+                        content: "";
+                        height: 100%;
+                        left: 0;
+                        position: absolute;
+                        top: 0;
+                        -webkit-transform-origin: 0 0;
+                        -ms-transform-origin: 0 0;
+                        transform-origin: 0 0;
+                        width: 150%;
+                        z-index: -1;
+                        -webkit-transform: translateX(-100%) skew(-45deg);
+                        -ms-transform: translateX(-100%) skew(-45deg);
+                        transform: translateX(-100%) skew(-45deg);
+                        transition: transform 1s
+                                cubic-bezier(0.07, 0.51, 0.12, 1),
+                            -webkit-transform 1s cubic-bezier(0.07, 0.51, 0.12, 1);
+                        background: $white;
+                    }
+
+                    &:hover {
+                        color: $brand-dark;
+
+                        .fl-button-text {
+                            color: $brand-dark;
+                        }
+
+                        &:before {
+                            -webkit-transform: translateX(0) skew(-45deg);
+                            -ms-transform: translateX(0) skew(-45deg);
+                            transform: translateX(0) skew(-45deg);
+                        }
+                    }
+
+                    .fl-button-text {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**Common CSS Rules for buttons styling**/
+button {
+    &.frm_button_submit {
+        @extend %button;
+    }
+}
+/* Slider css start*/
+.mobile_carousel, .mobileColumnSlider{
+    @include media-breakpoint-down(sm) {
+        padding-right: rem(0);
+    }
+    .slick-slider {
+        @include media-breakpoint-down(sm) {
+            position: relative;
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .card {
+            .card-img-top {
+                @include media-breakpoint-down(sm) {
+                    height: calc(75vw / 1.2);
+                }
+            }
+        }
+
+        .slick-arrow {
+            font-size: rem(0);
+            border: 0;
+            margin: rem(0);
+            height: rem(60);
+            width: rem(60);
+            z-index: 11;
+            padding: 0;
+            background: $white;
+            color: $brand-dark;
+
+            @include media-breakpoint-down(sm) {
+                height: rem(44);
+                width: rem(44);
+                display: none !important;
+            }
+
+            &:hover::before {
+                transition: none;
+                transform: none;
+            }
+
+            &::before {
+                font-family: $icomoon-font-family;
+                position: relative;
+                transition: none;
+                transform: none;
+                font-size: rem(18);
+            }
+        }
+
+        .slick-prev {
+            position: absolute;
+            top: 30%;
+            left: 2%;
+
+            &::before {
+                content: $icon-arrow-left;
+            }
+        }
+
+        .slick-next {
+            position: absolute;
+            top: 30%;
+            right: 2%;
+
+            &::before {
+                content: $icon-arrow-right;
+            }
+        }
+    }
+
+    .slick-list {
+        @include media-breakpoint-down(sm) {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .slick-list:focus {
+        @include media-breakpoint-down(sm) {
+            outline: none;
+        }
+    }
+
+    .slick-list.dragging {
+        @include media-breakpoint-down(sm) {
+            cursor: pointer;
+            cursor: hand;
+        }
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        @include media-breakpoint-down(sm) {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .slick-track {
+        @include media-breakpoint-down(sm) {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+        @include media-breakpoint-down(sm) {
+            display: table;
+            content: "";
+        }
+    }
+
+    .slick-track:after {
+        @include media-breakpoint-down(sm) {
+            clear: both;
+        }
+    }
+
+    .slick-loading .slick-track {
+        @include media-breakpoint-down(sm) {
+            visibility: hidden;
+        }
+    }
+
+    .slick-slide {
+        @include media-breakpoint-down(sm) {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: rem(1);
+            list-style: none !important;
+        }
+    }
+
+    [dir="rtl"] .slick-slide {
+        @include media-breakpoint-down(sm) {
+            float: right;
+        }
+    }
+
+    .slick-slide.slick-loading img {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .slick-slide.dragging img {
+        @include media-breakpoint-down(sm) {
+            pointer-events: none;
+        }
+    }
+
+    .slick-initialized .slick-slide {
+        @include media-breakpoint-down(sm) {
+            display: block;
+            margin-right: rem(20);
+        }
+    }
+
+    .slick-loading .slick-slide {
+        @include media-breakpoint-down(sm) {
+            visibility: hidden;
+        }
+    }
+
+    .slick-vertical .slick-slide {
+        @include media-breakpoint-down(sm) {
+            display: block;
+            height: auto;
+            border: rem(1) solid transparent;
+        }
+    }
+
+    .slick-arrow.slick-hidden {
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .slick-list.draggable {
+        @include media-breakpoint-down(sm) {
+            padding-right: 10%;
+        }
+    }
+
+    .slick-dots {
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            width: 100%;
+            margin: 20px 0 0 0;
+        }
+
+        li {
+            @include media-breakpoint-down(sm) {
+                display: inline-flex;
+                padding: 0 rem(3);
+            }
+
+            &.slick-active {
+                button {
+                    @include media-breakpoint-down(sm) {
+                        border: rem(2) solid $brand-dark;
+                        background: $brand-dark;
+                    }
+                }
+            }
+        }
+
+        button {
+            @include media-breakpoint-down(sm) {
+                width: rem(30);
+                height: rem(4);
+                padding: 0;
+                border: rem(2) solid $light-grey;
+                background: $light-grey;
+                border-radius: rem(50);
+                font-size: 0;
+                margin: 0;
+
+                &:not(.is-tabbing) {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .card-deck {
+        .recipe-card {
+            @include media-breakpoint-down(sm) {
+                min-width: 100%;
+                max-width: 100%;
+            }
+
+            .card-body {
+                @include media-breakpoint-down(sm) {
+                    padding: 0 rem(20);
+                }
+
+                .bottom-col-wrap {
+                    .col {
+                        @include media-breakpoint-down(sm) {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.full_width_slide {
+        .slick-list {
+            &.draggable {
+                @include media-breakpoint-down(sm) {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .slick-slider {
+            .slick-next {
+                @include media-breakpoint-down(sm) {
+                    right: rem(-20);
+                }
+            }
+
+            .slick-prev {
+                @include media-breakpoint-down(sm) {
+                    left: rem(-20);
+                }
+            }
+        }
+    }
+
+    &.dark_arrow {
+        .slick-slider {
+            .slick-arrow {
+                background: $brand-dark;
+                color: $white;
+            }
+        }
+    }
+
+    &.show_arrow {
+        .slick-slider {
+            .slick-arrow {
+                @include media-breakpoint-down(sm) {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
+ul.faq {
+    li {
+        list-style-type: circle;
+        padding: rem(2) 0;
+    }
+}
+
+.arrow-column {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: rem(20) solid transparent;
+        border-right: rem(20) solid transparent;
+        border-top: rem(20) solid $light-green;
+        left: 50%;
+        transform: translateX(rem(-20));
+        bottom: rem(-20);
+        z-index: 99999;
+    }
+}
+
+/*Image based icon css*/
+.fl-icon {
+    .fpicon-play-inverse,
+    .fpicon-play {
+        @extend %fpicon-play-size;
+    }
+}
+
+.fl-accordion {
+    .fl-accordion-button {
+        .fl-accordion-button-icon {
+            opacity: 1;
+            color: $default-button-default-colour;
+            padding-right: rem(15);
+        }
+    }
+}
+
+/*module button common css*/
+.fl-module-button {
+    .fl-button-wrap {
+        .fl-button {
+            @extend %button;
+
+            span {
+                color: inherit;
+            }
+
+            &:focus {
+                span {
+                    color: $white;
+                }
+
+                &:hover {
+                    span {
+                        color: $brand-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    &.white-btn {
+        .fl-button-wrap {
+            .fl-button {
+                @extend %button_white;
+
+                &:focus {
+                    span {
+                        color: $brand-dark;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** Print Css **/
+@media print {
+    body {
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .print_hidden {
+        display: none !important;
+    }
+}
+
+/** Ul List Css **/
+ul {
+    &.birthdays-parties {
+        padding-left: rem(15);
+        list-style-type: none;
+
+        li {
+            &.purple_dot {
+                &::before {
+                    content: $ul-disc;
+                    color: $purple-1;
+                    font-size: rem(26);
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: rem(20);
+                    margin-left: rem(-20);
+                }
+            }
+
+            &.yellow_dot {
+                &::before {
+                    content: $ul-disc;
+                    color: $yellow-1;
+                    font-size: rem(26);
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: rem(20);
+                    margin-left: rem(-20);
+                }
+            }
+
+            &.blue_dot {
+                &::before {
+                    content: $ul-disc;
+                    color: $blue-1;
+                    font-size: rem(26);
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: rem(20);
+                    margin-left: rem(-20);
+                }
+            }
+        }
+    }
+}
+
+.inline-col-group-md {
+    .fl-col-group {
+        &::after {
+            @include media-breakpoint-only(md) {
+                clear: none;
+            }
+        }
+    }
+}
+
+.video_icon {
+    i {
+        &.fa-play-circle {
+            @extend %fpicon-button-circle;
+        }
+    }
+}
+
+.underline_text {
+    text-decoration: underline;
+}
+
+iframe {
+    border: 0;
+}
+
+// I.E Popup style
+//Reason: Added style to manage I.E popup
+.ie11-warning {
+    &.show {
+        .modal-dialog {
+            .modal-content {
+                border: none;
+                border-radius: 0;
+                .modal-body {
+                    font-family: $main-font;
+                    .modal-title {
+                        color: $brand-dark;
+                    }
+                    .container {
+                        .col {
+                            a {
+                                color: $brand-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.modal-backdrop {
+    &.show {
+        opacity: 0.85;
+    }
+}

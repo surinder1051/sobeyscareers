@@ -1,0 +1,15 @@
+@media (max-width:374px){
+  body.page-air-miles .font-small-screen .fl-module-heading .fl-heading{
+    font-size:1.875rem;
+    line-height:2.25rem;
+  }
+}
+
+@media (max-width:374px){
+  body.page-air-miles .separator-mini-screen .fl-module-content{
+    margin-top:2.1875rem;
+    margin-bottom:2.1875rem;
+  }
+}
+
+/*# sourceMappingURL=page-airmiles.min.css.map */

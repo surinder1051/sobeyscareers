@@ -1,0 +1,41 @@
+@media (min-width:1850px){
+  .page_top_banner .fl-module-z_pattern_v2 .component_z_pattern_v2 .safety-container .text-container{
+    padding-left:6.25rem;
+    padding-right:2.5rem;
+  }
+}
+
+@media (max-width:1299px){
+  .page_top_banner .fl-module-z_pattern_v2 .component_z_pattern_v2 .safety-container .text-container{
+    padding-left:1.875rem;
+    padding-right:1.875rem;
+  }
+}
+
+.page_top_banner .fl-module-z_pattern_v2 .component_z_pattern_v2 .safety-container .text-container h1.heading{
+  margin-bottom:0;
+}
+
+@media (min-width:1850px){
+  .page_top_banner .fl-module-z_pattern_v2 .component_z_pattern_v2 .safety-container .text-container h1.heading{
+    font-size:40px;
+    font-size:2.5rem;
+    line-height:48px;
+    line-height:3rem;
+  }
+}
+
+.page_top_banner .fl-module-z_pattern_v2 .component_z_pattern_v2 .safety-container .text-container .field_editor p{
+  margin-top:.9375rem;
+  margin-bottom:0;
+  color:#fffac2;
+}
+
+@media (min-width:1601px){
+  .page_top_banner .fl-module-z_pattern_v2 .component_z_pattern_v2 .safety-container .image-container img{
+    height:350px;
+    height:21.875rem;
+  }
+}
+
+/*# sourceMappingURL=z_pattern_v2_theme.min.css.map */

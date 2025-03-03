@@ -1,0 +1,5 @@
+{
+    "require": {
+        "vierbergenlars/php-semver": "^3.0"
+    }
+}

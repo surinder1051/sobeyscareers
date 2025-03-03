@@ -1,0 +1,45 @@
+@import "component";
+// Module: fl-module-list_module
+// Reason: Added SCSS to style listing
+.fl-module-list_module {
+	.component_list_module {
+		.heading {
+			display: none;
+		}
+		ul {
+			li {
+				color: $gray-103;
+				font-family: $main-font;
+				padding: 0 0 0 rem(28);
+				line-height: rem(20);
+				@media (max-width: $small-screen) {
+					line-height: rem(24);
+					margin-bottom: rem(6);
+				}
+				&:before {
+					display: none;
+				}
+				span {
+					background: $blue-101;
+					width: rem(18);
+					height: rem(18);
+					border-radius: rem(100);
+					@media (max-width: $small-screen) {
+						top: rem(2);
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						bottom: rem(6);
+						left: rem(7);
+						width: rem(5);
+						height: rem(8);
+						border: solid $white;
+						border-width: 0 rem(2) rem(2) 0;
+						transform: rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+}

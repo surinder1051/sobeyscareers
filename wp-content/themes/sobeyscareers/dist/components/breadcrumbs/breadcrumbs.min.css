@@ -1,0 +1,29 @@
+.component_breadcrumbs .breadcrumb{
+  background-color:transparent;
+  margin:0 auto;
+  padding:0;
+}
+
+.component_breadcrumbs .breadcrumb .breadcrumb-item{
+  padding:0;
+}
+
+.component_breadcrumbs .breadcrumb .breadcrumb-item:before{
+  content:none;
+}
+
+.component_breadcrumbs .breadcrumb .breadcrumb-item .separator{
+  margin:0 .625rem;
+}
+
+.component_breadcrumbs .breadcrumb .breadcrumb-item .separator i{
+  font-size:.875rem;
+  vertical-align:top;
+}
+
+.component_breadcrumbs .breadcrumb .breadcrumb-item a{
+  text-decoration:none;
+  font-size:.875rem;
+}
+
+/*# sourceMappingURL=breadcrumbs.min.css.map */

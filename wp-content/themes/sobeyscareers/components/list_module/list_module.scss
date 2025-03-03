@@ -1,0 +1,348 @@
+@import "component";
+
+$main-font: 'Poppins-Regular', sans-serif !default;
+$icon-font: 'dashicons' !default;
+
+$grid-breakpoints2: (ultra-screen: 1600px);
+$grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
+
+.component_list_module {
+	// @extend .fp_component_padding;
+	float: left;
+	width: 100%;
+
+	ol,
+	ul {
+		column-count: 1;
+		clear: both;
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+		padding: 0;
+
+		@include media-breakpoint-down(md) {
+			padding: 0 !important;
+		}
+		&.align-left {
+			margin-left: 0;
+		}
+		&.align-right {
+			margin-right: 0;
+		}
+	}
+
+	li {
+		box-sizing: border-box;
+		counter-increment: counter;
+		display: block;
+		font-family: $main-font;
+		line-height: 44px;
+		list-style: none;
+		margin-bottom: -15px;
+		min-height: 50px;
+		padding: 16px 0;
+		position: relative;
+		width: 100%;
+
+		@include media-breakpoint-up(md) {
+			padding-left: 57px;
+		}
+
+		&.select-hidden {
+			display: none;
+			visibility: hidden;
+		}
+
+		> span,
+		&::before {
+			border-right: 1px solid $gray-800;
+			content: counter(counter);
+			font-size: 24px;
+			height: 44px;
+			left: 0;
+			margin-right: 10px;
+			padding-right: 10px;
+			position: absolute;
+			text-align: center;
+            width: 37px;
+
+			@include media-breakpoint-down(md) {
+				height: 20px;
+				padding-bottom: 40px;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			line-height: 40px;
+			max-width: 100%;
+			padding-left: 60px;
+		}
+
+	}
+
+	&.-two_col {
+		ul {
+			@include media-breakpoint-up(md) {
+				column-count: 2;
+				max-width: 800px;
+			}
+		}
+	}
+
+	&.-three_col {
+		ul {
+			@include media-breakpoint-up(md) {
+				column-count: 3;
+				max-width: 1000px;
+			}
+		}
+	}
+
+	&.-unordered {
+		ul {
+			li {
+				break-inside: avoid;
+				padding-left: 30px;
+
+				> span,
+				&::before {
+					border-right: 0;
+					content: '\f345';
+					font-family: $icon-font;
+					font-size: 15px;
+					padding: 0;
+				}
+
+				a {
+					&::after {
+						display: none;
+					}
+				}
+			}
+			&.style-bullet {
+
+				li {
+					font-size: 16px;
+					line-height: 24px;
+					margin-bottom: 8px;
+					min-height: 0;
+					overflow-wrap: break-word;
+					padding: 0 0 0 15px;
+					word-wrap: break-word;
+
+					> span {
+						border-radius: 50%;
+						width: 5px;
+						height: 5px;
+						margin-right: 0;
+						padding-right: 0;
+					}
+					&::before {
+						background-color: $main-font-colour;
+						border-radius: 50%;
+						content: "";
+						height: 5px;
+						margin-right: 0;
+						padding-right: 0;
+						transform: translateY(50%);
+						top: 7px;
+						width: 5px;
+						@include media-breakpoint-down(sm) {
+							padding-bottom: 0;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	&.-ordered {
+		ol {
+			&.style-background,
+			&.style-checkmark {
+				li {
+					font-size: 16px;
+				}
+			}
+			&.style-background {
+				li {
+					line-height: 24px;
+					margin-bottom: 0;
+					padding-top: 18px;
+					padding-left: 64px;
+
+					&::before {
+						background: $default-button-default-colour;
+						border: none;
+						border-radius: 50%;
+						color: $default-button-hover-colour;
+						font-family: inherit;
+						font-weight: 700;
+						font-size: 18px;
+						height: 44px;
+						line-height: 44px;
+						padding: 0;
+						text-align: center;
+						width: 44px;
+					}
+					> span {
+						display: none;
+					}
+				}
+			}
+			&.style-checkmark {
+				li {
+					line-height: 30px;
+					margin-bottom: 0;
+					min-height: auto;
+					padding: 5px 10px 0 40px;
+					&::before {
+						display: none;
+					}
+					> span {
+						background: $default-button-default-colour;
+						width: 24px;
+						height: 24px;
+						border-radius: 50%;
+						padding-right: 0;
+						border-right: 0;
+						left: 0;
+						top: 22px;
+						padding: 0;
+						transform: translateY(-50%);
+						&::before {
+							content: "";
+							position: absolute;
+							left: 9px;
+							bottom: 9px;
+							width: 5px;
+							height: 8px;
+							border-radius: 1px;
+							border: 1px solid $white;
+							border-width: 0 2px 2px 0;
+							transform: rotate(45deg);
+							z-index: 99;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.-unordered,
+	&.-ordered {
+		ul,
+		ol {
+			&.select-options {
+				background: $white;
+				border: 1px solid $gray-800;
+				border-top: 0;
+				display: none;
+				left: 0;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				right: 0;
+				top: 100%;
+				z-index: 999;
+
+				>li {
+					cursor: pointer;
+					margin-bottom: 0;
+					padding: 0;
+					transition: .4s ease background;
+
+					&:hover {
+						background: $gray-200;
+					}
+
+					&.select-hidden {
+						display: none;
+					}
+
+					> span,
+					&::before {
+						background: none;
+						display: none;
+					}
+
+					a {
+						display: block;
+						padding: 5px 20px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.safety-container {
+		float: left;
+		width: 100%;
+
+		.list-main {
+			float: left;
+			width: 100%;
+		}
+	}
+
+	.heading {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+		width: 100%;
+
+	}
+
+	.list-content-container {
+		.select {
+			clear: both;
+			margin: 20px auto;
+			max-width: 400px;
+			position: relative;
+			width: auto;
+		}
+
+	}
+
+	.list-wrapper {
+		button {
+			display: none;
+		}
+
+		&.select-styled {
+			// stylelint-disable-next-line no-vendor-prefixes
+			-webkit-touch-callout: none; // scss-lint:disable no-vendor-prefixes
+			user-select: none;
+			border: 1px solid $gray-800;
+			cursor: pointer;
+			position: relative;
+			width: 100%;
+
+			&::before {
+				content: '\f347';
+				display: block;
+				color: $gray-500;
+				font-family: $icon-font;
+				font-size: 20px;
+				position: absolute;
+				right: 10px;
+				top: 25px;
+    			transform: translateY(-50%);
+			}
+
+			button {
+				background: none;
+				border: 0;
+				color: $black;
+				display: block;
+				padding: 12px 15px;
+				position: relative;
+				text-align: left;
+				width: 100%;
+			}
+		}
+	}
+}

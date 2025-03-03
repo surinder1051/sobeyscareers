@@ -1,0 +1,50 @@
+@import 'component';
+
+$gray-light: #f4f4f4 !default;
+$gray-soft: #cccaca !default;
+$gray-25: #404040 !default;
+
+$main-font: 'Open sans',
+sans-serif !default;
+
+.fl-module-recipe_characteristics {
+    .component_recipe_characteristics {
+
+        .title {
+            font-size: rem(18);
+            line-height: normal;
+            margin-bottom: rem(20);
+            color: $gray-25;
+            font-family: $main-font;
+        }
+
+        a {
+            border: rem(1) solid $gray-soft;
+            border-radius: rem(30);
+            color: $gray-25;
+            display: inline-block;
+            font-style: normal;
+            margin-bottom: rem(10);
+            margin-right: rem(5);
+            padding: rem(5) rem(15);
+            text-decoration: none;
+            transition: all 0.5s ease;
+
+            @include media-breakpoint-only(md) {
+                font-size: rem(12);
+                padding: rem(5) rem(10);
+            }
+
+            &:hover {
+                background: $gray-light;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+
+@media print {
+    .fl-module-recipe_characteristics {
+        display: none;
+    }
+}

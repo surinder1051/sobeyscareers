@@ -1,0 +1,158 @@
+@media (max-width:767.98px){
+  .component_menu_dropdown{
+    display:none;
+  }
+}
+
+.component_menu_dropdown .menu-items{
+  padding:0;
+}
+
+.component_menu_dropdown .menu-items .menu-item{
+  background-color:transparent;
+  cursor:pointer;
+  display:inline-block;
+  position:relative;
+}
+
+.component_menu_dropdown .menu-items .menu-item.focus-visible{
+  outline:1px auto -webkit-focus-ring-color;
+  outline:.0625rem auto -webkit-focus-ring-color;
+  outline-offset:1px;
+  outline-offset:.0625rem;
+}
+
+.component_menu_dropdown .menu-items .menu-item:not(.focus-visible){
+  outline:0;
+}
+
+.component_menu_dropdown .menu-items .menu-item .dropdown-icon{
+  margin-left:.75rem;
+  position:relative;
+  top:3px;
+  top:.1875rem;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-item-text{
+  border-left:.0625rem solid #ddd;
+  display:inline-block;
+  padding:0 .9375rem;
+  position:relative;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-item-text:after{
+  border:.625rem solid transparent;
+  border-bottom-color:#fff;
+  border-top:0;
+  content:"";
+  display:none;
+  height:0;
+  left:-webkit-calc(50% - 5px);
+  left:-webkit-calc(50% - .3125rem);
+  left:-moz-calc(50% - 5px);
+  left:-moz-calc(50% - .3125rem);
+  left:calc(50% - 5px);
+  left:calc(50% - .3125rem);
+  bottom:-15px;
+  bottom:-.9375rem;
+  position:absolute;
+  width:0;
+  z-index:100;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content{
+  background-color:#fff;
+  -webkit-box-shadow:#404040 0 2px 7px 0;
+  -webkit-box-shadow:#404040 0 .125rem .4375rem 0;
+     -moz-box-shadow:#404040 0 2px 7px 0;
+     -moz-box-shadow:#404040 0 .125rem .4375rem 0;
+          box-shadow:0 2px 7px 0 #404040;
+          box-shadow:0 .125rem .4375rem 0 #404040;
+  -webkit-border-radius:6px;
+  -webkit-border-radius:.375rem;
+     -moz-border-radius:6px;
+     -moz-border-radius:.375rem;
+          border-radius:6px;
+          border-radius:.375rem;
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  max-width:-webkit-calc(100vw - 80px);
+  max-width:-webkit-calc(100vw - 5rem);
+  max-width:-moz-calc(100vw - 80px);
+  max-width:-moz-calc(100vw - 5rem);
+  max-width:calc(100vw - 80px);
+  max-width:calc(100vw - 5rem);
+  z-index:99;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-text{
+  display:block;
+  text-align:center;
+  padding:0 2.25rem;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-list{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:row;
+     -moz-box-orient:horizontal;
+     -moz-box-direction:normal;
+          flex-direction:row;
+  -webkit-flex-wrap:nowrap;
+          flex-wrap:nowrap;
+  height:100%;
+  -webkit-justify-content:space-around;
+          justify-content:space-around;
+  padding:1.25rem .3125rem;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-list a{
+  display:inline-block;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+     -moz-box-align:center;
+          align-items:center;
+  -webkit-transition:none;
+  -o-transition:none;
+  -moz-transition:none;
+  transition:none;
+  padding:0 .9375rem 0 0;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-list a:first-child{
+  padding-left:.9375rem;
+  margin-right:1.5rem;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-list a.item{
+  width:184px;
+  width:11.5rem;
+}
+
+.component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-list a img{
+  max-width:200px;
+  max-width:12.5rem;
+}
+
+@media (max-width:1199.98px){
+  .component_menu_dropdown .menu-items .menu-item .menu-dropdown-content .dropdown-list a img{
+    max-width:142px;
+    max-width:8.875rem;
+  }
+}
+
+.component_menu_dropdown .menu-items .menu-item.hover .menu-dropdown-content,.component_menu_dropdown .menu-items .menu-item.hover .menu-item-text:after,.component_menu_dropdown .menu-items .menu-item:hover .menu-dropdown-content,.component_menu_dropdown .menu-items .menu-item:hover .menu-item-text:after{
+  display:block;
+}
+
+.component_menu_dropdown .menu-items .button-icon-right{
+  float:right;
+}
+
+/*# sourceMappingURL=menu_dropdown.min.css.map */

@@ -1,0 +1,165 @@
+@import "component";
+
+// Reason: Added SCSS to change design of icons
+.component_multi_item_carousel {
+  &.-showcase {
+    .component-content-wrapper {
+      .carousel-wrapper {
+        .slick-slide {
+          @include media-breakpoint-down(sm) {
+            width: 70vw;
+          }
+          .card {
+            .card-image-wrap {
+              height: 500px;
+              &:after {
+                content: "";
+                background: $gray-transparent;
+                left: 0;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+              }
+              .card-img-top {
+                object-position: right;
+              }
+              @media (max-width: $ultra-screen) {
+                height: 420px;
+              }
+              @include media-breakpoint-between(md, lg) {
+                height: 350px;
+              }
+              @include media-breakpoint-down(sm) {
+                height: 240px;
+              }
+            }
+          }
+          &.slick-current {
+            .card {
+              .card-image-wrap {
+                &:after {
+                  background: $transparent;
+                }
+              }
+            }
+          }
+        }
+        .carousel-item {
+          .card {
+            .card-body {
+              h3 {
+                &.card-title {
+                  padding-bottom: 0;
+                  a {
+                    color: $gray-25;
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+              .card-description {
+                @include media-breakpoint-down(sm) {
+                  padding: 0 15px;
+                }
+                @media (max-width: $extra-small-screen) {
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+              }
+              a {
+                &.cta-button {
+                  margin-top: 20px;
+                  background-color: $red-104;
+                  border-color: $red-104;
+                  padding: 13px 30px;
+                  &:hover {
+                    color: $red-104;
+                  }
+                }
+              }
+            }
+          }
+        }
+        button {
+          &.slick-arrow {
+            position: absolute;
+            font-size: 0;
+            border: 0;
+            margin: 0;
+            width: 60px;
+            height: 60px;
+            background-color: $white;
+            top: calc(250px - 25px);
+            z-index: 11;
+            @media (max-width: $ultra-screen) {
+              top: calc(210px - 25px);
+            }
+            @include media-breakpoint-between(md, lg) {
+              top: calc(175px - 25px);
+            }
+            @include media-breakpoint-down(sm) {
+              top: calc(120px - 25px);
+              width: 45px;
+              height: 45px;
+            }
+            &:before {
+              font-family: brand;
+              font-size: 16px;
+              transition: none;
+              transform: none;
+              color: $brand-dark;
+            }
+          }
+          &.slick-prev {
+            left: 9%;
+            @media (max-width: $ultra-screen) {
+              left: 7%;
+            }
+            @include media-breakpoint-only(md) {
+              left: 4%;
+            }
+            @include media-breakpoint-down(sm) {
+              left: 2%;
+            }
+            &:before {
+              content: $icon-arrow-left;
+              position: absolute;
+              left: calc(50% - 44px);
+              top: calc(50% - 10px);
+              @include media-breakpoint-down(sm) {
+                left: calc(50% - 34px);
+                top: calc(50% - 9px);
+              }
+            }
+          }
+          &.slick-next {
+            right: 9%;
+            @media (max-width: $ultra-screen) {
+              right: 7%;
+            }
+            @include media-breakpoint-only(md) {
+              right: 4%;
+            }
+            @include media-breakpoint-down(sm) {
+              right: 2%;
+            }
+            &:before {
+              content: $icon-arrow-right;
+              position: relative;
+              top: calc(50% - 30px);
+              @include media-breakpoint-between(md, lg) {
+                top: calc(50% - 18px);
+                left: calc(50% - 8px);
+              }
+              @include media-breakpoint-down(sm) {
+                top: calc(50% - 22px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

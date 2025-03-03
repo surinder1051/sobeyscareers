@@ -1,0 +1,13 @@
+// Every component extends this file, scss code that outputs css should not within here.
+// Note this file gets overwritten by FP Foundations Update Script
+
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import 'theme-variables'; // Dynamically created by theme settings
+@import 'branding';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+@import 'mixins';
+@import 'icons';
+
+@import "templates";

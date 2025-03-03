@@ -1,0 +1,307 @@
+@import 'component';
+
+$ultra-screen: 1600px !default;
+
+.component_related {
+	&:not(.is-tabbing) {
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	h2 {
+		font-weight: 300;
+		font-size: rem(48);
+		line-height: normal;
+		margin-top: 0;
+		margin-bottom: rem(50);
+		padding: 0 rem(15);
+
+		@media (max-width: $ultra-screen) {
+			font-size: rem(40);
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: rem(36);
+			margin-bottom: rem(30);
+		}
+	}
+
+	.card-deck {
+		.fl-module-custom {
+			.card {
+				&.how-tos-card {
+					.card-body {
+						.card-title {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+
+		&.columns_4 {
+			.recipe-card {
+				.card-img-top {
+					@include media-breakpoint-only(md) {
+						height: calc(25vw / 1.2);
+					}
+				}
+
+				.card-body {
+					.bottom-col-wrap {
+						.col {
+							@include media-breakpoint-only(md) {
+								background-position: center top rem(15) !important;
+								padding: rem(20) rem(5) !important;
+								padding-top: rem(20) !important;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.columns_2 {
+			.card {
+				.card-img-top {
+					height: calc(50vw / 1.95);
+					max-height: rem(500);
+
+					@include media-breakpoint-down(sm) {
+						height: calc(100vw / 1.95);
+					}
+				}
+			}
+		}
+
+		&.columns_3 {
+			.card {
+				.card-img-top {
+					height: calc(33.3333vw / 1.54);
+					max-height: rem(420);
+
+					@include media-breakpoint-down(sm) {
+						height: calc(100vw / 1.54);
+					}
+				}
+			}
+		}
+	}
+}
+
+/** Print media Css **/
+@media print {
+	.component_related {
+		&.mobile_carousel {
+			display:none;
+		}
+	}
+}
+
+.fl-module-related {
+	&.related_sidebar {
+		&.two_column {
+			.component_related {
+				.card-deck {
+					.card {
+						width: 48%;
+						float: left;
+						margin-right: 2%;
+
+						@include media-breakpoint-down(sm) {
+							width: 100%;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.component_related {
+			h2 {
+				font-size: rem(36);
+
+				@media (max-width: $ultra-screen) {
+					font-size: rem(30);
+				}
+			}
+
+			.card-deck {
+				display: inline-block;
+
+				.card {
+					border: 0;
+					padding-bottom: rem(25);
+					margin-bottom: rem(25);
+					border-bottom: rem(1) solid $gray-soft;
+					display: inline-block;
+					display: inline-block;
+					width: 100%;
+					max-width: 100%;
+
+					@include media-breakpoint-only(md) {
+						padding-bottom: rem(15);
+						margin-bottom: rem(15);
+					}
+
+					.recipe_card_link {
+						display: inline-block;
+						float: left;
+						width: rem(90);
+
+						@include media-breakpoint-only(md) {
+							width: rem(50);
+						}
+
+						.card-img-top {
+							margin-right: 0;
+							width: 100%;
+							height: rem(90);
+							object-fit: cover;
+							min-height: inherit;
+							max-height: inherit;
+
+							@include media-breakpoint-only(md) {
+								height: rem(50);
+							}
+						}
+
+						.overlay {
+							display: none;
+							visibility: hidden;
+						}
+					}
+
+					.card-body {
+						padding: 0;
+						border: 0;
+						display: inline-block;
+						width: calc(100% - 90px);
+						float: left;
+						padding-left: rem(25);
+
+						@include media-breakpoint-only(md) {
+							padding-left: rem(15);
+							width: calc(100% - 50px);
+						}
+
+						.card-title {
+							font-size: rem(20);
+							line-height: rem(26);
+							height: inherit !important;
+							padding: 0;
+							border: 0;
+
+							@media (max-width: $ultra-screen) {
+								font-size: rem(18);
+								line-height: rem(24);
+							}
+
+							@include media-breakpoint-only(md) {
+								font-size: rem(14);
+								line-height: rem(16);
+							}
+						}
+
+						.bottom-col-wrap {
+							display: none !important;
+						}
+					}
+
+					.button-holder {
+						display: none;
+					}
+
+					.row {
+						display: inline-block;
+
+						&.overlay {
+							display: none;
+							visibility: hidden;
+						}
+
+						.col-auto {
+							display: inline-block;
+							float: left;
+							width: rem(90);
+
+							@include media-breakpoint-only(md) {
+								width: rem(50);
+							}
+
+							img {
+								margin-right: 0;
+								width: 100%;
+								height: rem(90);
+								object-fit: cover;
+
+								@include media-breakpoint-only(md) {
+									height: rem(50);
+								}
+							}
+						}
+
+						.col {
+							width: calc(100% - 90px);
+							float: left;
+							padding-left: rem(25);
+
+							@include media-breakpoint-only(md) {
+								padding-left: rem(15);
+								width: calc(100% - 50px);
+							}
+
+							.card-block {
+								.card-title {
+									font-size: rem(20);
+									line-height: rem(26);
+
+									@media (max-width: $ultra-screen) {
+										font-size: rem(18);
+										line-height: rem(24);
+									}
+
+									@include media-breakpoint-only(md) {
+										font-size: rem(14);
+										line-height: rem(16);
+									}
+								}
+
+								.card-text {
+									display: none;
+									visibility: hidden;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.no-description {
+		.component_related {
+			.card-deck {
+				.card {
+					&.product-card {
+						.recipe_card_link {
+							padding: 0;
+						}
+					}
+
+					.card-body {
+						.card-title {
+							border-bottom: 0;
+						}
+
+						.bottom-col-wrap {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

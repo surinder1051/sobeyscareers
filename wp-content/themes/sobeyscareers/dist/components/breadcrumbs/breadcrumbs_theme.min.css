@@ -1,0 +1,9 @@
+.fl-module-breadcrumbs .component_breadcrumbs .breadcrumb .breadcrumb-item .separator{
+  margin-right:.375rem;
+}
+
+.fl-module-breadcrumbs .component_breadcrumbs .breadcrumb .breadcrumb-item a:hover{
+  color:#02243e;
+}
+
+/*# sourceMappingURL=breadcrumbs_theme.min.css.map */

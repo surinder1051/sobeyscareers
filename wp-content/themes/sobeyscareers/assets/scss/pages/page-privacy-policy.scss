@@ -1,0 +1,71 @@
+@import "component";
+
+/*
+Url : /fr/politique-de-confidentialite/
+      /en/privacy-policy/
+      /fr/politique/
+*/
+body {
+    &.page-privacy-policy,
+    &.page-politique-de-confidentialite {
+        // Module: fl-module-rich-text
+        // Reason: Added CSS to style lisiting, paragraph and heading
+        .fl-module-rich-text {
+            ul,
+            ol {
+                padding-left: rem(15);
+
+                li {
+                    font-size: rem(16);
+                    line-height: rem(24);
+                    padding-bottom: rem(10);
+                    font-family: $main-font;
+
+                    a {
+                        color: $blue-101;
+                    }
+                }
+            }
+            h4 {
+                color: $gray-103;
+            }
+            h3,
+            h2 {
+                font-size: rem(18);
+                color: $gray-103;
+            }
+            hr {
+                border: 1px solid $gray-102;
+            }
+            p {
+                font-size: rem(16);
+                line-height: rem(24);
+                a {
+                    color: $blue-101;
+                    word-wrap: break-word;
+                }
+            }
+            h1 {
+                font-size: rem(30);
+                font-weight: bold;
+                color: $gray-103;
+                margin-bottom:rem(16);
+            }
+            .fl-rich-text {
+                >h1 {
+                    display:none;
+                }
+            }
+            span {
+                &.s1 {
+                    i {
+                        font-family: $heading-font;
+                    }
+                }
+            }
+            em {
+                font-family: $heading-font;
+            }
+        }
+    }
+}

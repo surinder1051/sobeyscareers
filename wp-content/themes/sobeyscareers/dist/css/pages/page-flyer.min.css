@@ -1,0 +1,22 @@
+body.page-circulaire .wishabi_flyer #circ_div main,body.page-flyer .wishabi_flyer #circ_div main{
+  margin-right:0;
+  margin-left:0;
+}
+
+@media (min-width:768px){
+  body.page-circulaire .fl-module-mega_menu.sticky-header,body.page-flyer .fl-module-mega_menu.sticky-header{
+    position:relative;
+    background:inherit;
+    -webkit-box-shadow:none;
+       -moz-box-shadow:none;
+            box-shadow:none;
+  }
+}
+
+@media (min-width:768px){
+  body.page-circulaire.logged-in .fl-module-mega_menu.sticky-header,body.page-flyer.logged-in .fl-module-mega_menu.sticky-header{
+    top:0;
+  }
+}
+
+/*# sourceMappingURL=page-flyer.min.css.map */

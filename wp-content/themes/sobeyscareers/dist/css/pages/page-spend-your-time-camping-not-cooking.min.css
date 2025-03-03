@@ -1,0 +1,122 @@
+@media (max-width:1299px){
+  body.page-maximum-de-camping-minimum-de-cuisine .top_full_container .fl-row-content-wrap,body.page-spend-your-time-camping-not-cooking .top_full_container .fl-row-content-wrap{
+    padding-left:1.875rem;
+    padding-right:1.875rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-maximum-de-camping-minimum-de-cuisine .top_full_container .fl-row-content-wrap,body.page-spend-your-time-camping-not-cooking .top_full_container .fl-row-content-wrap{
+    padding-left:1.5625rem;
+    padding-right:1.5625rem;
+  }
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .camping-list,body.page-spend-your-time-camping-not-cooking .camping-list{
+  padding-left:.9375rem;
+}
+
+@media (max-width:767.98px){
+  body.page-maximum-de-camping-minimum-de-cuisine .camping-list,body.page-spend-your-time-camping-not-cooking .camping-list{
+    margin-bottom:0;
+  }
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .camping-list li,body.page-spend-your-time-camping-not-cooking .camping-list li{
+  font-weight:300;
+  margin-bottom:.9375rem;
+}
+
+@media (max-width:767.98px){
+  body.page-maximum-de-camping-minimum-de-cuisine .camping-list li:last-child,body.page-spend-your-time-camping-not-cooking .camping-list li:last-child{
+    margin-bottom:0;
+  }
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .camping-list li::marker,body.page-spend-your-time-camping-not-cooking .camping-list li::marker{
+  width:.4375rem;
+  height:.4375rem;
+  color:#ea0028;
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide.slick-current .card .card-body,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide.slick-current .card .card-body{
+  padding:0 1rem;
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide.slick-current .card .card-body .card-title a,body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide.slick-current .card .card-body .card-title a:hover,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide.slick-current .card .card-body .card-title a,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide.slick-current .card .card-body .card-title a:hover{
+  color:#4d4d4f;
+}
+
+@media (max-width:767.98px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body{
+    height:auto !important;
+  }
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body .card-title,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body .card-title{
+  font-size:1.875rem;
+  line-height:1.2;
+  margin-top:1.875rem;
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body .card-title a,body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body .card-title a:hover,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body .card-title a,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body .card-title a:hover{
+  color:#fff;
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body a.cta-button,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper .slick-slide .card .card-body a.cta-button{
+  margin-top:2.5rem;
+}
+
+body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow:before,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow:before{
+  font-size:1.25rem;
+}
+
+@media (max-width:767.98px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow:before,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow:before{
+    top:-webkit-calc(50% - 10px);
+    top:-webkit-calc(50% - .625rem);
+    top:-moz-calc(50% - 10px);
+    top:-moz-calc(50% - .625rem);
+    top:calc(50% - 10px);
+    top:calc(50% - .625rem);
+  }
+}
+
+@media (max-width:413px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow:before,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow:before{
+    font-size:1rem;
+  }
+}
+
+@media (max-width:413px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-prev,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-prev{
+    width:2.1875rem;
+    height:2.1875rem;
+  }
+}
+
+@media (max-width:413px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-prev:before,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-prev:before{
+    left:-webkit-calc(50% - 25px);
+    left:-webkit-calc(50% - 1.5625rem);
+    left:-moz-calc(50% - 25px);
+    left:-moz-calc(50% - 1.5625rem);
+    left:calc(50% - 25px);
+    left:calc(50% - 1.5625rem);
+  }
+}
+
+@media (max-width:413px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-next,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-next{
+    width:2.1875rem;
+    height:2.1875rem;
+  }
+}
+
+@media (max-width:767.98px){
+  body.page-maximum-de-camping-minimum-de-cuisine .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-next:before,body.page-spend-your-time-camping-not-cooking .summer-recipe-slider .component_multi_item_carousel .component-content-wrapper .carousel-wrapper button.slick-arrow.slick-next:before{
+    top:0;
+  }
+}
+
+/*# sourceMappingURL=page-spend-your-time-camping-not-cooking.min.css.map */

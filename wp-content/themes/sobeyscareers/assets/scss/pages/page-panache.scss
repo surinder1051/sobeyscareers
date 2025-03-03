@@ -1,0 +1,46 @@
+@import "component";
+
+/*
+URL: /fr/panache/
+     /en/panache/
+*/
+
+body {
+    &.page-panache {
+        // Module: Builder Column
+        // Reason: Added css for column spacing on small screen
+        .text-border {
+            .fl-col.fl-col-small {
+                @include media-breakpoint-down(sm) {
+                    margin-right: rem(15);
+                }
+            }
+
+            .fl-module-bs_card {
+                .component_bs_card {
+                    &.card {
+                        // Module: fl-module-bs_card
+                        // Reason: Added css for card body styling
+                        .card-body {
+                            @media (min-width: $ultra-screen-sm) {
+                                padding-right: rem(100);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Reason: Added css for mange card width on mobile
+        .mobile_carousel{
+            .slick-list{
+                .fl-col{
+                    &.fl-col-small{
+                        @include media-breakpoint-down(sm){
+                            width: 100%  !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

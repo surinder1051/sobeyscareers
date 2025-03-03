@@ -1,0 +1,137 @@
+@import 'component';
+
+$extra-small-screen: 374px !default;
+$breakpoint-lg: map-get($grid-breakpoints, "lg") !default;
+$breakpoint-1024: 1024px !default;
+
+.component-facts {
+	float: left;
+	text-align: center;
+	padding: rem(40) 0;
+	width: 100%;
+
+	&:not(.is-tabbing) {
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.sm-standerd-container {
+		margin: 0 auto;
+		max-width: rem(1080);
+
+		.facts-main {
+			margin-top: rem(60);
+			width: 100%;
+
+			.fact-box {
+				float: left;
+				padding: rem(20) rem(30) 0;
+				width: 25%;
+
+				&:not(.is-tabbing) {
+					&:focus {
+						outline: 0;
+					}
+				}
+
+				@include media-breakpoint-down(md) {
+					padding: rem(20) rem(15);
+					width: 50%;
+
+					&:nth-child(3),
+					&:last-child {
+						margin-top: rem(20);
+					}
+
+					&:nth-child(3) {
+						clear: left;
+					}
+				}
+
+				@include media-breakpoint-down(sm) {
+					margin-bottom: rem(30);
+					width: 100%;
+
+					&:nth-child(3) {
+						clear: left;
+						margin-top: 0;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+						margin-top: 0;
+					}
+				}
+
+				h3 {
+					&.heading {
+						margin-bottom: rem(10);
+
+						>span {
+							display: block;
+							margin-bottom: rem(10);
+						}
+					}
+				}
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	&.one-fact {
+		.sm-standerd-container {
+			.facts-main {
+				.fact-box {
+					width: 100%;
+					@include media-breakpoint-down(md) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	&.two-facts {
+		.sm-standerd-container {
+			.facts-main {
+				.fact-box {
+					width: 50%;
+					@include media-breakpoint-down(md) {
+						width: 50%;
+					}
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	&.three-facts {
+		.sm-standerd-container {
+			.facts-main {
+				.fact-box {
+					width: 33%;
+					@include media-breakpoint-down(md) {
+						width: 33%;
+						&:nth-child(3) {
+							clear: none;
+							margin-top: 0;
+						}
+					}
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	&.-no-facts-support-text {
+		.fact-box {
+			.content {
+				display: none;
+			}
+		}
+	}
+}

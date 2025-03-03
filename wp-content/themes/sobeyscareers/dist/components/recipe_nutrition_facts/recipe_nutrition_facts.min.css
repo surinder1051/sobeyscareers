@@ -1,0 +1,77 @@
+.component_recipe_nutrition_facts .title{
+  margin:0 0 1.875rem;
+  font-weight:300;
+  line-height:2.25rem;
+  font-size:2.25rem;
+}
+
+@media (max-width:1600px){
+  .component_recipe_nutrition_facts .title{
+    font-size:1.875rem;
+    line-height:1.875rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_recipe_nutrition_facts .title{
+    font-size:1.625rem;
+    margin-bottom:1.25rem;
+  }
+}
+
+.component_recipe_nutrition_facts .row{
+  border-bottom:.0625rem solid #cccaca;
+  padding:.625rem 0;
+  color:#404040;
+  margin:0;
+}
+
+.component_recipe_nutrition_facts .row:first-child{
+  border:none;
+}
+
+@media (min-width:768px) and (max-width:991.98px){
+  .component_recipe_nutrition_facts .row{
+    font-size:.875rem;
+  }
+}
+
+.component_recipe_nutrition_facts .row dt{
+  font-weight:300;
+  padding:0;
+}
+
+.component_recipe_nutrition_facts .row dd{
+  margin:0;
+  padding:0;
+}
+
+.component_recipe_nutrition_facts .row strong{
+  font-weight:700;
+}
+
+.single-recipe .component_recipe_nutrition_facts .row:first-child{
+  border-top:.0625rem solid #cccaca;
+}
+
+.single-recipe .component_recipe_nutrition_facts .row:first-child dt{
+  font-size:1.25rem;
+}
+
+@media (max-width:1600px){
+  .single-recipe .component_recipe_nutrition_facts .row:first-child dt{
+    font-size:1.125rem;
+  }
+}
+
+.single-recipe .component_recipe_nutrition_facts .row:first-child dd{
+  max-width:40%;
+}
+
+@media print{
+  .fl-module-recipe_nutrition_facts{
+    margin-top:.9375rem;
+  }
+}
+
+/*# sourceMappingURL=recipe_nutrition_facts.min.css.map */

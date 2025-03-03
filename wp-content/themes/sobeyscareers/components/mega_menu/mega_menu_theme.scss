@@ -1,0 +1,616 @@
+@import "component";
+
+.fl-module-mega_menu {
+	.fl-module-mega_menu {
+		@include media-breakpoint-down(sm) {
+			background-color: $gray-light;
+		}
+
+		.component_mega_menu {
+			@include media-breakpoint-down(sm) {
+				height: 100vh;
+			}
+
+			// Reason: Scss code added for menu alignment
+			&:not(.-vertical) {
+				.navbar-collapse {
+					@include media-breakpoint-down(sm) {
+						padding-bottom: 200px;
+						margin: 0 20px;
+					}
+
+					ul {
+						&.nav {
+							@include media-breakpoint-down(sm) {
+								flex-direction: row;
+							}
+
+							.nav-standard {
+								min-width: 100%;
+								width: 100%;
+
+								@include media-breakpoint-only(md) {
+									min-width: 180px;
+								}
+
+								ul {
+									&.dropdown-menu {
+										min-width: 100%;
+										border: none;
+
+										@include media-breakpoint-down(sm) {
+											border-top: 1px solid $light-grey;
+											padding-top: 20px;
+										}
+
+										li {
+											&:hover {
+												@include media-breakpoint-down(sm) {
+													background: none;
+												}
+											}
+
+											&:last-child {
+												@include media-breakpoint-down(sm) {
+													border-bottom: 0;
+												}
+											}
+
+											a {
+												&.dropdown-item {
+													font-family: $main-font;
+													padding-top: 19px;
+													padding-bottom: 19px;
+													padding-left: 30px;
+
+													@media (max-width: $ultra-screen) {
+														padding-top: 12px;
+														padding-bottom: 12px;
+														padding-left: 20px;
+													}
+
+													@media (max-width: $extended-screen-lg) {
+														font-size: 13px;
+													}
+
+													@include media-breakpoint-only(lg) {
+														padding-left: 10px;
+														font-size: 15px;
+													}
+
+													@include media-breakpoint-down(sm) {
+														padding: 0;
+														margin: 5px 0;
+														color: $gray-103;
+														font-size: 15px;
+													}
+
+													&:hover {
+														@include media-breakpoint-down(sm) {
+															text-decoration: none;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							li {
+
+								&.menu-bg-item,
+								&.visible-sm {
+									display: none;
+								}
+
+								ul {
+									&.dropdown-menu {
+										min-height: 430px;
+										top: 0;
+
+										@include media-breakpoint-only(md) {
+											min-height: 380px;
+											border-right: 0;
+										}
+
+										@include media-breakpoint-down(sm) {
+											min-height: auto;
+											margin-bottom: 20px;
+
+											&:hover {
+												text-decoration: none;
+											}
+										}
+									}
+								}
+
+								.sidemenu {
+									min-height: 430px;
+									border-left: 1px solid $gray-100;
+									top: 100% !important;
+
+									@include media-breakpoint-only(md) {
+										min-height: 380px;
+									}
+
+									footer {
+										height: 100%;
+
+										.card-img-top {
+											height: 230px;
+
+											img {
+												object-fit: cover;
+												cursor: auto;
+											}
+										}
+
+										h2 {
+											cursor: auto;
+										}
+
+										.text {
+											padding: 15px 20px;
+
+											.heading {
+												line-height: 18px;
+											}
+
+											a {
+												color: $red-dark !important;
+												vertical-align: middle;
+
+												&:hover {
+													text-decoration: underline;
+												}
+
+												&:after {
+													content: $icon-arrow-right;
+													margin-top: 1px;
+												}
+											}
+										}
+									}
+								}
+
+								&.level-0 {
+									&:hover {
+										@include media-breakpoint-down(sm) {
+											background: none;
+										}
+									}
+
+									a,
+									button {
+										&.nav-link {
+											font-family: $main-font;
+
+											@media (max-width: $extended-screen-lg) {
+												font-size: 14px;
+											}
+
+											@include media-breakpoint-only(md) {
+												font-size: 12px;
+											}
+
+											@include media-breakpoint-down(sm) {
+												font-size: 18px;
+												padding-left: 0;
+												padding-right: 0;
+												color: $gray-103;
+												&:hover {
+													color: $text-links-hover-colour !important;
+												}
+											}
+										}
+									}
+
+									&.rightsidemenu {
+										.sidemenu {
+											@include media-breakpoint-between(md, lg) {
+												left: 0;
+											}
+										}
+									}
+
+									&.menu-item-has-children {
+
+										a,
+										button {
+											&.dropdown-toggle {
+												&:after {
+													height: 7px;
+													width: 7px;
+													margin-top: 0;
+													color: $brand-dark;
+
+													@include media-breakpoint-only(md) {
+														height: 5px;
+														width: 5px;
+														margin-top: 2px;
+													}
+
+													@include media-breakpoint-down(sm) {
+														right: 10px;
+														color: $brand-dark;
+													}
+												}
+											}
+
+											&.nav-link {
+												font-family: $main-font;
+												padding-right: 20px;
+
+												@include media-breakpoint-down(sm) {
+													font-size: 18px;
+												}
+											}
+										}
+
+										button {
+											&.multi-level-expand {
+												@include media-breakpoint-down(sm) {
+													top: auto;
+												}
+
+												&:after {
+													@include media-breakpoint-down(sm) {
+														right: 10px;
+													}
+												}
+											}
+										}
+
+										&.show {
+											a {
+												&:after {
+													@include media-breakpoint-down(sm) {
+														transition: all .5s ease-in-out;
+														transform: rotate(-135deg);
+														top: 25px;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								.nav-standard {
+									li {
+										&:last-child {
+											border-bottom: 1px solid $light-grey;
+
+											@include media-breakpoint-up(md) {
+												display: none;
+											}
+										}
+									}
+								}
+
+								&.three_label_menu {
+									ul {
+										&.nav {
+											.nav-grid {
+												li {
+													position: static;
+
+													&:last-child {
+														@include media-breakpoint-down(sm) {
+															border-bottom: 0;
+														}
+													}
+												}
+											}
+										}
+									}
+
+									.sidemenu {
+										left: 0;
+										overflow: hidden;
+										right: auto;
+										border-left: 1px solid $gray-100;
+
+										.card-img-top {
+											background-size: cover;
+											border-radius: 0;
+											height: 230px;
+
+											@include media-breakpoint-only(md) {
+												height: 120px;
+											}
+										}
+
+										.recipe-card {
+											width: 100%;
+											border: 0;
+											height: 100%;
+
+											h3 {
+												&.card-title {
+													font-size: 18px;
+													line-height: 110px;
+
+													a {
+														font-size: 18px;
+														line-height: 110px;
+
+														&:hover {
+															color: $gray-103;
+														}
+													}
+												}
+											}
+
+											.bottom-col-wrap {
+												margin-top: 20px;
+												border-top: 1px solid $light-grey;
+
+												.col {
+													display: flex;
+													border-right: 1px solid $light-grey;
+													padding-right: 10px;
+													padding-top: 20px;
+													padding-left: 0;
+
+													&:last-child {
+														border-right: 0;
+														padding-left: 10px;
+														padding-right: 0;
+													}
+
+													.icon-total-time {
+														margin-right: 10px;
+
+														&:before {
+															font-size: 20px;
+														}
+													}
+
+													.icon-serve {
+														margin-right: 10px;
+
+														&:before {
+															font-size: 26px;
+														}
+													}
+												}
+											}
+
+											.blue_background {
+												.bottom-col-wrap {
+													border-color: $blur_blue;
+
+													.col {
+														border-color: $blur_blue;
+													}
+												}
+											}
+
+											.yellow_background {
+												h3 {
+													&.card-title {
+														a {
+															&:hover {
+																color: $brand-dark;
+															}
+														}
+													}
+												}
+
+												.bottom-col-wrap {
+													border-color: $yellow;
+
+													.col {
+														border-color: $yellow;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							.nav-grid {
+								@include media-breakpoint-between(md, lg) {
+									left: 0;
+								}
+
+								li {
+									&:last-child {
+										border-bottom: 1px solid $light-grey;
+
+										@include media-breakpoint-down(sm) {
+											border-bottom: 0;
+										}
+									}
+
+									&:hover {
+										@include media-breakpoint-down(sm) {
+											background: none;
+										}
+									}
+
+									a {
+										&.dropdown-item {
+											@media (max-width: $ultra-screen) {
+												padding-top: 12px;
+												padding-bottom: 12px;
+											}
+
+											@media (max-width: $extended-screen-lg) {
+												font-size: 13px;
+											}
+
+											@include media-breakpoint-only(md) {
+												font-size: 14px;
+												padding: 15px 8px;
+											}
+
+											@include media-breakpoint-down(sm) {
+												color: $gray-103;
+												padding-left: 0;
+												padding-top: 0;
+											}
+
+											&:hover {
+												@include media-breakpoint-down(sm) {
+													text-decoration: none;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						&.navbar-nav {
+							li {
+								@include media-breakpoint-down(sm) {
+									clear: both;
+									width: 100%;
+									display: block;
+									overflow: hidden;
+								}
+
+								&.visible-sm {
+									@include media-breakpoint-down(sm) {
+										display: block;
+										margin-top: 30px;
+									}
+
+									&.menu-bg-item {
+										@include media-breakpoint-down(sm) {
+											display: flex;
+											float: left;
+											width: 33%;
+											clear: none;
+											height: auto;
+											text-align: center;
+											overflow: hidden;
+											border: 1px solid $light-grey;
+											border-right: 0;
+											align-items: center;
+
+											&:last-child {
+												border-right: 1px solid $light-grey;
+											}
+										}
+
+										a {
+											padding: 0;
+											text-align: center;
+											font-size: 16px;
+
+											@include media-breakpoint-down(sm) {
+												font-size: 12px;
+											}
+
+											@media (max-width: $extra-small-screen) {
+												font-size: 10px;
+												font-weight: 600;
+											}
+
+											span {
+												&:before {
+													color: $brand-dark;
+
+													@media (max-width: $small-screen) {
+														font-size: 14px;
+													}
+
+													@media (max-width: $extra-small-screen) {
+														font-size: 12px;
+													}
+												}
+											}
+										}
+									}
+
+									&.air-miles {
+										img {
+											object-fit: cover;
+										}
+
+										a {
+											padding: 0;
+										}
+									}
+
+									&.links-fr {
+										a {
+											@include media-breakpoint-down(sm) {
+												font-size: 14px !important;
+											}
+
+											@media (max-width: $extra-small-screen) {
+												font-size: 10px !important;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					.mm-language-switcher {
+						&.mobile {
+							@include media-breakpoint-down(sm) {
+								padding: 30px 0 0;
+							}
+
+							span {
+								&.mm-ls-text {
+									color: $gray-103;
+								}
+							}
+						}
+					}
+				}
+
+				.nav-grid {
+					width: 100%;
+
+					@include media-breakpoint-only(lg) {
+						width: 170px;
+					}
+
+					@include media-breakpoint-down(sm) {
+						width: 100%;
+					}
+
+					.dropdown-menu {
+						width: 100%;
+						min-width: 100%;
+					}
+
+					.level-1 {
+						position: static;
+
+						.dropdown-menu {
+							left: calc(100% - 2px);
+						}
+					}
+				}
+			}
+
+			button {
+				&.navbar-toggler {
+					@include media-breakpoint-down(sm) {
+						right: 5px;
+					}
+
+					.transformicon {
+
+						&:after,
+						&:before {
+							@include media-breakpoint-down(sm) {
+								background: $brand-dark;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

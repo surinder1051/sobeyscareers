@@ -1,0 +1,18 @@
+.component_social_links .title{
+  font-size:1.125rem;
+  color:#404040;
+}
+
+.component_social_links a{
+  -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+          border-radius:50%;
+  font-size:1.25rem;
+  height:3.375rem;
+  width:3.375rem;
+  margin-left:-.625rem;
+  margin-right:0;
+  color:#d84a28;
+}
+
+/*# sourceMappingURL=social_links_theme.min.css.map */
