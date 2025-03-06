@@ -1,0 +1,45 @@
+{
+	"setup": {
+		"FP_PAGES": {
+			"en": [{
+					"title": "About Us"
+				},
+				{
+					"title": "Entertaining Platters",
+					"parent": "Promotions"
+				}
+			]
+		},
+		"FP_MENUS": {
+			"en": [
+				{
+					"title": "Primary",
+					"location": "primary",
+					"items": [{
+							"title": "Flyer & Savings"
+						},
+						{
+							"title": "Departments"
+						},
+						{
+							"title": "Recipes",
+							"type": "custom",
+							"url": "/en/recipes"
+						}
+					]
+				},
+				{
+					"title": "Footer Trademark Row",
+					"location": "footer-trademark",
+					"items": [{
+						"title": "Contact Us"
+					},
+					{
+						"title": "Privacy"
+					}
+					]
+				}
+			]
+		}
+	}
+}

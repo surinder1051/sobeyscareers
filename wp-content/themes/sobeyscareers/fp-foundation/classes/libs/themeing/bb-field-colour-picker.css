@@ -1,0 +1,64 @@
+div.bb-select-colour-wrapper {
+	position: relative;
+}
+div.bb-select-colour-wrapper ul.bb-select-colour-list {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 1px 3px 3px #e5e5e5;
+	height: 160px;
+	left: -5px;
+	list-style: none;
+	margin-left: 0;
+	overflow: scroll;
+	overscroll-behavior: contain;
+    padding-left: 0;
+	position: absolute;
+	scroll-behavior: smooth;
+	top: -115px;
+	visibility: visible;
+	width: 200px;
+    z-index: 10;
+}
+div.bb-select-colour-wrapper ul.bb-select-colour-list.hidden {
+	visibility: hidden;
+}
+div.bb-select-colour-wrapper ul.bb-select-colour-list li {
+	border-top: 1px solid #ccc;
+	padding: 3px;
+}
+div.bb-select-colour-wrapper ul.bb-select-colour-list li:first-child {
+	border-top: none;
+}
+div.bb-select-colour-wrapper ul.bb-select-colour-list span {
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+}
+div.bb-select-colour-wrapper button.fp-colour-picker-button {
+	border: 1px solid #e4e4e4;
+	box-shadow: 0px 2px 2px #e4e4e4;
+	border-radius: 3px 0 0 3px;
+	height: 36px;
+	width: 75px;
+}
+div.bb-select-colour-wrapper button.fp-colour-picker-clear {
+	background: #e4e4e4;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	height: 39px;
+    margin-left: -4px;
+	vertical-align: top;
+	width: 30px;
+}
+
+/*styles to show BB presets and hide the add preset button in default BB colour picker*/
+
+ul.fl-color-picker-presets-list {
+    display: block !important;
+}
+.fl-color-picker-preset-add {
+	display: none !important;
+}

@@ -1,43 +1,5 @@
 {
-    "name": "fp-plugin-manager-settings",
-    "last-updated": "2021-10-14 15:12:04",
-    "description": "Plugin Manager for FlowPress managed repos. [ Auto Generated ]",
-    "log-core": true,
-    "platforms": [
-        "cli",
-        "admin"
-    ],
     "packages": {
-        "fp-plugin-distribution": {
-            "version": "*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-fp-plugin-distribution",
-            "github-username": "flowpress",
-            "plugin-slug": "fp-plugin-distribution"
-        },
-        "sobeys-store-importer": {
-            "version": "*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-store-importer",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-store-importer"
-        },
-        "sobeys-store-locator": {
-            "version": "*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-store-locator",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-store-locator"
-        },
         "admin-columns-pro": {
             "version": "*.*",
             "access_token": "",
@@ -88,6 +50,26 @@
             "github-username": "flowpress",
             "plugin-slug": "bb-theme-builder"
         },
+        "cookie-policy": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-cookie-policy",
+            "github-username": "flowpress",
+            "plugin-slug": "cookie-policy"
+        },
+        "facetwp": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-facetwp",
+            "github-username": "flowpress",
+            "plugin-slug": "facetwp"
+        },
         "facetwp-beaver-builder": {
             "version": "*.*",
             "access_token": "",
@@ -97,6 +79,26 @@
             "github-project-name": "plugin-facetwp-beaver-builder",
             "github-username": "flowpress",
             "plugin-slug": "facetwp-beaver-builder"
+        },
+        "fp-dashboard-client": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-fp-dashboard-client",
+            "github-username": "flowpress",
+            "plugin-slug": "fp-dashboard-client"
+        },
+        "fp-plugin-distribution": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-fp-plugin-distribution",
+            "github-username": "flowpress",
+            "plugin-slug": "fp-plugin-distribution"
         },
         "fp-post-importer": {
             "version": "*.*",
@@ -118,15 +120,15 @@
             "github-username": "flowpress",
             "plugin-slug": "sobeys-food-alerts"
         },
-        "fp-post-regionalization": {
+        "formidable-pro": {
             "version": "*.*",
             "access_token": "",
             "core": false,
             "branch": "master",
             "auto-update": true,
-            "github-project-name": "plugin-fp-post-regionalization",
+            "github-project-name": "plugin-formidable-pro",
             "github-username": "flowpress",
-            "plugin-slug": "fp-post-regionalization"
+            "plugin-slug": "formidable-pro"
         },
         "fp-slider": {
             "version": "*.*",
@@ -138,15 +140,15 @@
             "github-username": "flowpress",
             "plugin-slug": "fp-slider"
         },
-        "bffa-recipe-like": {
+        "gtm-tag-manager": {
             "version": "*.*",
             "access_token": "",
             "core": false,
             "branch": "master",
             "auto-update": true,
-            "github-project-name": "plugin-bffa-recipe-like",
+            "github-project-name": "plugin-gtm-tag-manager",
             "github-username": "flowpress",
-            "plugin-slug": "bffa-recipe-like"
+            "plugin-slug": "gtm-tag-manager"
         },
         "polylang-pro": {
             "version": "*.*",
@@ -168,26 +170,6 @@
             "github-username": "flowpress",
             "plugin-slug": "sobeys-recipe-schema"
         },
-        "sobeys-cooking-classes": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-cooking-classes",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-cooking-classes"
-        },
-        "sobeys-feeds": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-feeds",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-feeds"
-        },
         "sobeys-flyer": {
             "version": "*.*",
             "access_token": "",
@@ -198,15 +180,15 @@
             "github-username": "flowpress",
             "plugin-slug": "sobeys-flyer"
         },
-        "sobeys-image-cleanup": {
+        "sobeys-job-manager": {
             "version": "*.*",
             "access_token": "",
             "core": false,
             "branch": "master",
             "auto-update": true,
-            "github-project-name": "plugin-sobeys-image-cleanup",
+            "github-project-name": "plugin-sobeys-job-manager",
             "github-username": "flowpress",
-            "plugin-slug": "sobeys-image-cleanup"
+            "plugin-slug": "sobeys-job-manager"
         },
         "sobeys-lightbox-popup": {
             "version": "*.*",
@@ -228,6 +210,26 @@
             "github-username": "flowpress",
             "plugin-slug": "sobeys-ratings"
         },
+        "sobeys-store-importer": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-sobeys-store-importer",
+            "github-username": "flowpress",
+            "plugin-slug": "sobeys-store-importer"
+        },
+        "sobeys-store-locator": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-sobeys-store-locator",
+            "github-username": "flowpress",
+            "plugin-slug": "sobeys-store-locator"
+        },
         "sobeys-subscribe": {
             "version": "*.*",
             "access_token": "",
@@ -237,6 +239,16 @@
             "github-project-name": "plugin-sobeys-subscribe",
             "github-username": "flowpress",
             "plugin-slug": "sobeys-subscribe"
+        },
+        "sobeys-wpcontent-client": {
+            "version": "*.*",
+            "access_token": "",
+            "core": false,
+            "branch": "master",
+            "auto-update": true,
+            "github-project-name": "plugin-sobeys-wpcontent-client",
+            "github-username": "flowpress",
+            "plugin-slug": "sobeys-wpcontent-client"
         },
         "wp-migrate-db-pro": {
             "version": "*.*",
@@ -267,146 +279,14 @@
             "github-project-name": "plugin-wp-migrate-db-pro-media-files",
             "github-username": "flowpress",
             "plugin-slug": "wp-migrate-db-pro-media-files"
-        },
-        "facetwp": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-facetwp",
-            "github-username": "flowpress",
-            "plugin-slug": "facetwp"
-        },
-        "sobeys-ftd-custom-bags": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-ftd-custom-bags",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-ftd-custom-bags"
-        },
-        "sobeys-sso-client": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-sso-client",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-sso-client"
-        },
-        "sobeys-cheese-world": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-cheese-world",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-cheese-world"
-        },
-        "bb-regionalization": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-bb-regionalization",
-            "github-username": "flowpress",
-            "plugin-slug": "bb-regionalization"
-        },
-        "fp-bb-timeline-module": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-fp-bb-timeline-module",
-            "github-username": "flowpress",
-            "plugin-slug": "fp-bb-timeline-module"
-        },
-        "cookie-policy": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-cookie-policy",
-            "github-username": "flowpress",
-            "plugin-slug": "cookie-policy"
-        },
-        "formidable-pro": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-formidable-pro",
-            "github-username": "flowpress",
-            "plugin-slug": "formidable-pro"
-        },
-        "gtm-tag-manager": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-gtm-tag-manager",
-            "github-username": "flowpress",
-            "plugin-slug": "gtm-tag-manager"
-        },
-        "sobeys-quiz": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-quiz",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-quiz"
-        },
-        "sobeys-region-holiday-feed": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-region-holiday-feed",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-region-holiday-feed"
-        },
-        "video-thumbnails-pro": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-video-thumbnails-pro",
-            "github-username": "flowpress",
-            "plugin-slug": "video-thumbnails-pro"
-        },
-        "sobeys-wpcontent-client": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-sobeys-wpcontent-client",
-            "github-username": "flowpress",
-            "plugin-slug": "sobeys-wpcontent-client"
-        },
-        "wordpress-seo-premium": {
-            "version": "*.*",
-            "access_token": "",
-            "core": false,
-            "branch": "master",
-            "auto-update": true,
-            "github-project-name": "plugin-wordpress-seo-premium",
-            "github-username": "flowpress",
-            "plugin-slug": "wordpress-seo-premium"
         }
-    }
+    },
+    "last-updated": "2021-11-19 15:10:47",
+    "name": "fp-plugin-manager-settings",
+    "description": "Plugin Manager for FlowPress managed repos. [ Auto Generated ]",
+    "log-core": true,
+    "platforms": [
+        "cli",
+        "admin"
+    ]
 }

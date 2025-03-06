@@ -1,0 +1,8 @@
+.bb_fp_checkbox {
+    padding:8px 10px 0;
+}
+
+.bb_fp_checkbox input {
+    margin-right: 10px !important;
+    display: inline-block;
+}

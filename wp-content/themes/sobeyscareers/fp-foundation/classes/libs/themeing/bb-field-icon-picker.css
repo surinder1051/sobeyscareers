@@ -1,0 +1,76 @@
+.bb-select-icon-wrapper {
+	max-width: 284px;
+}
+
+.bb-select-icon-wrapper .bb-select-item {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.bb-select-icon-wrapper label {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 2.5rem;
+	cursor: pointer;
+	display: inline-block;
+	height: 38px;
+	position: relative;
+	text-align: center;
+	width: 38px;
+}
+
+.bb-select-icon-wrapper label input {
+	position: relative;
+	z-index: -1;
+}
+
+.bb-select-icon-wrapper label.is-checked {
+	border: 1px solid blue;
+	background: blue;
+}
+.bb-select-icon-wrapper label:hover, .bb-select-icon-wrapper label.is-checked:hover {
+	border: 1px solid #444;
+	background: #444;
+}
+
+.bb-select-icon-wrapper .select-overlay {
+	background-color: #fff;
+    background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: 2.5rem;
+	display: inline-block;
+	height: 90%;
+	left: 5%;
+	position: absolute;
+	top: 5%;
+	width: 90%;
+}
+
+.bb-clear-icon-wrapper {
+	margin-bottom: 0.625rem;
+}
+
+.bb-clear-icon-wrapper button {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	padding: 0.3125rem 0;
+	left: 23px;
+	position: absolute;
+    top: -5px;
+}
+
+.bb-clear-icon-wrapper button span {
+	background: #ff0000;
+	border-radius: 1.25rem;
+	color: #fff;
+	line-height: 1.7;
+	margin-right: 0.3125rem;
+	vertical-align: middle;
+}
+
+.bb-clear-icon-wrapper button:hover {
+	text-decoration: underline;
+}

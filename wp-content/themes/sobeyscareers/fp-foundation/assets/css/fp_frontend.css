@@ -1,0 +1,32 @@
+.facetwp-template .card-deck.fp-col-1>*{
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.facetwp-template .card-deck.fp-col-2>* {
+	min-width: 50%;
+	max-width: 50%;
+}
+
+.facetwp-template .card-deck.fp-col-3>* {
+	min-width: 33%;
+	max-width: 33%;
+}
+
+.facetwp-template .card-deck.fp-col-4>* {
+	min-width: 25%;
+	max-width: 25%;
+}
+
+.facetwp-template .card-deck.fp-col-5>* {
+	min-width: 20%;
+	max-width: 20%;
+}
+
+.facetwp-template .card-deck.fp-col-1 .card,
+.facetwp-template .card-deck.fp-col-2 .card,
+.facetwp-template .card-deck.fp-col-3 .card,
+.facetwp-template .card-deck.fp-col-4 .card,
+.facetwp-template .card-deck.fp-col-5 .card{
+	margin: 0;
+}
