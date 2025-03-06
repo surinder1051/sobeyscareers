@@ -10150,7 +10150,7 @@ a.text-dark:focus,a.text-dark:hover{
 
 .facetwp-bb-module .facetwp-type-checkboxes .facetwp-checkbox{
   padding-left:1.875rem;
-  background:url(/wp-content/themes/marches-tradition/assets/img/checkbox.png);
+  background:url(/wp-content/themes/sobeyscareers/assets/img/checkbox.png);
   -webkit-background-size:1rem 1rem;
      -moz-background-size:1rem 1rem;
           background-size:1rem 1rem;
@@ -10163,7 +10163,7 @@ a.text-dark:focus,a.text-dark:hover{
 }
 
 .facetwp-bb-module .facetwp-type-checkboxes .facetwp-checkbox.checked{
-  background:url(/wp-content/themes/marches-tradition/assets/img/checkbox-on.png);
+  background:url(/wp-content/themes/sobeyscareers/assets/img/checkbox-on.png);
   background-position:left top .25rem;
 }
 
@@ -11003,7 +11003,7 @@ a.text-dark:focus,a.text-dark:hover{
 }
 
 .search_section_bottom .frm_style_formidable-style.with_frm_style .frm_form_fields input[type=email]{
-  background-image:url(/wp-content/themes/marches-tradition/assets/img/email.svg);
+  background-image:url(/wp-content/themes/sobeyscareers/assets/img/email.svg);
   background-repeat:no-repeat;
   background-attachment:scroll;
   -webkit-background-size:1rem 1.125rem;

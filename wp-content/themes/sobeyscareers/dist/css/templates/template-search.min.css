@@ -179,7 +179,7 @@ body.search .facetwp-bb-module .facetwp-facet-keyword_search .facetwp-search-wra
 }
 
 body.search .facetwp-bb-module .facetwp-facet-keyword_search .facetwp-search-wrap .facetwp-btn:before{
-  background:url(/wp-content/themes/marches-tradition/assets/svg/search-soft-gray.svg) no-repeat;
+  background:url(/wp-content/themes/sobeyscareers/assets/svg/search-soft-gray.svg) no-repeat;
 }
 
 body.search .facetwp-bb-module .facetwp-facet-title{
@@ -190,7 +190,7 @@ body.search .facetwp-bb-module .facetwp-facet-title{
 
 body.search .facetwp-bb-module .facetwp-type-checkboxes .facetwp-checkbox{
   padding-left:1.875rem;
-  background:url(/wp-content/themes/marches-tradition/assets/img/checkbox.png);
+  background:url(/wp-content/themes/sobeyscareers/assets/img/checkbox.png);
   -webkit-background-size:1rem 1rem;
      -moz-background-size:1rem 1rem;
           background-size:1rem 1rem;
@@ -202,7 +202,7 @@ body.search .facetwp-bb-module .facetwp-type-checkboxes .facetwp-checkbox{
 }
 
 body.search .facetwp-bb-module .facetwp-type-checkboxes .facetwp-checkbox.checked{
-  background:url(/wp-content/themes/marches-tradition/assets/img/checkbox-on.png);
+  background:url(/wp-content/themes/sobeyscareers/assets/img/checkbox-on.png);
   background-position:left top .25rem;
 }
 
