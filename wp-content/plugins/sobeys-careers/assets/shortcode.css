@@ -1,0 +1,146 @@
+.searching {
+    border: 1px solid #DDDDDD;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 10%; /* Grid with 3 columns and an extra 10% width column */
+    gap: 20px;
+    padding: 16px 16px 16px 24px;
+    align-items: center; /* Center items vertically in the grid */
+}
+.column_text{
+    border-right: 1px solid #DDDDDD;
+}
+input{
+    border: 0;
+}
+.span {
+    margin: 0 10px 0 0;
+}
+.searchJob{
+    border: 0 !important;
+    background-color: #4AA447 !important;
+}
+.slick-prev slick-arrow{
+    display: none !important;
+}
+.slick-next slick-arrow{
+    display: none !important;
+    
+}
+.row {
+    padding: 16px 16px 16px 24px;
+    display: block;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding-bottom: 16px;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.column p {
+    font-size: 20px;
+    text-align: end;
+}
+
+.column button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.0;
+    background-color: #4AA447;
+}
+.filter_main {
+    width: 100%;
+    display: flex;
+    background: #FAF8F7;
+    padding: 30px;
+    height: auto;
+}
+
+.filter_main h2 {
+    font-size: 20px;
+    color: black;
+    font-family: Noto serif;
+    line-height: 1.2px;
+    margin-bottom: 20px;
+}
+
+.filter input,
+.filter select,
+.filter button {
+    color:#808080;
+    width: 294px;
+    height: 56px;
+    font-size: 16px;
+    /* Optional: Set a consistent font size */
+    padding: 10px;
+    /* Optional: Adds padding inside the elements */
+    margin-bottom: 10px;
+    /* Optional: Adds space between each element */
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width/height */
+}
+table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        color: black;
+        font-size: 16px;
+        font-family: 'Lexend Deca';
+        line-height: 1.2px;
+        font-weight: 700;
+        border: 0;
+    }
+    tr{
+        border-bottom: 1px solid green;
+    }
+    td{
+        color: black;
+        font-size: 16px;
+        font-family: 'Lexend Deca';
+        line-height: 1.2px;
+        font-weight: 400;
+    }
+    tbody tr{
+        width: 1074px;
+        height: 84px;
+        border:1px solid #DDDD
+    }
+    a {
+        color: #48a548;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .column input {
+        width: 100%;
+        height: 56px;
+        border-right: 1px solid #DDDDDD;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    #searchJobs{
+        padding: 19px 30px 19px 30px;
+        border-radius: 100px;
+        border: 0;
+        color: white;
+        font-family: Poppins;
+        line-height: 100%;
+        font-size: 16px;
+        font-weight: 500;
+    
+    }
+    #applyFilters{
+        font-size: 16px;
+        line-height: 100%;
+        font-family:'poppins';
+        font-weight: 500;
+        padding: 19px 30px 19px 30px;
+        background-color: #4AA447;
+        border: 0;
+    }
