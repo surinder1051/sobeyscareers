@@ -208,7 +208,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer
        transform:translateX(0) skew(-45deg);
 }
 body.single-store .fl-module-heading .fl-heading{
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
 }
 
 @media (max-width:1600px){
@@ -324,7 +324,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.manager span
 body.single-store .fl-module-bbmodule-store-info .single_store_info h3{
   font-size:1.5rem;
   color:#4d4d4f;
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   margin-bottom:.9375rem;
 }
 
@@ -584,7 +584,7 @@ body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .h
 }
 
 body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours table tr th,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container table tr th{
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   color:#ea0028;
   font-weight:600;
 }

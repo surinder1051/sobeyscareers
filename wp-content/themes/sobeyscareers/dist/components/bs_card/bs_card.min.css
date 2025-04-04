@@ -253,12 +253,12 @@
 }
 
 .component_bs_card.-theme-light .card-body{
-  background-color:#404040;
+  background-color:#000;
   color:#fff;
 }
 
 .component_bs_card.-theme-dark .card-body{
-  color:#404040;
+  color:#000;
 }
 
 .fl-module-bs_card,.fl-module-bs_card .component_bs_card,.fl-module-bs_card .fl-module-content{

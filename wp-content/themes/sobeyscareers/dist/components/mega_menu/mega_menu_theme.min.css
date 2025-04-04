@@ -229,7 +229,7 @@
     color:#4d4d4f;
   }
   .fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.nav li.level-0 a.nav-link:hover,.fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.nav li.level-0 button.nav-link:hover{
-    color:#ed1b2e !important;
+    color:#fff !important;
   }
 }
 

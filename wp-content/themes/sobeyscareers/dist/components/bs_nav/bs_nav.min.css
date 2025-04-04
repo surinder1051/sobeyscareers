@@ -4,7 +4,7 @@
   -webkit-border-radius:0;
      -moz-border-radius:0;
           border-radius:0;
-  color:#b21226;
+  color:#fff;
   font-size:14px;
   font-size:.875rem;
   display:inline-block;
@@ -20,7 +20,7 @@
 }
 
 .fl-builder-content .fl-module-custom .component_bs_nav button.bs-nav-expander:hover{
-  color:#ed1b2e;
+  color:#fff;
 }
 
 .component_bs_nav.vertical .title{
@@ -58,17 +58,17 @@
 .component_bs_nav.vertical.expand-collapse .dropdown-item{
   background:none;
   border:none;
-  color:#404040;
+  color:#000;
   text-align:left;
 }
 
 .component_bs_nav.vertical.expand-collapse .dropdown-item.active{
-  color:#404040;
+  color:#000;
   text-align:left;
 }
 
 .component_bs_nav.vertical.expand-collapse .dropdown-item:hover{
-  color:#ed1b2e;
+  color:#fff;
 }
 
 .component_bs_nav.vertical.expand-collapse .menu-item-has-children:not(.expanded) .dropdown-menu{

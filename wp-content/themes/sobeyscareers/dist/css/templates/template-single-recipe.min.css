@@ -230,7 +230,7 @@ body.single-recipe .fl-module-recipe_details .component_recipe_details .tile.til
 body.single-recipe .fl-module-recipe_details .component_recipe_details .tile.tile_makes dl dt{
   font-size:1rem;
   margin-bottom:.3125rem;
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   line-height:1;
 }
 
@@ -345,7 +345,7 @@ body.single-recipe .fl-module-recipe_steps .component_recipe_steps dl{
 body.single-recipe .fl-module-recipe_steps .component_recipe_steps dl dt{
   font-size:1.125rem;
   color:#4d4d4f;
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   min-width:4.375rem;
 }
 
@@ -482,7 +482,7 @@ body.single-recipe .fl-module-related .component_related .card-deck .card.recipe
 }
 
 body.single-recipe .fl-module-related .component_related .card-deck .card.recipe-card .card-body .card-title{
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   font-size:1.5rem;
   font-weight:600;
   line-height:1.75rem;
@@ -655,7 +655,7 @@ body.single-recipe .fl-module-related .component_related .card-deck .card.recipe
 body.single-recipe .fl-module-related .component_related .card-deck .card.recipe-card .card-body .bottom-col-wrap .col dl dt{
   font-size:1rem;
   line-height:1.25rem;
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   margin:0 0 .3125rem;
 }
 

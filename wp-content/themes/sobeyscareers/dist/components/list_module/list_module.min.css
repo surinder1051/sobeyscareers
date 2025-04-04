@@ -156,7 +156,7 @@
 }
 
 .component_list_module.-unordered ul.style-bullet li:before{
-  background-color:#404040;
+  background-color:#000;
   content:"";
   -webkit-transform:translateY(50%);
      -moz-transform:translateY(50%);
@@ -186,12 +186,12 @@
 }
 
 .component_list_module.-ordered ol.style-background li:before{
-  background:#b21226;
+  background:#4aa447;
   border:none;
   -webkit-border-radius:50%;
      -moz-border-radius:50%;
           border-radius:50%;
-  color:#fff;
+  color:#4aa447;
   font-family:inherit;
   font-weight:700;
   font-size:18px;
@@ -223,7 +223,7 @@
 }
 
 .component_list_module.-ordered ol.style-checkmark li>span{
-  background:#b21226;
+  background:#4aa447;
   width:24px;
   width:1.5rem;
   height:24px;

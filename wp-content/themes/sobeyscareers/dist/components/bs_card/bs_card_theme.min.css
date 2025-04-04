@@ -208,12 +208,13 @@
 }
 
 .fl-module-bs_card .component_bs_card.card .card-body .card-text p{
-  color:#4d4d4f;
+  color:#404040;
   margin:0;
-  font-family:Palanquin Dark SemiBold,sans-serif;
-  font-size:18px;
-  font-size:1.125rem;
+  font-family:Lexend Deca;
+  font-size:16px;
+  font-size:1rem;
   line-height:1.5;
+  font-weight:400;
 }
 
 @media (min-width:768px) and (max-width:991.98px){

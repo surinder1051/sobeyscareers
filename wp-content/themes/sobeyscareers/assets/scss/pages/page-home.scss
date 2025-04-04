@@ -1,259 +1,187 @@
 @import "component";
 
-$brand-dark : #ea0028;
-/*
-Url : /fr/
-      /en/
-*/
-body {
-  &.home {
-    // Module : slick-list
-    // Reason : Added css to manage spacing for mobile screen
-    .mobile_carousel{
-      .slick-initialized{ 
-        .slick-slide{
+.header-brand {
+  nav {
+    ul {
+      &.menu {
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          background: $white;
+          z-index: 100;
+          padding: rem(20) rem(25);
+          height: rem(267) !important;
+          display: block !important;
+          position: absolute;
+          top: 100%;
+          right: -100%;
+          transition: all .5s ease;
+          text-align: left;
+          margin: 0;
+        }
+
+        &.open {
+          right: 0;
+          height: 100vh !important;
+
           @include media-breakpoint-down(sm) {
-            margin-right: 0;
+            height: 100vh !important;
           }
-        }
-      }
-    }
-    .desp_style_sec{
-      .fl-col-content{
-        &.fl-node-content{
-          justify-content: end;
-        }
-      }
-    }
-    // Reason : Added css to manage spacing for tab screen
-    .tab-spacing {
-      .fl-row-content-wrap{
-        @include media-breakpoint-only(lg) {
-          margin-top: 40px;
-          margin-bottom: 40px;
-        }
-      }
-    }
-    .tab-top-spacing{
-      .tab-heading{
-        .fl-module-content{
-          @include media-breakpoint-only(lg) {
-            margin-top: 40px;
-            margin-bottom: 40px;
+
+          @media (max-width: $extra_small_screen) {
+            top: rem(62);
           }
-        }
-      }
-    }
-   
-    .tile_section {
-      // Module : Builder Column
-      // Reason : Added css to manage tiles and tile images styling
-      .tile_01_div {
-        .fl-node-content {
-          .fl-module-photo {
-            height: 100%;
-            .fl-node-content {
-              height: 100%;
-              .fl-photo {
-                height: 100%;
-                .fl-photo-content {
-                  height: 100%;
-                  img {
-                    height: 100%;
-                  }
-                }
-              }
-            }
+
+          @media (max-width: $small_screen) {
+            top: rem(66);
           }
+
         }
-      }
-    }
-    .clients_info_section {
-      // Module : fl-heading
-      // Reason : Added css to manage heading style and font
-      .fl-col-group {
-        .fl-col-content {
-          .fl-module-heading {
-            .fl-module-content {
-              @media (max-width: $small_screen) {
-                margin-left: rem(0);
-                margin-right: rem(0);
-              }
-            }
+
+        li {
+
+          @include media-breakpoint-down(sm) {
+            border-bottom: rem(1) solid $light_greyCol;
+            padding-top: rem(20);
+            padding-bottom: rem(20);
           }
-        }
-      }
-      .desp_style_sec {
-        .fl-col-content {
-          &.fl-node-content {
-            @include media-breakpoint-only(lg) {
-              padding: rem(20);
-            }
-          }
-        }
-        h2 {
-          &.fl-heading {
-            @include media-breakpoint-only(lg) {
-              font-size: rem(20);
-              line-height: rem(24);
-            }
-          }
-        }
-      }
-      .store-equal-height {
-        .fl-col-content {
-          .fl-col-group {
-            &.fl-col-group-equal-height {
-              height: 100%;
-            }
-          }
-        }
-      }
-      .fl-row-content-wrap{
-        .fl-col-group-equal-height {
-          .fl-col{
-            .image_info{
-              @include media-breakpoint-only(md){
-                 height: rem(230);
-                 overflow: hidden;
-              }
-              img{
-                @include media-breakpoint-only(md){
-                  height: rem(200);
-                  object-fit: contain;
-                }
-              }
-            }
-          }
-        }
-      }
-      // Reason : Added css to manage slick slider spacing and style
-      .slick-slider {
-        .slick-track {
-          @include media-breakpoint-down(sm){
-            padding-bottom: rem(10);
-          }
-          .slick-slide {
+
+          +li {
+            margin-left: rem(32);
+
             @include media-breakpoint-down(sm) {
-              margin-right: rem(20);
+              margin-left: 0;
+              margin-top: 0;
             }
-            .fl-col {
-              .fl-button-wrap {
-                a {
-                  @media (max-width: $small_screen) {
-                    font-size: rem(14);
-                  }
-                }
-              }
-              .fl-node-content {
-                @include media-breakpoint-down(sm) {
-                  margin-top: rem(0);
-                }
-                .fl-photo-content {
-                  @media (max-width: $small_screen) {
-                    width: 100%;
-                  }
-                }
-                .fl-col-group {
-                  .fl-col {
-                    @include media-breakpoint-down(sm) {
-                      display: table;
-                    }
-                    .fl-col-content {
-                      @include media-breakpoint-down(sm) {
-                        height: rem(240);
-                        vertical-align: top;
-                        display: table-cell;
-                      }
-                      @media (max-width: $small_screen) {
-                        height: auto;
-                      }
-                      img {
-                        @include media-breakpoint-down(sm) {
-                          width: 100%;
-                        }
-                      }
-                    }
-                  }
-                }
+          }
+
+          &:first-child {
+
+            @include media-breakpoint-down(sm) {
+              border-top: rem(1) solid $light_greyCol;
+            }
+          }
+
+          &:last-child {
+            border-bottom: none !important;
+
+            @include media-breakpoint-down(sm) {
+              border-bottom: none !important;
+            }
+          }
+
+          a {
+            text-transform: capitalize;
+            color: $dark-grey2;
+            transition-duration: .3s;
+            text-decoration: none !important;
+
+            @include media-breakpoint-down(sm) {
+              font-size: rem(14);
+            }
+
+            &:focus,
+            &:hover {
+              color: $aqua-green;
+              outline: none !important;
+
+              &:after {
+                content: "";
+                border-bottom: rem(4) solid $aqua-green;
+                width: 100%;
+                position: absolute;
+                bottom: rem(-8);
+                right: 0;
+                left: 0;
+                transition-duration: .3s;
               }
             }
           }
         }
       }
     }
-    .search_section_bottom {
-      .fl-col-content {
-        .fl-module-bbmodule-store-search-box {
-          .fl-module-content {
-            .input-group{
-              &.d-flex{
-                border-radius:0;
-                align-items: baseline;
-                input[type="text"]::-webkit-text-decoration,
-                input[type="text"]::-webkit-text-cancel-button,
-                input[type="text"]::-webkit-text-results-button,
-                input[type="text"]::-webkit-text-results-decoration { display: none; }
-                input[type="text"]::-ms-clear { display: none; width : 0; height: 0; }
-              }
-              .flex-fill{
-                .btn{
-                  &:focus{
-                    box-shadow: none;
-                  }
-                }
+  }
+
+  .fl-menu {
+    button {
+      &.fl-menu-mobile-toggle {
+        &.hamburger {
+          @include media-breakpoint-down(sm) {
+            position: relative;
+            margin: 0;
+            padding: 0;
+          }
+
+          &:before {
+            @include media-breakpoint-down(sm) {
+              top: rem(-5);
+              position: relative;
+              content: "";
+              display: block;
+              width: rem(24);
+              height: rem(3);
+              border-radius: rem(10);
+              background-color: $aqua-green;
+              transition: transform .5s ease-in-out;
+            }
+
+          }
+
+          &:after {
+
+            @include media-breakpoint-down(sm) {
+              bottom: rem(-5);
+              position: relative;
+              content: "";
+              display: block;
+              width: rem(24);
+              height: rem(3);
+              border-radius: rem(10);
+              background-color: $aqua-green;
+              transition: transform .5s ease-in-out;
+            }
+
+          }
+
+          &:focus {
+            outline: none !important;
+          }
+
+          span {
+            @include media-breakpoint-down(sm) {
+              display: block;
+              width: rem(24);
+              height: rem(3);
+              border-radius: rem(10);
+              background-color: $white;
+            }
+
+            svg {
+              display: none;
+            }
+          }
+
+          &.active {
+            &:before {
+              @include media-breakpoint-down(sm) {
+                transform: translateY(rem(6)) rotate(-225deg);
               }
             }
-            .small-content {
-              font-size: rem(16);
-              font-family: $main-font;
-              font-weight: 200;
-              float: left;
-              display: contents;
+
+            &:after {
+              @include media-breakpoint-down(sm) {
+                transform: translateY(rem(-10)) rotate(225deg);
+              }
             }
-            .search-input {
-              input{
-                &::placeholder,
-                &::-webkit-input-placeholder,
-                &::-moz-placeholder,
-                &::-ms-placeholder{
-                  color: $gray-104;
-                }
-              }
-              label {
-                color:$gray-103;
-                &.error{
-                  color: $brand-dark;
-                }
-              }
-              &:after{
-                color: $gray-103;
-                transform: translateY(0);
-              }
-              input {
-                &::placeholder{
-                  color:$gray-103;
-                }
-                @include media-breakpoint-only(md) {
-                  padding: rem(5) 0;
-                }
+
+            span {
+              @include media-breakpoint-down(sm) {
+                background-color: transparent;
+                transition-delay: 0s;
               }
             }
           }
-        } 
+        }
       }
-    }
-    .card-deck {
-       .recipe-card {
-          &.article-card {
-            @include media-breakpoint-only(md) {
-              margin-right: rem(14);
-            }
-            &:last-child {
-              margin-right: 0;
-            }
-          }
-       }
     }
   }
 }

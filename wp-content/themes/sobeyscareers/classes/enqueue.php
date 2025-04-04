@@ -42,6 +42,11 @@ function css()
 		wp_enqueue_style('home');
 	}
 
+	if (is_page('working-with-us')) {
+		wp_register_style( 'working-with-us', get_template_directory_uri() . '/dist/css/pages/page-workingwithus.min.css', array( 'main' ) );
+		wp_enqueue_style( 'working-with-us' );
+	}
+
 	if (is_search()) {
 		wp_register_style('search', get_template_directory_uri() . '/dist/css/templates/template-search.min.css', array('main'));
 		wp_enqueue_style('search');
@@ -60,10 +65,7 @@ function css()
 		wp_register_style('single-story', get_template_directory_uri() . '/dist/css/templates/template-single-story.min.css', array('main'));
 	 	wp_enqueue_style('single-story');
 	 }
-	 if (is_page('sceneplus')) {
-		wp_register_style( 'sceneplus', get_template_directory_uri() . '/dist/css/pages/page-sceneplus.min.css', array( 'main' ) );
-		wp_enqueue_style( 'sceneplus' );
-	}
+	 
 	if (is_page('panache')) {
 		wp_register_style('panache', get_template_directory_uri() . '/dist/css/pages/page-panache.min.css', array('main'));
 		wp_enqueue_style('panache');
@@ -236,6 +238,7 @@ function css()
 		wp_register_style('gift-cards', get_template_directory_uri() . '/dist/css/pages/page-gift-cards.min.css', array('general'));
 		wp_enqueue_style('gift-cards');
 	}
+
 	// if (is_singular('store')) {
 	// 	wp_register_style('single-store', get_template_directory_uri() . '/dist/css/pages/page-single-store.min.css', array('main'));
 	// 	wp_enqueue_style('single-store');
@@ -262,7 +265,6 @@ function js()
 	wp_enqueue_script('bootstrap-tooltip', get_template_directory_uri() . '/dist/js/bootstrap/tooltip.min.js', array('jquery', 'bootstrap-util'), '4.0.0', true);
 	wp_enqueue_script('bootstrap-popover', get_template_directory_uri() . '/dist/js/bootstrap/popover.min.js', array('jquery', 'bootstrap-util', 'bootstrap-tooltip'), '4.0.0', true);
 	wp_enqueue_script('common-js', get_template_directory_uri() . '/dist/js/common.min.js', array(), date("Y-m-d---G-i-s", filemtime(get_stylesheet_directory() . '/dist/js/common.min.js')));
-	wp_enqueue_script('page-groceriesandgetaways-js', get_template_directory_uri() . '/dist/js/page-groceriesandgetaways.min.js', array(), date("Y-m-d---G-i-s", filemtime(get_stylesheet_directory() . '/dist/js/page-groceriesandgetaways.min.js')));
 }
 add_action('wp_enqueue_scripts', 'fp\js');
 

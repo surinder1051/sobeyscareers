@@ -115,7 +115,7 @@
 
 .card-deck .recipe-card .card-body .card-title{
   color:#404040;
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
   font-size:1.5rem;
   line-height:1.75rem;
   font-weight:600;
@@ -133,7 +133,7 @@
 }
 
 .card-deck .recipe-card .card-body .bottom-col-wrap .col .description-term{
-  font-family:Palanquin Dark SemiBold,sans-serif;
+  font-family:Lexend Deca;
 }
 
 /*# sourceMappingURL=recipe_card_theme.min.css.map */

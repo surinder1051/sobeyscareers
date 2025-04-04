@@ -345,3 +345,24 @@ function slickSliderCustomSlides(element, slides) {
 		]
 	} );
 }
+function toggleMobileMenu() {
+	var screenWidth = jQuery(window).width();
+
+	if (768 > screenWidth) {
+		jQuery('.header-brand .hamburger').toggleClass('active');
+
+		jQuery('.header-brand .fl-menu .menu').toggleClass('open');
+
+		jQuery('body').toggleClass('scroll_hidden');
+	}
+}
+
+jQuery(document).ready(function() {
+	jQuery('.header-brand .fl-menu .fl-menu-mobile-toggle').on('click', function(event) {
+		event.stopImmediatePropagation();
+		toggleMobileMenu();
+	} );
+	jQuery('.header-brand .nav-link').on('click', function() {
+		toggleMobileMenu();
+	} );
+} );

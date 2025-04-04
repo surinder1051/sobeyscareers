@@ -115,7 +115,7 @@
 }
 
 .component_bs_card_simple .card-grid-row .card{
-  background:#404040;
+  background:#000;
   background-repeat:no-repeat;
   background-position:top;
   -webkit-background-size:cover;
