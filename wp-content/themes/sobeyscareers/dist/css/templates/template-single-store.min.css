@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_as_my_store button,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .static_map_overlay .load-btn-map,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container .static_map_overlay .load-btn-map{
-  border:solid #ea0028;
+  border:solid #4aa447;
 }
 
 @media (min-width:992px) and (max-width:1199.98px){
@@ -21,7 +21,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer a{
   font-size:rem(12);
   background-color:#fff;
-  border:solid #ea0028;
+  border:solid #4aa447;
   -webkit-border-radius:rem(50);
      -moz-border-radius:rem(50);
           border-radius:rem(50);
@@ -62,11 +62,11 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer a:hover{
-  color:#ea0028;
+  color:#4aa447;
 }
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_as_my_store button,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .static_map_overlay .load-btn-map,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container .static_map_overlay .load-btn-map{
-  background-color:#ea0028;
-  border:.125rem solid #ea0028;
+  background-color:#4aa447;
+  border:.125rem solid #4aa447;
   -webkit-border-radius:50px;
   -webkit-border-radius:3.125rem;
      -moz-border-radius:50px;
@@ -132,7 +132,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_as_my_store button.hover,body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_as_my_store button:hover,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .static_map_overlay .hover.load-btn-map,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .static_map_overlay .load-btn-map:hover,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container .static_map_overlay .hover.load-btn-map,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container .static_map_overlay .load-btn-map:hover{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_as_my_store button.hover:before,body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_as_my_store button:hover:before,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .static_map_overlay .hover.load-btn-map:before,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .static_map_overlay .load-btn-map:hover:before,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container .static_map_overlay .hover.load-btn-map:before,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container .static_map_overlay .load-btn-map:hover:before{
@@ -144,8 +144,8 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer a{
   background:#fff;
-  color:#ea0028;
-  border:.125rem solid #ea0028;
+  color:#4aa447;
+  border:.125rem solid #4aa447;
   font-size:1rem;
   font-weight:500;
   -webkit-border-radius:1.875rem;
@@ -194,7 +194,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer
     -o-transform:translateX(-100%) skew(-45deg);
        transform:translateX(-100%) skew(-45deg);
   transition:transform 1s cubic-bezier(.07, .51, .12, 1),-webkit-transform 1s cubic-bezier(.07, .51, .12, 1);
-  background:#ea0028;
+  background:#4aa447;
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.button_flyer a:hover{
@@ -312,7 +312,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.manager span
   position:absolute;
   left:0;
   font-size:1.25rem;
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (max-width:1600px){
@@ -370,7 +370,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info span.phone a
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info span i{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info span i.icon-store-address,body.single-store .fl-module-bbmodule-store-info .single_store_info span i.icon-store-fax,body.single-store .fl-module-bbmodule-store-info .single_store_info span i.icon-store-phone{
@@ -400,7 +400,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info .location_ad
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info .direction_link a{
-  color:#ea0028;
+  color:#4aa447;
   font-size:.875rem;
   position:relative;
 }
@@ -451,7 +451,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.services h3{
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info.services span.get_info_button{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (max-width:767.98px){
@@ -513,7 +513,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info.button_save_
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info .depart_list_service_main .collapseDept h3{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info .depart_list_service_main .collapseDept .service-col{
@@ -522,7 +522,7 @@ body.single-store .fl-module-bbmodule-store-info .single_store_info .depart_list
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info .depart_list_service_main .depart_list_service_heading h2{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.single-store .fl-module-bbmodule-store-info .single_store_info span i:before{
@@ -555,7 +555,7 @@ body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours.ho
 }
 
 body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours h3,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours h4,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container h3,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container h4{
-  color:#ea0028;
+  color:#4aa447;
   text-align:left;
 }
 
@@ -585,7 +585,7 @@ body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours .h
 
 body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .hours table tr th,body.single-store .fl-module-bbmodule-store-map-image .store-map-hours .map-container table tr th{
   font-family:Lexend Deca;
-  color:#ea0028;
+  color:#4aa447;
   font-weight:600;
 }
 

@@ -1,5 +1,5 @@
 body .filter_button .fl-module-content .fl-button-wrap .icon-filter:before{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.search .fl-module-bs_card_horizontal_dynamic:last-child{
@@ -118,7 +118,7 @@ body.search .fl-module-bs_card_horizontal_dynamic .component_bs_card_horizontal_
 
 body.search .fl-module-bs_card_horizontal_dynamic .component_bs_card_horizontal_dynamic .col .card-block .card-text a{
   display:inline-block;
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (min-width:992px) and (max-width:1199.98px){

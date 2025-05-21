@@ -1,187 +1,42 @@
 @import "component";
-
-.header-brand {
-  nav {
-    ul {
-      &.menu {
-        @include media-breakpoint-down(sm) {
-          width: 100%;
-          background: $white;
-          z-index: 100;
-          padding: rem(20) rem(25);
-          height: rem(267) !important;
-          display: block !important;
-          position: absolute;
-          top: 100%;
-          right: -100%;
-          transition: all .5s ease;
-          text-align: left;
-          margin: 0;
-        }
-
-        &.open {
-          right: 0;
-          height: 100vh !important;
-
-          @include media-breakpoint-down(sm) {
-            height: 100vh !important;
-          }
-
-          @media (max-width: $extra_small_screen) {
-            top: rem(62);
-          }
-
-          @media (max-width: $small_screen) {
-            top: rem(66);
-          }
-
-        }
-
-        li {
-
-          @include media-breakpoint-down(sm) {
-            border-bottom: rem(1) solid $light_greyCol;
-            padding-top: rem(20);
-            padding-bottom: rem(20);
-          }
-
-          +li {
-            margin-left: rem(32);
-
-            @include media-breakpoint-down(sm) {
-              margin-left: 0;
-              margin-top: 0;
-            }
-          }
-
-          &:first-child {
-
-            @include media-breakpoint-down(sm) {
-              border-top: rem(1) solid $light_greyCol;
-            }
-          }
-
-          &:last-child {
-            border-bottom: none !important;
-
-            @include media-breakpoint-down(sm) {
-              border-bottom: none !important;
-            }
-          }
-
-          a {
-            text-transform: capitalize;
-            color: $dark-grey2;
-            transition-duration: .3s;
-            text-decoration: none !important;
-
-            @include media-breakpoint-down(sm) {
-              font-size: rem(14);
-            }
-
-            &:focus,
-            &:hover {
-              color: $aqua-green;
-              outline: none !important;
-
-              &:after {
-                content: "";
-                border-bottom: rem(4) solid $aqua-green;
-                width: 100%;
-                position: absolute;
-                bottom: rem(-8);
-                right: 0;
-                left: 0;
-                transition-duration: .3s;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .fl-menu {
-    button {
-      &.fl-menu-mobile-toggle {
-        &.hamburger {
-          @include media-breakpoint-down(sm) {
-            position: relative;
-            margin: 0;
-            padding: 0;
-          }
-
-          &:before {
-            @include media-breakpoint-down(sm) {
-              top: rem(-5);
-              position: relative;
-              content: "";
-              display: block;
-              width: rem(24);
-              height: rem(3);
-              border-radius: rem(10);
-              background-color: $aqua-green;
-              transition: transform .5s ease-in-out;
-            }
-
-          }
-
-          &:after {
-
-            @include media-breakpoint-down(sm) {
-              bottom: rem(-5);
-              position: relative;
-              content: "";
-              display: block;
-              width: rem(24);
-              height: rem(3);
-              border-radius: rem(10);
-              background-color: $aqua-green;
-              transition: transform .5s ease-in-out;
-            }
-
-          }
-
-          &:focus {
-            outline: none !important;
-          }
-
-          span {
-            @include media-breakpoint-down(sm) {
-              display: block;
-              width: rem(24);
-              height: rem(3);
-              border-radius: rem(10);
-              background-color: $white;
-            }
-
-            svg {
-              display: none;
-            }
-          }
-
-          &.active {
-            &:before {
-              @include media-breakpoint-down(sm) {
-                transform: translateY(rem(6)) rotate(-225deg);
-              }
-            }
-
-            &:after {
-              @include media-breakpoint-down(sm) {
-                transform: translateY(rem(-10)) rotate(225deg);
-              }
-            }
-
-            span {
-              @include media-breakpoint-down(sm) {
-                background-color: transparent;
-                transition-delay: 0s;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+.menu-header-menu{
+    display: none;
 }
+.component_bs_accordion{
+    .card {
+        .card-header {
+            padding-right: 0 !important;
+            .accordion-header{
+            padding-right: 24px !important;
+              padding-top: rem(16);
+              padding-bottom: rem(16);
+    
+              &:before {
+                margin-top: 0 !important;
+                content: url($asset_path + "/img/arrow-down.svg") !important;
+                height: rem(8);
+                width: rem(14);
+                color: rgba(64, 64, 64, 1) !important;
+              }
+    
+             
+            }
+            
+        }
+        &[aria-expanded=true] 
+        .card-header {
+            .accordion-header{
+                &:before {
+                    content: url($asset_path + "/img/arrow-up.svg") !important;
+                  }
+        }
+        }
+        
+        
+        
+        
+        
+}
+}
+
+

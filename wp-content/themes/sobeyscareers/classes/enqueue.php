@@ -46,6 +46,22 @@ function css()
 		wp_register_style( 'working-with-us', get_template_directory_uri() . '/dist/css/pages/page-workingwithus.min.css', array( 'main' ) );
 		wp_enqueue_style( 'working-with-us' );
 	}
+	if (is_page('retail-career')) {
+		wp_register_style( 'retail-career', get_template_directory_uri() . '/dist/css/pages/retailcareer.min.css', array( 'main' ) );
+		wp_enqueue_style( 'retail-career' );
+	}
+	if (is_page('corporate-career')) {
+		wp_register_style( 'corporate-career', get_template_directory_uri() . '/dist/css/pages/corporate-career.min.css', array( 'main' ) );
+		wp_enqueue_style( 'corporate-career' );
+	}
+	if (is_page('distribution-careers')) {
+		wp_register_style( 'distribution-careers', get_template_directory_uri() . '/dist/css/pages/distributioncareer.min.css', array( 'main' ) );
+		wp_enqueue_style( 'distribution-careers' );
+	}
+	if (is_page('working-with-us')) {
+		wp_register_style( 'working-with-us', get_template_directory_uri() . '/dist/css/pages/page-workingwithus.min.css', array( 'main' ) );
+		wp_enqueue_style( 'working-with-us' );
+	}
 
 	if (is_search()) {
 		wp_register_style('search', get_template_directory_uri() . '/dist/css/templates/template-search.min.css', array('main'));

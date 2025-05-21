@@ -29,7 +29,7 @@ body.single-article .single_article_content .article-small-head{
 
 body.single-article .single_article_content h2.article_sub_heading{
   font-size:1.875rem;
-  color:#ea0028;
+  color:#4aa447;
   line-height:1.875rem;
   margin-bottom:1.5625rem;
   font-family:Lexend Deca;
@@ -121,7 +121,7 @@ body.single-article .single_article_content ul li:before{
   left:0;
   width:.375rem;
   height:.375rem;
-  background-color:#ea0028;
+  background-color:#4aa447;
   -webkit-border-radius:100%;
      -moz-border-radius:100%;
           border-radius:100%;
@@ -138,7 +138,7 @@ body.single-article .single_article_content .article_note_text{
   font-style:italic;
   padding:1.875rem;
   margin-bottom:3.125rem;
-  border-left:.25rem solid #ea0028;
+  border-left:.25rem solid #4aa447;
 }
 
 @media (max-width:767.98px){

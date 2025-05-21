@@ -72,6 +72,7 @@ define('FP_MODULE_DEFAULTS', array(
 	)
 ));
 
+
 add_filter('slide_size_extra_large', function () {
 	return 'slider_1920x630';
 });
@@ -443,14 +444,14 @@ add_filter( 'facetwp_facet_render_args', function( $args ) {
 
 });
 
-add_action('init', function() {
-	pll_register_string( 'very-easy', 'very easy', FP_TD, false );
-	pll_register_string( 'cp-very-easy', 'Very Easy', FP_TD, false );
-	pll_register_string('medium', 'medium');
-	pll_register_string('easy', 'easy');
-	pll_register_string('cp-medium', 'Medium');
-	pll_register_string('cp-easy', 'Easy');
-});
+//add_action('init', function() {
+//	pll_register_string( 'very-easy', 'very easy', FP_TD, false );
+//	pll_register_string( 'cp-very-easy', 'Very Easy', FP_TD, false );
+//	pll_register_string('medium', 'medium');
+//	pll_register_string('easy', 'easy');
+//	pll_register_string('cp-medium', 'Medium');
+//	pll_register_string('cp-easy', 'Easy');
+//});
 
 
 
@@ -466,3 +467,4 @@ function change_invalid_message( $message ) {
     $message = __('There was a problem with your submission. Errors are marked below.', FP_TD);
     return $message;
 }
+

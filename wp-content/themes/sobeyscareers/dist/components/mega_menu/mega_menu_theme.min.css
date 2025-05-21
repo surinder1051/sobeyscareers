@@ -245,7 +245,7 @@
   width:7px;
   width:.4375rem;
   margin-top:0;
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (min-width:768px) and (max-width:991.98px){
@@ -262,7 +262,7 @@
   .fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.nav li.level-0.menu-item-has-children a.dropdown-toggle:after,.fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.nav li.level-0.menu-item-has-children button.dropdown-toggle:after{
     right:10px;
     right:.625rem;
-    color:#ea0028;
+    color:#4aa447;
   }
 }
 
@@ -424,7 +424,7 @@
 }
 
 .fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.nav li.three_label_menu .sidemenu .recipe-card .yellow_background h3.card-title a:hover{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 .fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.nav li.three_label_menu .sidemenu .recipe-card .yellow_background .bottom-col-wrap{
@@ -556,7 +556,7 @@
 }
 
 .fl-module-mega_menu .fl-module-mega_menu .component_mega_menu:not(.-vertical) .navbar-collapse ul.navbar-nav li.visible-sm.menu-bg-item a span:before{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (max-width:413px){
@@ -650,7 +650,7 @@
 
 @media (max-width:767.98px){
   .fl-module-mega_menu .fl-module-mega_menu .component_mega_menu button.navbar-toggler .transformicon:after,.fl-module-mega_menu .fl-module-mega_menu .component_mega_menu button.navbar-toggler .transformicon:before{
-    background:#ea0028;
+    background:#4aa447;
   }
 }
 

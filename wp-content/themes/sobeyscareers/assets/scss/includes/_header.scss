@@ -1,4 +1,15 @@
 @import "component";
+.header-top {
+  .icon-top-nav-login {
+    display: flex !important;
+    align-items: center  !important;
+
+    &::before {
+      width: rem(16) ;
+      height: rem(16) ;
+    }
+  }
+}
 
 .header-brand {
   nav {
@@ -10,7 +21,7 @@
           z-index: 100;
           padding: rem(20) rem(25);
           height: rem(267) !important;
-          display: block !important;
+          display: none !important;
           position: absolute;
           top: 100%;
           right: -100%;
@@ -22,6 +33,7 @@
         &.open {
           right: 0;
           height: 100vh !important;
+          display: block !important;
 
           @include media-breakpoint-down(sm) {
             height: 100vh !important;
@@ -84,16 +96,6 @@
               color: $aqua-green;
               outline: none !important;
 
-              &:after {
-                content: "";
-                border-bottom: rem(4) solid $aqua-green;
-                width: 100%;
-                position: absolute;
-                bottom: rem(-8);
-                right: 0;
-                left: 0;
-                transition-duration: .3s;
-              }
             }
           }
         }

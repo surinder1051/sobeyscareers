@@ -1,5 +1,5 @@
 .card-deck .recipe-card .recipe_card_link .overlay span.button{
-  border:solid #ea0028;
+  border:solid #4aa447;
 }
 
 @media (min-width:992px) and (max-width:1199.98px){
@@ -16,8 +16,8 @@
   }
 }
 .card-deck .recipe-card .recipe_card_link .overlay span.button{
-  background-color:#ea0028;
-  border:.125rem solid #ea0028;
+  background-color:#4aa447;
+  border:.125rem solid #4aa447;
   -webkit-border-radius:50px;
   -webkit-border-radius:3.125rem;
      -moz-border-radius:50px;
@@ -83,7 +83,7 @@
 }
 
 .card-deck .recipe-card .recipe_card_link .overlay span.button:hover,.card-deck .recipe-card .recipe_card_link .overlay span.hover.button{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 .card-deck .recipe-card .recipe_card_link .overlay span.button:hover:before,.card-deck .recipe-card .recipe_card_link .overlay span.hover.button:before{
@@ -129,7 +129,7 @@
 }
 
 .card-deck .recipe-card .card-body .bottom-col-wrap .col span:before{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 .card-deck .recipe-card .card-body .bottom-col-wrap .col .description-term{

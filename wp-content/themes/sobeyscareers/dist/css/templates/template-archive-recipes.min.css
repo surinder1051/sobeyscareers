@@ -50,7 +50,7 @@ body.post-type-archive-recipe .c-recipes-filter .fl-col-group .fl-col .facetwp-f
 }
 
 body.post-type-archive-recipe .c-recipes-filter .fl-col-group .fl-col .facetwp-facet.facetwp-type-dropdown:after{
-  border:.125rem solid #ea0028;
+  border:.125rem solid #4aa447;
   border-width:0 .125rem .125rem 0;
   content:"";
   height:.5rem;
@@ -77,7 +77,7 @@ body.post-type-archive-recipe .c-recipes-filter .fl-col-group .fl-col .facetwp-f
 body.post-type-archive-recipe .c-recipes-filter .fl-col-group .fl-col .facetwp-facet .facetwp-input-wrap .facetwp-icon:before{
   font-family:brand;
   content:"";
-  color:#ea0028;
+  color:#4aa447;
   background:none;
   width:1.25rem;
   font-style:normal;

@@ -74,6 +74,8 @@ $grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
         }
       }
       .card-img-top {
+        border: rem(1) solid rgba(221, 221, 221, 1);
+        border-bottom: 0;
         background-position: center;
         @media (min-width: $ultra-screen-sm) {
           max-height: 380px;
@@ -89,7 +91,6 @@ $grid-breakpoints: map-merge($grid-breakpoints, $grid-breakpoints2);
       // Module: fl-module-bs_card
       // Reason: Added css for card body styling
       .card-body {
-        border: 1px solid $light-grey;
         border-top: none;
         .card-text {
           @include media-breakpoint-only(md) {

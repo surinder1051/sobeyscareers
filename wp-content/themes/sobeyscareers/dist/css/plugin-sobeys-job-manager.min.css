@@ -1,5 +1,5 @@
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button,body.page-emplois .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button,body.page-jobs .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button,body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button,body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .frm_style_formidable-style.with_frm_style .frm_submit button{
-  border:solid #ea0028;
+  border:solid #4aa447;
 }
 
 @media (min-width:992px) and (max-width:1199.98px){
@@ -16,8 +16,8 @@ body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplica
   }
 }
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button,body.page-emplois .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button,body.page-jobs .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button,body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button,body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .frm_style_formidable-style.with_frm_style .frm_submit button{
-  background-color:#ea0028;
-  border:.125rem solid #ea0028;
+  background-color:#4aa447;
+  border:.125rem solid #4aa447;
   -webkit-border-radius:50px;
   -webkit-border-radius:3.125rem;
      -moz-border-radius:50px;
@@ -83,7 +83,7 @@ body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplica
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button.hover,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button:hover,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button.hover,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button:hover,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button.hover,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button:hover,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button.hover,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button:hover,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button.hover,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button:hover,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button.hover,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button:hover,body.page-emplois .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button.hover,body.page-emplois .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button:hover,body.page-jobs .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button.hover,body.page-jobs .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button:hover,body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button.hover,body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button:hover,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button.hover,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button:hover,body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .frm_style_formidable-style.with_frm_style .frm_submit button.hover,body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .frm_style_formidable-style.with_frm_style .frm_submit button:hover{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button.hover:before,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button:hover:before,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button.hover:before,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button:hover:before,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button.hover:before,body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button:hover:before,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button.hover:before,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style.with_frm_style .frm_submit button:hover:before,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button.hover:before,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .application-content-wrapper .application-filter-wrapper form .submit-field button:hover:before,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button.hover:before,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication .submit-field button:hover:before,body.page-emplois .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button.hover:before,body.page-emplois .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button:hover:before,body.page-jobs .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button.hover:before,body.page-jobs .fl-module-bbmodule-searchjobs .module-jm-searchjobs .search-content-wrapper .form-data-wrapper form .submit-field button:hover:before,body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button.hover:before,body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button:hover:before,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button.hover:before,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults .results-content-wrapper .results-filter-wrapper .submit-field button:hover:before,body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .frm_style_formidable-style.with_frm_style .frm_submit button.hover:before,body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .frm_style_formidable-style.with_frm_style .frm_submit button:hover:before{
@@ -145,7 +145,7 @@ body .fl-builder-content .sobeys-jm-bs-nav .navbar-nav .menu-item.current-menu-i
 }
 
 body .fl-builder-content .sobeys-jm-bs-nav .navbar-nav .menu-item.current-menu-item a{
-  border-bottom:.1875rem solid #ea0028;
+  border-bottom:.1875rem solid #4aa447;
 }
 
 body .fl-builder-content .sobeys-jm-bs-nav .navbar-nav .menu-item .nav-link{
@@ -457,7 +457,7 @@ body.page-emplois .jobs-why-div div.fl-col-group-nested,body.page-jobs .jobs-why
 }
 
 body.page-emplois .jobs-why-div .why-work .fl-col-content,body.page-jobs .jobs-why-div .why-work .fl-col-content{
-  border-bottom:.25rem solid #ea0028;
+  border-bottom:.25rem solid #4aa447;
   padding:1.875rem;
 }
 
@@ -513,7 +513,7 @@ body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults,b
 }
 
 body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults fieldset.filter-by-type .checkbox:after,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults fieldset.filter-by-type .checkbox:after{
-  background:#ea0028;
+  background:#4aa447;
 }
 
 body.page-recherche .fl-module-bbmodule-searchresults .module-jm-searchresults fieldset.filter-by-type .checkbox .checked:after,body.page-search .fl-module-bbmodule-searchresults .module-jm-searchresults fieldset.filter-by-type .checkbox .checked:after{
@@ -1109,7 +1109,7 @@ body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplica
   -webkit-align-items:center;
      -moz-box-align:center;
           align-items:center;
-  background:#ea0028;
+  background:#4aa447;
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .job-choice .checkbox input,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .job-choice .checkbox input{
@@ -1123,18 +1123,18 @@ body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplica
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .status.submit-status,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .status.submit-status{
   background:#fff;
   text-align:center;
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .status.loading,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .status.loading{
-  border:.0625rem solid #ea0028;
-  color:#ea0028;
+  border:.0625rem solid #4aa447;
+  color:#4aa447;
   padding:.3125rem 0;
   display:none;
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .item button,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-2 .item button{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (min-width:992px){
@@ -1146,7 +1146,7 @@ body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplica
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .application-submit-wrapper a,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .application-submit-wrapper a{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style input[type=email],body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style input[type=tel],body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style input[type=text],body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style textarea,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style input[type=email],body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style input[type=tel],body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style input[type=text],body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style textarea{
@@ -1174,7 +1174,7 @@ body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplica
 }
 
 body.page-application .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style .form-field.select-job:after,body.page-candidature-spontanee .fl-module-bbmodule-openapplication .module-jm-openapplication.-step-3 .frm_style_formidable-style .form-field.select-job:after{
-  border:.125rem solid #ea0028;
+  border:.125rem solid #4aa447;
   border-width:0 .125rem .125rem 0;
   content:"";
   height:.5rem;
@@ -1244,7 +1244,7 @@ body .filter-by-region .form-field.facetwp-facet{
 }
 
 body .filter-by-region .form-field.facetwp-facet:after{
-  border:.125rem solid #ea0028;
+  border:.125rem solid #4aa447;
   border-width:0 .125rem .125rem 0;
   content:"";
   height:.5rem;
@@ -1380,7 +1380,7 @@ body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob .title mar
 }
 
 body.single-fp_job .fl-module-bbmodule-singlejob .module-jm-singlejob a{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 /*# sourceMappingURL=plugin-sobeys-job-manager.min.css.map */

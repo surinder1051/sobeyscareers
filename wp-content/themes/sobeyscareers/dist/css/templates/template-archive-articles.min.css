@@ -24,7 +24,7 @@ body.post-type-archive-article .fl-module-bs_card .component_bs_card.-image-top 
      -moz-border-radius:3.125rem;
           border-radius:50px;
           border-radius:3.125rem;
-  color:#ea0028;
+  color:#4aa447;
   line-height:normal;
   overflow:hidden;
   position:relative;
@@ -56,7 +56,7 @@ body.post-type-archive-article .fl-module-bs_card .component_bs_card.-image-top 
 }
 
 body.post-type-archive-article .fl-module-bs_card .component_bs_card.-image-top .overlay .button:before,body.post-type-archive-story .fl-module-bs_card .component_bs_card.-image-top .overlay .button:before,body.tax-article-category .fl-module-bs_card .component_bs_card.-image-top .overlay .button:before{
-  background:#ea0028;
+  background:#4aa447;
   content:"";
   height:100%;
   left:0;

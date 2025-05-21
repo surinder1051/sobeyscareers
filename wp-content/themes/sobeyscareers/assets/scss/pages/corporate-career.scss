@@ -1,0 +1,10 @@
+@import 'component';
+.sobeys-category-slider {
+    .category-slider-content {
+        align-items: end !important;
+  
+      .category-slider-button {
+        display: none !important;
+      }
+    }
+  }

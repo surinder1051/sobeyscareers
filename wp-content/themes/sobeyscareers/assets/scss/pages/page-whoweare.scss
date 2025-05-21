@@ -1,0 +1,64 @@
+@import "component";
+.banner_cards {
+    .fl-row-content-wrap {
+      .fl-row-content {
+        .fl-col-group {
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+      }
+    }
+  }
+  
+  
+.banner_container {
+    .image-container {
+      width: 56% ;
+      img {
+        min-height: rem(300) !important;
+        max-height: rem(300) !important;   
+       }
+    }
+  
+    .text-container {
+      width: 44% !important;
+      display: flex;
+  
+      .display-table {
+  
+        .display-cell {
+          h1 {
+            margin:0 !important;
+            font-size: rem(48) !important;
+            font-family: 'Noto Serif';
+            font-weight: 700 !important;
+            color: $text-links--colour;
+          }
+        }
+      }
+    }
+  }
+  
+.sobeys_card_1{
+    .card-body{
+    border-radius: 0 0 rem(12) rem(12);
+    border: rem(1) !important;
+    border-bottom:rem(4) solid $green-2 !important;
+    }
+
+}
+
+.card-img-top {
+    border-bottom: 0;
+    border-radius: rem(12) rem(12) 0 0 !important;
+    border: rem(1) solid $light_grey2 !important;
+}
+.grocery_row{
+    margin-left: rem(-12);
+    margin-right: rem(-12);
+    .component_bs_card{
+        background: none;
+    }
+}
+
+

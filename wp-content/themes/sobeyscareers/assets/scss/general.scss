@@ -2,7 +2,7 @@
 @import "bootstrap";
 @import "header";
 @import "footer";
-// @import "facet";
+@import "facetwp";
 @import "fonts";
 @import "forms";
 @import "gutenberg";
@@ -25,6 +25,193 @@
 // button,
 
 body {
+    
+    @import "component";
+    .arrow_style{
+        .card-body {
+            .text-links {
+              a {
+                position: relative;
+                padding-right: rem(24); 
+          
+                &::before {
+                  content: "";
+                  position: absolute;
+                  right:0; 
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: rem(12); 
+                  height: rem(2); 
+                  background-color: rgba(74, 164, 71, 1);
+                  border-radius: 2px;
+                }
+          
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right:0;
+                  top: 50%;
+                  transform: translateY(-50%) rotate(45deg);
+                  width: rem(6);
+                  height: rem(6);
+                  border-top: rem(2) solid rgba(74, 164, 71, 1);
+                  border-right: rem(2) solid rgba(74, 164, 71, 1);
+                  border-radius: 1px;
+                }
+              }
+            }
+          }
+    }
+.sobeys-category-slider{
+    display: flex !important;
+
+    align-items: center;
+    .category-slider-row{
+        margin-left: rem(12);
+        margin-right: rem(12);
+        .category-image-thumb{
+            img{
+                height: rem(218);
+                width: rem(342);
+                border-radius: rem(12) rem(12) 0 0;
+            }
+            
+        }
+        h3{
+            padding: rem(24);
+            border-top: none !important;
+            border: rem(1) solid $light_grey2;
+            border-radius: 0 0 rem(12) rem(12);
+            margin-bottom: 0;
+        }
+
+        
+    }
+    button.slick-prev.slick-arrow {
+    font-size: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0 !important;
+    }
+    button.slick-next.slick-arrow {
+    font-size: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0 !important;
+    }
+    .category-slider-content{
+        max-width: rem(342);
+        p{
+            margin: 0;
+            color: $text-links--colour;
+        }
+     
+    }
+    .slick-prev{
+        width: rem(40);
+        height: rem(40);
+        background-color: $text-links--colour;
+        border-radius: rem(100);
+        position: absolute;
+        left: rem(-7);
+        z-index:1 !important;
+        box-shadow: 0 0 4px 0.25px;
+        border: none;
+    }
+    .slick-next{
+        width: rem(40);
+        height: rem(40);
+        background-color: $text-links--colour;
+        border-radius: rem(100);
+        position: absolute;
+        right: rem(-21);
+        z-index: 1 !important;
+        box-shadow: 0 0 4px 0.25px;
+        border: none;
+    }
+    .slick-prev:before{
+        content: "";
+        color: $gray-26;
+        font-size: rem(18);
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slick-next:before{
+        content: "";
+        color: $gray-26;
+        font-size: rem(18);
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .category-main {
+        position: relative;
+        overflow: hidden;
+        border-radius: rem(12);
+        &:hover{
+            .category-slider-content{
+                max-height: rem(291);
+                bottom: 0;
+                color: $text-links--colour;
+                height: 100%;
+            }
+        }
+
+    .category-slider-button{
+        width: 100% !important;
+        display: flow !important;
+        text-align: center;
+        align-content: flex-end;
+    .category-button{
+        width: 50%;
+    }
+    }
+    }
+    .category-slider-content {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -4rem; // rem(-64) is invalid – this is likely what you meant
+        z-index: 111;
+        background-color: rgba(60, 30, 84, 0.9);
+        max-height: 0;
+        width: 21.375rem; // rem(342)
+        overflow: hidden;
+        padding: 2rem; // rem(32)
+        transition: max-height 0.4s ease;
+          
+      }
+      
+    
+}
+    .bottom_border {
+        .card-body {
+          border-bottom: rem(4) solid $brand-dark !important;
+          background-color: $brand-light;
+          border-radius: 0 0 rem(12) rem(12);
+        }
+        .card-img-top{
+            border-radius: rem(12) rem(12) 0 0 !important;
+        }
+        .card-text{
+            p{
+                padding-bottom: rem(24);
+            }
+        }
+      }
+      
+      
+    .max_1920 {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    
     font-family: $main-font;
     font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -63,6 +250,7 @@ body {
     :focus {
         outline: none;
     }
+
 }
 .site {
     max-width: 100%;

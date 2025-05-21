@@ -17,11 +17,10 @@
 				.accordion-header {
 					position: relative;
 
-					&::after {
-						content: "\276F";
+					&::before {
+						content:'^';
 						position: absolute;
 						right: 0;
-						transform: rotate(270deg);
 					}
 				}
 			}

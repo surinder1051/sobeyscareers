@@ -1,0 +1,19 @@
+.sobeys-category-slider .category-slider-content,.sobeys-category-slider .category-slider-content p{
+  -webkit-box-align:end !important;
+  -webkit-align-items:end !important;
+     -moz-box-align:end !important;
+          align-items:end !important;
+}
+
+.sobeys-category-slider .category-slider-content p{
+  display:-webkit-box !important;
+  display:-webkit-flex !important;
+  display:-moz-box !important;
+  display:flex !important;
+}
+
+.sobeys-category-slider .category-slider-content .category-slider-button{
+  display:none !important;
+}
+
+/*# sourceMappingURL=retailcareer.min.css.map */

@@ -2,7 +2,7 @@
 
 .component_bs_accordion h1,.component_bs_accordion h2,.component_bs_accordion h3,.component_bs_accordion h4,.component_bs_accordion h5,.component_bs_accordion h6{
   font-size:1.5rem;
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (max-width:413px){
@@ -36,7 +36,7 @@
   font-family:brand;
   font-style:normal;
   font-weight:400;
-  color:#ea0028;
+  color:#4aa447;
   display:-webkit-box;
   display:-webkit-flex;
   display:-moz-box;
@@ -93,7 +93,7 @@
 }
 
 .component_bs_accordion .card .card-body p a,.component_bs_accordion .card .card-body p a:visited:hover{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 .component_bs_accordion .card[aria-expanded=true] .card-header:before{

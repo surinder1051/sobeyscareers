@@ -1,5 +1,6 @@
 @import "component";
 
+
 .component_z_pattern {
   &.-right-to-left {
     // Reason : Added css for module container width and height
@@ -69,11 +70,12 @@
             }
 
             .heading {
+              color : $text-links--colour;
               margin-bottom: rem(20);
               font-size: rem(40);
               font-weight: 700;
               @media (max-width: $ultra-screen-lg) {
-                font-size: rem(30);
+                font-size: rem(48);
               }
               @media (max-width: $extended-screen-lg) {
                 margin-bottom: rem(15);
@@ -91,13 +93,37 @@
             }
           }
         }
+
+        .display-table{
+					.display-cell {
+						.heading{
+							@include media-breakpoint-up(lg) {
+								font-size: rem(48) !important;
+							}
+							@include media-breakpoint-down(sm) {
+								font-size: rem(36)!important;
+								line-height: 1.16 !important;
+								font-family: 'Noto Serif';
+								
+							}
+							
+						}
+					}
+				} 
       }
 
       // Reason : Added css for module image block height
-      .image-container {
+      .image-container { 
+        margin: 0 !important;
+        @include media-breakpoint-down(md) {
+          width: 100% !important;
+        }
+        @include media-breakpoint-up(md) {
+          width: 56% !important;
+        }
         img {
           width: 100%;
-          min-height: rem(350);
+          min-height: auto;
           object-fit: cover;
           height: 100%;
           @media (max-width: $ultra-screen) {
@@ -113,4 +139,35 @@
       }
     }
   }
+}
+@media (min-width : $extended-screen-sm) {
+  .banner_container {
+    position: relative;
+    max-width: inherit !important;
+  
+    > .fl-row-content-wrap {
+      position: static;
+      max-width: 1920px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .component_z_pattern {
+      position: static !important;
+  
+      .text-container {
+        @include media-breakpoint-down(md) {
+          width: 100% !important;
+        }
+        @include media-breakpoint-up(md) {
+          width: 40% !important;
+        }
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+  }
+  
 }

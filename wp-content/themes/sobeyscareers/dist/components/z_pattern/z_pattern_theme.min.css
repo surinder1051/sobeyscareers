@@ -100,6 +100,7 @@
 }
 
 .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+  color:#fff;
   margin-bottom:1.25rem;
   font-size:2.5rem;
   font-weight:700;
@@ -107,7 +108,7 @@
 
 @media (max-width:1850px){
   .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
-    font-size:1.875rem;
+    font-size:3rem;
   }
 }
 
@@ -131,9 +132,39 @@
   font-weight:300;
 }
 
+@media (min-width:992px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+    font-size:3rem !important;
+  }
+}
+
+@media (max-width:767.98px){
+  .component_z_pattern.-right-to-left .safety-container .text-container .display-table .display-cell .heading{
+    font-size:2.25rem !important;
+    line-height:1.16 !important;
+    font-family:"Noto Serif";
+  }
+}
+
+.component_z_pattern.-right-to-left .safety-container .image-container{
+  margin:0 !important;
+}
+
+@media (max-width:991.98px){
+  .component_z_pattern.-right-to-left .safety-container .image-container{
+    width:100% !important;
+  }
+}
+
+@media (min-width:768px){
+  .component_z_pattern.-right-to-left .safety-container .image-container{
+    width:56% !important;
+  }
+}
+
 .component_z_pattern.-right-to-left .safety-container .image-container img{
   width:100%;
-  min-height:21.875rem;
+  min-height:auto;
   -o-object-fit:cover;
      object-fit:cover;
   height:100%;
@@ -154,6 +185,44 @@
 @media (max-width:767.98px){
   .component_z_pattern.-right-to-left .safety-container .image-container img{
     min-height:12.5rem;
+  }
+}
+
+@media (min-width:1200px){
+  .banner_container{
+    position:relative;
+    max-width:inherit !important;
+  }
+  .banner_container>.fl-row-content-wrap{
+    position:static;
+    max-width:1920px !important;
+    max-width:120rem !important;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .banner_container .component_z_pattern{
+    position:static !important;
+  }
+  .banner_container .component_z_pattern .text-container{
+    position:absolute;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+       -moz-transform:translateY(-50%);
+         -o-transform:translateY(-50%);
+            transform:translateY(-50%);
+    left:0;
+  }
+}
+
+@media (min-width:1200px) and (max-width:991.98px){
+  .banner_container .component_z_pattern .text-container{
+    width:100% !important;
+  }
+}
+
+@media (min-width:1200px) and (min-width:768px){
+  .banner_container .component_z_pattern .text-container{
+    width:40% !important;
   }
 }
 

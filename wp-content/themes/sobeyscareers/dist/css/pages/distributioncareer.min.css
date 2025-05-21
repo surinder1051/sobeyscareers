@@ -1,0 +1,16 @@
+.sobeys-category-slider .category-slider-content p{
+  display:-webkit-box !important;
+  display:-webkit-flex !important;
+  display:-moz-box !important;
+  display:flex !important;
+  -webkit-box-align:end !important;
+  -webkit-align-items:flex-end !important;
+     -moz-box-align:end !important;
+          align-items:flex-end !important;
+}
+
+.sobeys-category-slider .category-slider-content .category-slider-button{
+  display:none !important;
+}
+
+/*# sourceMappingURL=distributioncareer.min.css.map */

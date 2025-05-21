@@ -24,7 +24,7 @@ body.single-recipe .fl-module-related .component_related .card-deck .card.recipe
      -moz-border-radius:3.125rem;
           border-radius:50px;
           border-radius:3.125rem;
-  color:#ea0028;
+  color:#4aa447;
   line-height:normal;
   overflow:hidden;
   position:relative;
@@ -56,7 +56,7 @@ body.single-recipe .fl-module-related .component_related .card-deck .card.recipe
 }
 
 body.single-recipe .fl-module-related .component_related .card-deck .card.recipe-card .overlay .container .button:before{
-  background:#ea0028;
+  background:#4aa447;
   content:"";
   height:100%;
   left:0;
@@ -200,7 +200,7 @@ body.single-recipe .fl-module-recipe_details .component_recipe_details{
 
 body.single-recipe .fl-module-recipe_details .component_recipe_details .tile.tile_makes .icon{
   height:auto;
-  color:#ea0028;
+  color:#4aa447;
 }
 
 body.single-recipe .fl-module-recipe_details .component_recipe_details .tile.tile_makes .icon:before{
@@ -304,7 +304,7 @@ body.single-recipe .fl-module-social_share .component_social_share a span.dashic
 }
 
 body.single-recipe .fl-module-social_share .component_social_share.show_print_button a .icon-recipe-print:before{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 @media (min-width:768px) and (max-width:991.98px){

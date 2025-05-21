@@ -1,2 +1,48 @@
+.banner_container .image-container{
+  width:56% !important;
+}
+
+.banner_container .image-container img{
+  min-height:0 !important;
+  max-height:300px !important;
+  max-height:18.75rem !important;
+}
+
+.we_provide_grid .provide_card_1 .card-img-top{
+  -webkit-border-radius:.75rem .75rem 0 0;
+     -moz-border-radius:.75rem .75rem 0 0;
+          border-radius:.75rem .75rem 0 0;
+}
+
+.we_provide_grid .provide_card_2 .card-img-top{
+  -webkit-border-radius:.75rem .75rem 0 0 !important;
+     -moz-border-radius:.75rem .75rem 0 0 !important;
+          border-radius:.75rem .75rem 0 0 !important;
+}
+
+.we_provide_grid .provide_card_2 .card-body{
+  -webkit-border-radius:0 0 .75rem .75rem !important;
+     -moz-border-radius:0 0 .75rem .75rem !important;
+          border-radius:0 0 .75rem .75rem !important;
+  border-bottom:.25rem solid #793cd6 !important;
+}
+
+.we_provide_grid .provide_card_3 .card-img-top{
+  -webkit-border-radius:.75rem .75rem 0 0 !important;
+     -moz-border-radius:.75rem .75rem 0 0 !important;
+          border-radius:.75rem .75rem 0 0 !important;
+}
+
+.we_provide_grid .provide_card_3 .card-body{
+  -webkit-border-radius:0 0 .75rem .75rem !important;
+     -moz-border-radius:0 0 .75rem .75rem !important;
+          border-radius:0 0 .75rem .75rem !important;
+  border-bottom:.25rem solid #3c1e54 !important;
+}
+
+.we_provide_grid .card-body{
+  padding:2rem;
+  background-color:#faf8f7;
+}
 
 /*# sourceMappingURL=page-workingwithus.min.css.map */

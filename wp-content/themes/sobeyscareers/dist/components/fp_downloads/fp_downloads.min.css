@@ -1,5 +1,5 @@
 .component_fp_downloads .pdf-content a.button{
-  border:solid #ea0028;
+  border:solid #4aa447;
 }
 
 @media (min-width:992px) and (max-width:1199.98px){
@@ -16,8 +16,8 @@
   }
 }
 .component_fp_downloads .pdf-content a.button{
-  background-color:#ea0028;
-  border:.125rem solid #ea0028;
+  background-color:#4aa447;
+  border:.125rem solid #4aa447;
   -webkit-border-radius:50px;
   -webkit-border-radius:3.125rem;
      -moz-border-radius:50px;
@@ -83,7 +83,7 @@
 }
 
 .component_fp_downloads .pdf-content a.button:hover,.component_fp_downloads .pdf-content a.hover.button{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 .component_fp_downloads .pdf-content a.button:hover:before,.component_fp_downloads .pdf-content a.hover.button:before{

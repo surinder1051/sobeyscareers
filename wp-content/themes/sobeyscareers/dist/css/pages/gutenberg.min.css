@@ -78,7 +78,7 @@ h6{
 
 .wp-block-quote{
   background:#f4f4f4;
-  border-left:.3125rem solid #ea0028;
+  border-left:.3125rem solid #4aa447;
   margin-left:auto;
   margin-right:auto;
   padding:1.25rem 1.25rem .625rem;
@@ -127,7 +127,7 @@ h6{
 
 .wp-block-coblocks-accordion-item details summary:before{
   content:"\e808";
-  color:#ea0028;
+  color:#4aa447;
   display:block;
   font-family:brand;
   font-size:12px;
@@ -145,7 +145,7 @@ h6{
 
 .wp-block-coblocks-accordion-item .wp-block-coblocks-accordion-item__title:before{
   content:"\002B";
-  color:#ea0028;
+  color:#4aa447;
   font-family:Open-sans,sans-serif;
   font-weight:400;
   left:0;
@@ -153,19 +153,19 @@ h6{
 
 .wp-block-coblocks-accordion-item--open .wp-block-coblocks-accordion-item__title:before{
   content:"\2212";
-  color:#ea0028;
+  color:#4aa447;
   font-family:Open-sans,sans-serif;
   font-weight:400;
   left:0;
 }
 
 .fl-rich-text h2{
-  color:#ea0028;
+  color:#4aa447;
   font-size:1.875rem;
 }
 
 .fl-rich-text h3,.fl-rich-text h4{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 /*# sourceMappingURL=gutenberg.min.css.map */

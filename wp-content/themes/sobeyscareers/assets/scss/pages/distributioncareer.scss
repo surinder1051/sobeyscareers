@@ -1,0 +1,14 @@
+@import 'component';
+
+.sobeys-category-slider {
+  .category-slider-content {
+    p {
+      display: flex !important;
+      align-items: flex-end !important;
+    }
+
+    .category-slider-button {
+      display: none !important;
+    }
+  }
+}

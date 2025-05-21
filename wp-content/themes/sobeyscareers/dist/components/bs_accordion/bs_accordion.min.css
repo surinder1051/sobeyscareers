@@ -9,14 +9,10 @@
   position:relative;
 }
 
-.component_bs_accordion.-toggle-icon .card .card-header .accordion-header:after{
-  content:"\276F";
+.component_bs_accordion.-toggle-icon .card .card-header .accordion-header:before{
+  content:"^";
   position:absolute;
   right:0;
-  -webkit-transform:rotate(270deg);
-     -moz-transform:rotate(270deg);
-       -o-transform:rotate(270deg);
-          transform:rotate(270deg);
 }
 
 .component_bs_accordion .card .card-body .card-content-grid{

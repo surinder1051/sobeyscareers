@@ -1,5 +1,5 @@
 .fl-module-bs_card .component_bs_card.-image-background.card .text-links a{
-  border:solid #ea0028;
+  border:solid #4aa447;
 }
 
 @media (min-width:992px) and (max-width:1199.98px){
@@ -16,8 +16,8 @@
   }
 }
 .fl-module-bs_card .component_bs_card.-image-background.card .text-links a{
-  background-color:#ea0028;
-  border:.125rem solid #ea0028;
+  background-color:#4aa447;
+  border:.125rem solid #4aa447;
   -webkit-border-radius:50px;
   -webkit-border-radius:3.125rem;
      -moz-border-radius:50px;
@@ -83,7 +83,7 @@
 }
 
 .fl-module-bs_card .component_bs_card.-image-background.card .text-links a.hover,.fl-module-bs_card .component_bs_card.-image-background.card .text-links a:hover{
-  color:#ea0028;
+  color:#4aa447;
 }
 
 .fl-module-bs_card .component_bs_card.-image-background.card .text-links a.hover:before,.fl-module-bs_card .component_bs_card.-image-background.card .text-links a:hover:before{
@@ -162,16 +162,18 @@
 }
 
 .fl-module-bs_card .component_bs_card.card .overlay{
-  background-color:rgba(234, 0, 40, .6);
+  background-color:rgba(74, 164, 71, .6);
 }
 
 .fl-module-bs_card .component_bs_card.card .overlay:before{
-  background-color:#ea0028;
+  background-color:#4aa447;
   height:100%;
   opacity:.1;
 }
 
 .fl-module-bs_card .component_bs_card.card .card-img-top{
+  border:.0625rem solid #ddd;
+  border-bottom:0;
   background-position:50%;
 }
 
@@ -197,7 +199,6 @@
 }
 
 .fl-module-bs_card .component_bs_card.card .card-body{
-  border:.0625rem solid #ddd;
   border-top:none;
 }
 

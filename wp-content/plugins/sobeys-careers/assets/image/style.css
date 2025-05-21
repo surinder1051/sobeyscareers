@@ -1,0 +1,645 @@
+/***************   Search section css code ***********************************/
+.custom-dropdown {
+    position: relative;
+    width: 250px;
+    cursor: pointer;
+  }
+  
+  .dropdown-selected {
+      color:#808080;
+  }
+  .dropdown-selected::after{
+      content: url('/wp-content/plugins/sobeys-careers/assets/image/dropdown-arrow.svg');
+      position: absolute;
+      right: 0;
+  }
+  .dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 99;
+  }
+  
+  .dropdown-options li {
+    padding: 10px;
+  }
+  
+  .dropdown-options li:hover {
+    background: #eee;
+  }
+
+
+
+
+  /**********************************   Filter section code starts from here  ************************************************/
+.career_sec .career_sidebar .career_sidebar_data .custom-dropdown {
+    width: 100%;
+    margin: 16px 0;
+    cursor: pointer;
+    position: relative;
+    color: #808080;
+    border-radius: 4px;
+}
+.career_sec .career_sidebar .career_sidebar_data .dropdown-selected {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.career_sec .career_sidebar .career_sidebar_data .custom-dropdown .dropdown-selected::after {
+    content: url('/wp-content/plugins/sobeys-careers/assets/image/dropdown-arrow.svg');
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 24px;
+}
+.career_sec .career_sidebar_data input {
+    margin-bottom: 0;
+}
+.career_sec .career_sidebar_data input:last-child{
+    margin-bottom: 16px ;
+}
+.career_sec {
+    margin-top: 32px;
+}
+
+.career_sec .row {
+    display: flex;
+    border: none !important;
+    padding: 0;
+}
+
+.career_sec .col_3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.career_sec .col_9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.career_sec .career_sidebar {
+    background-color: #FAF8F7;
+}
+
+.career_sec .career_sidebar {
+    width: 100%;
+    display: block;
+    background: #FAF8F7;
+    padding: 24px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.career_sec .career_sidebar h2 {
+    font-size: 20px;
+    color: #404040;
+    font-family: Noto serif;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.career_sec .career_sidebar_data input {
+    border: 1px solid #ddd;
+}
+
+.career_sec .applyButton {
+    display: inline-block;
+}
+
+.career_sec .career_table_section {
+    margin-left: 24px;
+}
+
+.career_sec .career_table_section .show_count_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.career_sec .career_table_section .show_count_label .career_table_pagination ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    align-items: center;
+}
+
+.career_sec .career_table_section .show_count_label .career_table_pagination ul li {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.career_sec .career_table_section .show_count_label .career_table_pagination ul li:hover{
+    background-color: #48a548;
+    color: #fff !important;
+}
+#carrers-results {
+    margin-bottom: 64px;
+}
+
+.career_sec .career_table_body tr {
+    margin-top: 16px;
+}
+
+.career_table_body a {
+    color: #48a548;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.distance-range{
+    margin-top: 16px;
+}
+
+
+table {
+    border-collapse: separate !important;
+    border-spacing: 0 10px !important;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+thead {
+    position: relative;
+}
+
+thead:after {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: green;
+    content: "";
+}
+
+td {
+    color: black;
+    font-size: 16px;
+    font-family: 'Lexend Deca';
+    line-height: 1.2;
+    font-weight: 400;
+    max-width: 200px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    font-weight: 700;
+}
+
+td:last-child {
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    color: black;
+    font-size: 16px;
+    font-family: 'Lexend Deca';
+    line-height: 1.5;
+    font-weight: 700;
+    border: 0;
+    padding-bottom: 16px;
+}
+
+tbody tr {
+    border-bottom: 1px solid green;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+.career_sec .career_table_section .career_table_body tr {
+    margin-top: 8px;
+}
+
+
+select#languageDropdown ,#bannerDropdown, #experienceLevel, #datePosted, #jobType{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.searching {
+    border: 1px solid #DDDDDD;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 16px 16px 24px;
+    align-items: center;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.searching .search_content {
+    display: flex;
+    gap: 16px;
+}
+/*** button css ***/
+.search_button {
+    max-width: 160px;
+    width: 100%;
+}
+button.reset_button {
+    padding: 0 !important;
+}
+.column button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.0;
+    background-color: #4AA447;
+}
+button#searching-form {
+    background-color: #fff;
+    border: .125rem solid #fff;
+    -webkit-border-radius: 50px;
+    -webkit-border-radius: 3.125rem;
+    -moz-border-radius: 50px;
+    -moz-border-radius: 3.125rem;
+    border-radius: 50px;
+    border-radius: 3.125rem;
+    color: #4AA447;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.07, .51, .12, 1);
+    transition: -webkit-transform 1s cubic-bezier(.07, .51, .12, 1);
+    -o-transition: -o-transform 1s cubic-bezier(.07, .51, .12, 1);
+    -moz-transition: transform 1s cubic-bezier(.07, .51, .12, 1), -moz-transform 1s cubic-bezier(.07, .51, .12, 1);
+    transition: transform 1s cubic-bezier(.07, .51, .12, 1);
+    transition: transform 1s cubic-bezier(.07, .51, .12, 1), -webkit-transform 1s cubic-bezier(.07, .51, .12, 1), -moz-transform 1s cubic-bezier(.07, .51, .12, 1), -o-transform 1s cubic-bezier(.07, .51, .12, 1);
+    z-index: 1;
+}
+button#searching-form:hover:before {
+    -webkit-transform: translateX(0) skew(-45deg);
+    -moz-transform: translateX(0) skew(-45deg);
+    -o-transform: translateX(0) skew(-45deg);
+    transform: translateX(0) skew(-45deg);
+}
+button#searching-form:before {
+    background: #4AA447;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-100%) skew(-45deg);
+    -moz-transform: translateX(-100%) skew(-45deg);
+    -o-transform: translateX(-100%) skew(-45deg);
+    transform: translateX(-100%) skew(-45deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.07, .51, .12, 1);
+    transition: -webkit-transform 1s cubic-bezier(.07, .51, .12, 1);
+    -o-transition: -o-transform 1s cubic-bezier(.07, .51, .12, 1);
+    -moz-transition: transform 1s cubic-bezier(.07, .51, .12, 1), -moz-transform 1s cubic-bezier(.07, .51, .12, 1);
+    transition: transform 1s cubic-bezier(.07, .51, .12, 1);
+    transition: transform 1s cubic-bezier(.07, .51, .12, 1), -webkit-transform 1s cubic-bezier(.07, .51, .12, 1), -moz-transform 1s cubic-bezier(.07, .51, .12, 1), -o-transform 1s cubic-bezier(.07, .51, .12, 1);
+    width: 150%;
+    z-index: -1;
+}
+button#searching-form {
+    color: #fff;
+    margin: 0;
+}
+button#searching-form:hover{
+   background-color: #fff !important;
+   color: #fff;
+   border: 1px solid #4AA447 !important;
+   padding: 14px 29px;
+}
+#applyFilters,
+button.reset_button {
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+button.reset_button {
+    background: none !important;
+    border: none !important;
+    color: #4AA447 !important;
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+
+
+input {
+    border: 0;
+}
+
+.span {
+    margin: 0 10px 0 0;
+}
+
+.searchJob {
+    border: 0 !important;
+    background-color: #4AA447 !important;
+}
+
+.slick-prev slick-arrow {
+    display: none !important;
+}
+
+.slick-next slick-arrow {
+    display: none !important;
+
+}
+
+
+
+.column p {
+    font-size: 20px;
+    text-align: end;
+}
+
+
+.career_table_body td a {
+    color: #4AA447 !important;
+}
+
+.career_sidebar_data input,
+.career_sidebar_data select,
+.career_sidebar_data button {
+    color: #808080;
+    width: 294px;
+    height: 56px;
+    font-size: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width/height */
+}
+.applyButton #applyFilters ,.reset_button{
+    margin-bottom: 0 !important;
+}
+
+.career_table_body {
+    margin-top: 16px;
+}
+
+tbody tr {
+    width: 1074px;
+    height: 84px;
+    border: 1px solid #DDDD;
+}
+
+.career_sec .career_table_section .show_count_label .career_table_pagination ul li a{
+    color: #000;
+}
+.column input {
+    width: 100%;
+    height: 56px;
+    border-right: 1px solid #DDDDDD;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.career_sidebar h2, .career_sidebar_data input, .searching .column_text input{
+    font-family: "Lexend Deca", sans-serif !important;
+}
+#searchJobs {
+    padding: 19px 30px 19px 30px;
+    border-radius: 100px;
+    border: 0;
+    color: white;
+    font-family: Poppins;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+#applyFilters {
+    background-color: #4AA447;
+    color: #fff;
+    border: 0;
+    padding: 16px 30px;
+    border: 1px solid #4AA447;
+        font-family: "Lexend Deca", sans-serif;
+}
+
+#applyFilters:hover {
+    background-color: #fff;
+    color: #4AA447;
+    border: 1px solid #4AA447;
+}
+
+
+.mobile_table .mobile_table_box {
+    border: 1px solid #ddd;
+    padding: 16px 24px;
+}
+
+.mobile_table .mobile_table_box p {
+    color: black;
+    font-size: 16px;
+    font-family: 'Lexend Deca';
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.mobile_table .mobile_table_box p:last-child {
+    margin-bottom: 0;
+}
+
+.career_sidebar_data input,
+.career_sidebar_data select {
+    width: 100% !important;
+}
+
+#distance_km {
+    padding: 0;
+}
+#jobType option{
+    background-color: red !important;
+}
+
+.career_sec .career_table_section .career_table_body tr td:last-child::after{
+    content: url('/wp-content/plugins/sobeys-careers/assets/image/right arrow.svg');
+    margin-left: 8px;
+}
+.career_sec .career_table_section .show_count_label .career_table_pagination ul li.previous, 
+.career_sec .career_table_section .show_count_label .career_table_pagination ul li.next {
+    border: none;
+    padding: 0;
+    background: none;
+}
+li.current {
+    background: #4AA447;
+    color: #fff;
+}
+.search_alert_section{
+    margin: 24px 0;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Lexend Deca';
+}
+.search_alert_section .alert_digit {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 4px;
+}
+.b-none{
+    border: none;
+}
+
+.search_alert_section .searchJob{
+    font-family: 'Lexend Deca';
+}
+
+.column_text {
+    border-right: 1px solid #DDDDDD;
+    margin-right: 14px;
+}
+
+
+@media (max-width:1440px) {
+    .career_sec {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .career_sec .row {
+        display: block;
+    }
+
+    .career_sec .career_table_section .career_table_heading {
+        display: none;
+    }
+
+    .career_sec .career_table_section .career_table_body tr {
+        display: block;
+        height: 100%;
+        border-radius: 12px;
+        padding: 16px 24px;
+        width: 100% !important;
+        margin-top: 8px;
+    }
+
+    .career_sec .career_table_section .career_table_body tr td:first-child {
+        font-weight: 700;
+    }
+
+    .career_sec .career_table_section .career_table_body tr td {
+        max-width: 100% !important;
+        display: block;
+        padding: 4px 0;
+    }
+
+    .career_sec .career_table_section {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .mb_career_table_section {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    td {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    td:first-child {
+        border-left: none;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    td:last-child {
+        border-right: none;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .searching {
+        display: block;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        margin: 0 24px;
+    }
+    .career_sec {
+        padding: 0;
+    }
+    .column_text, .column input {
+        border-right: none !important;
+    }
+}
+
+@media (max-width:480px) {
+    .fl-node-jxlpvtci8en5.fl-row > .fl-row-content-wrap {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    .searching.row {
+        display: block;
+    }
+    .searching .column {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0;
+    }
+    button#searching-form {
+        width: 100%;
+    }
+    .column input {
+        border-bottom: 1px solid #ddd;
+    }
+    .column_text{
+        border-bottom: 1px solid #ddd;
+    }
+    .career_sec .career_table_section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .career_sec .career_table_section .show_count_label {
+        display: block !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .career_sec .career_table_section .show_count_label .result-counter {
+        margin-bottom: 16px;
+    }
+
+    ul.jobs_pagination {
+        justify-content: center;
+    }
+
+    .result-counter {
+        margin-bottom: 16px;
+    }
+   
+}

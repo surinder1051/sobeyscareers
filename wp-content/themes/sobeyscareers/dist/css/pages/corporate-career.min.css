@@ -1,0 +1,12 @@
+.sobeys-category-slider .category-slider-content{
+  -webkit-box-align:end !important;
+  -webkit-align-items:end !important;
+     -moz-box-align:end !important;
+          align-items:end !important;
+}
+
+.sobeys-category-slider .category-slider-content .category-slider-button{
+  display:none !important;
+}
+
+/*# sourceMappingURL=corporate-career.min.css.map */

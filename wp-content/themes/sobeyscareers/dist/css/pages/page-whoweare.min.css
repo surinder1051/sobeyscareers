@@ -1,2 +1,56 @@
+.banner_cards .fl-row-content-wrap .fl-row-content .fl-col-group{
+  margin-right:-.9375rem;
+  margin-left:-.9375rem;
+}
+
+.banner_container .image-container{
+  width:56%;
+}
+
+.banner_container .image-container img{
+  min-height:18.75rem !important;
+  max-height:18.75rem !important;
+}
+
+.banner_container .text-container{
+  width:44% !important;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+}
+
+.banner_container .text-container .display-table .display-cell h1{
+  margin:0 !important;
+  font-size:3rem !important;
+  font-family:"Noto Serif";
+  font-weight:700 !important;
+  color:#fff;
+}
+
+.sobeys_card_1 .card-body{
+  -webkit-border-radius:0 0 .75rem .75rem;
+     -moz-border-radius:0 0 .75rem .75rem;
+          border-radius:0 0 .75rem .75rem;
+  border:.0625rem !important;
+  border-bottom:.25rem solid #4aa447 !important;
+}
+
+.card-img-top{
+  border-bottom:0;
+  -webkit-border-radius:.75rem .75rem 0 0 !important;
+     -moz-border-radius:.75rem .75rem 0 0 !important;
+          border-radius:.75rem .75rem 0 0 !important;
+  border:.0625rem solid #ddd !important;
+}
+
+.grocery_row{
+  margin-left:-.75rem;
+  margin-right:-.75rem;
+}
+
+.grocery_row .component_bs_card{
+  background:none;
+}
 
 /*# sourceMappingURL=page-whoweare.min.css.map */

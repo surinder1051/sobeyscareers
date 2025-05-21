@@ -24,6 +24,22 @@ jQuery(document).ready(function() {
 		}
 	} );
 
+	function row_padding() {
+		if (1200 < window.innerWidth) {
+			var leftOffset = jQuery('.header-brand .fl-row-content-wrap .fl-row-content').offset().left;
+		if (leftOffset !== undefined) {
+			jQuery('.banner_container .fl-row-content-wrap .text-container').each(function() {
+				this.style.setProperty('padding-left', leftOffset + 'px', 'important');
+			} );
+		}
+		} else {
+			jQuery('.banner_container .fl-row-content-wrap .text-container').each(function() {
+				this.style.removeProperty('padding-left');
+			} );
+		}
+	}
+
+
 	//Reason: Script for custom slider in economic choice page
 	if (0 < jQuery('.economic-choice-col-group').find('.economic-choice-slider').length) {
 		slickSliderCustomSlides('.economic-choice-slider', 3);
@@ -62,6 +78,7 @@ jQuery(document).ready(function() {
 		jQuery(ele).replaceWith(video_frame);
 	}
 
+
 	function check_if_in_view() {
 		var window_height = jQuery(window).height();
 		var window_top_position = jQuery(window).scrollTop();
@@ -84,6 +101,11 @@ jQuery(document).ready(function() {
 			}
 		} );
 	}
+
+	jQuery(window).on('load resize', function() {
+		row_padding();
+	} );
+
 	jQuery(window).on('scroll resize load', check_if_in_view);
 
 	/**  Location page drop down **/
@@ -113,6 +135,9 @@ jQuery(window).on('load', function() {
 
 jQuery(window).on('load resize', function() {
 
+	equalHeightPerRow('.banner_cards .fl-col-group', '.card-body .card-text p');
+	equalHeightPerRow('.banner_cards .fl-col-group', '.card-body');
+	equalHeightPerRow('.grocery_row', '.card-body .card-text p');
 	equalHeightPerRow('.card-body-equal-height', '.card-body');
 	equalHeightPerRow('.history_main_wrapper', '.equal_height_history');
 	equalHeightPerRow('.title_equal_height', '.fl-post-title');
